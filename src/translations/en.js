@@ -820,4 +820,5 @@ export const messages = {
   "foundation_address":"Foundation Freeze TRX Total Number",
   "unfreeze_time":"Unfreeze Time",
   "addresses_number":"Addresses Number",
+  "copyright":"Copyright",
 };

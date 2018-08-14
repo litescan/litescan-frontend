@@ -812,4 +812,5 @@ export const messages = {
   "foundation_address":"基金会锁仓TRX总数",
   "unfreeze_time":"解冻时间",
   "addresses_number":"地址数",
+  "copyright":"版权",
 };
