@@ -119,6 +119,7 @@ export const messages = {
   "tools": "工具",
   "transaction_viewer": "查看交易",
   "node_tester": "测试节点",
+  "tron_convert_tool":"TRON转换工具",
   "system": "系统",
   "news": "新闻",
   "help": "帮助",

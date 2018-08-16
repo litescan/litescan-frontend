@@ -212,9 +212,9 @@ export const routes = [
         component: NodeTesterAsync,
       },
       {
-        label: "node_tester",
+        label: "tron_convert_tool",
         path: "/tools/tron-convert-tool",
-        icon: "fa fa-server",
+        icon: "fa fa-random",
         component: TronConvertToolAsync,
       },
       {

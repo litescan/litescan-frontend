@@ -120,6 +120,7 @@ export const messages = {
   "tools": "Tools",
   "transaction_viewer": "Transaction Viewer",
   "node_tester": "Node Tester",
+  "tron_convert_tool":"TRON Convert Tool",
   "system": "System",
   "news": "News",
   "help": "Help",
