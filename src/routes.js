@@ -15,6 +15,7 @@ import {
   RepresentativesAsync,
   AccountAsync,
   NodeTesterAsync,
+  TronConvertToolAsync,
   SystemAsync,
   DemoAsync,
   FaqAsync,
@@ -209,6 +210,12 @@ export const routes = [
         path: "/tools/node-tester",
         icon: "fa fa-server",
         component: NodeTesterAsync,
+      },
+      {
+        label: "node_tester",
+        path: "/tools/tron-convert-tool",
+        icon: "fa fa-server",
+        component: TronConvertToolAsync,
       },
       {
         path: "/tools/system",
