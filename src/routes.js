@@ -36,6 +36,7 @@ import Transfers from "./components/blockchain/Transfers";
 import Representative from "./components/representatives/representative";
 import {Redirect} from "react-router-dom";
 import ChainParameters from "./components/blockchain/ChainParameters";
+import Proposals from "./components/blockchain/Proposals";
 
 export const routes = [
   {
@@ -105,6 +106,12 @@ export const routes = [
         label: "chain_parameters",
         icon: "fa fa-cogs",
         component: ChainParameters,
+      },
+      {
+        path: "/blockchain/proposals",
+        label: "proposals",
+        icon: "fas fa-file-signature",
+        component: Proposals,
       }
     ]
   },
