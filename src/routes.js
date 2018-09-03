@@ -35,6 +35,7 @@ import Transactions from "./components/blockchain/Transactions";
 import Transfers from "./components/blockchain/Transfers";
 import Representative from "./components/representatives/representative";
 import {Redirect} from "react-router-dom";
+import ChainParameters from "./components/blockchain/ChainParameters";
 
 export const routes = [
   {
@@ -98,6 +99,12 @@ export const routes = [
         label: "foundation",
         icon: "fa fa-address-book",
         component: FoundationAsync,
+      },
+      {
+        path: "/blockchain/parameters",
+        label: "chain_parameters",
+        icon: "fa fa-cogs",
+        component: ChainParameters,
       }
     ]
   },
@@ -275,7 +282,6 @@ export const routes = [
         url: "https://t.me/tronscan",
         label: "telegram_updates",
       },
-
       '-',
       "Community",
       {
