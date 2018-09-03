@@ -52,7 +52,7 @@ export const routes = [
         component: Blocks,
       },
       {
-        icon: 'fas fa-handshake',
+        icon: 'fas fa-credit-card',
         path: "/blockchain/transactions",
         label: "transactions",
         component: Transactions
@@ -110,7 +110,7 @@ export const routes = [
       {
         path: "/blockchain/proposals",
         label: "proposals",
-        icon: "fas fa-file-signature",
+        icon: "fas fa-handshake",
         component: Proposals,
       }
     ]

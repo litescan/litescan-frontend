@@ -60,70 +60,76 @@ class Proposals extends Component {
 
     return (
       <main className="container header-overlap">
-          {
-            proposals.map(proposal => (
-              <div className="card border-left-3 border-left-success-400 rounded-left-0 mb-3">
-                <div className="card-header text-center ">
-                  <h5 className="m-0">{tu("Proposal")} <span className="text-success">#{proposal.proposalId}</span></h5>
-                </div>
-                <table className="table table-hover m-0 bg-white">
-                  <tbody>
-                  <tr>
-                    <th>Proposed By</th>
-                    <td><AddressLink address={proposal.proposerAddress} /></td>
-                  </tr>
-                  <tr>
-                    <th>Date Created</th>
-                    <td>
-                      <FormattedDate value={proposal.createTime} />&nbsp;
-                      <FormattedTime value={proposal.createTime} />&nbsp;
-                      (<FormattedRelative value={proposal.createTime}/>)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Expires On</th>
-                    <td>
-                      <FormattedDate value={proposal.expirationTime} />&nbsp;
-                      <FormattedTime value={proposal.expirationTime} />&nbsp;
-                      (<FormattedRelative value={proposal.expirationTime}/>)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Proposal</th>
-                    <td>
-                      {
-                        Object.entries(proposal.parameters).map(([key, value]) => (
-                          <div>
-                            Change <b>{parameterKeys[key]}</b> to <b>{ChainParameterRenderers[parameterKeys[key]](value)}</b>
-                          </div>
-                        ))
-                        // <b>{ChainParameterRenderers[parameterKeys[key]](parameters[parameterKeys[key]])}</b>
-                      }
-                    </td>
-                  </tr>
-                    <tr>
-                      <th>Approvals</th>
-                      <td>
-                        {
-                          proposal.approvals.length > 0 ?
-                            <Fragment>
-                              {
-                                proposal.approvals.map(approval => (
-                                  <AddressLink address={approval}/>
-                                ))
-                              }
-                            </Fragment> :
-                            <div className="text-muted">
-                              No approvals yet
-                            </div>
-                        }
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+        {
+          proposals.map(proposal => (
+            <div className="card border-left-3 border-left-success-400 rounded-left-0 mb-3">
+              <div className="card-header text-center ">
+                <h5 className="m-0">{tu("Proposal")} <span className="text-success">#{proposal.proposalId}</span></h5>
               </div>
-            ))
-          }
+              <table className="table table-hover m-0 bg-white">
+                <tbody>
+                <tr>
+                  <th>Proposed By</th>
+                  <td><AddressLink address={proposal.proposerAddress}/></td>
+                </tr>
+                <tr>
+                  <th>Date Created</th>
+                  <td>
+                    <FormattedDate value={proposal.createTime}/>&nbsp;
+                    <FormattedTime value={proposal.createTime}/>&nbsp;
+                    (<FormattedRelative value={proposal.createTime}/>)
+                  </td>
+                </tr>
+                <tr>
+                  <th>Expires On</th>
+                  <td>
+                    <FormattedDate value={proposal.expirationTime}/>&nbsp;
+                    <FormattedTime value={proposal.expirationTime}/>&nbsp;
+                    (<FormattedRelative value={proposal.expirationTime}/>)
+                  </td>
+                </tr>
+                <tr>
+                  <th>Proposal</th>
+                  <td>
+                    {
+                      Object.entries(proposal.parameters).map(([key, value]) => (
+                        <div>
+                          Change <b>{parameterKeys[key]}</b> to <b>{ChainParameterRenderers[parameterKeys[key]](value)}</b>
+                        </div>
+                      ))
+                      // <b>{ChainParameterRenderers[parameterKeys[key]](parameters[parameterKeys[key]])}</b>
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>
+                    {proposal.state}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Approvals</th>
+                  <td>
+                    {
+                      proposal.approvals.length > 0 ?
+                        <Fragment>
+                          {
+                            proposal.approvals.map(approval => (
+                              <AddressLink address={approval}/>
+                            ))
+                          }
+                        </Fragment> :
+                        <div className="text-muted">
+                          No approvals yet
+                        </div>
+                    }
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          ))
+        }
       </main>
     );
   }
