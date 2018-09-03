@@ -383,6 +383,17 @@ class Address extends React.Component {
                               </ul>
                             </td>
                           </tr>
+                          <tr>
+                            <th>{tu("allowance")}:</th>
+                            <td>
+                              <ul className="list-unstyled m-0">
+                                <li>
+                                  <TRXPrice amount={address.allowance / ONE_TRX} />{' '}
+                                  <span className="small">(<TRXPrice amount={(address.allowance) / ONE_TRX} currency="USD" showPopup={false} />)</span>
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
                           {
                             totalVotes &&
                             <tr>
