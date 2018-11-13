@@ -59,7 +59,7 @@ async function searchTxHash(criteria) {
     limit: 1,
   });
 
-  if (transactions.length === 1) {
+  if (transactions.length === 1 && transactions[0].hash) {
     return `#/transaction/${transactions[0].hash}`;
   }
 }
@@ -84,7 +84,12 @@ async function searchAddress(criteria) {
   });
 
   if (accounts.length === 1) {
-    return `#/address/${accounts[0].address}`;
+    if(accounts[0].accountType == 2){
+      return `#/contract/${accounts[0].address}/code`;
+    }else{
+      return `#/address/${accounts[0].address}`;
+    }
+    
   }
 }
 
@@ -95,9 +100,10 @@ async function searchToken(criteria) {
     limit: 2,
   });
 
-  if (tokens.length === 1) {
-    return `#/token/${tokens[0].name}`;
-  } else if (tokens.length > 1) {
+  // if (tokens.length === 1) {
+  //   return `#/token/${tokens[0].name}`;
+  // } else 
+  if (tokens.length >= 1) {
 
     if (window.location.hash === "#/tokens/view")
       return `#/tokens/view?search=${criteria}`;

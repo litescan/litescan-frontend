@@ -91,7 +91,6 @@ export class BasicInfo extends PureComponent {
     let reader = new FileReader();
     reader.readAsDataURL(file.files[0]);
     reader.onload = () => {
-      //console.log(reader.result);
       this.setState({logoData: reader.result});
     }
   }
@@ -103,6 +102,7 @@ export class BasicInfo extends PureComponent {
   }
 
   componentDidMount() {
+
   }
 
   componentDidUpdate(prevProps, prevState) {

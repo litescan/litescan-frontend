@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {loadTokens} from "../../actions/tokens";
 import {login} from "../../actions/app";
 import {filter, trim, some, sumBy} from "lodash";
-import {ASSET_ISSUE_COST, ONE_TRX} from "../../constants";
+import {ASSET_ISSUE_COST, ONE_TRX, API_URL} from "../../constants";
 import {FormattedNumber, FormattedDate, injectIntl} from "react-intl";
 import {addDays, addHours, isAfter} from "date-fns";
 import "react-datetime/css/react-datetime.css";
@@ -27,16 +27,17 @@ class TokenCreate extends Component {
 
     let startTime = new Date();
     startTime.setHours(0, 0, 0, 0);
+    startTime.setTime(startTime.getTime() + 24*60*60*1000)
 
     let endTime = new Date();
     endTime.setHours(0, 0, 0, 0);
-    endTime.setDate(startTime.getDate() + 90);
+    endTime.setTime(endTime.getTime() + 24*60*60*1000*2)
 
     this.state = {
       privateKey: "",
       name: "",
       abbr: "",
-      totalSupply: null,
+      totalSupply: '',
       numberOfCoins: 1,
       numberOfTron: 1,
       startTime: startTime,
@@ -50,7 +51,7 @@ class TokenCreate extends Component {
       issuedAsset: null,
       errors: {
         name: null,
-        totalSupply: null,
+        totalSupply: '',
         description: null,
         url: null,
         tronAmount: null,
@@ -144,7 +145,7 @@ class TokenCreate extends Component {
       })(account.key);
 
       if (result.success) {
-        let result_img = await xhr.post("https://www.tronapp.co:9009/api/uploadLogo", {
+        let result_img = await xhr.post(API_URL+ "/api/uploadLogo", {
           imageData: logoData,
           owner_address: account.address
         });
@@ -192,17 +193,16 @@ class TokenCreate extends Component {
   };
 
   componentDidMount() {
-    this.setStartTime();
+    // this.setStartTime();
     this.checkExistingToken();
   }
 
   checkExistingToken = () => {
 
     let {wallet} = this.props;
-
     if (wallet !== null) {
       Client.getIssuedAsset(wallet.address).then(({token}) => {
-
+        
         if (token) {
           this.setState({
             issuedAsset: token,

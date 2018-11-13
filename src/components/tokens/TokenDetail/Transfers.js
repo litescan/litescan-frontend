@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import {Client} from "../../../services/api";
 import {AddressLink, TransactionHashLink} from "../../common/Links";
 import {TRXPrice} from "../../common/Price";
-import {ONE_TRX} from "../../../constants";
+import {API_URL, ONE_TRX} from "../../../constants";
 import {tu, t} from "../../../utils/i18n";
 import TimeAgo from "react-timeago";
 import {Truncate} from "../../common/text";
@@ -11,6 +11,7 @@ import {FormattedNumber, injectIntl} from "react-intl";
 import SmartTable from "../../common/SmartTable.js"
 import {upperFirst} from "lodash";
 import {TronLoader} from "../../common/loaders";
+import xhr from "axios/index";
 
 class Transfers extends React.Component {
 
@@ -41,21 +42,24 @@ class Transfers extends React.Component {
     this.loadPage(page, pageSize);
   };
 
-  loadPage = async (page = 1, pageSize = 10) => {
+  loadPage = async (page = 1, pageSize = 20) => {
 
     let {filter} = this.props;
 
     let {showTotal} = this.state;
 
     this.setState({loading: true});
+    let { data } = await xhr.get(API_URL+"/api/asset/transfer?start=" +(page - 1) * pageSize+ "&limit="+pageSize+"&name=" + filter.token);
+    let transfers = data.Data
+    let total = data.total
 
-    let {transfers, total} = await Client.getTransfers({
-      sort: '-timestamp',
-      limit: pageSize,
-      start: (page - 1) * pageSize,
-      count: showTotal ? true : null,
-      ...filter,
-    });
+    // let {transfers, total} = await Client.getTransfers({
+    //   sort: '-timestamp',
+    //   limit: pageSize,
+    //   start: (page - 1) * pageSize,
+    //   count: showTotal ? true : null,
+    //   ...filter,
+    // });
 
     for (let index in transfers) {
       transfers[index].index = parseInt(index) + 1;
@@ -153,7 +157,7 @@ class Transfers extends React.Component {
     if (!loading && transfers.length === 0) {
       if (!EmptyState) {
         return (
-            <div className="p-3 text-center" style={{background:'white'}}>{tu("no_transfers")}</div>
+            <div className="p-3 text-center no-data">{tu("no_transfers")}</div>
         );
       }
 
@@ -165,7 +169,7 @@ class Transfers extends React.Component {
         {loading && <div className="loading-style" style={{marginTop: '-20px'}}><TronLoader/></div>}
         <div className="row transfers">
           <div className="col-md-12 table_pos">
-            {total? <div className="table_pos_info">{tableInfo}</div>: ''}
+            {/* {total? <div className="table_pos_info">{tableInfo}</div>: ''} */}
             <SmartTable border={false} loading={loading} column={column} data={transfers} total={total}
                         onPageChange={(page, pageSize) => {
                           this.loadPage(page, pageSize)

@@ -32,6 +32,7 @@ import ReceiveModal from "./transfer/Receive/ReceiveModal";
 import {toastr} from 'react-redux-toastr'
 import Lockr from "lockr";
 import {BarLoader} from "./common/loaders";
+import {Truncate} from "./common/text";
 
 class Navigation extends PureComponent {
 
@@ -43,7 +44,6 @@ class Navigation extends PureComponent {
     this.id = 0;
     this.loginFlag = false;
     this.state = {
-      privateKey: '',
       search: "",
       popup: null,
       notifications: [],
@@ -58,6 +58,10 @@ class Navigation extends PureComponent {
        this.loginFlag = true;
      }
     */
+  }
+
+  componentDidMount() {
+      let {account} = this.props;
   }
 
   setLanguage = (language) => {
@@ -92,10 +96,6 @@ class Navigation extends PureComponent {
       return false;
     }
 
-    //if (isAddressValid(privateKey))
-    //  return true;
-    //else
-    //  return false;
 
     if (privateKey.length !== 64) {
       return false;
@@ -201,13 +201,14 @@ class Navigation extends PureComponent {
     let type = getSearchType(search);
 
     let result = await doSearch(search, type);
+    
     if (result === true) {
       this.setState({search: ""});
     } else if (result !== null) {
       window.location.hash = result;
       this.setState({search: ""});
     } else {
-      toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'record_not_found'}));
+      toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'search_not_found'}));
     }
   };
 
@@ -318,32 +319,37 @@ class Navigation extends PureComponent {
       );
 
     }
-    //Lockr.set("account_address", account.address);
 
     return (
         <Fragment>
           {
             (account.isLoggedIn && wallet.isOpen) ?
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown token_black nav">
                   <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;">
                     {tu("wallet")}
                   </a>
-                  <ul className="dropdown-menu dropdown-menu-right account-dropdown-menu">
-                    <li className="px-1 py-1">
+                  <ul className="dropdown-menu dropdown-menu-right account-dropdown-menu px-3">
+                    <li className=" py-1">
                       <div className="row" style={{width: 305}}>
-                        <div className="col-lg-2">
+                      <Link to="/account" className="col-12 d-flex justify-content-end align-items-center">
+                        {/* <div className="col-lg-2">
                           <Avatar size={45} value={account.address}/>
-                        </div>
-                        <div className="col-lg-10">
-                          <b>{wallet.current.name || tu("account")}</b>
+                        </div> */}
+                        <div>
+                          <b style={{color: '#333'}}>{wallet.current.name || tu("account")}</b>
                           <br/>
-                          <AddressLink
+                          {/* <AddressLink
                               address={account.address}
                               className="small text-truncate text-nowrap d-sm-inline-block"
-                              style={{width: 150}}/>
+                              style={{width: 150}}/> */}
+                           <Truncate><span>{account.address}</span></Truncate>
                         </div>
+                        {/* <Link to="/account" className="col-lg-4 d-flex justify-content-end align-items-center"> */}
+                          <i className="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                        {/* </Link> */}
+                        </Link>
                       </div>
-                      <Link to="/account" className="btn btn-dark btn-block btn-sm">{tu("account")}</Link>
+                      
                     </li>
                     {
                       wallet.current.representative.enabled && (
@@ -356,47 +362,58 @@ class Navigation extends PureComponent {
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-credit-card mr-2"/>
                       <FormattedNumber value={wallet.current.balance / ONE_TRX}/> TRX
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </Link>
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-bolt mr-2"/>
                       <FormattedNumber value={wallet.current.frozenTrx / ONE_TRX}/> TRON {tu("power")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </Link>
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-tachometer-alt mr-2"/>
-                      <FormattedNumber value={wallet.current.bandwidth.netRemaining}/> {tu("bandwidth")}
+                      <FormattedNumber value={wallet.current.bandwidth.netRemaining + wallet.current.bandwidth.freeNetRemaining}/> {tu("bandwidth")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
+                    </Link>
+                    <Link className="dropdown-item" to="/account">
+                      <i className="fa fa-server mr-2"/>
+                      <FormattedNumber value={wallet.current.bandwidth.energyRemaining}/> {tu("energy")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </Link>
                     <Link className="dropdown-item"
                           to={"/blockchain/transactions?address=" + account.address}>
                       <i className="fa fa-exchange-alt mr-2"/>
                       <FormattedNumber value={totalTransactions}/> {tu("transactions")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </Link>
                     <li className="dropdown-divider"/>
                     <a className="dropdown-item" href="javascript:;" onClick={this.newTransaction}>
                       <i className="fa fa-paper-plane mr-2"/>
                       {tu("send")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </a>
                     <a className="dropdown-item" href="javascript:;" onClick={this.showReceive}>
                       <i className="fa fa-qrcode mr-2"/>
                       {tu("receive")}
+                      <i className="fa fa-angle-right float-right" aria-hidden="true"></i>
                     </a>
                     {/*<Link className="dropdown-item" to={"/blockchain/transactions?address=" + account.address}>*/}
                     {/*<i className="fa fa-qrcode mr-2"/>*/}
                     {/*Receive*/}
                     {/*</Link>*/}
                     <li className="dropdown-divider"/>
-                    <li className="px-2 pt-1">
+                    <li className=" pt-1 pb-2">
                       <button className="btn btn-danger btn-block"
                               onClick={this.logout}>{tu("sign_out")}</button>
                     </li>
                   </ul>
                 </li> :
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown nav nav_input">
                   <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:">
                     {tu("open_wallet")}
                   </a>
                   <ul className="dropdown-menu dropdown-menu-right nav-login-wallet" style={{width: 320}}>
-                    <li className="px-3">
-                      <div className="form-group text-center">
+                  <li className="px-3 py-3">
+                      <div className="text-center">
                         <label>{tu("private_key")}</label>
                         <input
                             type="text"
@@ -404,17 +421,17 @@ class Navigation extends PureComponent {
                             onChange={ev => this.setState({privateKey: ev.target.value})}
                             placeholder=""/>
                       </div>
-                      <button className="btn btn-success btn-block"
+                      <button className="btn btn-danger btn-block mt-3"
                               disabled={!this.isLoginValid()}
                               onClick={this.login}>
                         {tu("sign_in")}
                       </button>
                     </li>
-                    <li className="dropdown-divider"/>
-                    <li className="px-3">
-                      <div className="form-group text-center">
+                    {/* <li className="dropdown-divider blod"/> */}
+                    <li className="px-3 py-3 ">
+                      <div className="text-center">
                         <label>{tu("keystore_file")}</label>
-                        <button className="btn btn-success btn-block" onClick={this.selectFile}>
+                        <button className="btn btn-danger btn-block" onClick={this.selectFile}>
                           {tu("select_file")}
                         </button>
                         <input type="file" ref={this.fileRef} className="d-none"
@@ -423,12 +440,12 @@ class Navigation extends PureComponent {
                       </div>
 
                     </li>
-                    <li className="dropdown-divider"/>
+                    {/* <li className="dropdown-divider blod"/> */}
                     {
                       flags.mobileLogin &&
                       <Fragment>
-                        <li className="px-3">
-                          <div className="form-group text-center">
+                        <li className="px-3 py-3 ">
+                          <div className="text-center">
                             <label>{tu("Mobile Login")}</label>
                             <button className="btn btn-success btn-block"
                                     onClick={this.loginWithMobileDevice}>
@@ -436,10 +453,10 @@ class Navigation extends PureComponent {
                             </button>
                           </div>
                         </li>
-                        <li className="dropdown-divider"/>
+                        {/* <li className="dropdown-divider"/> */}
                       </Fragment>
                     }
-                    <li className="px-3 py-2">
+                    <li className="px-3 py-3">
                       <Link className="btn btn-primary btn-block" to="/wallet/new">
                         {tu("create_wallet")}
                       </Link>
@@ -453,7 +470,7 @@ class Navigation extends PureComponent {
 
   render() {
 
-    let {intl} = this.props;
+    let {intl, params} = this.props;
     let {
       languages,
       activeLanguage,
@@ -466,7 +483,7 @@ class Navigation extends PureComponent {
     let {search, popup, notifications} = this.state;
 
     let activeComponent = this.getActiveComponent();
-
+    
     return (
         <div className="header-top">
           {popup}
@@ -477,25 +494,46 @@ class Navigation extends PureComponent {
                   <img src={this.getLogo()} className="logo" alt="Tron"/>
                 </Link>
               </div>
-              {
-                IS_TESTNET &&
-                <div className="col mx-auto text-center text-info font-weight-bold py-2">
-                  TESTNET
+                {
+                    IS_TESTNET &&
+                    <div className="col text-center text-info font-weight-bold py-2">
+                      TESTNET
+                    </div>
+                }
+                {
+                     (syncStatus && syncStatus.sync.progress < 95) &&
+                    <div className="col text-danger text-center py-2">
+                      Tronscan is syncing, data might not be up-to-date ({Math.round(syncStatus.sync.progress)}%)
+                    </div>
+                }
+              <div className="ml-auto d-flex">
+                { this.props.location.pathname != '/'&&
+                  <div className= "hidden-mobile nav-searchbar">
+                    <div className="input-group">
+                      <input type="text"
+                            className="form-control p-2 bg-white border-0 box-shadow-none"
+                            style={styles.search}
+                            value={search}
+                            onKeyDown={this.onSearchKeyDown}
+                            onChange={ev => this.setState({search: ev.target.value})}
+                            placeholder={intl.formatMessage({id: "search_description1"})}/>
+                      <div className="input-group-append">
+
+                        <button className="btn box-shadow-none" onClick={this.doSearch}>
+                          <i className="fa fa-search"/>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                }
+                <div className="navbar navbar-expand-md navbar-dark py-0">
+                  <ul className="navbar-nav navbar-right wallet-nav">
+                    {
+                      wallet.isOpen && <Notifications wallet={wallet} notifications={notifications}/>
+                    }
+                    {this.renderWallet()}
+                  </ul>
                 </div>
-              }
-              {
-                (syncStatus && syncStatus.sync.progress < 95) &&
-                <div className="col mx-auto text-danger text-center py-2">
-                  Tronscan is syncing, data might not be up-to-date ({Math.round(syncStatus.sync.progress)}%)
-                </div>
-              }
-              <div className="ml-auto navbar navbar-expand-md navbar-dark py-0">
-                <ul className="navbar-nav navbar-right wallet-nav">
-                  {
-                    wallet.isOpen && <Notifications wallet={wallet} notifications={notifications}/>
-                  }
-                  {this.renderWallet()}
-                </ul>
               </div>
             </div>
           </div>
@@ -513,7 +551,7 @@ class Navigation extends PureComponent {
                           route.linkHref === true ?
                               <HrefLink
                                   className="nav-link"
-                                  href={activeLanguage == 'en' ? route.enurl : route.zhurl}>
+                                  href={activeLanguage == 'zh' ? route.zhurl : route.enurl}>
                                 {route.icon &&
                                 <i className={route.icon + " d-none d-lg-inline-block mr-1"}/>}
                                 {tu(route.label)}
@@ -559,6 +597,20 @@ class Navigation extends PureComponent {
                                           key={subRoute.url}
                                           className="dropdown-item text-uppercase"
                                           href={subRoute.url}>
+                                        {subRoute.icon &&
+                                        <i className={subRoute.icon + " mr-2"}/>}
+                                        {tu(subRoute.label)}
+                                        {subRoute.badge &&
+                                        <Badge value={subRoute.badge}/>}
+                                      </HrefLink>
+                                  );
+                                }
+                                if (!isUndefined(subRoute.enurl) || !isUndefined(subRoute.zhurl)) {
+                                  return (
+                                      <HrefLink
+                                          key={subRoute.enurl}
+                                          className="dropdown-item text-uppercase"
+                                          href={activeLanguage == 'zh' ? subRoute.zhurl : subRoute.enurl}>
                                         {subRoute.icon &&
                                         <i className={subRoute.icon + " mr-2"}/>}
                                         {tu(subRoute.label)}
@@ -639,7 +691,7 @@ class Navigation extends PureComponent {
                 </h4>
               }
 
-              <div className="ml-auto py-3 hidden-mobile nav-searchbar">
+              {/* <div className="ml-auto py-3 hidden-mobile nav-searchbar">
                 <div className="input-group">
                   <input type="text"
                          className="form-control p-2 bg-white border-0 box-shadow-none"
@@ -655,7 +707,8 @@ class Navigation extends PureComponent {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              
             </div>
           }
         </div>

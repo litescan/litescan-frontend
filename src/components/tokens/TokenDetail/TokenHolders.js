@@ -34,7 +34,7 @@ class TokenHolders extends React.Component {
     this.loadTokenHolders(page, pageSize);
   };
 
-  loadTokenHolders = async (page = 1, pageSize = 10) => {
+  loadTokenHolders = async (page = 1, pageSize = 20) => {
     let {filter} = this.props;
     this.setState({loading: true});
 
@@ -115,7 +115,7 @@ class TokenHolders extends React.Component {
     let tableInfo = intl.formatMessage({id: 'a_totle'})+' ' + total +' '+ intl.formatMessage({id: 'hold_addr'})
     if (!loading && addresses.length === 0) {
       return (
-          <div className="p-3 text-center">{tu("no_holders_found")}</div>
+          <div className="p-3 text-center no-data">{tu("no_holders_found")}</div>
       );
     }
     return (
@@ -123,7 +123,7 @@ class TokenHolders extends React.Component {
         {loading && <div className="loading-style" style={{marginTop: '-20px'}}><TronLoader/></div>}
         <div className="row transfers">
           <div className="col-md-12 table_pos">
-            {total? <div className="table_pos_info">{tableInfo}</div>: ''}
+            {/* {total?<div className="table_pos_info d-none d-md-block">{tableInfo}</div>: ''} */}
             <SmartTable border={false} loading={loading} column={column} data={addresses} total={total}
                         onPageChange={(page, pageSize) => {
                           this.loadTokenHolders(page, pageSize)

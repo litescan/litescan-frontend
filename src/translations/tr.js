@@ -1,4 +1,3 @@
-
 export const messages = {
   /*
   ##################################################################################
@@ -179,7 +178,7 @@ export const messages = {
   "asset_participation": "Varlık Katılımı",
   "loading_transaction": "İşlem Yükleniyor",
   "nodes_ranking": "Düğüm Sıralaması",
-  "total_accounts_last_day":"Total Accounts Till Last Day",
+  "total_accounts_last_day": "Total Accounts Till Last Day",
   "chart_tip": "Drag the data zoom area to zoom in and zoom out",
   "link_test_server": "Testnet",
   "highest": "Highest ",
@@ -259,7 +258,7 @@ export const messages = {
   "send_to_following_address": "Alıcı'nın adresi",
   "change_website": "Website'yi değiştir",
   "you_must_enter_url": "Bir URL girmelisiniz",
-  "specify_the_url":  "Please specify the URL",
+  "specify_the_url": "Please specify the URL",
   /*
   ##################################################################################
   #                                                                                #
@@ -356,7 +355,7 @@ export const messages = {
   "github_linked": "Github bağlandı!",
   "unable_to_link_github_message": "GitHub ile bağlantı kurulamadı, lütfen kullanıcı adından emin olunuz!",
   "could_not_link_github": "GitHub bağlanamadı",
-  "enter_your_github_username":  "GitHub kullanıcı adınızı giriniz",
+  "enter_your_github_username": "GitHub kullanıcı adınızı giriniz",
   "link_to_github": "GitHub ile bağla",
   "link_github": "GitHub Bağla",
   "you_must_enter_a_url": "Bir URL girmelisiniz",
@@ -371,7 +370,7 @@ export const messages = {
   "could_not_claim_rewards": "Ödüller talep edilemedi",
   "claim_rewards_error_message": "Ödüller talep edilirken bir hata oluştu, lütfen daha sonra tekrar deneyiniz",
   "rewards_claimed": "Ödüller talep edildi!",
-  "successfully_claimed_rewards":  "Ödüller başarıyla talep edildi",
+  "successfully_claimed_rewards": "Ödüller başarıyla talep edildi",
   "claim_rewards": "Ödül Talebi",
   "sr_receive_reward_message_0": "Bir temsilci olarak, blok ürettiğiniz için ödül alırsınız. Bu ödüller her 24 saatte bir talep edilebilir",
   "intro": "Başlangıç",
@@ -518,9 +517,9 @@ export const messages = {
   "token_spend_confirm": "Jeton arzının tamamnını yaratmanın bir defalık toplam 1024 TRX ücrete tabi olduğunu onaylarım.",
   "token_issue_guide_message_1": `TRON Protokolünde jeton üretimi
    hesabında en az 1024 TRX bulunan herkes tarafından yapılabilir.`,
-  "token_issue_guide_message_2":`Bir jeton üretilir üretilmez jetonlara genel bakış sayfasında görünecektir.
+  "token_issue_guide_message_2": `Bir jeton üretilir üretilmez jetonlara genel bakış sayfasında görünecektir.
    Kullanıcılar katılım süresi boyunca katılım sağlayarak TRX'leri ile jeton alabilirler.`,
-  "token_issue_guide_message_3":`Jeton üretildikten sonra hesabınıza toplam arzı kadar miktarda jeton gelecektir.
+  "token_issue_guide_message_3": `Jeton üretildikten sonra hesabınıza toplam arzı kadar miktarda jeton gelecektir.
    Diğer kullanıcılar TRX ile jeton aldıklarında, jetonlar hesabınızdan çekilir
    ve siz tanımlı jeton fiyatı üzerinden TRX alırsınız.`,
   /*
@@ -854,27 +853,205 @@ export const messages = {
    #                                                                                #
    ##################################################################################
  */
-  "tron_convert_tool":"Encode Convert Tool",
-  "breakdown_supply_types":"Breakdown By Supply Types",
-  "genesis":"Genesis",
+  "tron_convert_tool": "Encode Convert Tool",
+  "breakdown_supply_types": "Breakdown By Supply Types",
+  "genesis": "Genesis",
   "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
-  "block_produce_rewards":"Block Produce Rewards",
-  "node_rewards":"Node Rewards",
-  "independence_day_burned":"Independence Day Burned",
-  "fee_burned":"Fee Burned",
-  "current_total_supply":"Current Total Supply",
-  "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
-  "in_USD":"In USD",
-  "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
-  "market_capitalization":"Market Capitalization",
-  "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
-  "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
-  "14_day_transaction_history":"14 day Transaction History",
-  "14_day_address_growth":"14 day Address Growth",
+  "block_produce_rewards": "Block Produce Rewards",
+  "node_rewards": "Node Rewards",
+  "independence_day_burned": "Independence Day Burned",
+  "fee_burned": "Fee Burned",
+  "current_total_supply": "Current Total Supply",
+  "foundation_freeze": "Foundation Freeze",
+  "price_per_1000_trx": "PRICE PER 1000 TRX",
+  "in_USD": "In USD",
+  "in_BTC": "In BTC",
+  "total_TRX_supply": "Total TRX Supply",
+  "market_capitalization": "Market Capitalization",
+  "circulating_supply": "Circulating Supply",
+  "list_trx": "List TRX",
+  "burned_trx": "TRX Burned",
+  "supply_notes": "Crowdsale and pre-sale available globally, except in the US, China, and Japan",
+  "14_day_transaction_history": "14 day Transaction History",
+  "14_day_address_growth": "14 day Address Growth",
+    /*
+      ##################################################################################
+      #                                                                                #
+      # ICO--rating page                                                              #
+      #                                                                                #
+      ##################################################################################
+    */
+    "TRONRating": "TRON Token Rating",
+    "rating_title": "Tronscan Token Reputation System",
+    "modify_on": "Modified on",
+    "rating_description": "The Tronscan Reputation System aims at helping users to understand, differentiate and assess different tokens. When you visit the token page, the Reputation is classified into 5 categories:",
+    "rating_status_1": "Review Pending",
+    "rating_status_1_desc_a": "Not yet reviewed",
+    "rating_status_2": "OK",
+    "rating_status_2_desc": "An “OK” Reputation is not an endorsement or recommendation, but meets the following criteria:",
+    "rating_status_2_desc_a": "Provide sufficient and accurate information",
+    "rating_status_2_desc_b": "Has precise project goals and communication channels",
+    "rating_status_2_desc_c": "Accessible information of the project founders/ investors/ consultants",
+    "rating_status_2_desc_d": "The token is traded/listed on a cryptocurrency exchange with AML/KYC inspection",
+    "rating_status_2_desc_e": "ICO has been completed or active for no less than 3 months",
+    "rating_status_2_desc_f": "A major milestone has been achieved",
+    "rating_status_3": "Neutral",
+    "rating_status_3_desc": "A 'neutral' Reputation means that the information about the project and the team is relatively transparent.",
+    "rating_status_3_desc_a": "Provide necessary and sufficient information (official website, logo, official contact email, white paper)",
+    "rating_status_3_desc_b": "A professional public profile of team members and consultants is posted online (Indicate the project in LinkedIn Personal Profile)",
+    "rating_status_3_desc_c": "Provide social media materials",
+    "rating_status_4": "Insufficient Information",
+    "rating_status_4_desc_a": "Has not provided necessary and sufficient information (official website, logo, official contact email, white paper)",
+    "rating_status_4_desc_b": "There is no information showing that the project has ongoing operational progress",
+    "rating_status_5": "False Information",
+    "rating_status_5_desc_a": "Use false identity to issue token",
+    "rating_status_5_desc_b": "There is information indicating that the fraud/phishing/fraud/spamming or misrepresentation behavior related to this token has not been properly handled, or the token has other 'dangerous' signs.",
+    "rating_disclaimer": "DISCLAIMER",
+    "disclaimer_desc_1": "Tronscan does not endorse, approve or condemn any services or projects related to the token contracts displayed on the Tronscan. Users should always conduct research with due diligence before taking any action related to the token, especially when it comes to value investing.",
+    "disclaimer_desc_2": "Reputation associated with this service may or may not be accurate as they are based on subjective evaluations and/or reports from the community. We take no sides, nor do we guarantee or conduct any level of responsibility/accuracy/reliability evaluation; our reputation evaluation cannot be deemed as any behavioral advice, especially investment advice.",
+    "disclaimer_desc_3": "We reserve the right to interpret the symbolic reputation of the token on this page, and we are not obligated to provide any feedback for the refusal. We reserve the right to delete or update information (including reputation) once there is falseness or discrepancies of the information.",
+
+    /*
+    ##################################################################################
+    #                                                                                #
+    # ICO--myToken page                                                              #
+    #                                                                                #
+    ##################################################################################
+  */
+    "my_token": "My Token",
+    "my_token_desc_1": "The information related to the token will be displayed on the token page. Each token based on the comprehensiveness and authenticity of the information will get a",
+    "tron_rating": "Token Reputation",
+    "my_token_desc_2": "If you need to update your information, please send the updates using the following Excel template to token@tron.network via your company email or certified email with necessary credentials.",
+    "brief_info": "Brief Introduction",
+    "website_official": "Official website",
+    "white_paper": "White Paper",
+    "GitHub": "GitHub",
+    "country": "Country/Region",
+    "social_link": "Social Media Link",
+    "download_excel": "Download the template",
+    "no_message": "N/A (Please send an email to complete this information)",
+    "insufficient_message": "Insufficient information",
+    "token_detail": "Token Detail",
+    "contact_us": "Contact us",
+    "my_token": "My Token",
+    "try_later": "Please try it later",
+    "contract_address": "Contract Address",
+
+    /*
+  ##################################################################################
+  #                                                                                #
+  # ICO--create token page                                                         #
+  #                                                                                #
+  ##################################################################################
+  */
+    "basic_info": "Basic Information",
+    "basic_info_desc": "Token basic information ",
+    "exchange_setting": "Issuance Setting",
+    "exchange_setting_desc": "Set the issuing price and time frame for tokens",
+    "freeze_setting": "Frozen Setting",
+    "freeze_setting_desc": "Freeze part of the tokens for a period of time",
+    "confirm_setting": "Confirm Setting",
+    "confirm_setting_desc": "Confirm all your information",
+    "token_logo": "Token LOGO",
+    "image_restraint_desc": "resolution 1:1, suggested format jpg/png",
+    "prev_step": "Previous",
+    "freeze_on": "ON",
+    "freeze_off": "OFF",
+    "freeze_not_valid": "Freeze function off",
+    "no_logo_error": "no logo found",
+    "confirm_issue_info": "Please make sure that the following information is correct, as the smart contract cannot be modified once it is written into the block chain.",
+    "tick_checkbox": "Need to tick the Checkbox",
+    "change_info": "If the information is not correct, please",
+    "total": "total",
+    "a_totle": "A Total of",
+    "transaction_info": "transactions found",
+    "hold_addr": "Token Holders",
+    "transactions_unit": "Transactions",
+    "transfers_unit": "Transfers",
+    "block_unit": "Blocks",
+    "record_unit": "Transactions",
+    "token_unit": "Tokens",
+    "vote_unit": "candidates",
+    "voter_unit": "Voters",
+    "account_unit": "accounts",
+    "address_unit": "addresses",
+    "contract_unit": "verified contract source codes found",
+    "inter_contract_unit": "Internal Transactions found",
+
+    /*
+  ##################################################################################
+  #                                                                                #
+  # ICO--participate page                                                         #
+  #                                                                                #
+  ##################################################################################
+  */
+
+    "issue_progress": "Progress",
+    "fund_raised": "Fund Raised",
+    "issuing_price": "Issuing Price",
+    "buy_token_info": "How much tokens do you want to buy?",
+    "reputation": "Reputation",
+    "issue_time": "Issuing Time ",
+    "success_receive": "Successfully received",
+    "circulating_supply": "Circulating Supply",
+    "issue_info": "Issuance Info",
+    "transferring": "In progress",
+    "in_progress": "In progress",
+    "fail_transaction": "Transaction failed",
+    "records": "Records",
+    "part_total": "A total of ",
+    "part_pass": "tokens found",
+    "view_total": "A Total of",
+    "view_pass": "Tokens to participate",
+    "token_overview_tron": "Overview of TRON token market",
+    "token_participate_tron": "Participate in TRON token issuance",
+    "not_started": "Not started",
+    "no_token_to_buy": "Sorry, all the circulating supply has been issued, please wait the tokens to be unfrozen to participate.",
+
+    /*
+    ##################################################################################
+    #                                                                                #
+    # contract page                                                                  #
+    #                                                                                #
+    ##################################################################################
+    */
+
+    "Code": "Code",
+    "contract_overview": "Contract Overview",
+    "trx_value": "TRX Value",
+    "token_tracker": "Token Tracker",
+    "contract_creator": "Contract Creator",
+    "at_txn": "at txn",
+    "token_txns": "Token Txns",
+    "Events": "Events",
+    "TxHash": "TxHash",
+    "Internal_Txns": "Internal Txns",
+    "ParentTxHash": "ParentTxHash",
+    "TxFee": "[TxFee]",
+    "contract_code_verified": "Contract Source Code Verified (Exact Match)",
+    "Contract_ABI": "Contract ABI",
+    "Byte_code": "Byte code",
+    "Constructor_Arguments": "Constructor Arguments (ABI-Encoded and is the last bytes of the Contract Creation Code above) ",
+    "Copy": "Copy",
+    "TxHash_Block_Age": "TxHash | Block | Age",
+    "Method": "Method",
+    "Event_Logs": "Event Logs",
+    "With_Verified_Source_Codes_Only": "With Verified Source Codes Only",
+    "verified_contract_source_codes_found": " verified contract source codes found",
+    "contract_source_codes_found": " contracts found",
+    "ContractName": "ContractName",
+    "TxCount": "TxCount",
+    "Settings": "Settings",
+    "DateVerified": "DateVerified",
+    "Compiler": "Compiler",
+    "Compiler_Text": "Compiler Text",
+    "Contract_Internal_Transactions": "Contract Internal Transactions",
+    "Internal_Transactions_found": "Internal Transactions found",
+    "Misc": "Misc",
+    "Optimization_Enabled": "Optimization Enabled",
+    "Normal_Transactions": "Normal Transactions",
+    "Verified_contracts": "verified contracts",
+    "Constructor_Arguments_tip": "Constructor Arguments",
 
   /*
   ##################################################################################
@@ -884,6 +1061,174 @@ export const messages = {
   ##################################################################################
   */
   "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "tron_power_freezing": "TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power.",
+  "HighChart_tip": "Click and drag in the plot area to zoom in",
+  "general_information": "General Information",
+  "blockchain_information": "Blockchain Information",
+  "sr_information": "SR Information",
+  "currency_information": "Currency Information",
+  "your_vote":"Your vote",
+  "total_number_frozenTRX":"Total number of frozen TRX",
+  "tronics_support_planTRX":"TRX frozen by the Tronics Support Plan",
+  "frozen_by_the_foundationTRX":"TRX frozen by the Foundation",
+  "tronics_support_plan":"Tronics Support Plan",
+  "tronics_support_plan_recipient_address":"Tronics Support Plan recipient address",
+  "update_token":"Update Token",
+  "total_frozen": "Foundation Reserve",
+  "account_create_contract":"Account Create Contract",
+  "account_create":"Create account",
+  "create_from_address": "Initiate Contract Address",
+  "create_to_address":"Created Account Address",
+  "proposal_create_contract":"Proposal Create Contract",
+  "proposal_create":"Create proposal",
+  "block_not_found":"Sorry, the block could not be found.",
+  "transaction_not_found":"Sorry, the transaction could not be found.",
+  "search_not_found": "Sorry, the search string you entered could not be found.",
+  "available_balance":"Available Balance",
+  /*
+  ##################################################################################
+  #                                                                                #
+  # verify-contract-code                                          #
+  #                                                                                #
+  ##################################################################################
+  */
+  "contract_source_code": "Contract Source Code",
+  "bytecode_and_ABI": "ByteCode And ABI",
+  "verify_and_publish_your_solidity_source_code": "Verify and Publish your Solidity Source Code",
+  "step": "Step",
+  "step_1": "Enter your Contract Source Code below.",
+  "step_2": "If the Bytecode generated matches the existingCreation Address Bytecode, the contract is then Verified.",
+  "step_3": "Contract Source Code is published online and publicably verifiable by anyone.",
+  "contract_notes": "NOTES",
+  "contract_notes_1": "To verify Contracts that accept Constructor arguments,please enter the ABI-encoded Arguments in the box below.",
+  "contract_notes_2_1": "For debugging purposes if it compiles correctly at",
+  "contract_notes_2_2": " TRON studio",
+  "contract_notes_2_3": ", it should also compile correctly here.",
+  "contract_notes_3": 'We do not support contract verification that use "imports" up to now.',
+  "contract_notes_4": "We do not support contract verification for contracts created by another contract.",
+  "contract_notes_5": "There is a timeout of up to 45 seconds for each contract compiled. If your contract takes longer than this we will not be able to verify it.",
+  "contract_notes_6": "More functions are coming in the next version.",
+  "contract_address": "Contract Address",
+  "contract_optimization": "Optimization",
+  "enter_contract_code": "Enter the Solidity Contract Code below",
+  "following_optional_parameters": "The following are optional Parameters",
+  "constructor_arguments_ABIencoded": "Constructor Arguments ABI-encoded (For contracts that accept constructor parameters)",
+  "contract_library_address": "Contract Library Address (For contracts that use libraries, supports up to 5 libraries):",
+  "library_1_name": "Library_1 Name",
+  "library_2_name": "Library_2 Name",
+  "library_3_name": "Library_3 Name",
+  "library_4_name": "Library_4 Name",
+  "library_5_name": "Library_5 Name",
+  "library_contract_address": "Library Contract Address",
+  "verify_and_publish": "Verify And Publish",
+  "txn": "txn",
+  "contract_name_tip": "Must match the ContractName in the Source Code or in a MultiPart Contract it should match the ContractName you deployed.",
+  "constructor_arguments_ABIencoded_tip": "This option ONLY applies to contracts that accept constructor arguments, if you are unsure you most likely do not need this.The constructor arguments should be in ABI-ENCODED values and will be appended to the contract bytecode.",
+  "library_1_name_tip": "This option ONLY applies to contracts that use libraries.",
+  "library_contract_address_tip": "Corresponding Contract Library Address.",
+  "contract_source_code_for": "The Contract Source code for",
+  "has_already_been_verified": "has already been verified.",
+  "click_here_to_view": "Click here to view the",
+  "contract_was_creating_during": "contract was creating during",
+  "constructor_arguements": "Constructor Arguements Used (ABI-encoded)",
+  "ContractBytecode": "ContractBytecode",
+  "ContractABI": "ContractABI",
+  "start_over": "Start Over",
+  "sorry_unable_contract_address": "Sorry！Unable to locate Contract code at ",
+  "this_a_valid_contract_address": "this a valid contract address?",
+  "successfully_generated_byteCode": "Successfully generated ByteCode and ABI for Contract Address ",
+  "error_construct_ABI_encoded": "Missing Constructor Arguments/Library used for function ",
+  "error_construct_bytecode_for": "Sorry! The Compiled Contract ByteCode for ",
+  "the_contract_creation_code_for": " does NOT match the Contract Creation Code for ",
+  "error_contract_ABI_for": "Sorry! The Compiled Contract ABI for",
+  "unableto_verify_contract_source_code": "Unableto Verify Contract source code.",
+  "contractname_found": "Contractname(s) found",
+  /*
+  ##################################################################################
+  #                                                                                #
+  # contract-type                                          #
+  #                                                                                #
+  ##################################################################################
+  */
+  "trigger_smart_contract":"Trigger Smart Contract",
+  "normal_address_trigger_smart_contract":"Normal address trigger smart contract",
+  "trigger":"Contract Triggers",
+  "contract_triggers_total":"Contract Triggers",
+  "contract_triggers_owner":"Owner",
+  "contract_triggers_owner_address":"Owner Address",
+  "no_tnx":"No Transaction",
+  "no_event":"No Event",
+  "link_test_fauct":"test faucet",
+  "gain_bandwith":"Freeze TRX to gain bandwith",
+  "gain_energy":"Freeze TRX to gain energy",
+  "energy":"energy",
+  "freeze_trx_gain_bandwith_energy":"You can gain bandwith or energy as well.",
+  "freeze_type":"Freeze Type",
+  "success_unfrozen_trx":"Successfully Unfrozen TRX",
+  "please_select_the_type_of_unfreeze":"Please select the type of unfreeze",
+  "unfreeze_bandwidth":"Unfreeze the bandwidth account to get TRX",
+  "unfreeze_energy":"Unfreeze the energy account to get TRX",
+  "hide_small_currency":"Hide small balances",
+  "tokens_less_than_10":"Tokens with a quantity less than 10",
+  "only_TRX_transfers":"Only TRX transfers",
+  "no_transfers_found":"No transfers found",
+  "current_MaxTPS":"Current/Max TPS",
 
+  /*
+  ##################################################################################
+  #                                                                                #
+  # exchange                                         #
+  #                                                                                #
+  ##################################################################################
+ */
+
+  "apply_for_the_currency": "Apply for the currency",
+  "apply_for_process": "Apply for the currency process",
+  "apply_content": "If you want to add coins, please fill out the application form to provide information about the currency. After submitting the information, we will review the data as soon as possible. Please wait patiently before replying to the audit results.",
+  "operate_txn_pair_message": "Please enter an integer",
+  "withdraw_all": "Not fully divested",
+  "creat_valid": "Cannot exceed account balance",
+  "my_trading_pairs": "My Trading Pairs",
+  "create_trading_pairs": "Create Trading Pairs",
+  "pairs": "Pairs",
+  "no_pairs": "No Pairs",
+  "capital_injection": "Capital Injection",
+  "capital_withdrawal": "Capital Withdrawal",
+  "pair_has_been_created": "Pair has been created",
+  "successfully_created_pair": "Successfully created a deal pair",
+  "pair_creation_failed": "pair creation failed",
+  "successful_injection": "Successful Injection",
+  "sorry_injection_failed": "Sorry, injection failed",
+  "successful_withdrawal": "Successful Withdrawal",
+  "sorry_withdrawal_failed": "Sorry, withdrawal failed",
+  "select_the_name_of_the_Token": "Please select the name of the Token",
+  "enter_the_amount": "Enter the Amount",
+  "choose_a_Token_for_capital_injection": "Choose a Token for Capital Injection:",
+  "choose_a_Token_for_capital_withdrawal": "Choose a Token for Capital Withdrawal:",
+  "injection_amount": "Injection Amount:",
+  "withdrawal_amount": "Withdrawal Amount:",
+  "last_price": "Last price",
+  "pairs_change": "Change",
+  "H": "H",
+  "L": "L",
+  "O": "O",
+  "C": "C",
+  "24H_VOL": "24H VOL",
+  "token_application_instructions_title": "Token Application Instructions",
+  "token_application_instructions_1":"For better user experience, please fill in the application with detailed information about the token that you would like to issue. After receiving your application, we will conclude the review of the information that you have submitted in 3 - 5 business days. Tokens without review will be hidden.",
+  "click_here_to_apply": "Click here to apply",
+  "TxTime": "Transaction Time",
+  "TxAmount": "Transaction Amount",
+  "TxRecord": "Transaction Record",
+  "TxAvailable": "Available",
+  "TxBuy": "Expected to buy",
+  "TxSell": "Amount want to sell",
+  "my_transaction": "My Transaction",
+  "enter_the_trading_amount": "Enter the Trading Amount",
+  "BUY": "BUY",
+  "SELL": "SELL",
+  "estimated_cost": "Estimated Cost",
+  "estimated_revenue": "Estimated Revenue",
+  "slightly_cost": "Slightly increase the estimated cost, and the turnover rate will be higher.",
+  "slightly_revenue": "Slightly lower the estimated revenue, and the turnover rate will be higher.",
 };

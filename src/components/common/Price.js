@@ -108,7 +108,7 @@ export class TRXPrice extends React.PureComponent {
   render() {
     let {open, id} = this.state;
     let {source,name,amount = 0, currency = "", showCurreny = true, showPopup = true, ...props} = this.props;
-      let ele = null;
+    let ele = null;
     return (
       <Consumer>
           {
@@ -120,8 +120,8 @@ export class TRXPrice extends React.PureComponent {
                                 value={this.renderPrice(amount, priceValues)}
                                 maximumFractionDigits={12}>
                                 {value => <span id={id}
-                                                onMouseOver={() => this.setState({open: true})}
-                                                onMouseOut={() => this.setState({open: false})}
+                                                onMouseEnter={() => this.setState({open: true})}
+                                                onMouseLeave={() => this.setState({open: false})}
                                                 {...props}>
                               {name == 'TRX' ? amount / ONE_TRX : amount} {name}
                                         </span>}
@@ -178,8 +178,8 @@ export class TRXPrice extends React.PureComponent {
                                 value={this.renderPrice(amount, priceValues)}
                                 maximumFractionDigits={priceValues.currencies[currency.toUpperCase() || priceValues.priceShown.toUpperCase()].fractions || 2}>
                                 {value => <span id={id}
-                                                onMouseOver={() => this.setState({open: true})}
-                                                onMouseOut={() => this.setState({open: false})}
+                                                onMouseEnter={() => this.setState({open: true})}
+                                                onMouseLeave={() => this.setState({open: false})}
                                                 {...props}>
           {value} {showCurreny && (currency.toUpperCase() || priceValues.priceShown.toUpperCase())}
           </span>}

@@ -13,20 +13,19 @@ import {cloneDeep} from "lodash";
 import {tu} from "../../../utils/i18n";
 import CountUp from 'react-countup';
 import {Link} from "react-router-dom"
-
+import {API_URL} from "../../../constants";
 import {
-    LineReactAdd,
-    LineReactBlockSize,
-    LineReactBlockchainSize,
-    LineReactTx,
-    LineReactPrice,
-    LineReactVolumeUsd,
-    LineReactHighChartAdd
+    LineReactHighChartAdd,
+    LineReactHighChartTx,
+    LineReactHighChartBlockchainSize,
+    BarReactHighChartBlockSize,
+    LineReactHighChartPrice,
+    LineReactHighChartVolumeUsd
 } from "../../common/LineCharts";
 
 import {
     RepresentativesRingPieReact,
-    SupplyTypesTRXPieChart
+    SupplyTypesTRXPieChart,
 } from "../../common/RingPieChart";
 
 import {loadPriceData} from "../../../actions/markets";
@@ -67,32 +66,29 @@ class Statistics extends React.Component {
 
     componentDidMount() {
         let {match} = this.props;
-        this.loadAccounts();
-        this.loadStats();
-
         let chartName = match.params.chartName;
         switch (chartName){
             case 'supply':
                 this.loadTotalTRXSupply();
                 setInterval(() => {
                     this.loadTotalTRXSupply();
-                }, 15000);
-            break;
+                }, 30000);
+                break;
             case 'pieChart':
                 this.loadPieChart();
-            break;
+                break;
             case 'volumeStats':
                 this.loadVolume();
-            break;
+                break;
             case 'priceStats':
                 this.loadPriceStats();
-            break;
+                break;
             case 'accounts':
                 this.loadAccounts();
-            break;
+                break;
             default:
                 this.loadTxOverviewStats();
-            break;
+                break;
         }
     }
 
@@ -125,44 +121,12 @@ class Statistics extends React.Component {
         });
     }
 
-
-    async loadStats() {
-
-        let {stats} = await Client.getTransferStats({
-            groupby: 'timestamp',
-            interval: 'hour',
-        });
-
-        let {stats: blockStats} = await Client.getBlockStats({
-            info: `avg-block-size`,
-        });
-
-        let transactionTotalStats = stats.total.map(row => ({
-            timestamp: row.timestamp,
-            value: row.value,
-        }));
-
-        let valueStats = stats.value.map(row => ({
-            timestamp: row.timestamp,
-            value: row.value / ONE_TRX,
-        }));
-
-        blockStats = blockStats.map(row => ({
-            timestamp: row.timestamp,
-            value: row.value,
-        }));
-
-        this.setState({
-            transactionStats: transactionTotalStats,
-            transactionValueStats: valueStats,
-            blockStats,
-        });
-    }
     async loadTotalTRXSupply(){
         let {intl} = this.props;
+        let TronicsSupportPlanTotal = 48051406 + 47301714 + 43778265 +  43765311;
         let random = Math.random();
-        let balanceData = await xhr.get("https://server.tron.network/api/v2/node/balance_info?random=" + random);
-        let TRONFoundationTotal = balanceData.data.total;
+        let balanceData = await xhr.get(`${API_URL}/api/fund?random="${random}&page_index=1&per_page=1`);
+        let TRONFoundationTotal = balanceData.data.data.total/ONE_TRX - TronicsSupportPlanTotal;
         let {blocks} = await Client.getBlocks({
             limit: 1,
             sort: '-number',
@@ -176,10 +140,11 @@ class Statistics extends React.Component {
         let genesisNum = 100000000000;
         let independenceDayBurned = 1000000000;
         let currentTotalSupply = genesisNum + blockProduceRewardsNum + nodeRewardsNum - independenceDayBurned - feeBurnedNum;
-        let circulatingNum = (currentTotalSupply  - TRONFoundationTotal).toFixed(2);
+        let circulatingNum = (currentTotalSupply  - TRONFoundationTotal + TronicsSupportPlanTotal).toFixed(2);
         let supplyTypesChartData = [
-            {value: TRONFoundationTotal, name: 'foundation_freeze', selected: true},
-            {value: circulatingNum, name: 'circulating_supply', selected: true},
+            {value: circulatingNum, name: 'circulating_supply', selected: true,sliced: true},
+            {value: TRONFoundationTotal, name: 'total_frozen', selected: false,sliced: false},
+
         ]
         let trxPriceData = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/tronix/?convert=EUR`);
         let priceUSD = ((parseFloat(trxPriceData.data[0].price_usd))*1000).toFixed(2);
@@ -237,7 +202,7 @@ class Statistics extends React.Component {
             }
         })
         this.setState({
-            volumeStats: volume
+            volumeStats: volume.slice(27, volume.length - 1),
         });
         let higest = {date: '', increment: ''};
         let lowest = {date: '', increment: ''};
@@ -295,9 +260,7 @@ class Statistics extends React.Component {
 
 
     async loadTxOverviewStats() {
-        // let {txOverviewStats} = await Client.getTxOverviewStats();
-        let overviewData = await xhr.get("https://assistapi.tronscan.org/api/stats/overview");
-        let txOverviewStats = overviewData.data.data;
+        let { txOverviewStats } = await Client.getTxOverviewStats();
         let temp = [];
         let addressesTemp = [];
         let blockSizeStatsTemp = [];
@@ -323,7 +286,7 @@ class Statistics extends React.Component {
                 });
                 addressesTemp.push({
                     date: txOverviewStats[tx].date,
-                    total: txOverviewStats[tx].newAddressSeen + addressesTemp[tx - 1].total,
+                    total: txOverviewStats[tx].totalAddress,
                     increment: txOverviewStats[tx].newAddressSeen
                 });
             }
@@ -443,323 +406,323 @@ class Statistics extends React.Component {
                 {
                     match.params.chartName != 'pieChart' && match.params.chartName != 'supply' ?
                         <div className="alert alert-light" role="alert">
-                            <div className="row">
-                                <div className="col-md-6 text-center">
-                                    {
-                                        summit && summit[match.params.chartName + '_sort'] &&
-                                        <span>{t('highest')}{t(unit)}{t('_of')}
-                                            <strong>{' ' + summit[match.params.chartName + '_sort'][0].increment + ' '}</strong>
-                                            {t('was_recorded_on')} {intl.formatDate(summit[match.params.chartName + '_sort'][0].date)}
+                          <div className="row">
+                            <div className="col-md-6 text-center">
+                                {
+                                    summit && summit[match.params.chartName + '_sort'] &&
+                                    <span>{t('highest')}{t(unit)}{t('_of')}
+                                      <strong>{' ' + summit[match.params.chartName + '_sort'][0].increment + ' '}</strong>
+                                        {t('was_recorded_on')} {intl.formatDate(summit[match.params.chartName + '_sort'][0].date)}
                             </span>
-                                    }
-                                </div>
-                                <div className="col-md-6 text-center">
-                                    {
-                                        summit && summit[match.params.chartName + '_sort'] &&
-                                        <span>{t('lowest')}{t(unit)}{t('_of')}
-                                            <strong>{' ' + summit[match.params.chartName + '_sort'][1].increment + ' '}</strong>
-                                            {t('was_recorded_on')} {intl.formatDate(summit[match.params.chartName + '_sort'][1].date)}
-                            </span>
-                                    }
-                                </div>
+                                }
                             </div>
+                            <div className="col-md-6 text-center">
+                                {
+                                    summit && summit[match.params.chartName + '_sort'] &&
+                                    <span>{t('lowest')}{t(unit)}{t('_of')}
+                                      <strong>{' ' + summit[match.params.chartName + '_sort'][1].increment + ' '}</strong>
+                                        {t('was_recorded_on')} {intl.formatDate(summit[match.params.chartName + '_sort'][1].date)}
+                            </span>
+                                }
+                            </div>
+                          </div>
                         </div>
                         : null
                 }
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="card">
-                            <div className="card-body">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="card">
+                    <div className="card-body p-5">
+                        {
+                            match.params.chartName === 'txOverviewStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'txOverviewStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            txOverviewStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactTx source='singleChart' style={{height: 500}}
-                                                             data={txOverviewStats} intl={intl}/>
-                                        }
-                                    </div>
+                                    txOverviewStats === null ?
+                                        <TronLoader/> :
+                                        <LineReactHighChartTx source='singleChart' style={{height: 500}}
+                                                              data={txOverviewStats} intl={intl}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'addressesStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'addressesStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            addressesStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactAdd source='singleChart' style={{height: 500}} data={addressesStats} intl={intl}/>
-                                        }
-                                    </div>
+                                    addressesStats === null ?
+                                        <TronLoader/> :
+                                        <LineReactHighChartAdd source='singleChart' style={{height: 500}} data={addressesStats} intl={intl}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'blockSizeStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'blockSizeStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            blockSizeStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactBlockSize source='singleChart' style={{height: 500}}
+                                    blockSizeStats === null ?
+                                        <TronLoader/> :
+                                        <BarReactHighChartBlockSize source='singleChart' style={{height: 500}}
                                                                     data={blockSizeStats}
                                                                     intl={intl}/>
-                                        }
-                                    </div>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'blockchainSizeStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'blockchainSizeStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            blockchainSizeStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactBlockchainSize source='singleChart' style={{height: 500}}
-                                                                         data={blockchainSizeStats} intl={intl}/>
-                                        }
-                                    </div>
+                                    blockchainSizeStats === null ?
+                                        <TronLoader/> :
+                                        <LineReactHighChartBlockchainSize source='singleChart' style={{height: 500}}
+                                                                          data={blockchainSizeStats} intl={intl}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'priceStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'priceStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            priceStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactPrice source='singleChart' style={{height: 500}}
-                                                                data={priceStats} intl={intl}/>
-                                        }
-                                    </div>
+                                    priceStats === null ?
+                                        <TronLoader/> :
+                                        <LineReactHighChartPrice source='singleChart' style={{height: 500}}
+                                                                 data={priceStats} intl={intl}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'accounts' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'accounts' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            accounts === null ?
-                                                <TronLoader/> :
-                                                <PieReact style={{height: 500}} data={accounts}/>
-                                        }
-                                    </div>
+                                    accounts === null ?
+                                        <TronLoader/> :
+                                        <PieReact style={{height: 500}} data={accounts}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'transactionValueStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'transactionValueStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            transactionValueStats === null ?
-                                                <TronLoader/> :
-                                                <LineReact message={{
-                                                    id: 'trx_transferred_past_hour',
-                                                    href: 'transactionValueStats'
-                                                }}
-                                                           style={{height: 500}} data={transactionValueStats}
-                                                           keysData={['timestamp', 'value']}
-                                                           format={{timestamp: true}}/>
-                                        }
-                                    </div>
+                                    transactionValueStats === null ?
+                                        <TronLoader/> :
+                                        <LineReact message={{
+                                            id: 'trx_transferred_past_hour',
+                                            href: 'transactionValueStats'
+                                        }}
+                                                   style={{height: 500}} data={transactionValueStats}
+                                                   keysData={['timestamp', 'value']}
+                                                   format={{timestamp: true}}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'transactionStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'transactionStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            transactionStats === null ?
-                                                <TronLoader/> :
-                                                <LineReact
-                                                    message={{id: 'transactions_past_hour', href: 'transactionStats'}}
-                                                    style={{height: 500}} data={transactionStats}
-                                                    keysData={['timestamp', 'value']}
-                                                    format={{timestamp: true}}/>
-                                        }
-                                    </div>
+                                    transactionStats === null ?
+                                        <TronLoader/> :
+                                        <LineReact
+                                            message={{id: 'transactions_past_hour', href: 'transactionStats'}}
+                                            style={{height: 500}} data={transactionStats}
+                                            keysData={['timestamp', 'value']}
+                                            format={{timestamp: true}}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'blockStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'blockStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            blockStats === null ?
-                                                <TronLoader/> :
-                                                <LineReact message={{id: 'average_blocksize', href: 'blockStats'}}
-                                                           style={{height: 500}} data={blockStats}
-                                                           keysData={['timestamp', 'value']}
-                                                           format={{timestamp: true}}/>
-                                        }
-                                    </div>
+                                    blockStats === null ?
+                                        <TronLoader/> :
+                                        <LineReact message={{id: 'average_blocksize', href: 'blockStats'}}
+                                                   style={{height: 500}} data={blockStats}
+                                                   keysData={['timestamp', 'value']}
+                                                   format={{timestamp: true}}/>
                                 }
+                            </div>
+                        }
+                        {
+                            match.params.chartName === 'volumeStats' &&
+                            <div style={{height: 500}}>
                                 {
-                                    match.params.chartName === 'volumeStats' &&
-                                    <div style={{height: 500}}>
-                                        {
-                                            volumeStats === null ?
-                                                <TronLoader/> :
-                                                <LineReactVolumeUsd source='singleChart'
-                                                                    style={{height: 500}}
-                                                                    data={volumeStats}
-                                                                    intl={intl}/>
-                                        }
-                                    </div>
+                                    volumeStats === null ?
+                                        <TronLoader/> :
+                                        <LineReactHighChartVolumeUsd source='singleChart'
+                                                                     style={{height: 500}}
+                                                                     data={volumeStats}
+                                                                     intl={intl}/>
                                 }
-                                {
+                            </div>
+                        }
+                        {
 
-                                    match.params.chartName === 'pieChart' &&
-                                    <div>
-                                        {
-                                            pieChart === null ?
-                                                <TronLoader/> :
-                                                <RepresentativesRingPieReact source='singleChart'
-                                                                             message={{id: 'produce_distribution'}}
-                                                                             intl={intl}
-                                                                             data={pieChart}
-                                                                             style={{height: 500}}/>
-
-                                        }
-                                    </div>
-
-                                }
+                            match.params.chartName === 'pieChart' &&
+                            <div>
                                 {
-                                    match.params.chartName === 'supply' &&
-                                    <div>
-                                        {
-                                            supplyTypesChart === null ?
-                                                <TronLoader/> :
-                                                <div className="row" style={{fontSize : 12,marginRight:0}}>
-                                                    <div className="col-md-5">
-                                                        <div className="table-responsive">
-                                                            <table className="table" style={{marginTop : 10}}>
-                                                            <thead>
-                                                            <tr>
-                                                                <th style={{border:0}}>
-                                                                    <i className="fa fa-puzzle-piece" ></i>
-                                                                    <span style={{marginTop:2}}>{tu('TRX_distribution_overview')}</span>
-                                                                </th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    {tu('genesis')}:
-                                                                </td>
-                                                                <td>
-                                                                    {genesisNum} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>+  {tu('block_produce_rewards')}:
-                                                                </td>
-                                                                <td>
-                                                                    {blockProduceRewardsNum} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>+ {tu('node_rewards')}:
-                                                                </td>
-                                                                <td>
-                                                                    {nodeRewardsNum} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>- {tu('independence_day_burned')}:
-                                                                </td>
-                                                                <td>
-                                                                    {independenceDayBurned} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>- {tu('fee_burned')}:
-                                                                </td>
-                                                                <td>
-                                                                    {feeBurnedNum} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>= <b>{tu('current_total_supply')}:</b><br/>
-                                                                </td>
-                                                                <td>
-                                                                    <b>{intl.formatNumber(currentTotalSupply)} TRX</b>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style={{color:'red'}} className="go-foundation">
-                                                                    <Link to="/blockchain/foundation" style={{color:'red',}}>{tu("foundation_freeze")}</Link>
-                                                                </td>
-                                                                <td>
-                                                                    {foundationFreeze} TRX
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{tu('circulating_supply')}:
-                                                                </td>
-                                                                <td>
-                                                                    {circulatingNum} TRX
-                                                                </td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        </div>
-                                                        <br/>
-                                                        <div className="table-responsive">
-                                                            <table className="table" style={{marginBottom:0}}>
-                                                                <thead>
-                                                                <tr>
-                                                                    <th style={{border:0}}><br/><i className="fa fa-coins" ></i> {tu('price_per_1000_trx')}</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody><tr>
-                                                                    <td>{tu('in_USD')}:
-                                                                    </td>
-                                                                    <td>
-                                                                        ${priceUSD}
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>{tu('in_BTC')}:
-                                                                    </td>
-                                                                    <td>
-                                                                        {priceBTC}
-                                                                    </td>
-                                                                </tr>
-                                                                </tbody></table>
-                                                                <div style={{fontSize:12,color:'#999',whiteSpace: 'nowrap',textAlign:'left', padding: '0.75rem',borderTop: '1px solid #DFD7CA',verticalAlign: 'top'}}>
-                                                                    <div style={{transform:'scale(.9)',marginLeft: '-1.3rem'}}>
-                                                                        *{tu('supply_notes')}
-                                                                    </div>
-                                                                </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-7" style={{backgroundColor: '#F5F5F5',marginTop:0,paddingBottom:15}}>
-                                                        <div className="main-counters row">
-                                                            <div className="counters col-md-6 col-sm-6">
-                                                                <span className="counter">
-                                                                    <CountUp start={0} end={currentTotalSupply} duration={2}  separator="," decimals={2} />
-                                                                </span>
-                                                                <h4>{tu('total_TRX_supply')}</h4>
-                                                            </div>
-                                                            <div className="counters col-md-6 col-sm-6">
-                                                                <span className="counter">
-                                                                    $<CountUp start={0} end={marketCapitalization} duration={2}  separator="," decimals={2}/>
-                                                                </span>
-                                                                <h4>{tu('market_capitalization')}</h4>
-                                                            </div>
-                                                        </div>
-                                                        <div className="card">
-                                                            <div className="card-body">
-                                                                <SupplyTypesTRXPieChart
-                                                                    message={{id: 'breakdown_supply_types'}}
-                                                                    intl={intl}
-                                                                    data={supplyTypesChart}
-                                                                    style={{height: 400}}
-                                                                    source='singleChart'
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            }
-                                    </div>
+                                    pieChart === null ?
+                                        <TronLoader/> :
+                                        <RepresentativesRingPieReact source='singleChart'
+                                                                     message={{id: 'produce_distribution'}}
+                                                                     intl={intl}
+                                                                     data={pieChart}
+                                                                     style={{height: 500}}/>
 
                                 }
                             </div>
 
-                        </div>
-                        {
-                            match.params.chartName === 'txOverviewStats' &&
-                            <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#C23631'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;</div>
                         }
+                        {
+                            match.params.chartName === 'supply' &&
+                            <div>
+                                {
+                                    supplyTypesChart === null ?
+                                        <TronLoader/> :
+                                        <div className="row" style={{fontSize : 12,marginRight:0}}>
+                                          <div className="col-md-5">
+                                            <div className="table-responsive">
+                                              <table className="table" style={{marginTop : 10}}>
+                                                <thead>
+                                                <tr>
+                                                  <th style={{border:0}}>
+                                                    <i className="fa fa-puzzle-piece" ></i>
+                                                    <span style={{marginTop:2}}>{tu('TRX_distribution_overview')}</span>
+                                                  </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                  <td>
+                                                      {tu('genesis')}:
+                                                  </td>
+                                                  <td>
+                                                      {genesisNum} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>+  {tu('block_produce_rewards')}:
+                                                  </td>
+                                                  <td>
+                                                      {blockProduceRewardsNum} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>+ {tu('node_rewards')}:
+                                                  </td>
+                                                  <td>
+                                                      {nodeRewardsNum} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>- {tu('independence_day_burned')}:
+                                                  </td>
+                                                  <td>
+                                                      {independenceDayBurned} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>- {tu('fee_burned')}:
+                                                  </td>
+                                                  <td>
+                                                      {feeBurnedNum} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>= <b>{tu('current_total_supply')}:</b><br/>
+                                                  </td>
+                                                  <td>
+                                                    <b>{intl.formatNumber(currentTotalSupply)} TRX</b>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style={{color:'red'}} className="go-foundation">
+                                                    <Link to="/blockchain/foundation" style={{color:'red',}}>{tu("total_frozen")}</Link>
+                                                  </td>
+                                                  <td>
+                                                      {foundationFreeze} TRX
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>{tu('circulating_supply')}:
+                                                  </td>
+                                                  <td>
+                                                      {circulatingNum} TRX
+                                                  </td>
+                                                </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <br/>
+                                            <div className="table-responsive">
+                                              <table className="table" style={{marginBottom:0}}>
+                                                <thead>
+                                                <tr>
+                                                  <th style={{border:0}}><br/><i className="fa fa-coins" ></i> {tu('price_per_1000_trx')}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody><tr>
+                                                  <td>{tu('in_USD')}:
+                                                  </td>
+                                                  <td>
+                                                    ${priceUSD}
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>{tu('in_BTC')}:
+                                                  </td>
+                                                  <td>
+                                                      {priceBTC}
+                                                  </td>
+                                                </tr>
+                                                </tbody></table>
+                                              <div style={{fontSize:12,color:'#999',whiteSpace: 'nowrap',textAlign:'left', padding: '0.75rem',borderTop: '1px solid #DFD7CA',verticalAlign: 'top'}}>
+                                                <div style={{transform:'scale(.9)',marginLeft: '-1.3rem'}}>
+                                                  *{tu('supply_notes')}
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div className="col-md-7" style={{backgroundColor: '#F5F5F5',marginTop:0,paddingBottom:15}}>
+                                            <div className="main-counters row">
+                                              <div className="counters col-md-6 col-sm-6">
+                                                                <span className="counter">
+                                                                    <CountUp start={0} end={currentTotalSupply} duration={2}  separator="," decimals={2} />
+                                                                </span>
+                                                <h4>{tu('total_TRX_supply')}</h4>
+                                              </div>
+                                              <div className="counters col-md-6 col-sm-6">
+                                                                <span className="counter">
+                                                                    $<CountUp start={0} end={marketCapitalization} duration={2}  separator="," decimals={2}/>
+                                                                </span>
+                                                <h4>{tu('market_capitalization')}</h4>
+                                              </div>
+                                            </div>
+                                            <div className="card">
+                                              <div className="card-body" style={{height: 400}}>
+                                                <SupplyTypesTRXPieChart
+                                                    message={{id: 'breakdown_supply_types'}}
+                                                    intl={intl}
+                                                    data={supplyTypesChart}
+                                                    style={{height: 300,marginTop:25}}
+                                                    source='singleChart'
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                }
+                            </div>
 
+                        }
                     </div>
+
+                  </div>
+                    {
+                        match.params.chartName === 'txOverviewStats' &&
+                        <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#C23631'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;</div>
+                    }
+
                 </div>
+              </div>
 
             </main>
         );

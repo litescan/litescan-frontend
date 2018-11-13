@@ -11,7 +11,7 @@ import {TokenLink} from "../../common/Links";
 import SearchInput from "../../../utils/SearchInput";
 import {toastr} from 'react-redux-toastr'
 import SmartTable from "../../common/SmartTable.js"
-import {ONE_TRX} from "../../../constants";
+import {API_URL, ONE_TRX} from "../../../constants";
 import {login} from "../../../actions/app";
 import {reloadWallet} from "../../../actions/wallet";
 import {upperFirst} from "lodash";
@@ -37,7 +37,7 @@ class TokenOverview extends Component {
     }
   }
 
-  loadPage = async (page = 1, pageSize = 10) => {
+  loadPage = async (page = 1, pageSize = 20) => {
     let {filter} = this.state;
     let {intl} = this.props;
     this.setState({loading: true});
@@ -45,21 +45,12 @@ class TokenOverview extends Component {
     let result;
 
     if (filter.name)
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico" + "&name=" + filter.name);
+      result = await xhr.get(API_URL+"/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico" + "&name=" + filter.name);
     else
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico");
+      result = await xhr.get(API_URL+"/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico");
 
-    let total = result.data.data['Total'];
-    let tokens = result.data.data['Data'];
-    /*
-        let {tokens, total} = await Client.getTokens({
-          sort: '-name',
-          limit: pageSize,
-          start: (page - 1) * pageSize,
-          status: 'ico',
-          ...filter,
-        });
-    */
+    let total = result.data['total'];
+    let tokens = result.data['data'];
     if (tokens.length === 0) {
       toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'record_not_found'}));
     }
@@ -358,7 +349,7 @@ class TokenOverview extends Component {
             }
             <div>
               <h5><TokenLink name={record.name}
-                             namePlus={record.name + ' (' + record.abbr + ')'}/>
+                             namePlus={record.name + ' (' + record.abbr + ')'} address={record.ownerAddress}/>
               </h5>
               <p>{record.description}</p>
             </div>
@@ -368,7 +359,7 @@ class TokenOverview extends Component {
       {
         title: intl.formatMessage({id: 'fund_raised'}),
         render: (text, record, index) => {
-          return <div><FormattedNumber value={record.participated / ONE_TRX}/> TRX</div>
+          return <div><FormattedNumber value={record.participated / ONE_TRX} maximumFractionDigits={1}/> TRX</div>
         },
         align: 'center',
         className: 'ant_table d-none d-md-table-cell _text_nowrap'
@@ -381,7 +372,7 @@ class TokenOverview extends Component {
         render: (text, record, index) => {
           if (text === null)
             text = 0;
-          return <div><FormattedNumber value={text}/>%</div>
+          return <div><FormattedNumber value={text} maximumFractionDigits={1}/>%</div>
         },
         align: 'center',
         className: 'ant_table d-none d-sm-table-cell _text_nowrap'
@@ -410,7 +401,10 @@ class TokenOverview extends Component {
         title: intl.formatMessage({id: 'participate'}),
         align: 'center',
         render: (text, record, index) => {
-          if (record.endTime < new Date() || record.issuedPercentage === 100)
+          if(record.isBlack){
+            return<button className="btn btn-secondary btn-block btn-sm" disabled>{tu("participate")}</button>
+          }
+          if (record.endTime < new Date() || record.issuedPercentage === 100 )
             return <span style={{fontWeight: 'normal'}}>{tu("finish")}</span>
           else if (record.startTime > new Date())
             return <span style={{fontWeight: 'normal'}}>{tu("not_started")}</span>
@@ -441,7 +435,7 @@ class TokenOverview extends Component {
             <div className="row">
 
               <div className="col-md-12 table_pos">
-                {total ? <div className="table_pos_info" style={{left: 'auto'}}>{tableInfo}</div> : ''}
+                {total ?<div className="table_pos_info d-none d-md-block" style={{left: 'auto'}}>{tableInfo}</div> : ''}
                 <SmartTable bordered={true} loading={loading} column={column} data={tokens} total={total}
                             rowClassName="table-row" onPageChange={(page, pageSize) => {
                   this.loadPage(page, pageSize)

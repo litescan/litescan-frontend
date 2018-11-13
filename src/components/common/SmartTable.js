@@ -14,6 +14,7 @@ export default class SmartTable extends Component {
       pagination: {
         position: 'both',
         showSizeChanger: true,
+        defaultPageSize:20
         // showTotal: function (total) {
         //   return <div>{total} {tu('records')}</div>
         // }
@@ -54,6 +55,12 @@ export default class SmartTable extends Component {
 
   fetch = (params = {}) => {
     this.setState({loading: true});
+    if (!this.props.onPageChange) {
+      this.setState({
+        loading: false,
+      });
+      return;
+    }
     this.props.onPageChange(params.page, params.pageSize);
     this.setState({
       loading: false,
@@ -162,25 +169,43 @@ export default class SmartTable extends Component {
 
   render() {
 
-    let {total, loading, data, column, bordered} = this.props;
+    let {total, loading, data, column, bordered, pagination=true, scroll,locale,addr} = this.props;
     let columns = this.setColumn(column);
-
+    const paginationStatus = pagination? {total: total, ...this.state.pagination}: pagination;
+    
     return (
-
-        <div className="card table_pos">
-          
-          <Table
-              bordered={bordered}
-              columns={columns}
-              rowKey={record => record.index}
-              dataSource={data}
-              pagination={{total: total, ...this.state.pagination}}
-              loading={loading}
-              onChange={this.handleTableChange}
-          />
-
+        <div>
+            {
+                addr?<div className="card table_pos table_pos_addr">
+                  <Table
+                      bordered={bordered}
+                      columns={columns}
+                      rowKey={(record, index) => {
+                          return index
+                      }}
+                      dataSource={data}
+                      locale={locale}
+                      scroll={scroll}
+                      pagination={paginationStatus}
+                      loading={loading}
+                      onChange={this.handleTableChange}
+                  /> </div>:<div className="card table_pos">
+                  <Table
+                      bordered={bordered}
+                      columns={columns}
+                      rowKey={(record, index) => {
+                          return index
+                      }}
+                      dataSource={data}
+                      locale={locale}
+                      scroll={scroll}
+                      pagination={paginationStatus}
+                      loading={loading}
+                      onChange={this.handleTableChange}
+                  />
+                </div>
+            }
         </div>
-
     )
   }
 }

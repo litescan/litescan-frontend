@@ -11,10 +11,10 @@ import {getQueryParam} from "../../../utils/url";
 import SearchInput from "../../../utils/SearchInput";
 import {toastr} from 'react-redux-toastr'
 import SmartTable from "../../common/SmartTable.js"
-import {ONE_TRX} from "../../../constants";
+import {API_URL, ONE_TRX} from "../../../constants";
 import {login} from "../../../actions/app";
 import {reloadWallet} from "../../../actions/wallet";
-import {upperFirst} from "lodash";
+import {upperFirst, toLower} from "lodash";
 import {TronLoader} from "../../common/loaders";
 import xhr from "axios/index";
 
@@ -37,37 +37,26 @@ class TokenList extends Component {
     }
   }
 
-  loadPage = async (page = 1, pageSize = 10) => {
+  loadPage = async (page = 1, pageSize = 20) => {
     let {filter} = this.state;
     let {intl} = this.props;
     this.setState({loading: true});
     let token;
     let result;
+    let total
 
-    if (filter.name)
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
-    else
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
-
-    let total = result.data.data['Total'];
-    let tokens = result.data.data['Data'];
-    /*
-    let {tokens, total} = await Client.getTokens({
-       sort: '-name',
-       limit: pageSize,
-       start: (page - 1) * pageSize,
-       ...filter,
-     });
-     */
+    if (filter.name){
+      result = await xhr.get(API_URL+"/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
+      total = result.data['data'].length;
+    }else{
+      result = await xhr.get(API_URL+"/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
+      total = result.data['total'];
+    }
+    
+    let tokens = result.data['data'];
+    
     if (tokens.length === 0) {
       toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'record_not_found'}));
-    }
-    try {
-      // token = await Client.getToken("McDonaldsCoin");
-      // if (page === 1)
-      //   tokens.splice(9, 1, token);
-    }
-    catch (e) {
     }
 
     this.setState({
@@ -151,7 +140,7 @@ class TokenList extends Component {
             <SweetAlert
                 info
                 showConfirm={false}
-                style={{marginLeft: '-240px', marginTop: '-195px', width: '450px', height: '300px'}}
+                // style={{marginLeft: '-240px', marginTop: '-195px', width: '450px', height: '300px', left: "50%"}}
             >
               <div className="token-sweet-alert">
                 <a className="close" onClick={() => {
@@ -173,7 +162,7 @@ class TokenList extends Component {
         alert: (
             <SweetAlert
                 showConfirm={false}
-                style={{marginLeft: '-240px', marginTop: '-195px', width: '450px', height: '300px'}}
+                // style={{marginLeft: '-240px', marginTop: '-195px', width: '450px', height: '300px', left: "50%"}}
             >
               <div className="mt-5 token-sweet-alert" style={{textAlign:'left'}}>
                 <a style={{float: 'right', marginTop: '-45px'}} onClick={() => {
@@ -364,12 +353,20 @@ class TokenList extends Component {
 
             <div>
               <h5><TokenLink name={record.name}
-                             namePlus={record.name + ' (' + record.abbr + ')'}/>
+                             namePlus={record.name + ' (' + record.abbr + ')'} address={record.ownerAddress}/>
               </h5>
               <p>{record.description}</p>
             </div>
           </div>
         }
+      },
+      {
+        title: intl.formatMessage({id: 'fund_raised'}),
+        render: (text, record, index) => {
+          return <div><FormattedNumber value={record.participated / ONE_TRX} maximumFractionDigits={1}/> TRX</div>
+        },
+        align: 'center',
+        className: 'ant_table d-none d-md-table-cell _text_nowrap'
       },
       {
         title: intl.formatMessage({id: 'reputation'}),
@@ -378,9 +375,10 @@ class TokenList extends Component {
         align: 'center',
         className: 'ant_table',
         render: (text, record, index) => {
+          let lowerText = toLower(text)
           return <div>
             {text && intl.formatMessage({id: text})}
-            <img src={require('../../../images/state/' + text + '.png')} className="ml-1 faceico"/>
+            <img src={require('../../../images/state/' + lowerText + '.png')} className="ml-1 faceico"/>
           </div>
         }
       },
@@ -391,7 +389,7 @@ class TokenList extends Component {
         render: (text, record, index) => {
           if (text === null)
             text = 0;
-          return <div><FormattedNumber value={text}/>%</div>
+          return <div><FormattedNumber value={text} maximumFractionDigits={1}/>%</div>
         },
         align: 'center',
         className: 'ant_table _text_nowrap'
@@ -410,6 +408,9 @@ class TokenList extends Component {
         title: intl.formatMessage({id: 'participate'}),
         align: 'center',
         render: (text, record, index) => {
+          if(record.isBlack){
+            return<button className="btn btn-secondary btn-sm" disabled>{tu("participate")}</button>
+          }
           if (record.endTime < new Date() || record.issuedPercentage === 100)
             return <span style={{fontWeight: 'normal'}}>{tu("finish")}</span>
           else if (record.startTime > new Date())
@@ -436,7 +437,7 @@ class TokenList extends Component {
           {
             <div className="row">
               <div className="col-md-12 table_pos">
-                {total ? <div className="table_pos_info" style={{left: 'auto'}}>{tableInfo}</div> : ''}
+                {total ?<div className="table_pos_info d-none d-md-block" style={{left: 'auto'}}>{tableInfo}</div> : ''}
                 <SmartTable bordered={true} loading={loading} column={column} data={tokens} total={total}
                             onPageChange={(page, pageSize) => {
                               this.loadPage(page, pageSize)
