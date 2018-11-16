@@ -18,7 +18,12 @@ class CreateTxnPairModal extends React.PureComponent {
         this.state = {
             name: "",
             disabled: false,
-            allowExchange:[],
+            allowExchange:[
+                {
+                    "first_token_id":"troncandy",
+                    "second_token_id":"TRX"
+                },
+            ],
             secTokenIdArr:[],
             firstTokenId:"",
             secondTokenId:"",
@@ -126,7 +131,7 @@ class CreateTxnPairModal extends React.PureComponent {
 
     }
     componentDidMount() {
-        this.exchangeToken()
+        //this.exchangeToken()
     }
 
 

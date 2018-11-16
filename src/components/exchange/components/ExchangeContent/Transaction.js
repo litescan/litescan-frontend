@@ -55,7 +55,9 @@ class Transaction extends Component {
           let quant = exchangeData.second_token_id == "TRX"?values.second_quant_buy * ONE_TRX:values.second_quant_buy;
           let expected =  exchangeData.first_token_id == "TRX"?values.first_quant_buy * ONE_TRX:values.first_quant_buy;
 
-          this.exchangeTransaction(exchangeData.exchange_id, token_id, quant, expected, values)
+          this.exchangeTransaction(35, token_id, quant, expected, values)
+          //this.exchangeTransaction(35, token_id, quant, 1000000, values)
+
       }
     });
   }
@@ -77,7 +79,7 @@ class Transaction extends Component {
 
   exchangeTransaction = async (exchangeId, tokenId, quant, expected,values) => {
       let {account,currentWallet,exchangeData} = this.props;
-      let {success, code,transaction,message} = await Client.transactionExchange(currentWallet.address,exchangeId, tokenId, quant, expected)(account.key);
+      let {success, code,transaction,message} = await Client.transactionExchange(currentWallet.address,35, "_", quant, expected)(account.key);
       if (success) {
           this.props.form.resetFields();
           this.setState({

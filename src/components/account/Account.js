@@ -1218,7 +1218,7 @@ class Account extends Component {
             </div>
           </div>
           {
-              currentWallet.allowExchange.length ?
+              !currentWallet.allowExchange.length ?
                   <div className="row mt-3">
                     <div className="col-md-12">
                       <div className="card">
