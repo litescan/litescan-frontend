@@ -51,9 +51,9 @@ class TranList extends Component {
       console.log('data',data)
       let arr  = filter(data, function(o) {
           if(o.tokenID == "TRX"){
-              return o.quant > 1000
+              return o.quant >= 3000
           }
-          return  o.quant > 100000
+          return  o.quant >= 50000
 
           //let bok = fa
          // return o.quant > 1000;
