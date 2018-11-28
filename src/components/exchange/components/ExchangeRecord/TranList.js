@@ -8,7 +8,7 @@ import {Truncate} from "../../../common/text";
 import {tu, tv} from "../../../../utils/i18n";
 import {Client} from "../../../../services/api";
 import {connect} from "react-redux";
-import {upperFirst} from 'lodash'
+import {upperFirst,filter} from 'lodash'
 
 class TranList extends Component {
   constructor(props) {
@@ -47,8 +47,18 @@ class TranList extends Component {
   getData = async () => {
     const {selectData} = this.props
     if(selectData.exchange_id){
-      const {data} = await Client.getTransactionList({limit: 15, exchangeID: selectData.exchange_id});
-      this.setState({dataSource: data})
+      const {data} = await Client.getTransactionList({limit: 100, exchangeID: selectData.exchange_id});
+      console.log('data',data)
+      let arr  = filter(data, function(o) {
+          if(o.tokenID == "TRX"){
+              return o.quant > 1000
+          }
+          return  o.quant > 100000
+
+          //let bok = fa
+         // return o.quant > 1000;
+      });
+      this.setState({dataSource: arr})
     }
   }
 
@@ -56,22 +66,23 @@ class TranList extends Component {
     let {dataSource} = this.state;
     let {intl} = this.props;
     const columns = [
-      // {
-      //   title: upperFirst(intl.formatMessage({id: 'TxHash'})),
-      //   dataIndex: 'trx_hash',
-      //   key: 'trx_hash',
-      //   render: (text, record, index) => {
-      //     // className={record.status === 1? 'buy': 'sell'}
-      //     return <span ><Truncate>
-      //             <TransactionHashLink hash={text}>{text}</TransactionHashLink>
-      //           </Truncate></span>
-      //   }
-      // },
+      {
+        title: upperFirst(intl.formatMessage({id: 'TxHash'})),
+        dataIndex: 'trx_hash',
+        key: 'trx_hash',
+        width: '150px',
+        render: (text, record, index) => {
+          // className={record.status === 1? 'buy': 'sell'}
+          return <span ><Truncate>
+                  <TransactionHashLink hash={text}>{text}</TransactionHashLink>
+                </Truncate></span>
+        }
+      },
       {
         title: upperFirst(intl.formatMessage({id: 'TxTime'})),
         dataIndex: 'createTime',
         key: 'createTime',
-        //width: '200px',
+        width: '300px',
         render: (text, record, index) => {
           return <span>
             <FormattedDate value={Number(text)}/>&nbsp;
@@ -79,19 +90,19 @@ class TranList extends Component {
           </span>
         }
       },
-      // {
-      //   title: upperFirst(intl.formatMessage({id: 'address'})),
-      //   dataIndex: 'creatorAddress',
-      //   key: 'creatorAddress',
-      //   render: (text, record, index) => {
-      //     return  <AddressLink address={text}/>
-      //   }
-      // },
+      {
+        title: upperFirst(intl.formatMessage({id: 'address'})),
+        dataIndex: 'creatorAddress',
+        key: 'creatorAddress',
+        render: (text, record, index) => {
+          return  <AddressLink address={text}/>
+        }
+      },
       {
         title: upperFirst(intl.formatMessage({id: 'TxAmount'})),
         dataIndex: 'quant',
         key: 'quant',
-        //width: '200px',
+        width: '200px',
         render: (text, record, index) => {
           return  record.tokenID == '_'? 
           <TRXPrice amount={record.quant / ONE_TRX}/>

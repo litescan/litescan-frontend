@@ -48,22 +48,23 @@ class Mytran extends Component {
     let {intl} = this.props;
     let {dataSource, total} = this.state
     const columns = [
-      // {
-      //   title: upperFirst(intl.formatMessage({id: 'TxHash'})),
-      //   dataIndex: 'trx_hash',
-      //   key: 'trx_hash',
-      //   render: (text, record, index) => {
-      //     // className={record.status === 1? 'buy': 'sell'}
-      //     return <span ><Truncate>
-      //             <TransactionHashLink hash={text}>{text}</TransactionHashLink>
-      //           </Truncate></span>
-      //   }
-      // },
+      {
+        title: upperFirst(intl.formatMessage({id: 'TxHash'})),
+        dataIndex: 'trx_hash',
+        key: 'trx_hash',
+        width: '100px',
+        render: (text, record, index) => {
+          // className={record.status === 1? 'buy': 'sell'}
+          return <span ><Truncate>
+                  <TransactionHashLink hash={text}>{text}</TransactionHashLink>
+                </Truncate></span>
+        }
+      },
       {
         title: upperFirst(intl.formatMessage({id: 'TxTime'})),
         dataIndex: 'createTime',
         key: 'createTime',
-        width: '200px',
+        width: '300px',
         render: (text, record, index) => {
           return <span>
             <FormattedDate value={Number(text)}/>&nbsp;
@@ -71,14 +72,14 @@ class Mytran extends Component {
           </span>
         }
       },
-      // {
-      //   title: upperFirst(intl.formatMessage({id: 'address'})),
-      //   dataIndex: 'creatorAddress',
-      //   key: 'creatorAddress',
-      //   render: (text, record, index) => {
-      //     return  <AddressLink address={text}/>
-      //   }
-      // },
+      {
+        title: upperFirst(intl.formatMessage({id: 'address'})),
+        dataIndex: 'creatorAddress',
+        key: 'creatorAddress',
+        render: (text, record, index) => {
+          return  <AddressLink address={text}/>
+        }
+      },
       {
         title: upperFirst(intl.formatMessage({id: 'TxAmount'})),
         dataIndex: 'quant',
