@@ -69,7 +69,7 @@ class Account extends Component {
     });
 
     if (currentWallet && currentWallet.envoy.enabled) {
-      let ev = await Client.getSuperRepresentative(currentWallet.address);
+      let ev = await Client.getSuperEnvoy(currentWallet.address);
       this.setState({
         ev,
       });
@@ -657,7 +657,7 @@ class Account extends Component {
     let [name, repo] = url.split("/");
     let githubLink = name + "/" + (repo || "litetokensev-template");
 
-    await Client.updateSuperRepresentative(key, {
+    await Client.updateSuperEnvoy(key, {
       address: currentWallet.address,
       githubLink,
     });
@@ -806,7 +806,7 @@ class Account extends Component {
             <div className="card">
               {
                 currentWallet.envoy.enabled &&
-                  <div className="card-header bg-info text-center font-weight-bold text-white">Representative</div>
+                  <div className="card-header bg-info text-center font-weight-bold text-white">Envoy</div>
               }
                   <div className="table-responsive">
                     <table className="table m-0">
@@ -1011,7 +1011,7 @@ class Account extends Component {
                     <div className="card">
                       <div className="card-body text-center">
                         <h5 className="card-title text-center">
-                          {tu("Super Representatives")}
+                          {tu("Super Envoys")}
                         </h5>
                         <p className="card-text">
                           {tu("ev_receive_reward_message_0")}
@@ -1084,7 +1084,7 @@ class Account extends Component {
                             </td>
                           </tr>
                           <tr>
-                            <th>{tu("Representative Page")}</th>
+                            <th>{tu("Envoy Page")}</th>
                             <td><Link className="text-primary"
                                       to={`/envoy/${currentWallet.address}`}>View</Link>
                             </td>
@@ -1100,7 +1100,7 @@ class Account extends Component {
                     <div className="card">
                       <div className="card-body px-0 border-0">
                         <h5 className="card-title text-center m-0">
-                          {tu("Super Representatives")}
+                          {tu("Super Envoys")}
                         </h5>
                       </div>
                       <div className="card-body text-center">

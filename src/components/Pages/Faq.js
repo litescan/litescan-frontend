@@ -71,7 +71,7 @@ export default class Faq extends Component {
                     https://medium.com/tron-foundation/how-to-vote-for-super-envoys-d81d14d9743d
                   </HrefLink>
                 </p>
-                <h2>What is a Super Representative and why would I want to vote?</h2>
+                <h2>What is a Super Envoy and why would I want to vote?</h2>
                 <p>On Independence Day, we leave the Ethereum network. The 27 EVs are the companies that are responsible to build and operate the new LITETOKENS network. Additionally, there will be 50+ stand-by EVs. LITETOKENS has set aside EV rewards in the form of XLT to pay these companies.</p>
                 <p>The voters, can select which EVs they want, based on their contribution to the community and how they plan to spend their rewards. This gives the voters a direct say in the future of LITETOKENS, and how they would like the EVs to reinvest in LITETOKENS.</p>
                 <p>In addition to network operations, some of the common EV plans include items like

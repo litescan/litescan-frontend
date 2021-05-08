@@ -15,7 +15,7 @@ import {Alert} from "reactstrap";
 import MediaQuery from "react-responsive";
 import $ from "jquery/dist/jquery.js";
 
-class Representative extends React.Component {
+class Envoy extends React.Component {
 
   constructor() {
     super();
@@ -152,7 +152,7 @@ class Representative extends React.Component {
   }
 
   async reloadPages() {
-    let ev = await Client.getSuperRepresentative(this.getAddress());
+    let ev = await Client.getSuperEnvoy(this.getAddress());
     await this.loadGithubData(ev.githubLink);
   }
 
@@ -294,7 +294,7 @@ class Representative extends React.Component {
                     {
                       address.envoy.enabled &&
                       <div className="card-header text-center bg-info font-weight-bold text-white">
-                        {address.name || "Representative"}
+                        {address.name || "Envoy"}
                       </div>
                     }
                     <div className="card-body text-center">
@@ -339,4 +339,4 @@ function mapStateToProps(state) {
 const mapDispatchToProps = {
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Representative);
+export default connect(mapStateToProps, mapDispatchToProps)(Envoy);

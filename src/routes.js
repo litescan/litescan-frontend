@@ -12,7 +12,7 @@ import {
   VoteLiveAsync,
   VoteOverviewAsync,
   WalletWizardAsync,
-  RepresentativesAsync,
+  EnvoysAsync,
   AccountAsync,
   NodeTesterAsync,
   LitetokensConvertToolAsync,
@@ -35,7 +35,7 @@ import {
 import Blocks from "./components/blockchain/Blocks";
 import Transactions from "./components/blockchain/Transactions";
 import Transfers from "./components/blockchain/Transfers";
-import Representative from "./components/envoys/envoy";
+import Envoy from "./components/envoys/envoy";
 import {Redirect} from "react-router-dom";
 
 export const routes = [
@@ -113,7 +113,7 @@ export const routes = [
     label: "envoys",
     path: "/envoys",
     icon: "fa fa-rocket",
-    component: RepresentativesAsync
+    component: EnvoysAsync
   },
   {
     path: "/block/:id",
@@ -136,7 +136,7 @@ export const routes = [
   {
     path: "/envoy/:id",
     label: "envoy",
-    component: Representative,
+    component: Envoy,
     showInMenu: false,
   },
   {

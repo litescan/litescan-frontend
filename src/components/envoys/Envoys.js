@@ -9,10 +9,10 @@ import _, {filter, maxBy, sortBy, trim, sumBy} from "lodash";
 import {AddressLink, BlockNumberLink} from "../common/Links";
 import {EV_MAX_COUNT} from "../../constants";
 import {WidgetIcon} from "../common/Icon";
-import {RepresentativesRingPieReact} from "../common/RingPieChart";
+import {EnvoysRingPieReact} from "../common/RingPieChart";
 import {loadVoteList, loadVoteTimer} from "../../actions/votes";
 
-class Representatives extends Component {
+class Envoys extends Component {
   constructor() {
     super();
     this.state = {
@@ -79,8 +79,8 @@ class Representatives extends Component {
       );
     }
 
-    let superRepresentatives = sortBy(filter(witnesses, w => w.producer), w => w.votes * -1);
-    let candidateRepresentatives = sortBy(filter(witnesses, w => !w.producer), w => w.votes * -1);
+    let superEnvoys = sortBy(filter(witnesses, w => w.producer), w => w.votes * -1);
+    let candidateEnvoys = sortBy(filter(witnesses, w => !w.producer), w => w.votes * -1);
 
     return (
         <div className="card border-0">
@@ -102,16 +102,16 @@ class Representatives extends Component {
             <tbody>
             <tr>
               <td colSpan="9" className="bg-danger text-white text-center font-weight-bold">
-                {tu("Super Representatives")}
+                {tu("Super Envoys")}
               </td>
             </tr>
-            {superRepresentatives.map((account, index) => <Row index={index} state={this.state} props={this.props} key={account.address} account={account}/>)}
+            {superEnvoys.map((account, index) => <Row index={index} state={this.state} props={this.props} key={account.address} account={account}/>)}
             <tr>
               <td colSpan="9" className="bg-secondary text-white text-center font-weight-bold">
-                {tu("Super Representative Candidates")}
+                {tu("Super Envoy Candidates")}
               </td>
             </tr>
-            {candidateRepresentatives.map((account, index) => <Row index={index + 27} state={this.state} props={this.props} key={account.address} account={account} showSync={false}/>)}
+            {candidateEnvoys.map((account, index) => <Row index={index + 27} state={this.state} props={this.props} key={account.address} account={account} showSync={false}/>)}
             </tbody>
           </table>
         </div>
@@ -188,7 +188,7 @@ class Representatives extends Component {
                         <div className="card-body">
                           <div style={{height: 330}}>
                             {
-                              <RepresentativesRingPieReact message={{id: 'produce_distribution'}} intl={intl}
+                              <EnvoysRingPieReact message={{id: 'produce_distribution'}} intl={intl}
                                                            data={pieChart} style={{height: 300}}/>
                             }
                           </div>
@@ -331,5 +331,5 @@ const mapDispatchToProps = {
   loadVoteTimer,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps, null, {pure: false})(injectIntl(Representatives));
-//export default connect(mapStateToProps, mapDispatchToProps)(Representatives)
+export default connect(mapStateToProps, mapDispatchToProps, null, {pure: false})(injectIntl(Envoys));
+//export default connect(mapStateToProps, mapDispatchToProps)(Envoys)

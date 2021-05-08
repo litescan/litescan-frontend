@@ -558,8 +558,8 @@ export const messages = {
   */
   "highest_productivity": "Cea mai mare Productivitate",
   "lowest_productivity": "Cea mai mică Productivitate",
-  "Super Representatives": "Super Reprezentanți",
-  "Super Representative Candidates": "Candidați Super Reprezentanți",
+  "Super Envoys": "Super Reprezentanți",
+  "Super Envoy Candidates": "Candidați Super Reprezentanți",
   "loading_envoys": "Încărcare Reprezentanți",
   "address_not_super_envoy": "Această adresă nu este un Super Reprezentant",
   "unable_load_envoys_page_message": "Nu se poate încărca pagina, acest lucru se întâmplă dacă adresa este invalidă, dacă adresa nu este un reprezentant sau reprezentantul nu și-a configurat încă pagina",

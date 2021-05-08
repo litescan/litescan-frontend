@@ -556,12 +556,12 @@ export const messages = {
   */
   "highest_productivity": "بالاترین بهره وری",
   "lowest_productivity": "پایین ترین بهره وری",
-  "Super Representatives": "نمایندگان ممتاز",
-  "Super Representative Candidates": "کاندیدهای نماینده ممتاز",
+  "Super Envoys": "نمایندگان ممتاز",
+  "Super Envoy Candidates": "کاندیدهای نماینده ممتاز",
   "loading_envoys": "بارگزاری نمایندگان",
   "address_not_super_envoy": "این آدرس یک نماینده ممتاز نیست",
   "unable_load_envoys_page_message": "صفحه قابل بارگزاری نیست، ممکن است این اتفاق اگر آدرس نامعتبر باشد، بیفتد ، آدرس نماینده ممتاز نیست یا نماینده این صفحه را پیکربندی نکرده است",
-  "loading_envoy": "Loading Representative",
+  "loading_envoy": "Loading Envoy",
   /*
   ##################################################################################
   #                                                                                #
@@ -609,7 +609,7 @@ export const messages = {
   "submissing_vote_message_0": "Your votes are successfully submitted, they will take effect when the next voting cycle starts.",
   "submissing_vote_message_1": "شما می توانید رای خود را در هر زمان که دوست دارید منتشر کنید",
   "submitting_vote_error_message": "هنگام رای دادن خود اشتباهی رخ داد. لطفا دوباره امتحان کنید. ",
-  "loading_super_envoys": "بارگذاری Super Representatives",
+  "loading_super_envoys": "بارگذاری Super Envoys",
   /*
   ##################################################################################
   #                                                                                #
@@ -766,8 +766,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

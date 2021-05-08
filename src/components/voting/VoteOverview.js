@@ -539,7 +539,7 @@ class VoteOverview extends React.Component {
                         (searchCriteria.length > 0 && filteredCandidates.length === 0) &&
                           <tr>
                             <td colSpan="6" className="p-3 text-center">
-                              No Super Representatives found for <b>{searchCriteria}</b>
+                              No Super Envoys found for <b>{searchCriteria}</b>
                             </td>
                           </tr>
                       }

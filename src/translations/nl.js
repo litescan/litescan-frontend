@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Blokhoogte",
   "online_nodes": "Online Nodes",
   "pice_per_1000xlt": "Prijs (per 1000XLT)",
-  "vote_for_super_envoys": "Stemmen op Super Representatives",
-  "view_super_envoys": "Bekijk Super Representatives",
+  "vote_for_super_envoys": "Stemmen op Super Envoys",
+  "view_super_envoys": "Bekijk Super Envoys",
   "create_new_wallet": "Nieuwe portemonee maken",
   "view_tokens": "Bekijk tokens",
   "transactions_last_day": "Aantal transacties van gisteren",
@@ -549,12 +549,12 @@ export const messages = {
   */
   "highest_productivity": "Hoogste Productiviteit",
   "lowest_productivity": "Laagste Productiviteit",
-  "Super Representatives": "Super Vertegenwoordiger",
-  "Super Representative Candidates": "Super Vertegenwoordiger Kandidaten",
+  "Super Envoys": "Super Vertegenwoordiger",
+  "Super Envoy Candidates": "Super Vertegenwoordiger Kandidaten",
   "loading_envoys": "Vertegenwoordigers worden geladen",
   "address_not_super_envoy": "Dit adres betreft geen Super Vertegenwoordiger",
   "unable_load_envoys_page_message": "Niet mogelijk de pagina te laden. Dit kan gebeuren doordat het adres ongeldig is, niet van een vertegenwoordiger of de vertegenwoordiger heeft deze pagina nog niet ingesteld",
-  "loading_envoy": "Representative aan het laden",
+  "loading_envoy": "Envoy aan het laden",
   /*
   ##################################################################################
   #                                                                                #
@@ -602,7 +602,7 @@ export const messages = {
   "submissing_vote_message_0": "Uw persoonlijke stem is met succes uitgebracht en zal in de volgende verkiezingscyclus van kracht worden.",
   "submissing_vote_message_1": "U mag uw stemmen herverdelen wanneer u maar wilt",
   "submitting_vote_error_message": "Bij het stemmen is een fout opgetreden. Probeer het later nogmaals.",
-  "loading_super_envoys": "Super Representatives aan het laden",
+  "loading_super_envoys": "Super Envoys aan het laden",
   /*
   ##################################################################################
   #                                                                                #
@@ -759,8 +759,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

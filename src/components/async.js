@@ -136,7 +136,7 @@ export const VoteLiveAsync = asyncComponent({
 });
 
 
-export const RepresentativesAsync = asyncComponent({
+export const EnvoysAsync = asyncComponent({
   LoadingComponent: () => (
       <LitetokensLoader/>
   ),
@@ -146,10 +146,10 @@ export const RepresentativesAsync = asyncComponent({
           [],
           (require) => {
             $script("", () => {
-              resolve(require("./envoys/Representatives"));
+              resolve(require("./envoys/Envoys"));
             });
           },
-          'Representatives',
+          'Envoys',
       )
   )
 });

@@ -359,11 +359,11 @@ export const messages = {
   "link_github": "Link Github",
   "you_must_enter_a_url": "You must enter a URL",
   "success": "Success",
-  "successfully_appied_ev_canidate_message_0": "Successfully applied to be Super Representative Candidate.",
+  "successfully_appied_ev_canidate_message_0": "Successfully applied to be Super Envoy Candidate.",
   "successfully_appied_ev_canidate_message_1": "Your account will be upgraded shortly.",
   "landing_page": "Landing Page",
   "show_more_information_publish_ev_page": "Show more Information on how to publish a page",
-  "create_ev_landing_page_message_0": "Super Representatives can create a landing page on which they can share more information about their team and plans",
+  "create_ev_landing_page_message_0": "Super Envoys can create a landing page on which they can share more information about their team and plans",
   "set_github_url_message_0": "Did you already configure your Github template? Then set the URL by using the button below",
   "set_github_link": "Set Github Link",
   "could_not_claim_rewards": "Could not claim rewards",
@@ -558,12 +558,12 @@ export const messages = {
   */
   "highest_productivity": "Productivité la plus élevée",
   "lowest_productivity": "Productivité la plus faible",
-  "Super Representatives": "Super Représentants",
-  "Super Representative Candidates": "Candidats super-représentatifs",
+  "Super Envoys": "Super Représentants",
+  "Super Envoy Candidates": "Candidats super-représentatifs",
   "loading_envoys": "chargement des Représentants",
   "address_not_super_envoy": "cette adresse ne correspond pas à un Super Représentant",
   "unable_load_envoys_page_message": "Impossible de charger la page, cela peut arriver si l'adresse n'est pas valide, l'adresse ne correspond pas à un représentant ou bien ce dernier n'a pas encore configuré cette page",
-  "loading_envoy": "Loading Representative",
+  "loading_envoy": "Loading Envoy",
   /*
   ##################################################################################
   #                                                                                #
@@ -611,7 +611,7 @@ export const messages = {
   "submissing_vote_message_0": "Vos votes ont été envoyés avec succès. Ils seront comptabilisés au prochain cycle de vote.",
   "submissing_vote_message_1": "Vous pouvez redistribuer vos votes quand vous le souhaitez",
   "submitting_vote_error_message": "Une erreur s'est produite lors de l'envoi de vos votes. Veuillez réessayer ultérieurement.",
-  "loading_super_envoys": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Envoys",
   /*
   ##################################################################################
   #                                                                                #
@@ -768,8 +768,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

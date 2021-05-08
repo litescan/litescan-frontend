@@ -551,8 +551,8 @@ export const messages = {
   */
   "highest_productivity": "최고의 생산성",
   "lowest_productivity": "최저의 생산성",
-  "Super Representatives": "슈퍼 대표",
-  "Super Representative Candidates": "슈퍼 대표 후보",
+  "Super Envoys": "슈퍼 대표",
+  "Super Envoy Candidates": "슈퍼 대표 후보",
   "loading_envoys": "대표 목록 로딩 중",
   "address_not_super_envoy": "이 주소는 슈퍼 대표가 아닙니다",
   "unable_load_envoys_page_message": "페이지 로드에 실패하였습니다. 주소가 유효하지 않은 주소이거나 대표가 아닌 경우일 수 있습니다. 또는 해당 대표가 이 페이지에 아직 설정되어있지 않았을 수도 있습니다",

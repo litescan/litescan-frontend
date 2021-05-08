@@ -551,8 +551,8 @@ export const messages = {
   */
   "highest_productivity": "Największa produktywność",
   "lowest_productivity": "Najmniejsza produktywność",
-  "Super Representatives": "Super Representatanci",
-  "Super Representative Candidates": "Kandydaci na Super Reprezentantów",
+  "Super Envoys": "Super Representatanci",
+  "Super Envoy Candidates": "Kandydaci na Super Reprezentantów",
   "loading_envoys": "Wczytuję Reprezentantów",
   "address_not_super_envoy": "Ten adres nie należy do Super Reprezentanta",
   "unable_load_envoys_page_message": "Nie udało się wczytać strony. Powodem takiej sytuacji może być podanie nieprawidłowego adresu, wskazanie adresu, który nie należy do Reprezentanta lub Reprezentant jeszcze nie skonfigurował tej strony.",

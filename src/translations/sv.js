@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Block Höjd",
   "online_nodes": "Noder Onlines",
   "pice_per_1000xlt": "Pris (per 1000XLT)",
-  "vote_for_super_envoys": "Rösta för Super Representatives",
-  "view_super_envoys": "Se Super Representatives",
+  "vote_for_super_envoys": "Rösta för Super Envoys",
+  "view_super_envoys": "Se Super Envoys",
   "create_new_wallet": "Skapa en ny plånbok",
   "view_tokens": "Se Tokens",
   "transactions_last_day": "Transaktioner på sista dagen",
@@ -271,7 +271,7 @@ export const messages = {
   "unfreeze": "frigöra",
   "freeze_xlt_least": "Du behöver minst 1 XLT för att frysa",
   "freeze_xlt_premessage_0": "XLT kan vara fryst/låst för att vinna LITETOKENS Power och aktivera ytterligare funktioner. Med LITETOKENS Power kan du till exempel",
-  "freeze_xlt_premessage_link": "rösta på Super Representatives.",
+  "freeze_xlt_premessage_link": "rösta på Super Envoys.",
   "freeze_xlt_premessage_1": "Frysta tokens är låsta för en period på 3 dagar. Under denna period kan inte frysta XLT handlas. Efter denna period kan du frigöra XLT och handla tokens.",
   "xlt_amount": "XLT Antal",
   "token_freeze_confirm_message_0": "Jag bekräftar att frysa ",
@@ -298,14 +298,14 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "ansöka om ombudet",
-  "apply_super_envoy_candidate": "Ansök om att bli en Super Representative kandidat",
+  "apply_super_envoy_candidate": "Ansök om att bli en Super Envoy kandidat",
   "your_personal_website_address": "din personliga webbadress",
-  "apply_for_delegate_predescription":`Varje token innehavare har möjlighet att bli en LITETOKENS Super Representative.
+  "apply_for_delegate_predescription":`Varje token innehavare har möjlighet att bli en LITETOKENS Super Envoy.
    För att nätverket och samhället ska fungera mer smidigt och effektivt har vi dock skapat en uppsättning standarder och regler för kvalificerade kandidater att bli rekommenderade superrepresentanter.
    Vi kommer att främja rekommenderade EV: er för att öka deras chanser att bli valda.
-   Nya rekommenderade Super Representatives uppdateras och publiceras en gång i`,
+   Nya rekommenderade Super Envoys uppdateras och publiceras en gång i`,
   "apply_for_delegate_description": `
-   XLT hållare kan ansöka om att bli Super Representative genom att använda konto hanterings funktionen, och rösta för kandidater.
+   XLT hållare kan ansöka om att bli Super Envoy genom att använda konto hanterings funktionen, och rösta för kandidater.
    Varje konto kan uppdatera sin röst information och är också tillåten att rösta på flera kandidater.
    Det maximala antalet röster är mindre eller lika med antalet XLT varje innehavare har varje gång. (Om du har ett antal XLT,
    så kan du rösta mindre eller lika mycket av ditt innehav). Resultated av rösterna kommer att beräknas baserat på slutliga
@@ -355,7 +355,7 @@ export const messages = {
   "link_github": "Länk Github",
   "you_must_enter_a_url": "Du måste ange en webbadress",
   "success": "Framgång",
-  "successfully_appied_ev_canidate_message_0": "Framgångsrikt ansökt om att vara Super Representative Candidate.",
+  "successfully_appied_ev_canidate_message_0": "Framgångsrikt ansökt om att vara Super Envoy Candidate.",
   "successfully_appied_ev_canidate_message_1": "Ditt konto kommer att uppgraderas inom kort.",
   "landing_page": "Landningssida",
   "show_more_information_publish_ev_page": "Visa mer Information om hur man publicerar en sida",
@@ -448,7 +448,7 @@ export const messages = {
   "to_much_votes": "För mycket röster",
   "no_xlt_remaining": "Inga XLT kvar",
   "show_more": "Visa {countriesLength} Mer",
-  "vote_guide_message": `Använd dina XLT för att rösta för Super Representatives.
+  "vote_guide_message": `Använd dina XLT för att rösta för Super Envoys.
    För varje XLT du håller i ditt konto har du en röst att spendera.
    XLT kommer att förbrukas. Du kan rösta hur många gånger för varje representant du vill.
    Dem sista rösterna kommer att räknas vi kl 24 och listan med deligaten kommer att uppdateras`,
@@ -549,10 +549,10 @@ export const messages = {
   */
   "highest_productivity": "Högsta produktivitet",
   "lowest_productivity": "Lägsta produktivitet",
-  "Super Representatives": "Super Representatives",
-  "Super Representative Candidates": "Super Representative Kandidater",
-  "loading_envoys": "Laddar Representatives",
-  "address_not_super_envoy": "Den här adressen är inte en Super Representative",
+  "Super Envoys": "Super Envoys",
+  "Super Envoy Candidates": "Super Envoy Kandidater",
+  "loading_envoys": "Laddar Envoys",
+  "address_not_super_envoy": "Den här adressen är inte en Super Envoy",
   "unable_load_envoys_page_message": "Det gick inte att ladda sidan, detta kan hända när en address är ogiltig, adressen inte är en  envoy eller envoy har inte konfigurerat sidan ännu.",
   "loading_envoy": "Laddar Representant",
   /*
@@ -759,8 +759,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

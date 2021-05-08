@@ -561,8 +561,8 @@ export const messages = {
   */
   "highest_productivity": "En Yüksek Üretkenlik",
   "lowest_productivity": "En Düşük Üretkenlik",
-  "Super Representatives": "Süper Temsilciler",
-  "Super Representative Candidates": "Süper Temsilci Adayları",
+  "Super Envoys": "Süper Temsilciler",
+  "Super Envoy Candidates": "Süper Temsilci Adayları",
   "loading_envoys": "Temsilciler Yükleniyor",
   "address_not_super_envoy": "Bu adres bir Süper Temsilci değil",
   "unable_load_envoys_page_message": "Sayfa yüklenemedi, bunun sebebi adresin geçersiz olması olabileceği gibi, bir Süper Temslcilye ait olmaması ya da temsilcinin henüz bu sayfayı ayarlamamış olması olabilir.",

@@ -538,8 +538,8 @@ export const messages = {
   */
   "highest_productivity": "наибольная Продуктивность",
   "lowest_productivity": "наименьшая Продуктивность",
-  "Super Representatives": "Супер Представители",
-  "Super Representative Candidates": "Кандидаты в Супер Представители",
+  "Super Envoys": "Супер Представители",
+  "Super Envoy Candidates": "Кандидаты в Супер Представители",
   "loading_envoys": "посмотреть Представителя",
   "address_not_super_envoy": "Это Адрес данного Супер Представителя",
   "unable_load_envoys_page_message": "не удается загрузить Сайт, или Ссылка не верна, или данная Страница еще не работает",
@@ -748,8 +748,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

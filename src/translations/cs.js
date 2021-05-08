@@ -554,8 +554,8 @@ export const messages = {
   */
   "highest_productivity": "Nejvyšší produktivita",
   "lowest_productivity": "Nejnižší produktivita",
-  "Super Representatives": "Super Reprezentanti",
-  "Super Representative Candidates": "Kandidáti na Super Reprezentanty",
+  "Super Envoys": "Super Reprezentanti",
+  "Super Envoy Candidates": "Kandidáti na Super Reprezentanty",
   "loading_envoys": "Naèítám Reprezentanty",
   "address_not_super_envoy": "Tato adresa nepatøí Super Reprezentantovi",
   "unable_load_envoys_page_message": "Nemohu naèíst stránku, to se mùže stát, pokud je adresa neplatná, nebo nepatøí reprezentantovi, nebo si reprezentant tuto stránku ještì nenakonfiguroval",
@@ -607,7 +607,7 @@ export const messages = {
   "submissing_vote_message_0": "Vaše hlasy byly úspìšnì odeslány, budou zaúètovány po zaèátku nového hlasovacího cyklu.",
   "submissing_vote_message_1": "Své hlasy mùžete pøerozdìlit, kdykoliv se vám bude chtít",
   "submitting_vote_error_message": "Bìhem odesílání hlasù došlo k chybì. Prosím, zkuste to pozdìji.",
-  "loading_super_envoys": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Envoys",
   /*
   ##################################################################################
   #                                                                                #
@@ -764,8 +764,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "vytvořený token",
   "token_creation": "Vytvoření Token",
   "bought": "koupit",

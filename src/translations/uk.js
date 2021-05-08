@@ -556,8 +556,8 @@ export const messages = {
   */
   "highest_productivity": "Найвища продуктивність",
   "lowest_productivity": "Найнижча продуктивність",
-  "Super Representatives": "Супер-представники",
-  "Super Representative Candidates": "Кандидати у Супер-представники",
+  "Super Envoys": "Супер-представники",
+  "Super Envoy Candidates": "Кандидати у Супер-представники",
   "loading_envoys": "Завантаження представників",
   "address_not_super_envoy": "Ця адреса не є адресою Супер-представника",
   "unable_load_envoys_page_message": "Не вдається завантажити сторінку, це може статися, якщо адреса недійсна, адреса не є адресою представника, або представник ще не налаштовував цю сторінку",

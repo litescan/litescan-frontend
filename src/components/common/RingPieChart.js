@@ -111,7 +111,7 @@ export class RingPieReact extends React.Component {
   }
 }
 
-export class RepresentativesRingPieReact extends React.Component {
+export class EnvoysRingPieReact extends React.Component {
 
   constructor(props) {
     super(props)

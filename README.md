@@ -20,7 +20,7 @@
 
 * All information from the blockchain viewable
 * Web Wallet
-* Super Representative Voting
+* Super Envoy Voting
 * Node Tester
 * Transaction Debugger
 * Notifications

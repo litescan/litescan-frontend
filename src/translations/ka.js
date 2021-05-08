@@ -357,7 +357,7 @@ export const messages = {
   "successfully_appied_ev_canidate_message_1": "თქვენი ანგარიში განახლდება ცოტა ხანში.",
   "landing_page": "სადესანტო გვერდი",
   "show_more_information_publish_ev_page": "Show more Information on how to publish a page",
-  "create_ev_landing_page_message_0": "Super Representatives can create a landing page on which they can share more information about their team and plans",
+  "create_ev_landing_page_message_0": "Super Envoys can create a landing page on which they can share more information about their team and plans",
   "set_github_url_message_0": "Did you already configure your Github template? Then set the URL by using the button below",
   "set_github_link": "Set Github Link",
   "could_not_claim_rewards": "Could not claim rewards",
@@ -547,8 +547,8 @@ export const messages = {
   */
   "highest_productivity": "უმაღლესი წარმადობა",
   "lowest_productivity": "უმცირესი წარმადობა",
-  "Super Representatives": "სუპერ წარმომადგენლები",
-  "Super Representative Candidates": "სუპერ წარმომადგენლობის კანდიდატები",
+  "Super Envoys": "სუპერ წარმომადგენლები",
+  "Super Envoy Candidates": "სუპერ წარმომადგენლობის კანდიდატები",
   "loading_envoys": "წარმომადგენლების ჩატვირთვა",
   "address_not_super_envoy": "ეს მისამართი სუპერ წარმომადგენელი არაა",
   "unable_load_envoys_page_message": "გვერდი არ იტვირთება, ეს შესაძლოა მოხდეს, როცა მისამართი არასწორია, მისამართი წარმომადგენლისა არაა ან წარმომადგენელმა ეს გვერდი ჯერ არ დააკონფიგურირა.",
@@ -757,8 +757,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

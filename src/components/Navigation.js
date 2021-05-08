@@ -348,7 +348,7 @@ class Navigation extends PureComponent {
                     {
                       wallet.current.envoy.enabled && (
                           <li className="dropdown-item text-danger text-center">
-                            Representative
+                            Envoy
                           </li>
                       )
                     }

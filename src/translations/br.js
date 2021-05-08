@@ -555,8 +555,8 @@ export const messages = {
   */
   "highest_productivity": "Maior Produtividade",
   "lowest_productivity": "Menor Produtividade",
-  "Super Representatives": "Super Representantes",
-  "Super Representative Candidates": "Candidatos a Super Representantes",
+  "Super Envoys": "Super Representantes",
+  "Super Envoy Candidates": "Candidatos a Super Representantes",
   "loading_envoys": "Carregando Representantes",
   "address_not_super_envoy": "Este endereço não é um Super Representante",
   "unable_load_envoys_page_message": "Não foi possível carregar a página. Isso pode acontecer se o endereço for inválido, não for de um representante ou se este representante ainda não tiver configurado a página.",

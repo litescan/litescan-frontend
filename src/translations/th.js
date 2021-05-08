@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "บล็อกล่าสุด",
   "online_nodes": "โหนดที่ออนไลน์อยู่",
   "pice_per_1000xlt": "ราคา (ต่อ 1,000 XLT)",
-  "vote_for_super_envoys": "ลงคะแนนเสียงให้ Super Representative",
-  "view_super_envoys": "ดู Super Representative",
+  "vote_for_super_envoys": "ลงคะแนนเสียงให้ Super Envoy",
+  "view_super_envoys": "ดู Super Envoy",
   "create_new_wallet": "สร้าง Wallet ใหม่",
   "view_tokens": "ดูโทเคน",
   "transactions_last_day": "รายการธุรกรรมเมื่อวานนี้",
@@ -272,7 +272,7 @@ export const messages = {
   "freeze_xlt_least": "คุณต้องมี 1 XLT เป็นอย่างน้อย เพื่อทำการตรึงยอดคงเหลือในบัญชี",
   "unable_unfreeze_xlt_message": "ไม่สามารถยกเลิกการตรึงยอดคงเหลือ XLT ซึ่งอาจเป็นเพราะยังไม่ถึงระยะเวลาการตรึงบัญชีขั้นต่ำ",
   "freeze_xlt_premessage_0": "คุณสามารถทำการตรึงยอดคงเหลือ XLT ในบัญชี เพื่อได้รับ LITETOKENS Power และเปิดใช้งานคุณสมบัติเพิ่มเติม เช่น คุณสามารถใช้ LITETOKENS Power ในการ",
-  "freeze_xlt_premessage_link": "ลงคะแนนเสียงเลือกตั้ง Super Representative",
+  "freeze_xlt_premessage_link": "ลงคะแนนเสียงเลือกตั้ง Super Envoy",
   "freeze_xlt_premessage_1": "โทเคนที่ถูกตรึงจะถูกล็อกไว้เป็นเวลา 3 วัน ซึ่ง XLT ที่ถูกตรึงอยู่จะไม่สามารถนำไปซื้อขายได้ โดยคุณสามารถยกเลิกการตรึงยอดคงเหลือ XLT และทำการซื้อขายได้เมื่อสิ้นสุดระยะเวลานี้",
   "xlt_amount": "จำนวน XLT",
   "token_freeze_confirm_message_0": "ฉันยืนยันที่จะทำการตรึงยอดคงเหลือในบัญชี ",
@@ -299,12 +299,12 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "สมัครเป็น delegate",
-  "apply_super_envoy_candidate": "สมัครเป็น Super Representative Candidate",
+  "apply_super_envoy_candidate": "สมัครเป็น Super Envoy Candidate",
   "your_personal_website_address": "เว็บไซต์ส่วนบุคคลของคุณ",
-  "apply_for_delegate_predescription": "ผู้ถือครองโทเคนทุกรายมีโอกาสที่จะสมัครเป็น Super Representative ของ LITETOKENS และเพื่อให้เครือข่ายและชุมชนสามารถดำเนินงานได้อย่างราบรื่นและมีประสิทธิภาพ เราจึงได้จัดทำชุดมาตรฐาน และข้อบังคับสำหรับผู้ที่มีสิทธิ์เข้าร่วมเป็น Super Representatives ที่ได้รับการแนะนำ ซึ่งเราจะโปรโมท EV ที่ได้รับการแนะนำเพื่อเพิ่มโอกาสในการได้รับเลือก โดยรายชื่อ Super Representatives ที่ได้รับการแนะนำจะได้รับการปรับปรุงและเผยแพร่สัปดาห์ละครั้ง",
-  "apply_for_delegate_description": `ผู้ถือครอง XLT ทุกรายสามารถสมัครเป็น Super Representative ด้วยการใช้ฟังก์ชันการจัดการบัญชี และลงคะแนนเสียงเลือกตั้งให้ผู้สมัคร โดยแต่ละบัญชีสามารถปรับปรุงข้อมูลปัจจุบันของผู้ลงคะแนนเสียง และสามารถลงคะแนนเสียงเลือกตั้งให้กับผู้สมัครหลายคนได้ ซึ่งจำนวนคะแนนเสียงสูงสุดที่สามารถลงได้จะน้อยกว่าหรือเท่ากับจำนวน XLT ที่ผู้ใช้งานถือครองอยู่ในขณะนั้น (คุณสามารถลงคะแนนเสียงได้น้อยกว่าหรือเท่ากับจำนวน XLT ที่มีอยู่) โดยผลการลงคะแนนเสียงจะถูกคำนวณจากข้อมูลสุดท้ายของผู้ลงคะแนนเสียงเลือกตั้งทุกบัญชี ซึ่งมีระยะเวลาตั้งแต่ 00:00 - 24:00 น. ในแต่ละรอบการลงคะแนนเสียง และผู้ถือครอง LITETOKENS ที่ได้รับการลงคะแนนเสียงส่วนใหญ่จะได้รับเลือกเป็น Super Representative ทั้งนี้ทุกธุรกรรมที่ทำในเครือข่ายจะต้องถูกตรวจสอบโดย Super Representative ซึ่งพวกเขาจะได้รับค่าตอบแทนเป็นรางวัล ซึ่ง XLT ที่มีอยู่จะไม่ลดลงในการลงคะแนนเสียงเลือกตั้ง Super Representative แต่อย่างใด`,
+  "apply_for_delegate_predescription": "ผู้ถือครองโทเคนทุกรายมีโอกาสที่จะสมัครเป็น Super Envoy ของ LITETOKENS และเพื่อให้เครือข่ายและชุมชนสามารถดำเนินงานได้อย่างราบรื่นและมีประสิทธิภาพ เราจึงได้จัดทำชุดมาตรฐาน และข้อบังคับสำหรับผู้ที่มีสิทธิ์เข้าร่วมเป็น Super Envoys ที่ได้รับการแนะนำ ซึ่งเราจะโปรโมท EV ที่ได้รับการแนะนำเพื่อเพิ่มโอกาสในการได้รับเลือก โดยรายชื่อ Super Envoys ที่ได้รับการแนะนำจะได้รับการปรับปรุงและเผยแพร่สัปดาห์ละครั้ง",
+  "apply_for_delegate_description": `ผู้ถือครอง XLT ทุกรายสามารถสมัครเป็น Super Envoy ด้วยการใช้ฟังก์ชันการจัดการบัญชี และลงคะแนนเสียงเลือกตั้งให้ผู้สมัคร โดยแต่ละบัญชีสามารถปรับปรุงข้อมูลปัจจุบันของผู้ลงคะแนนเสียง และสามารถลงคะแนนเสียงเลือกตั้งให้กับผู้สมัครหลายคนได้ ซึ่งจำนวนคะแนนเสียงสูงสุดที่สามารถลงได้จะน้อยกว่าหรือเท่ากับจำนวน XLT ที่ผู้ใช้งานถือครองอยู่ในขณะนั้น (คุณสามารถลงคะแนนเสียงได้น้อยกว่าหรือเท่ากับจำนวน XLT ที่มีอยู่) โดยผลการลงคะแนนเสียงจะถูกคำนวณจากข้อมูลสุดท้ายของผู้ลงคะแนนเสียงเลือกตั้งทุกบัญชี ซึ่งมีระยะเวลาตั้งแต่ 00:00 - 24:00 น. ในแต่ละรอบการลงคะแนนเสียง และผู้ถือครอง LITETOKENS ที่ได้รับการลงคะแนนเสียงส่วนใหญ่จะได้รับเลือกเป็น Super Envoy ทั้งนี้ทุกธุรกรรมที่ทำในเครือข่ายจะต้องถูกตรวจสอบโดย Super Envoy ซึ่งพวกเขาจะได้รับค่าตอบแทนเป็นรางวัล ซึ่ง XLT ที่มีอยู่จะไม่ลดลงในการลงคะแนนเสียงเลือกตั้ง Super Envoy แต่อย่างใด`,
   "unknown_error": "เกิดข้อผิดพลาดที่ไม่รู้จักขึ้น",
-  "envoy_understand": "ฉันเข้าใจว่าจะเป็น Super Representative ของ LITETOKENS อย่างไร",
+  "envoy_understand": "ฉันเข้าใจว่าจะเป็น Super Envoy ของ LITETOKENS อย่างไร",
   "generate_account": "คลิกเพื่อสร้างแอดเดรส และรหัสผ่านบัญชีของคุณ",
   "create_account_confirm_1": "ฉันเข้าใจแล้วว่าถ้าลืมหรือทำรหัสผ่านหาย ฉันจะไม่สามารถเข้าถึงทรัพย์สินของฉันได้",
   "create_account_confirm_2": "ฉันเข้าใจแล้วว่าถ้าลืมหรือทำรหัสผ่านหาย จะไม่มีใครสามารถทำการกู้รหัสผ่านคืนให้ฉันได้",
@@ -347,11 +347,11 @@ export const messages = {
   "link_github": "เชื่อมโยงไปยัง Github",
   "you_must_enter_a_url": "คุณต้องกรอก URL",
   "success": "สำเร็จ",
-  "successfully_appied_ev_canidate_message_0": "สมัครเป็น Super Representative Candidate เรียบร้อยแล้ว",
+  "successfully_appied_ev_canidate_message_0": "สมัครเป็น Super Envoy Candidate เรียบร้อยแล้ว",
   "successfully_appied_ev_canidate_message_1": "บัญชีของคุณจะได้รับการอัปเกรดในเร็วๆ นี้",
   "landing_page": "หน้า Landing Page",
   "show_more_information_publish_ev_page": "แสดงข้อมูลเพิ่มเติมเกี่ยวกับการเผยแพร่หน้าเว็บ",
-  "create_ev_landing_page_message_0": "Super Representatives สามารถสร้างหน้า Landing Page ที่สามารถแบ่งปันข้อมูลเพิ่มเติมเกี่ยวกับทีม และแผนการของตนเองได้",
+  "create_ev_landing_page_message_0": "Super Envoys สามารถสร้างหน้า Landing Page ที่สามารถแบ่งปันข้อมูลเพิ่มเติมเกี่ยวกับทีม และแผนการของตนเองได้",
   "set_github_url_message_0": "คุณได้กำหนดค่าเทมเพลต Github ของคุณแล้วหรือยัง? ถ้ากำหนดแล้ว ให้ตั้งค่า URL โดยใช้ปุ่มด้านล่าง",
   "set_github_link": "ตั้งค่าลิงก์ของ Github",
   "could_not_claim_rewards": "ไม่สามารถขอรับรางวัลได้",
@@ -359,7 +359,7 @@ export const messages = {
   "rewards_claimed": "ได้รับรางวัลแล้ว!",
   "successfully_claimed_rewards":  "ได้รับรางวัลต่างๆ เรียบร้อยแล้ว",
   "claim_rewards": "ขอรับรางวัล",
-  "ev_receive_reward_message_0": "ในฐานะ Representative คุณจะได้รับรางวัลสำหรับการผลิตบล็อก สามารถขอรับรางวัลเหล่านี้ได้ทุก 24 ชั่วโมง",
+  "ev_receive_reward_message_0": "ในฐานะ Envoy คุณจะได้รับรางวัลสำหรับการผลิตบล็อก สามารถขอรับรางวัลเหล่านี้ได้ทุก 24 ชั่วโมง",
   "intro": "บทนำ",
   "budget_expenses": "งบประมาณใช้จ่าย",
   "server_configuration": "การกำหนดค่าเซิร์ฟเวอร์",
@@ -440,7 +440,7 @@ export const messages = {
   "to_much_votes": "คะแนนเสียงมากเกินไป",
   "no_xlt_remaining": "ไม่มี XLT เหลือแล้ว",
   "show_more": "แสดง {countriesLength} เพิ่มเติม",
-  "vote_guide_message": "ใช้ XLT ของคุณเพื่อลงคะแนนเสียงเลือกตั้ง Super Representative คุณจะสามารถลงคะแนนเสียงเลืิอกตั้งได้หนึ่งคะแนน ต่อแต่ละ XLT ที่คุณมีในบัญชี XLT จะไม่ถูกใช้โดยตรง คุณสามารถลงคะแนนเสียงเลือกตั้งได้หลายครั้ง และได้หลายผู้สมัคร เท่าที่คุณต้องการ คะแนนสุดท้ายจะถูกนับ ณ เวลา 24 นาฬิกา และรายชื่อ Super Representative จะได้รับการปรับปรุง",
+  "vote_guide_message": "ใช้ XLT ของคุณเพื่อลงคะแนนเสียงเลือกตั้ง Super Envoy คุณจะสามารถลงคะแนนเสียงเลืิอกตั้งได้หนึ่งคะแนน ต่อแต่ละ XLT ที่คุณมีในบัญชี XLT จะไม่ถูกใช้โดยตรง คุณสามารถลงคะแนนเสียงเลือกตั้งได้หลายครั้ง และได้หลายผู้สมัคร เท่าที่คุณต้องการ คะแนนสุดท้ายจะถูกนับ ณ เวลา 24 นาฬิกา และรายชื่อ Super Envoy จะได้รับการปรับปรุง",
   "search_address": "ค้นหาแอดเดรส",
   "token_transactions": "การทำธุรกรรมโทเคน",
   "token_holders": "ผู้ถือครองโทเคน",
@@ -538,12 +538,12 @@ export const messages = {
   */
   "highest_productivity": "ประสิทธิภาพสูงสุด",
   "lowest_productivity": "ประสิทธิภาพต่ำสุด",
-  "Super Representatives": "Super Representatives",
-  "Super Representative Candidates": "Super Representative Candidates",
-  "loading_envoys": "กำลังโหลด Representative",
-  "address_not_super_envoy": "แอดเดรสนี้ไม่ได้เป็น Super Representative",
+  "Super Envoys": "Super Envoys",
+  "Super Envoy Candidates": "Super Envoy Candidates",
+  "loading_envoys": "กำลังโหลด Envoy",
+  "address_not_super_envoy": "แอดเดรสนี้ไม่ได้เป็น Super Envoy",
   "unable_load_envoys_page_message": "ไม่สามารถโหลดหน้านี้ ซึ่งอาจเกิดขึ้นเพราะแอดเดรสไม่ถูกต้อง ไม่ได้เป็น envoy หรือ envoy ยังไม่ได้กำหนดค่าหน้านี้",
-  "loading_envoy": "กำลังโหลด Representative",
+  "loading_envoy": "กำลังโหลด Envoy",
   /*
   ##################################################################################
   #                                                                                #
@@ -591,7 +591,7 @@ export const messages = {
   "submissing_vote_message_0": "การลงคะแนนเสียงของคุณจะถูกส่งเรียบร้อยแล้ว ซึ่งจะมีผลเมื่อรอบการลงคะแนนเสียงครั้งถัดไปเริ่มขึ้น",
   "submissing_vote_message_1": "คุณสามารถแจกจ่ายคะแนนเสียงของคุณได้ทุกเมื่อที่ต้องการ",
   "submitting_vote_error_message": "เกิดข้อผิดพลาดขณะส่งคะแนนเสียงของคุณ กรุณาลองใหม่อีกครั้งในภายหลัง",
-  "loading_super_envoys": "กำลังโหลด Super Representative",
+  "loading_super_envoys": "กำลังโหลด Super Envoy",
   /*
   ##################################################################################
   #                                                                                #
@@ -748,8 +748,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

@@ -25,7 +25,7 @@ import {
 } from "../../common/LineCharts";
 
 import {
-    RepresentativesRingPieReact,
+    EnvoysRingPieReact,
     SupplyTypesXLTPieChart
 } from "../../common/RingPieChart";
 
@@ -598,7 +598,7 @@ class Statistics extends React.Component {
                                         {
                                             pieChart === null ?
                                                 <LitetokensLoader/> :
-                                                <RepresentativesRingPieReact source='singleChart'
+                                                <EnvoysRingPieReact source='singleChart'
                                                                              message={{id: 'produce_distribution'}}
                                                                              intl={intl}
                                                                              data={pieChart}

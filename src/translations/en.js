@@ -144,8 +144,8 @@ export const messages = {
   "block_height": "Block Height",
   "online_nodes": "Online Nodes",
   "pice_per_1000xlt": "Price (per 1000XLT)",
-  "vote_for_super_envoys": "Vote for Super Representatives",
-  "view_super_envoys": "View Super Representatives",
+  "vote_for_super_envoys": "Vote for Super Envoys",
+  "view_super_envoys": "View Super Envoys",
   "create_new_wallet": "Create a new Wallet",
   "view_tokens": "View Tokens",
   "transactions_last_day": "Transactions Last Day",
@@ -272,7 +272,7 @@ export const messages = {
   "unable_unfreeze_xlt_message": "Unable to unfreeze XLT. This could be caused because the minimal freeze period hasn't been reached yet.",
   "freeze_xlt_premessage_0": `XLT can be frozen to gain LITETOKENS Power and enable additional features.
    For example, with LITETOKENS Power you can `,
-  "freeze_xlt_premessage_link": "vote for Super Representatives.",
+  "freeze_xlt_premessage_link": "vote for Super Envoys.",
   "freeze_xlt_premessage_1": ` Frozen tokens are "locked" for a period of 3 days. During this period the frozen XLT cannot be traded.
    After this period you can unfreeze the XLT and trade the tokens.`,
   "xlt_amount": "XLT Amount",
@@ -300,10 +300,10 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "apply for delegate",
-  "apply_super_envoy_candidate": "Apply to be a Super Representative Candidate",
+  "apply_super_envoy_candidate": "Apply to be a Super Envoy Candidate",
   "your_personal_website_address": "your personal website address",
-  "apply_for_delegate_predescription": "Every token holder has the opportunity to become a LITETOKENS Super Representative.However, for the network and community to operate more smoothly and effectively,we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended EVs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.",
-  "apply_for_delegate_description": "All token holders can apply to become Super Representative (EV) candidates by clicking into the Account page; they can also vote for the candidates by clicking into the Votes page. Each user can vote for multiple candidates, with the number of votes smaller or equal to the amount of XLT that they hold.The voting results are based on the last round of voting by each user. The number of votes will be updated at 02:00(GMT+8),08:00(GMT+8),14:00(GMT+8),20:00(GMT+8) every day; users can also view real-time vote numbers. The top 27 most-voted candidates will become EVs and be responsible for transaction packaging and block generation, with a reward of 32 XLT per block generation. The 27 EVs and the top 100 EV candidates can also receive rewards of nodes based on the votes they receive. A one-time transaction fee of 9,999 XLT will be deducted for the application to become a candidate. It will not cost any XLT for users to vote for EV candidates.",
+  "apply_for_delegate_predescription": "Every token holder has the opportunity to become a LITETOKENS Super Envoy.However, for the network and community to operate more smoothly and effectively,we have created a set of standards and regulations for eligible candidates to become recommended Super Envoys. We will promote recommended EVs to increase their chances of being elected. New recommended Super Envoys are updated and posted once a week.",
+  "apply_for_delegate_description": "All token holders can apply to become Super Envoy (EV) candidates by clicking into the Account page; they can also vote for the candidates by clicking into the Votes page. Each user can vote for multiple candidates, with the number of votes smaller or equal to the amount of XLT that they hold.The voting results are based on the last round of voting by each user. The number of votes will be updated at 02:00(GMT+8),08:00(GMT+8),14:00(GMT+8),20:00(GMT+8) every day; users can also view real-time vote numbers. The top 27 most-voted candidates will become EVs and be responsible for transaction packaging and block generation, with a reward of 32 XLT per block generation. The 27 EVs and the top 100 EV candidates can also receive rewards of nodes based on the votes they receive. A one-time transaction fee of 9,999 XLT will be deducted for the application to become a candidate. It will not cost any XLT for users to vote for EV candidates.",
   "unknown_error": "an unknown error occurred",
   "envoy_understand": "I understand how to be a LITETOKENS envoy",
   "generate_account": "Click to generate your account address and password",
@@ -348,11 +348,11 @@ export const messages = {
   "link_github": "Link Github",
   "you_must_enter_a_url": "You must enter a URL",
   "success": "Success",
-  "successfully_appied_ev_canidate_message_0": "Successfully applied to be Super Representative Candidate.",
+  "successfully_appied_ev_canidate_message_0": "Successfully applied to be Super Envoy Candidate.",
   "successfully_appied_ev_canidate_message_1": "Your account will be upgraded shortly.",
   "landing_page": "Landing Page",
   "show_more_information_publish_ev_page": "Show more Information on how to publish a page",
-  "create_ev_landing_page_message_0": "Super Representatives can create a landing page on which they can share more information about their team and plans",
+  "create_ev_landing_page_message_0": "Super Envoys can create a landing page on which they can share more information about their team and plans",
   "set_github_url_message_0": "Did you already configure your Github template? Then set the URL by using the button below",
   "set_github_link": "Set Github Link",
   "could_not_claim_rewards": "Could not claim rewards",
@@ -441,7 +441,7 @@ export const messages = {
   "to_much_votes": "To many votes",
   "no_xlt_remaining": "No XLT remaining",
   "show_more": "Show {countriesLength} More",
-  "vote_guide_message": `Use your XLT to vote for Super Representatives.
+  "vote_guide_message": `Use your XLT to vote for Super Envoys.
    For every XLT you hold in your account you have one vote to spend.
    XLT will not be consumed. You can vote as many times for the several envoys as you like.
    The number of votes will be updated at 02:00,08:00,14:00,20:00(GMT+8）every day and the list of delegates will be updated.`,
@@ -549,12 +549,12 @@ export const messages = {
   */
   "highest_productivity": "Highest Productivity",
   "lowest_productivity": "Lowest Productivity",
-  "Super Representatives": "Super Representatives",
-  "Super Representative Candidates": "Super Representative Candidates",
-  "loading_envoys": "Loading Representatives",
-  "address_not_super_envoy": "This address is not a Super Representative",
+  "Super Envoys": "Super Envoys",
+  "Super Envoy Candidates": "Super Envoy Candidates",
+  "loading_envoys": "Loading Envoys",
+  "address_not_super_envoy": "This address is not a Super Envoy",
   "unable_load_envoys_page_message": "Unable to load page, this may happen if the address is invalid, the address is not a envoy or the envoy did not configure this page yet",
-  "loading_envoy": "Loading Representative",
+  "loading_envoy": "Loading Envoy",
   /*
   ##################################################################################
   #                                                                                #
@@ -602,7 +602,7 @@ export const messages = {
   "submissing_vote_message_0": "Your votes are successfully submitted, they will take effect when the next voting cycle starts.",
   "submissing_vote_message_1": "You may redistribute your votes anytime you like",
   "submitting_vote_error_message": "Something went wrong while submitting your votes. Please try again later.",
-  "loading_super_envoys": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Envoys",
   /*
   ##################################################################################
   #                                                                                #
@@ -760,8 +760,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

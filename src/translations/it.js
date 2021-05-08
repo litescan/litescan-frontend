@@ -553,8 +553,8 @@ export const messages = {
   */
   "highest_productivity": "Maggiore produttività",
   "lowest_productivity": "Minore produttività",
-  "Super Representatives": "Super Rappresentanti",
-  "Super Representative Candidates": "Candidati Super Rappresentanti",
+  "Super Envoys": "Super Rappresentanti",
+  "Super Envoy Candidates": "Candidati Super Rappresentanti",
   "loading_envoys": "Caricamento Rappresentanti",
   "address_not_super_envoy": "Questo indirizzo non è un Super Rappresentante",
   "unable_load_envoys_page_message": "Impossibile caricare la pagina, questo può accadere se l'indirizzo non è valido, l'indirizzo non è di un rappresentante o il rappresentante non ha ancora configurato questa pagina",

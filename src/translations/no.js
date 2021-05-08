@@ -554,8 +554,8 @@ export const messages = {
   */
   "highest_productivity": "Høyest Produktivitet",
   "lowest_productivity": "Lavest Produktivitet",
-  "Super Representatives": "Super Representanter",
-  "Super Representative Candidate": "Super Representant kandidater",
+  "Super Envoys": "Super Representanter",
+  "Super Envoy Candidate": "Super Representant kandidater",
   "loading_envoys": "Laster Representanter",
   "address_not_super_envoy": "Denne adressen er ikke en Super Representant",
   "unable_load_envoys_page_message": "Kan ikke laste siden, årsak til dette kan være at adressen er ugyldig, adressen ikke er en representant eller at representanten ikke har konfigurert denne siden ennå",
@@ -764,8 +764,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

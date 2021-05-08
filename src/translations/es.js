@@ -557,12 +557,12 @@ export const messages = {
   */
   "highest_productivity": "Más productivo",
   "lowest_productivity": "Menos productivo",
-  "Super Representatives": "Súper Representantes",
-  "Super Representative Candidates": "Candidatos a Súper Representantes",
+  "Super Envoys": "Súper Representantes",
+  "Super Envoy Candidates": "Candidatos a Súper Representantes",
   "loading_envoys": "Cargando Representantes",
   "address_not_super_envoy": "Esta dirección no es la de un Súper Representante",
   "unable_load_envoys_page_message": "No se puede cargar la página, quizás la dirección no sea válida, la dirección no es la de un representante o el representante aún no ha configurado esta página",
-  "loading_envoy": "Cargando Representative",
+  "loading_envoy": "Cargando Envoy",
   /*
   ##################################################################################
   #                                                                                #

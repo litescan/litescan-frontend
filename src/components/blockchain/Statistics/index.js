@@ -19,7 +19,7 @@ import {
     LineReactVolumeUsd
 } from "../../common/LineCharts";
 import {
-    RepresentativesRingPieReact,
+    EnvoysRingPieReact,
     SupplyTypesXLTPieChart
 } from "../../common/RingPieChart";
 import {loadPriceData} from "../../../actions/markets";
@@ -347,7 +347,7 @@ class Statistics extends React.Component {
                                 {/*{*/}
                                     {/*pieChart === null ?*/}
                                         {/*<LitetokensLoader/> :*/}
-                                        {/*<RepresentativesRingPieReact message={{id: 'produce_distribution'}}*/}
+                                        {/*<EnvoysRingPieReact message={{id: 'produce_distribution'}}*/}
                                                                      {/*intl={intl}*/}
                                                                      {/*data={pieChart} style={{height: 300}}/>*/}
                                 {/*}*/}

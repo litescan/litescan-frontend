@@ -559,8 +559,8 @@ export const messages = {
   */
   "highest_productivity": "Năng suất cao nhất",
   "lowest_productivity": "Năng suất thấp nhất",
-  "Super Representatives": "Siêu Đại Diện",
-  "Super Representative Candidates": "Ứng cử viên Siêu Đại Diện",
+  "Super Envoys": "Siêu Đại Diện",
+  "Super Envoy Candidates": "Ứng cử viên Siêu Đại Diện",
   "loading_envoys": "Đang tải Đại diện",
   "address_not_super_envoy": "Địa chỉ này không phải là Siêu đại diện",
   "unable_load_envoys_page_message": "Không thể tải trang, điều này có thể xảy ra nếu địa chỉ không hợp lệ, địa chỉ không phải là đại diện hoặc người đại diện chưa định cấu hình trang này",
@@ -769,8 +769,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

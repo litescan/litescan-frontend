@@ -538,8 +538,8 @@ export const messages = {
   */
   "highest_productivity": "الأكثر انتاجية",
   "lowest_productivity": "الأقل انتاجية",
-  "Super Representatives": "الممثلين المميزين",
-  "Super Representative Candidates": "المرشحين كممثلين مميزين",
+  "Super Envoys": "الممثلين المميزين",
+  "Super Envoy Candidates": "المرشحين كممثلين مميزين",
   "loading_envoys": "تحميل الممثلين",
   "address_not_super_envoy": "هذا العنوان غير صالح لممثل مميز",
   "unable_load_envoys_page_message": "لم نتمكن من تحميل الصفحة, و هذا يحصل في حال كان العنوان غير صالح, أو ليس لممثل, أو أن الممثل لم يهيّء هذه الصفحة بعد",
@@ -748,8 +748,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_envoy": "applied for Super Representative",
-  "ev_candidature": "Super Representative Candidature",
+  "applied_for_super_envoy": "applied for Super Envoy",
+  "ev_candidature": "Super Envoy Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",

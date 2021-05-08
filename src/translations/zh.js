@@ -542,8 +542,8 @@ export const messages = {
   */
   "highest_productivity": "出块效率最高",
   "lowest_productivity": "出块效率最低",
-  "Super Representatives": "超级代表",
-  "Super Representative Candidates": "超级代表候选人",
+  "Super Envoys": "超级代表",
+  "Super Envoy Candidates": "超级代表候选人",
   "loading_envoys": "超级代表加载中",
   "address_not_super_envoy": "本地址非超级代表",
   "unable_load_envoys_page_message": "页面加载失败，可能原因为地址无效、非超级代表地址或超级代表尚未设置此页面。",
