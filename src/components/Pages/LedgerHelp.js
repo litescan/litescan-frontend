@@ -23,13 +23,13 @@ export default class LedgerHelp extends Component {
                     {tu('install_the')}<HrefLink href="https://www.ledgerwallet.com/live"> Ledger Live </HrefLink> {tu('app')}
                   </li>
                   <li>
-                    {tu('install_latest_version_message_0')} <HrefLink href="https://github.com/tronscan/tronscan-desktop/releases">Tronscan Desktop</HrefLink>
+                    {tu('install_latest_version_message_0')} <HrefLink href="https://github.com/litescan/litescan-desktop/releases">Litescan Desktop</HrefLink>
                   </li>
                 </ol>
                 <h3>{tu('opening_your_wallet')}</h3>
                 <ol>
                   <li>
-                    {tu('open_the_tronscan_desktop_client')}
+                    {tu('open_the_litescan_desktop_client')}
                   </li>
                   <li>
                     {tu('click_open_wallet_top_right')}
@@ -41,10 +41,10 @@ export default class LedgerHelp extends Component {
                     {tu('connect_unlock_ledger_with_pin')}
                   </li>
                   <li>
-                    {tu('open_tron_app_on_ledger')}
+                    {tu('open_litetokens_app_on_ledger')}
                   </li>
                   <li>
-                    {tu('ledger_connected_tronscan_message_0')}
+                    {tu('ledger_connected_litescan_message_0')}
                   </li>
                   <li>
                     {tu('click_on_open_wallet')}

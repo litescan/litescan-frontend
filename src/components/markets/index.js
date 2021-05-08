@@ -3,7 +3,7 @@ import {injectIntl} from "react-intl";
 import {connect} from "react-redux";
 import {loadPriceData} from "../../actions/markets";
 import MarketOverview from "./MarketOverview";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import {Client} from "../../services/api";
 import LineReact from "../common/LineChart";
 import {RingPieReact} from "../common/RingPieChart";
@@ -41,10 +41,10 @@ class Markets extends React.Component {
     let birthday = new Date("2017/10/10");
     let timerBirthday = birthday.getTime();
     let dayNum = Math.floor((timerToday - timerBirthday) / 1000 / 3600 / 24);
-    let {data} = await xhr.get("https://min-api.cryptocompare.com/data/histoday?fsym=TRX&tsym=USD&limit=" + dayNum);
+    let {data} = await xhr.get("https://min-api.cryptocompare.com/data/histoday?fsym=XLT&tsym=USD&limit=" + dayNum);
     let priceStatsTemp = data['Data'];
 
-    let volumeData = await xhr.get("https://server.tron.network/api/v2/node/market_data");
+    let volumeData = await xhr.get("https://server.litetokens.org/api/v2/node/market_data");
     let volumeUSD = volumeData.data.market_cap_by_available_supply
     let volume = volumeUSD.map(function (v, i) {
       return {
@@ -71,7 +71,7 @@ class Markets extends React.Component {
           rank: val.rank,
           name: val.name,
           pair: val.pair,
-          volumeNative: intl.formatNumber(val.volumeNative) + ' TRX',
+          volumeNative: intl.formatNumber(val.volumeNative) + ' XLT',
           volumePercentage: (intl.formatNumber(val.volumePercentage, {
             maximumFractionDigits: 2,
             minimumFractionDigits: 2
@@ -150,7 +150,7 @@ class Markets extends React.Component {
                   {/*<div style={{height: 300}}>*/}
                   {/*{*/}
                   {/*priceGraph.length === 0 ?*/}
-                  {/*<TronLoader/> :*/}
+                  {/*<LitetokensLoader/> :*/}
                   {/*<LineReact message={{id: 'average_price_usd'}} style={{height: 300}}*/}
                   {/*data={priceGraph} keysData={['time', 'close']}*/}
                   {/*format={{time: true, date: true}}/>*/}
@@ -158,7 +158,7 @@ class Markets extends React.Component {
                   <div style={{height: 350}}>
                     {
                       priceStats === null ?
-                          <TronLoader/> :
+                          <LitetokensLoader/> :
                           <LineReactPrice style={{height: 350}} data={priceStats} intl={intl}/>
                     }
                   </div>
@@ -172,7 +172,7 @@ class Markets extends React.Component {
                   {/*<div style={{height: 300}}>*/}
                   {/*{*/}
                   {/*volumeGraph.length === 0 ?*/}
-                  {/*<TronLoader/> :*/}
+                  {/*<LitetokensLoader/> :*/}
                   {/*<LineReact message={{id: 'average_volume_usd'}} style={{height: 300}}*/}
                   {/*data={volumeGraph} keysData={['time', 'volume']}*/}
                   {/*format={{time: true}}/>*/}
@@ -181,7 +181,7 @@ class Markets extends React.Component {
                   <div style={{height: 350}}>
                     {
                       volume === null ?
-                          <TronLoader/> :
+                          <LitetokensLoader/> :
                           <LineReactVolumeUsd style={{height: 350}} data={volume} intl={intl}/>
                     }
                   </div>

@@ -7,12 +7,12 @@ import {tu} from "../../../utils/i18n";
 import {FormattedDate, FormattedTime} from "react-intl";
 import {BlockNumberLink} from "../../common/Links";
 import {CopyText} from "../../common/Copy";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import {Truncate} from "../../common/text";
 import Contract from "../../tools/TransactionViewer/Contract";
 import {ContractTypes} from "../../../utils/protocol";
 import {trim} from "lodash";
-import {hextoString} from "@tronscan/client/src/utils/bytes";
+import {hextoString} from "litescan-client/src/utils/bytes";
 
 
 class Transaction extends React.Component {
@@ -32,7 +32,7 @@ class Transaction extends React.Component {
           icon: "fa fa-exchange-alt",
           path: "",
           label: <span>{tu("contracts")}</span>,
-          cmp: () => <TronLoader/>,
+          cmp: () => <LitetokensLoader/>,
         }
       },
     };
@@ -86,9 +86,9 @@ class Transaction extends React.Component {
       <main className="container header-overlap">
         {
           loading ? <div className="card">
-            <TronLoader>
+            <LitetokensLoader>
               tu{("loading_transaction")}
-            </TronLoader>
+            </LitetokensLoader>
           </div> :
             <div className="row">
               <div className="col-md-12">

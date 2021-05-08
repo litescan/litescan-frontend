@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React, {Fragment} from "react";
 import {trim} from "lodash";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import {ExternalLink} from "../../common/Links";
 import {connect} from "react-redux";
 import {Client} from "../../../services/api";
@@ -152,8 +152,8 @@ class Representative extends React.Component {
   }
 
   async reloadPages() {
-    let sr = await Client.getSuperRepresentative(this.getAddress());
-    await this.loadGithubData(sr.githubLink);
+    let ev = await Client.getSuperRepresentative(this.getAddress());
+    await this.loadGithubData(ev.githubLink);
   }
 
   async loadAddress(id) {
@@ -241,9 +241,9 @@ class Representative extends React.Component {
       return (
         <main className="container header-overlap">
           <div className="card text-center">
-            <TronLoader>
+            <LitetokensLoader>
               {tu("loading_representatives")}
-            </TronLoader>
+            </LitetokensLoader>
           </div>
         </main>
       );
@@ -285,9 +285,9 @@ class Representative extends React.Component {
           <div className="col-md-9 representative-content">
             {
               loading ? <div className="card">
-                  <TronLoader>
+                  <LitetokensLoader>
                     {tu("loading_representative")} {address.address}
-                  </TronLoader>
+                  </LitetokensLoader>
                 </div> :
                 <Fragment>
                   <div className="card">

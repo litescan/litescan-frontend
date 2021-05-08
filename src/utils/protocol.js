@@ -1,5 +1,5 @@
 
-import {Transaction} from "@tronscan/client/src/protocol/core/Tron_pb";
+import {Transaction} from "litescan-client/src/protocol/core/Litetokens_pb";
 
 let contractTypes = {};
 

@@ -125,7 +125,7 @@ module.exports = {
       }
     ]
   },
-  supplyTypesTRXPieChart: {
+  supplyTypesXLTPieChart: {
     color: [
       '#c84a45',
       '#e7afad',

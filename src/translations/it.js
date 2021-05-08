@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Italian                                                      #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "OK",
-  "app_title": "Protocollo TRON",
+  "app_title": "Protocollo LITETOKENS",
   "password": "password",
   "money_price": "prezzo",
   "price": "prezzo",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "Decentralizzare il Web",
+  "litetokens_main_message": "Decentralizzare il Web",
   "transactions_last_hour": "Transazioni nell'ultima ora",
   "block_height": "Altezza Blocco",
   "online_nodes": "Nodi connessi",
-  "pice_per_1000trx": "Prezzo (per 1000 TRX)",
+  "pice_per_1000xlt": "Prezzo (per 1000 XLT)",
   "vote_for_super_representatives": "Vota i Super Rappresentanti",
   "view_super_representatives": "Vedi i Super Rappresentanti",
   "create_new_wallet": "Crea un nuovo portafoglio",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "indirizzi",
-  "trx_transferred_past_hour": "TRX trasferiti nell'ultima ora",
+  "xlt_transferred_past_hour": "XLT trasferiti nell'ultima ora",
   "transactions_past_hour": "Transazioni nell'ora precedente",
   "average_blocksize": "Transazioni nell'ultima ora",
   "rich_list": "Lista Ricchi",
-  "tron_transaction_chart": "Grafico Transazioni TRON",
+  "litetokens_transaction_chart": "Grafico Transazioni LITETOKENS",
   "transactions_per_day": "Transazioni Al Giorno",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "Cambia Nome",
   "account_name": "Nome account",
   "show_qr_code": "Visualizza codice QR",
-  "do_not_send_2": "Non inviare TRX dal tuo wallet oppure da un exchange all'indirizzo dell'account della testnet soprastante!",
+  "do_not_send_2": "Non inviare XLT dal tuo wallet oppure da un exchange all'indirizzo dell'account della testnet soprastante!",
   "bandwidth": "larghezza di banda",
   "balance": "saldo",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "transazioni",
   "no_transfers": "Nessun trasferimento",
   "no_tokens": "Nessun token",
   "free_bandwidth": "Larghezza di banda libera",
   "expires": "scade",
   "have_been_added_to_your_account": "è stato aggiunto al tuo account!",
-  "information_message_1": "La mainnet non può richiedere TRX di test, per favore contattate TRON per ottenere TRX di test.",
-  "information_message_2": "Puoi richiedere TRX per un massimo di 10 volte per account.",
-  "request_trx_for_testing": "Richiedi TRX per i test",
+  "information_message_1": "La mainnet non può richiedere XLT di test, per favore contattate LITETOKENS per ottenere XLT di test.",
+  "information_message_2": "Puoi richiedere XLT per un massimo di 10 volte per account.",
+  "request_xlt_for_testing": "Richiedi XLT per i test",
   "token_balances": "saldo token",
   "produced_blocks": "blocchi prodotti",
   "voters": "elettori",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "emittente",
   "network": "rete",
   "current": "attuale",
-  "trx_received": "TRX ricevuti",
-  "test_trx_temporarily_unavailable_message": "Al momento non sono disponibili TRX di test. Si prega di riprovare più tardi.",
-  "not_enough_trx": "TRX non sufficienti",
-  "information_message_3": "TRX richiesti con successo. Se non hai ricevuto alcun TRX allora non è disponibile alcun TRX di test al momento, dovresti provare di nuovo più tardi.",
+  "xlt_received": "XLT ricevuti",
+  "test_xlt_temporarily_unavailable_message": "Al momento non sono disponibili XLT di test. Si prega di riprovare più tardi.",
+  "not_enough_xlt": "XLT non sufficienti",
+  "information_message_3": "XLT richiesti con successo. Se non hai ricevuto alcun XLT allora non è disponibile alcun XLT di test al momento, dovresti provare di nuovo più tardi.",
   "send_to_following_address": "Invia al seguente indirizzo",
   "change_website": "Cambia sito web",
   "you_must_enter_url": "Devi inserire un URL",
@@ -269,12 +269,12 @@ export const messages = {
   */
   "freeze": "congela",
   "unfreeze": "scongelare",
-  "freeze_trx_least": "Devi avere almeno un TRX per poter procedere al congelamento",
-  "unable_unfreeze_trx_message": "Impossibile scongelare i TRX. Ciò potrebbe essere causato dal fatto che il periodo di congelamento minimo non è stato ancora raggiunto.",
-  "freeze_trx_premessage_0": `I TRX possono essere congelati/bloccati per guadagnare TRON Power e abilitare funzionalità aggiuntive. Per esempio, con i TRON Power puoi `,
-  "freeze_trx_premessage_link": "votare per i Super Rappresentanti.",
-  "freeze_trx_premessage_1": `I token congelati sono "bloccati" per un periodo di 3 giorni. Durante questo periodo i TRX congelati non possono essere scambiati. Dopo questo periodo è possibile scongelare i TRX e scambiare token.`,
-  "trx_amount": "Quantità di TRX",
+  "freeze_xlt_least": "Devi avere almeno un XLT per poter procedere al congelamento",
+  "unable_unfreeze_xlt_message": "Impossibile scongelare i XLT. Ciò potrebbe essere causato dal fatto che il periodo di congelamento minimo non è stato ancora raggiunto.",
+  "freeze_xlt_premessage_0": `I XLT possono essere congelati/bloccati per guadagnare LITETOKENS Power e abilitare funzionalità aggiuntive. Per esempio, con i LITETOKENS Power puoi `,
+  "freeze_xlt_premessage_link": "votare per i Super Rappresentanti.",
+  "freeze_xlt_premessage_1": `I token congelati sono "bloccati" per un periodo di 3 giorni. Durante questo periodo i XLT congelati non possono essere scambiati. Dopo questo periodo è possibile scongelare i XLT e scambiare token.`,
+  "xlt_amount": "Quantità di XLT",
   "token_freeze_confirm_message_0": "Confermo il congelamento",
   "token_freeze_confirm_message_1": "per almeno 3 giorni",
   "frozen_supply": "Fornitura Congelata",
@@ -288,7 +288,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Nome cambiato con successo in",
   "unable_to_rename_title": "Impossibile rinominare",
   "unable_to_rename_message": "Qualcosa è andato storto durante l'aggiornamento del nome, per favore riprova più tardi",
-  "unfreeze_trx_confirm_message": "Sei sicuro di voler scongelare TRX?",
+  "unfreeze_xlt_confirm_message": "Sei sicuro di voler scongelare XLT?",
   "unfreeze_assets": "Scongela asset",
   "sure_to_unfreeze_unlocked_tokens_message": "Sei sicuro di voler scongelare i token sbloccati?",
   /*
@@ -301,19 +301,19 @@ export const messages = {
   "apply_for_delegate": "richiesta per diventare rappresentante",
   "apply_super_representative_candidate": "Richiesta per essere un Super Rappresentante",
   "your_personal_website_address": "il tuo sito web personale",
-  "apply_for_delegate_predescription":`Ogni possessore di token ha l'opportunità di diventare un Super Rappresentante di TRON.
+  "apply_for_delegate_predescription":`Ogni possessore di token ha l'opportunità di diventare un Super Rappresentante di LITETOKENS.
    Tuttavia, affinché sia rete che la comunità possano operare in modo più fluido ed efficace,
    abbiamo creato una serie di norme e regolamenti per essere idonei a diventare Super Rappresentanti. Promuoveremo i Super Rappresentanti selezionati per aumentare le possibilità di essere eletti. La lista dei Super Rappresentanti selezionati viene aggiornata una volta a settimana.`,
   "apply_for_delegate_description": `
-   I possessori di TRX possono richiedere di diventare Super Rappresentanti utilizzando la funzione di gestione dell'account e votare per i candidati.
+   I possessori di XLT possono richiedere di diventare Super Rappresentanti utilizzando la funzione di gestione dell'account e votare per i candidati.
    Ogni account può aggiornare le informazioni attuali sugli elettori e inoltre è autorizzato a votare per più candidati.
-   Il numero massimo di voti è inferiore o uguale alla quantità di TRX a disposizione degli utenti ogni volta.
-   (Puoi dare una quantità di voti inferiore o uguale al totale di TRX in tuo posseso).
-   Il risultato dei voti verrà calcolato in base alle informazioni finali su ogni account degli elettori in ciascun ciclo di votazione di cui l'orario è dalle 00:00 alle 23:59. I possessori di TRX con più voti diventeranno Super Rappresentanti.
+   Il numero massimo di voti è inferiore o uguale alla quantità di XLT a disposizione degli utenti ogni volta.
+   (Puoi dare una quantità di voti inferiore o uguale al totale di XLT in tuo posseso).
+   Il risultato dei voti verrà calcolato in base alle informazioni finali su ogni account degli elettori in ciascun ciclo di votazione di cui l'orario è dalle 00:00 alle 23:59. I possessori di XLT con più voti diventeranno Super Rappresentanti.
   Ogni transazione eseguita nella rete deve essere convalidata da tutti i Super Rappresentanti, quindi saranno ottenuti dei bonus.
-  Nessun TRX verrà utilizzato nel processo di richiesta a Super Rappresentante e per il voto.`,
+  Nessun XLT verrà utilizzato nel processo di richiesta a Super Rappresentante e per il voto.`,
   "unknown_error": "si è verificato un errore sconosciuto",
-  "representative_understand": "Sono a conoscenza di come diventare Rappresentante di TRON",
+  "representative_understand": "Sono a conoscenza di come diventare Rappresentante di LITETOKENS",
   "generate_account": "Clicca per generare l'indirizzo e la password del tuo account",
   "create_account_confirm_1": "Capisco che se dimentico/perdo la mia password non potrò più accedere ai miei asset",
   "create_account_confirm_2": "Capisco che se dimentico/perdo la mia password nessuno sarà in grado di aiutarmi a recuperarli",
@@ -325,23 +325,23 @@ export const messages = {
   "most_votes": "più voti",
   "start_end_time": "Istante di Inizio / Fine",
   "scan_qr_code": "Scannerizza il codice con uno scanner di codici QR",
-  "receive_trx": "ricevi TRX",
+  "receive_xlt": "ricevi XLT",
   "require_account_to_send": "Devi aver effettuato l'accesso per inviare monete",
   "require_account_to_receive": "Devi aver effettuato l'accesso per ricevere monete",
   "successful_send": "Inviato con successo!",
   "confirm_transaction": "conferma transazione",
   "last_confirmed": "Ultima Confermata",
-  "trx_produced": "Transazioni Prodotte",
-  "do_not_send_1": "Non inviare TRX dal tuo portafoglio o da un sito di cambio all'indirizzo del tuo account della testnet!",
+  "xlt_produced": "Transazioni Prodotte",
+  "do_not_send_1": "Non inviare XLT dal tuo portafoglio o da un sito di cambio all'indirizzo del tuo account della testnet!",
   "go_to_votelist": "Vai alla lista dei voti",
-  "understand_tron_sr_message_0": "Sono a conoscenza di come si diventa un rappresentante TRON e confermo di spendere ",
-  "understand_tron_sr_message_1": "in commissioni.",
+  "understand_litetokens_ev_message_0": "Sono a conoscenza di come si diventa un rappresentante LITETOKENS e confermo di spendere ",
+  "understand_litetokens_ev_message_1": "in commissioni.",
   "invalid_url": "URL non valido",
   "apply_representative_error_message_0": "Qualcosa è andato storto durante la candidatura a rappresentante.",
-  "apply_representative_error_message_1": "Assicuratevi di avere TRX sufficienti per le commissioni o riprovare più tardi.",
+  "apply_representative_error_message_1": "Assicuratevi di avere XLT sufficienti per le commissioni o riprovare più tardi.",
   "open_external_link": "Stai per aprire un collegamento esterno",
   "private_key_untrusted_website_message_0": "Non inserite mai la vostra chiave privata su un sito non affidabile.",
-  "no_official_tron_website": "non è un sito ufficiale di TRON.",
+  "no_official_litetokens_website": "non è un sito ufficiale di LITETOKENS.",
   "continue_to_external_website": "Continua sul sito esterno",
   "url_changed": "URL cambiato",
   "successfully_changed_website_message": "Sito web cambiato con successo in ",
@@ -356,11 +356,11 @@ export const messages = {
   "link_github": "Collegamento Github",
   "you_must_enter_a_url": "Devi inserire un URL",
   "success": "Successo",
-  "successfully_appied_sr_canidate_message_0": "Richiesta eseguita con successo per diventare candidato Super Rappresentante.",
-  "successfully_appied_sr_canidate_message_1": "Il tuo account verrà aggiornato a breve.",
+  "successfully_appied_ev_canidate_message_0": "Richiesta eseguita con successo per diventare candidato Super Rappresentante.",
+  "successfully_appied_ev_canidate_message_1": "Il tuo account verrà aggiornato a breve.",
   "landing_page": "Landing Page",
-  "show_more_information_publish_sr_page": "Mostra più informazioni su come pubblicare una pagina",
-  "create_sr_landing_page_message_0": "I Super Rappresentanti possono creare una landing page sulla quale possono condividere più informazioni sulla loro squadra e i loro piani",
+  "show_more_information_publish_ev_page": "Mostra più informazioni su come pubblicare una pagina",
+  "create_ev_landing_page_message_0": "I Super Rappresentanti possono creare una landing page sulla quale possono condividere più informazioni sulla loro squadra e i loro piani",
   "set_github_url_message_0": "Hai già configurato il tuo template Github? In tal caso imposta l'URL utilizzando il pulsante sottostante",
   "set_github_link": "Imposta il link a Github",
   "could_not_claim_rewards": "Non è stato possibile reclamare le ricompense",
@@ -368,7 +368,7 @@ export const messages = {
   "rewards_claimed": "Ricompense reclamate!",
   "successfully_claimed_rewards":  "Ricompense reclamate con successo",
   "claim_rewards": "Reclama ricompense",
-  "sr_receive_reward_message_0": "In qualità di rappresentante ricevi ricompense per la produzione dei blocchi. Queste ricompense possono essere reclamate ogni 24 ore",
+  "ev_receive_reward_message_0": "In qualità di rappresentante ricevi ricompense per la produzione dei blocchi. Queste ricompense possono essere reclamate ogni 24 ore",
   "intro": "Introduzione",
   "budget_expenses": "Budget per le spese",
   "server_configuration": "Configurazione del server",
@@ -396,15 +396,15 @@ export const messages = {
   "available": "disponibile",
   "testnet": "Testnet",
   "days_to_freeze": "Giorni da congelare",
-  "trx_token_fee_message": "Sono richiesti 1024 TRX per creare un nuovo token",
-  "trx_token_account_limit": "Puoi creare solo un token per account",
-  "trx_token_wallet_requirement": "Devi avere un portafoglio per poter creare un token",
+  "xlt_token_fee_message": "Sono richiesti 1024 XLT per creare un nuovo token",
+  "xlt_token_account_limit": "Puoi creare solo un token per account",
+  "xlt_token_wallet_requirement": "Devi avere un portafoglio per poter creare un token",
   "invalid_address": "indirizzo non valido",
   "insufficient_tokens": "Token insufficenti",
   "fill_a_valid_number": "Per favore inserire un numero valido",
   "fill_a_valid_address": "Per favore inserire un indirizzo valido",
   "make_another_transaction": "Effettua un'altra transazione",
-  "token_exchange_confirm": "Ho confermato di pagare {trxAmount} per la distribuzione dei token e di ricevere {tokenAmount} token.",
+  "token_exchange_confirm": "Ho confermato di pagare {xltAmount} per la distribuzione dei token e di ricevere {tokenAmount} token.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "Si è verificato un errore sconosciuto, si prega di riprovare tra qualche minuto",
   "An_error_occurred": "Si è verificato un errore",
   "create_a_token": "Crea un token",
@@ -422,8 +422,8 @@ export const messages = {
   "how_much_buy_message": "Quanti token vuoi comprare?",
   "buy_confirm_message_1": "Sei sicuro di voler acquistare",
   "for": "per",
-  "insufficient_trx": "TRX insufficienti",
-  "not_enough_trx_message": "Non hai abbastanza TRX per poter comprare i token specificati",
+  "insufficient_xlt": "XLT insufficienti",
+  "not_enough_xlt_message": "Non hai abbastanza XLT per poter comprare i token specificati",
   "ends": "finisce",
   "starts": "inizia",
   "can_be_unlocked": "possono essere sbloccati",
@@ -434,12 +434,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Inserire solamente un indirizzo valido di un wallet TRON. Indirizzi non corretti possono causare la perdita dei TRX.",
+  "address_warning": "Inserire solamente un indirizzo valido di un wallet LITETOKENS. Indirizzi non corretti possono causare la perdita dei XLT.",
   "search_address_or_url": "Cerca per indirizzo o URL",
   "the_lunch_test": "Il lancio della testnet ha lo scopo di testare tutte le funzionalità del nostro blockchain explorer e del nostro wallet.",
-  "please_keep_in_mind": "Tieni presente che, dal momento che l'indirizzo dell'account registrato è utilizzato solo per la testnet, non devi inviare TRX dal tuo wallet o da un exchange all'indirizzo dell'account della testnet.",
-  "tron_foundation": "Fondazione TRON",
-  "trx_for_testing": "Una volta effettuata con successo la richiesta attraverso la gestione del tuo conto, una quantità di TRX di test verrà inviata al tuo account di testing",
+  "please_keep_in_mind": "Tieni presente che, dal momento che l'indirizzo dell'account registrato è utilizzato solo per la testnet, non devi inviare XLT dal tuo wallet o da un exchange all'indirizzo dell'account della testnet.",
+  "litetokens_foundation": "Fondazione LITETOKENS",
+  "xlt_for_testing": "Una volta effettuata con successo la richiesta attraverso la gestione del tuo conto, una quantità di XLT di test verrà inviata al tuo account di testing",
   "dear_users": "Cari utenti,",
   "finished": "Finito",
   "token": "token",
@@ -447,11 +447,11 @@ export const messages = {
   "need_to_login": "Devi avere effettuato l'accesso per accedere alla pagina del tuo conto",
   "thanks_for_applying": "Grazie per la partecipazione!",
   "to_much_votes": "Troppi voti",
-  "no_trx_remaining": "Nessun TRX rimasto",
+  "no_xlt_remaining": "Nessun XLT rimasto",
   "show_more": "Visualizza altri {countriesLength}",
-  "vote_guide_message": `Usa i tuoi TRX per votare i Super Rappresentanti.
-   È possibile dare un voto per ogni TRX posseduto.
-   I TRX non veranno consumati. Puoi votare più volte per i diversi rappresentanti.
+  "vote_guide_message": `Usa i tuoi XLT per votare i Super Rappresentanti.
+   È possibile dare un voto per ogni XLT posseduto.
+   I XLT non veranno consumati. Puoi votare più volte per i diversi rappresentanti.
    I voti finali verranno conteggiati a mezzanotte e la lista dei delegati verrà aggiornata.`,
   "search_address": "Cerca per indirizzo",
   "token_transactions": "Transazioni di token",
@@ -497,11 +497,11 @@ export const messages = {
   "supply_message": "Quantità totale di token che verranno messi in circolazione",
   "description_message": "Una breve descrizione dello scopo del token",
   "url_message": "Un sito web dove gli utenti possono trovare ulteriori informazioni sul token",
-  "exchange_rate_message_0": "Specificare il prezzo di un singolo token definendo quanti gettoni un partecipante riceverà per ogni TRX speso.",
+  "exchange_rate_message_0": "Specificare il prezzo di un singolo token definendo quanti gettoni un partecipante riceverà per ogni XLT speso.",
   "exchange_rate_message_1": "I partecipanti riceveranno",
   "exchange_rate_message_2": "per ogni",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Specifica il periodo di partecipazione durante il quale verranno emessi i token. Durante il periodo di partecipazione gli utenti potranno scambiare TRX per ",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Specifica il periodo di partecipazione durante il quale verranno emessi i token. Durante il periodo di partecipazione gli utenti potranno scambiare XLT per ",
   "participation_message_1": " token.",
   "frozen_supply_message_0": `una parte della fornitura può essere congelata. La quantità della fornitura può essere specificata e dovrà essere congelata per un minimo di 1 giorno.
   La fornitura congelata può essere sbloccata manualmente dopo che è stata raggiunta la soglia di durata dalla data di inizio più i giorni congelati. Il congelamento della fornitura non è obbligatorio.`,
@@ -509,12 +509,12 @@ export const messages = {
   "participation": "partecipazione",
   "start_date": "Data di inizio",
   "end_date": "Data di fine",
-  "token_spend_confirm": "Confermo che la creazione del token prevede un costo una tantum di 1024 TRX.",
-  "token_issue_guide_message_1": "L'emissione di un token sul protocollo TRON può essere eseguita da chiunque possieda almeno 1024 TRX nel proprio conto.",
+  "token_spend_confirm": "Confermo che la creazione del token prevede un costo una tantum di 1024 XLT.",
+  "token_issue_guide_message_1": "L'emissione di un token sul protocollo LITETOKENS può essere eseguita da chiunque possieda almeno 1024 XLT nel proprio conto.",
   "token_issue_guide_message_2": `Quando un token viene emesso verrà mostrato nella pagina panoramica del token.
-    Gli utenti possono quindi partecipare all'interno del periodo di partecipazione e scambiare i loro TRX per il token.`,
+    Gli utenti possono quindi partecipare all'interno del periodo di partecipazione e scambiare i loro XLT per il token.`,
   "token_issue_guide_message_3":`Dopo la creazione del token il tuo conto riceverà la quantità di token pari alla fornitura totale.
-    Quando altri utenti scambieranno i loro TRX per i tuoi token, questi saranno detratti dal tuo account e riceverai una somma di TRX uguale al tasso di cambio specificato.`,
+    Quando altri utenti scambieranno i loro XLT per i tuoi token, questi saranno detratti dal tuo account e riceverai una somma di XLT uguale al tasso di cambio specificato.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -526,7 +526,7 @@ export const messages = {
   "no_name_error": "Il nome è obbligatorio",
   "no_supply_error": "La fornitura totale deve essere almeno di 1",
   "coin_value_error": "La quantità di token deve essere almeno di 1",
-  "tron_value_error": "la quantità di TRX per gettone deve essere almeno di 1",
+  "litetokens_value_error": "la quantità di XLT per gettone deve essere almeno di 1",
   "invalid_starttime_error": "La data di inizio specificata non è valida",
   "invalid_endtime_error": "La data di fine specificata non è valida",
   "no_description_error": "Descrizione obbligatoria",
@@ -587,7 +587,7 @@ export const messages = {
   "most_ranks": "Posizioni guadagnate maggiormente in questo ciclo di voto",
   "view_live_ranking": "Guarda la classifica in diretta",
   "open_team_page": "Apri pagina del Team",
-  "warning_votes": "È richiesto almeno 1 TRON Power per iniziare a votare. I TRON Power sono ottenuti congelando TRX sul",
+  "warning_votes": "È richiesto almeno 1 LITETOKENS Power per iniziare a votare. I LITETOKENS Power sono ottenuti congelando XLT sul",
   "account_page": "Pagina Account",
   "loading_votes": "Caricamento voti",
   "3_day_ranking": "Classifica 3 giorni",
@@ -599,7 +599,7 @@ export const messages = {
   "votes_remaining_message": "Voti rimanenti",
   "open_wallet_start_voting_message": "Apri il wallet per iniziare la votazione",
   "thanks_submitting_vote_message": "Grazie per aver inviato il tuo voto!",
-  "need_min_trx_to_vote_message": "Per poter votare è necessario almeno 1 TRX",
+  "need_min_xlt_to_vote_message": "Per poter votare è necessario almeno 1 XLT",
   "to_much_votes_massage": "Esprimeresti troppi voti!",
   "all_votes_are_used_message": "Tutti i voti sono stati utilizzati!",
   "submissing_vote_message_title": "Grazie per aver votato!",
@@ -657,10 +657,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "Cos'è TRON",
-  "tron_explorer_api": "API TRON Explorer",
-  "tron_architechure": "Architettura TRON",
-  "tron_protobuf_doc": "Documentazione TRON Protobuf",
+  "what_is_litetokens": "Cos'è LITETOKENS",
+  "litetokens_explorer_api": "API LITETOKENS Explorer",
+  "litetokens_architechure": "Architettura LITETOKENS",
+  "litetokens_protobuf_doc": "Documentazione LITETOKENS Protobuf",
   "report_an_error": "Segnala un bug / Invia un suggerimento",
   "frequently_asked_questions": "Domande Frequenti",
   "telegram_updates": "Aggiornamenti Telegram",
@@ -685,7 +685,7 @@ export const messages = {
   "save_keystore_file": "Salva il tuo file Keystore",
   "download_keystore_file": "Scarica la chiave criptata",
   "do_not_lose_it": "Non perderla!",
-  "do_not_lose_it_message_0": "La Fondazione TRON non può aiutarti a recuperare una chiave persa.",
+  "do_not_lose_it_message_0": "La Fondazione LITETOKENS non può aiutarti a recuperare una chiave persa.",
   "do_not_share_it": "Non condividerla!",
   "do_not_share_it_message_0": "I tuoi fondi porebbero essere rubati se usi questo file su un sito malevolo.",
   "make_a_backup": "Fai un backup!",
@@ -728,23 +728,23 @@ export const messages = {
   */
   "ledger_guide": "Guida Ledger",
   "requirements": "Requisiti",
-  "using_ledger_steps_message_0": "L'utilizzo del Ledger con Tronscan richiede i seguenti passaggi:",
+  "using_ledger_steps_message_0": "L'utilizzo del Ledger con Litescan richiede i seguenti passaggi:",
   "a": "Un",
   "install_the": "Installate l'app ",
   "app": "",
   "install_latest_version_message_0": "Installate l'ultima versione del ",
   "opening_your_wallet": "Aprire il vostro wallet",
-  "open_the_tronscan_desktop_client": "Aprite il client Tronscan Desktop",
+  "open_the_litescan_desktop_client": "Aprite il client Litescan Desktop",
   "click_open_wallet_top_right": "Cliccate su 'Open Wallet' in alto a destra",
   "choose_ledger": "Scegliete Ledger",
   "connect_unlock_ledger_with_pin": "Connettete e sbloccate il vostro dispositivo con il vostro codice PIN",
-  "open_tron_app_on_ledger": "Aprite l'app TRON sul vostro Ledger",
-  "ledger_connected_tronscan_message_0": "Se il vostro Ledger è connesso correttamente allora Tronscan mostrerà il messaggio 'Connected'",
+  "open_litetokens_app_on_ledger": "Aprite l'app LITETOKENS sul vostro Ledger",
+  "ledger_connected_litescan_message_0": "Se il vostro Ledger è connesso correttamente allora Litescan mostrerà il messaggio 'Connected'",
   "click_on_open_wallet": "Cliccate su 'Open Wallet'",
-  "redirect_to_your_wallet_message": "Verrete reindirizzati al vostro wallet e potrete vedere il vostro indirizzo TRON",
+  "redirect_to_your_wallet_message": "Verrete reindirizzati al vostro wallet e potrete vedere il vostro indirizzo LITETOKENS",
   "using_ledger_to_sign_transactions": "Utilizzare il Ledger per firmare transazioni",
-  "using_ledger_to_sign_transactions_message_0": "Assicuratevi di mantenere il Ledger connesso e l'app TRON aperta per firmare le transazioni utilizzando il Ledger mentre si utilizza Tronscan Desktop",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan mostrerà un popup con i dettagli della transazione quando è richiesta una firma per la transazione stessa. Le firme sono sempre richieste quando votate, inviate TRX, cambiate nome dell'account, ecc..",
+  "using_ledger_to_sign_transactions_message_0": "Assicuratevi di mantenere il Ledger connesso e l'app LITETOKENS aperta per firmare le transazioni utilizzando il Ledger mentre si utilizza Litescan Desktop",
+  "using_ledger_to_sign_transactions_message_1": "Litescan mostrerà un popup con i dettagli della transazione quando è richiesta una firma per la transazione stessa. Le firme sono sempre richieste quando votate, inviate XLT, cambiate nome dell'account, ecc..",
   /*
   ##################################################################################
   #                                                                                #
@@ -764,7 +764,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "effettuata richiesta per diventare Super Rappresentante",
-  "sr_candidature": "Candidatura a Super Rappresentante",
+  "ev_candidature": "Candidatura a Super Rappresentante",
   "created_token": "token creato",
   "token_creation": "Creazione Token",
   "bought": "acquistato",
@@ -775,13 +775,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -797,7 +797,7 @@ export const messages = {
   "total_BlockCount": "Numero totale dei blocchi",
   "new_address_seen": "Nuovi indirizzi visti",
   "transfer_contract": "Contratto di trasferimento",
-  "TRX_transfer_between_addresses": "Trasferimento di TRX tra indirizzi",
+  "XLT_transfer_between_addresses": "Trasferimento di XLT tra indirizzi",
   "transfer_asset_contract": "Contratto di trasferimento asset",
   "token_transfer_between_addresses": "Trasferimento di token tra indirizzi",
   "participate_asset_issue_contract": "Participa al contratto di emissione dell'asset",
@@ -811,9 +811,9 @@ export const messages = {
   "withdraw_balance_contract": "Contratto di prelievo del saldo",
   "withdraw_balance": "Preleva saldo",
   "freeze_balance_contract": "Contratto di congelamento del saldo",
-  "freeze_TRX": "Congela TRX",
+  "freeze_XLT": "Congela XLT",
   "unfreeze_balance_contract": "Contratto di scongelamento del saldo",
-  "unfreeze_TRX": "Scongela TRX",
+  "unfreeze_XLT": "Scongela XLT",
   "vote_witness_contract": "Contratto di voto per testimoni",
   "vote_for_a_witness": "Vota per un testimone",
   "asset_issue_contract": "Contratto di emissione di asset",
@@ -822,7 +822,7 @@ export const messages = {
   "frozen_balance": "Saldo congelato",
   "frozen_days": "Giorni da congelare",
   "counts": "Quantità",
-  "TRX_exchange_rate": "Tasso di cambio TRX",
+  "XLT_exchange_rate": "Tasso di cambio XLT",
   "start_time": "Istante iniziale",
   "end_time": "Istante finale",
   "contracts": "Contratti",
@@ -846,24 +846,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -875,8 +875,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 
 };

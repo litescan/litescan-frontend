@@ -5,7 +5,7 @@ import {filter} from "lodash";
 import {TokenLink} from "../../common/Links";
 
 export function TokenBalances({tokenBalances}) {
-  if (Object.keys(tokenBalances).length === 0 || (Object.keys(tokenBalances).length === 1 && tokenBalances[0].name === "TRX")) {
+  if (Object.keys(tokenBalances).length === 0 || (Object.keys(tokenBalances).length === 1 && tokenBalances[0].name === "XLT")) {
     return (
       <div className="text-center p-3">
         {tu("no_tokens_found")}
@@ -23,7 +23,7 @@ export function TokenBalances({tokenBalances}) {
       </thead>
       <tbody>
       {
-        filter(tokenBalances, tb => tb.name !== "TRX").map(tokenBalance => (
+        filter(tokenBalances, tb => tb.name !== "XLT").map(tokenBalance => (
           <tr key={tokenBalance.name}>
             <td>
               <TokenLink name={tokenBalance.name}/>

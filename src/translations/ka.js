@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Georgian                                                     #
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "ვების დეცენტრალიზაცია",
+  "litetokens_main_message": "ვების დეცენტრალიზაცია",
   "transactions_last_hour": "ბოლო საათის ტრანზაქციები",
   "block_height": "ბლოკის სიმაღლე",
   "online_nodes": "ონლაინ კვანძები",
-  "pice_per_1000trx": "ფასი (1000TRX-ზე)",
+  "pice_per_1000xlt": "ფასი (1000XLT-ზე)",
   "vote_for_super_representatives": "ხმის მიცემა სუპერ წარმომადგენლისთვის",
   "view_super_representatives": "სუპერ წარმომადგენლის ხილვა",
   "create_new_wallet": "შექმენით ახალი საფულე",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "მისამართები",
-  "trx_transferred_past_hour": "ბოლო საათში TRX-ის ტრანსფერი",
+  "xlt_transferred_past_hour": "ბოლო საათში XLT-ის ტრანსფერი",
   "transactions_past_hour": "ბოლო საათის ტრანზაქციები",
   "average_blocksize": "საშუალო ბლოკის ზომა",
   "rich_list": "სიმდიდრის სია",
-  "tron_transaction_chart": "TRON Transaction Chart",
+  "litetokens_transaction_chart": "LITETOKENS Transaction Chart",
   "transactions_per_day": "ტრანზაქციები ერთ დღეში",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "სახელის შეცვლა",
   "account_name": "ანგარიშის სახელი",
   "show_qr_code": "QR კოდის ჩვენება",
-  "do_not_send_2": "არ გააგზავნოთ TRX თქვენი საკუთარი საფულიდან ან გაცვალოთ ზედა სატესტო ქსელის ანგარიშის მისამართზე!",
+  "do_not_send_2": "არ გააგზავნოთ XLT თქვენი საკუთარი საფულიდან ან გაცვალოთ ზედა სატესტო ქსელის ანგარიშის მისამართზე!",
   "bandwidth": "გამტარუნარიანობა",
   "balance": "ბალანსი",
-  "tron_power": "ტრონის ძალა",
+  "litetokens_power": "ტრონის ძალა",
   "transactions": "ტრანზაქციები",
   "no_transfers": "ტრანსფერები არ არის",
   "no_tokens": "ტოკენები არ არის",
   "free_bandwidth": "უფასო გამტარუნარიანობა",
   "expires": "ვადა გასდის",
   "have_been_added_to_your_account": "დამატებულია თქვენს ანგარიშზე!",
-  "information_message_1": " TRX-ის მოთხოვნისას, თქვენ მიიღებთ 10000 TRX, რომელთა გამოყენება შეგეძლებათ სატესტო ქსელზე შესამოწმებლად.",
-  "information_message_2": "თქვენ შეგიძლიათ მოითხოვოთ TRX მხოლოდ 10-ჯერ ერთ ანგარიშზე.",
-  "request_trx_for_testing": "მოითხოვეთ TRX ტესტისთვის",
+  "information_message_1": " XLT-ის მოთხოვნისას, თქვენ მიიღებთ 10000 XLT, რომელთა გამოყენება შეგეძლებათ სატესტო ქსელზე შესამოწმებლად.",
+  "information_message_2": "თქვენ შეგიძლიათ მოითხოვოთ XLT მხოლოდ 10-ჯერ ერთ ანგარიშზე.",
+  "request_xlt_for_testing": "მოითხოვეთ XLT ტესტისთვის",
   "token_balances": "ტოკენების ბალანსი",
   "produced_blocks": "წარმოებული ბლოკები",
   "voters": "ხმის მიმცემები",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "გამომშვები",
   "network": "ქსელი",
   "current": "მიმდინარე",
-  "trx_received": "TRX მიღებულია",
-  "test_trx_temporarily_unavailable_message": " TRX-ის ტესტირება დროებით მიუწვდომელია. გთხოვთ სცადოთ მოგვიანებით.",
-  "not_enough_trx": "არასაკმარისი TRX",
-  "information_message_3": "TRX წარმატებით მოთხოვნილია. თუ არ მიიღებთ რაიმე TRX, მაშინ რაიმე  ხელმისაწვდომი TRX-ის ტესტი არ არის, და თქვენ უნდა კვლავ სცადოთ მოგვიანებით.  ",
+  "xlt_received": "XLT მიღებულია",
+  "test_xlt_temporarily_unavailable_message": " XLT-ის ტესტირება დროებით მიუწვდომელია. გთხოვთ სცადოთ მოგვიანებით.",
+  "not_enough_xlt": "არასაკმარისი XLT",
+  "information_message_3": "XLT წარმატებით მოთხოვნილია. თუ არ მიიღებთ რაიმე XLT, მაშინ რაიმე  ხელმისაწვდომი XLT-ის ტესტი არ არის, და თქვენ უნდა კვლავ სცადოთ მოგვიანებით.  ",
   "send_to_following_address": "გააგზავნეთ შემდეგ მისამართზე",
   "change_website": "შეცვალეთ საიტი",
   "you_must_enter_url": "თქვენ უნდა შეიყვანოთ URL",
@@ -269,14 +269,14 @@ export const messages = {
   */
   "freeze": "გაყინვა",
   "unfreeze": "გაყინვის მოხსნა",
-  "freeze_trx_least": "თქვენ გჭირდებათ სულ მცირე 1 TRX გაყინვის მოსახსნელად",
-  "unable_unfreeze_trx_message": " TRX-ის გაყინვის მოხსნის შეუძლებლობა. ეს შესაძლოა იყოს გამოწვეული მინიმალური გაყინვის პერიოდით, რომელიც ჯერ არაა მიღწეული.",
-  "freeze_trx_premessage_0": `TRX შეიძლება გაიყინოს/დაიბლოკოს ტრონის ძალის მისაღებად და გაიხსნას დამატებითი ფუნქციები.
+  "freeze_xlt_least": "თქვენ გჭირდებათ სულ მცირე 1 XLT გაყინვის მოსახსნელად",
+  "unable_unfreeze_xlt_message": " XLT-ის გაყინვის მოხსნის შეუძლებლობა. ეს შესაძლოა იყოს გამოწვეული მინიმალური გაყინვის პერიოდით, რომელიც ჯერ არაა მიღწეული.",
+  "freeze_xlt_premessage_0": `XLT შეიძლება გაიყინოს/დაიბლოკოს ტრონის ძალის მისაღებად და გაიხსნას დამატებითი ფუნქციები.
    მაგალითად ტრონის ძალით თქვენ შესძლებთ`,
-  "freeze_trx_premessage_link": "ხმა მისცეთ სუპერ წარმომადგენლის სასარგებლოდ.",
-  "freeze_trx_premessage_1": ` გაყინული ტოკენები "დაბლოკილია" 3 დღის პერიოდით. ამ პერიოდის განმავლობაში TRX-ით ვაჭრობა შეუძლებელია.
-   ამ პერიოდის გავლისას, თქვენ შეგიძლიათ მოხსნათ TRX-ის გაყინვა და ივაჭროთ ტოკენებით.`,
-  "trx_amount": "TRX ოდენობა",
+  "freeze_xlt_premessage_link": "ხმა მისცეთ სუპერ წარმომადგენლის სასარგებლოდ.",
+  "freeze_xlt_premessage_1": ` გაყინული ტოკენები "დაბლოკილია" 3 დღის პერიოდით. ამ პერიოდის განმავლობაში XLT-ით ვაჭრობა შეუძლებელია.
+   ამ პერიოდის გავლისას, თქვენ შეგიძლიათ მოხსნათ XLT-ის გაყინვა და ივაჭროთ ტოკენებით.`,
+  "xlt_amount": "XLT ოდენობა",
   "token_freeze_confirm_message_0": "ვადასტურებ გაყინვას ",
   "token_freeze_confirm_message_1": "სულ მცირე 3 დღით",
   "frozen_supply": "გაყინულობის მიწოდება",
@@ -290,7 +290,7 @@ export const messages = {
   "successfully_changed_name_to_message": "სახელი წარმატებით შეიცვალა",
   "unable_to_rename_title": "გადარქმევა შეუძლებელია",
   "unable_to_rename_message": "თქვენი ანგარიშის ნომრის განახლებისას, რაღაცა არასწორად წავიდა, გთხოვთ, სცადეთ მოგვიანებით.",
-  "unfreeze_trx_confirm_message": "დარწმუნებული ხართ, რომ გინდათ TRX-ის გაყინვა?",
+  "unfreeze_xlt_confirm_message": "დარწმუნებული ხართ, რომ გინდათ XLT-ის გაყინვა?",
   "unfreeze_assets": "აქტივებზე გაყინვის მოხსნა",
   "sure_to_unfreeze_unlocked_tokens_message": "დარწმუნებული ხართ რომ გსურთ ტოკენების გახსნისთვის გაყინვის მოხსნა?",
   /*
@@ -306,9 +306,9 @@ export const messages = {
   "apply_for_delegate_predescription": `ყოველ ტოკენის მფლობელს აქვს შესაძლებლობა გახდეს ტრონის სუპერ წარმომადგენელი.
    მაგრამ, ქსელისა და საზოგადოებასთან უფრო გლუვად და ეფექტურად ოპერირებისთვის, ჩვენ შევქმენით სტანდარტებისა და რეგულაციების კომპლექტი შესაფერისს კანდიდატებისთვის, რათა გახდეთ რეკომენდირებული სუპერ წარმომადგენელი. ჩვენ ხელს ვუწყობთ რეკომენდირებულ სუპერ წარმომადგენლებს, რათა გაზარდონ თავიანთი შესაძლებლობები და იყვნენ ამორჩეულები. ახალი რეკომენდირებული სუპერ წარმომადგენლები განახლდება და გამოქვეყნდება კვირაში ერთხელ.`,
   "apply_for_delegate_description": `დელეგატად მიმართვის აღწერილობა
-     TRX-ის მფლობელებს შეუძლიათ მიმართონ სუპერ დელეგატად გახდომაზე, ანგარიშის მართვის ფუნქციების გამოყენებით და კანდიდატისთვის ხმის მიცემისთვის.
-     ყოველ ანგარიშს შეუძლია განაახლოს მიმდინარე ხმის მიმცემის ინფორმაცია და აგრეთვე ნებადართულია ხმის მიცემა მრავალი კანდიდატისთვის. ხმების მიცემის მაქსიმალური ინფორმაცია ნაკლებია ან ტოლია TRX-ის მომხმარებელთა მფლობელთა რაოდენობას ყოველი დროისთვის. (თუ გაგაჩნიათ გარკვეული TRX-ის თანხა, თქვენ შეგიძლიათ მისცეთ მასზე ნაკლები ან ტოლი ხმების რაოდენობა ყოველი დროისთვის). ხმის მიცემის შედეგები გაითვლება საბოლოო ყოველი ანგარიშის ხმის მიმცემის ინფორმაციაზე დაყრდნობით ყოველ ხმის მიცემის წრეში, რომლის დროც იწყება 00:00:00 და სრულდება 23:59:59. TRX-ის მფლობელი უმეტესი ხმებით ხდება სუპერ დელეგატი.
-     ქსელში ყოველი გაკეთებული ტრანზაქცია აუცილებელია დასამოწმებლად ყველა სუპერ დელეგატის მიერ, და მიიღება გარკვეული ბონუსები. სუპერ დელეგატზე მიმართვისას და ხმის მიცემისას TRX აი იხარჯება.`,
+     XLT-ის მფლობელებს შეუძლიათ მიმართონ სუპერ დელეგატად გახდომაზე, ანგარიშის მართვის ფუნქციების გამოყენებით და კანდიდატისთვის ხმის მიცემისთვის.
+     ყოველ ანგარიშს შეუძლია განაახლოს მიმდინარე ხმის მიმცემის ინფორმაცია და აგრეთვე ნებადართულია ხმის მიცემა მრავალი კანდიდატისთვის. ხმების მიცემის მაქსიმალური ინფორმაცია ნაკლებია ან ტოლია XLT-ის მომხმარებელთა მფლობელთა რაოდენობას ყოველი დროისთვის. (თუ გაგაჩნიათ გარკვეული XLT-ის თანხა, თქვენ შეგიძლიათ მისცეთ მასზე ნაკლები ან ტოლი ხმების რაოდენობა ყოველი დროისთვის). ხმის მიცემის შედეგები გაითვლება საბოლოო ყოველი ანგარიშის ხმის მიმცემის ინფორმაციაზე დაყრდნობით ყოველ ხმის მიცემის წრეში, რომლის დროც იწყება 00:00:00 და სრულდება 23:59:59. XLT-ის მფლობელი უმეტესი ხმებით ხდება სუპერ დელეგატი.
+     ქსელში ყოველი გაკეთებული ტრანზაქცია აუცილებელია დასამოწმებლად ყველა სუპერ დელეგატის მიერ, და მიიღება გარკვეული ბონუსები. სუპერ დელეგატზე მიმართვისას და ხმის მიცემისას XLT აი იხარჯება.`,
   "unknown_error": "უცნობ შეცდომას აქვს ადგილი",
   "representative_understand": "მე მესმის როგორ გავხდე ტრონის წარმომადგენელი",
   "generate_account": "დააკლიკეთ ანგარიშის მისამართისა და პაროლის გენერირებისთვის",
@@ -322,23 +322,23 @@ export const messages = {
   "most_votes": "ხმების უმრავლესობა",
   "start_end_time": "სასტარტო / დასრულების დრო",
   "scan_qr_code": "კოდის სკანირება QR-კოდის სკანერით",
-  "receive_trx": " TRX-ის მიღება",
+  "receive_xlt": " XLT-ის მიღება",
   "require_account_to_send": "ქოინების გასაგზავნად, თქვენ უნდა იყოთ შესულები",
   "require_account_to_receive": "ქოინების მისაღებად, თქვენ უნდა იყოთ შესულები",
   "successful_send": "წარმატებით გაიგზავნა!",
   "confirm_transaction": "ტრანზაქციის დადასტურება",
   "last_confirmed": "ბოლოს დადასტურებული",
-  "trx_produced": "ტრანზაქციები წარმოებულია",
-  "do_not_send_1": "არ გააგზავნოთ TRX თქვენი საკუთარი საფულიდან ან არ გადაცვალოთ   თქვენი სატესტო ქსელის მისამართი!",
+  "xlt_produced": "ტრანზაქციები წარმოებულია",
+  "do_not_send_1": "არ გააგზავნოთ XLT თქვენი საკუთარი საფულიდან ან არ გადაცვალოთ   თქვენი სატესტო ქსელის მისამართი!",
   "go_to_votelist": "გადადით ხმის მიცემის სიაზე",
-  "understand_tron_sr_message_0": "მე მესმის, როგორ გავხდე ტრონის წარმომადგენელი და ვადასტურებ დავხარჯო",
-  "understand_tron_sr_message_1": "გადასახადი.",
+  "understand_litetokens_ev_message_0": "მე მესმის, როგორ გავხდე ტრონის წარმომადგენელი და ვადასტურებ დავხარჯო",
+  "understand_litetokens_ev_message_1": "გადასახადი.",
   "invalid_url": "უმოქმედო URL",
   "apply_representative_error_message_0": "წარმომადგენლად მიმართვის მცდელობისას, რაღაცა არასწორად წავიდა.",
-  "apply_representative_error_message_1": "დარწმუნდით, რომ საკმარისი TRX-ის ოდენობა გაქვთ გადასახადისთვის, და კვლავ სცადეთ.",
+  "apply_representative_error_message_1": "დარწმუნდით, რომ საკმარისი XLT-ის ოდენობა გაქვთ გადასახადისთვის, და კვლავ სცადეთ.",
   "open_external_link": "თქვენ გახსნით გარე ბმულს",
   "private_key_untrusted_website_message_0": "არასდროს შეიყვანეთ თქვენი პირადი გასაღები არასანდო ვებსაიტზე.",
-  "no_official_tron_website": "არ არის ოფიციალური TRON საიტი.",
+  "no_official_litetokens_website": "არ არის ოფიციალური LITETOKENS საიტი.",
   "continue_to_external_website": "გააგრძელეთ გარე საიტი",
   "url_changed": "URL შეიცვალა",
   "successfully_changed_website_message": "ვებსაიტი წარმატებით შეიცვალა ..... ",
@@ -353,11 +353,11 @@ export const messages = {
   "link_github": "Github-ზე მიბმა",
   "you_must_enter_a_url": "თქვენ უნდა შეიყვანოთ URL",
   "success": "წარმატება",
-  "successfully_appied_sr_canidate_message_0": "სუპერ წარმომადგენლის კანდიდატის წარმატებული მიმართვა.",
-  "successfully_appied_sr_canidate_message_1": "თქვენი ანგარიში განახლდება ცოტა ხანში.",
+  "successfully_appied_ev_canidate_message_0": "სუპერ წარმომადგენლის კანდიდატის წარმატებული მიმართვა.",
+  "successfully_appied_ev_canidate_message_1": "თქვენი ანგარიში განახლდება ცოტა ხანში.",
   "landing_page": "სადესანტო გვერდი",
-  "show_more_information_publish_sr_page": "Show more Information on how to publish a page",
-  "create_sr_landing_page_message_0": "Super Representatives can create a landing page on which they can share more information about their team and plans",
+  "show_more_information_publish_ev_page": "Show more Information on how to publish a page",
+  "create_ev_landing_page_message_0": "Super Representatives can create a landing page on which they can share more information about their team and plans",
   "set_github_url_message_0": "Did you already configure your Github template? Then set the URL by using the button below",
   "set_github_link": "Set Github Link",
   "could_not_claim_rewards": "Could not claim rewards",
@@ -365,7 +365,7 @@ export const messages = {
   "rewards_claimed": "Rewards Claimed!",
   "successfully_claimed_rewards":  "Successfully claimed rewards",
   "claim_rewards": "Claim Rewards",
-  "sr_receive_reward_message_0": "As a representative you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
+  "ev_receive_reward_message_0": "As a representative you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
   "intro": "Intro",
   "budget_expenses": "Budget Expenses",
   "server_configuration": "Server Configuration",
@@ -393,15 +393,15 @@ export const messages = {
   "available": "ხელმისაწვდომი",
   "testnet": "სატესტო ქსელი",
   "days_to_freeze": "გაყინვის დღეები",
-  "trx_token_fee_message": "საჭიროა 1024 TRX ახალი ტოკენის გამოსაცემად",
-  "trx_token_account_limit": "თქვენ შეგიძლიათ შექმნათ ანგარიშზე მხოლოდ ერთი ტოკენი",
-  "trx_token_wallet_requirement": "ტოკენის შესაქმნელად, თქვენ უნდა გახსნათ საფულე",
+  "xlt_token_fee_message": "საჭიროა 1024 XLT ახალი ტოკენის გამოსაცემად",
+  "xlt_token_account_limit": "თქვენ შეგიძლიათ შექმნათ ანგარიშზე მხოლოდ ერთი ტოკენი",
+  "xlt_token_wallet_requirement": "ტოკენის შესაქმნელად, თქვენ უნდა გახსნათ საფულე",
   "invalid_address": "უქმი მისამართი",
   "insufficient_tokens": "არასაკმარისი ტოკენები",
   "fill_a_valid_number": "გთხოვთ შეავსოთ ",
   "fill_a_valid_address": "გთხოვთ შეავსოთ მოქმედი მისამართი",
   "make_another_transaction": "შეასრულეთ სხვა ტრანზაქცია",
-  "token_exchange_confirm": "ვადასტურებ, დავხარჯო {trxAmount} ტოკენების განაწილებაზე და  მივიღო სულ {tokenAmount} ტოკენი.",
+  "token_exchange_confirm": "ვადასტურებ, დავხარჯო {xltAmount} ტოკენების განაწილებაზე და  მივიღო სულ {tokenAmount} ტოკენი.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "მოხდა გაურკვეველი შეცდომა, გთხოვთ კვლავ სცადოთ რამდენიმე წუთში",
   "An_error_occurred": "მოხდა შეცდომა",
   "create_a_token": "ტოკენის შექმნა",
@@ -419,8 +419,8 @@ export const messages = {
   "how_much_buy_message": "რამდენი ტოკენის ყიდვა გსურთ?",
   "buy_confirm_message_1": "დარწმუნებული ხართ, რომ ყიდვა გსურთ",
   "for": "-სთვის",
-  "insufficient_trx": "არასაკმარისი TRX",
-  "not_enough_trx_message": "თქვენ არ გაქვთ საკმარისი TRX ბევრი ტოკენის საყიდლად",
+  "insufficient_xlt": "არასაკმარისი XLT",
+  "not_enough_xlt_message": "თქვენ არ გაქვთ საკმარისი XLT ბევრი ტოკენის საყიდლად",
   "ends": "დასრულებები",
   "starts": "სტარტები",
   "can_be_unlocked": "can be unlocked",
@@ -431,12 +431,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "შეიყვანეთ მხოლოდ მოქმედი ტრონის საფულის მისამართი. არასწორი მისამართებმა შესაძლოა TRX-ის დაკარგვა გამოიწვიოს.",
+  "address_warning": "შეიყვანეთ მხოლოდ მოქმედი ტრონის საფულის მისამართი. არასწორი მისამართებმა შესაძლოა XLT-ის დაკარგვა გამოიწვიოს.",
   "search_address_or_url": "მისამართის და URL-ის ძიება",
   "the_lunch_test": "გაუშვით სატესტო ქსელის მიზნები, რათა შეამოწმოთ ჩვენი ბლოკჩეინისა და საფულის ყველა ფუნქცია.",
-  "please_keep_in_mind": "გახსოვდეთ, რადგან თქვენი დარეგისტრირებული ანგარიშის მისამართი მხოლოდ სატესტო ქსელისთვის გამოიყენება, არ გააგზავნოთ TRX თქვენი საკუთარი საფულიდან ან არ გაცვალოთ სატესტო ქსელის ანგარიშის მისამართი.",
-  "tron_foundation": "ტრონის ორგანიზაცია",
-  "trx_for_testing": "ტესტირებისთვის TRX გაიგზავნება თქვენს სატესტო ანგარიშზე, როგორც კი თქვენ წარმატებით მიმართავთ ანგარიშის მართვის მეშვეობით.",
+  "please_keep_in_mind": "გახსოვდეთ, რადგან თქვენი დარეგისტრირებული ანგარიშის მისამართი მხოლოდ სატესტო ქსელისთვის გამოიყენება, არ გააგზავნოთ XLT თქვენი საკუთარი საფულიდან ან არ გაცვალოთ სატესტო ქსელის ანგარიშის მისამართი.",
+  "litetokens_foundation": "ტრონის ორგანიზაცია",
+  "xlt_for_testing": "ტესტირებისთვის XLT გაიგზავნება თქვენს სატესტო ანგარიშზე, როგორც კი თქვენ წარმატებით მიმართავთ ანგარიშის მართვის მეშვეობით.",
   "dear_users": "პატივცემულო მომხმარებელო,",
   "finished": "დასრულდა",
   "token": "ტოკენი",
@@ -444,11 +444,11 @@ export const messages = {
   "need_to_login": "თქვენ უნდა შესული იყოთ, რათა მიიღოთ წვდომა თქვენს გვერდზე",
   "thanks_for_applying": "გმადლობთ, მიმართვისთვის!",
   "to_much_votes": "ნამეტანი ბევრი ხმა",
-  "no_trx_remaining": "TRX არ დარჩა",
+  "no_xlt_remaining": "XLT არ დარჩა",
   "show_more": "მეტი {countriesLength} ჩვენება",
-  "vote_guide_message": `გამოიყენეთ თქვენი TRX სუპერ წარმომადგენლად ხმის მისაცემად.
-   ყოველი მქონე TRX-სთვის თქვენს გაქვთ ერთი დასახარჯი ხმა.
-   TRX არ მოიხმარება. რამდენიმე წარმომადგენლისთვის შეგიძლიათ მისცეთ ხმა იმდენ ჯერ, რამდენ ჯერაც მოისურვებთ. საბოლოო ხმები შეჯამდება 24 საათზე და დელეგატთა სია განახლდება.`,
+  "vote_guide_message": `გამოიყენეთ თქვენი XLT სუპერ წარმომადგენლად ხმის მისაცემად.
+   ყოველი მქონე XLT-სთვის თქვენს გაქვთ ერთი დასახარჯი ხმა.
+   XLT არ მოიხმარება. რამდენიმე წარმომადგენლისთვის შეგიძლიათ მისცეთ ხმა იმდენ ჯერ, რამდენ ჯერაც მოისურვებთ. საბოლოო ხმები შეჯამდება 24 საათზე და დელეგატთა სია განახლდება.`,
   "search_address": "მისამართებისთვის ძიება",
   "token_transactions": "ტოკენების ტრანზაქციები",
   "token_holders": "ტოკენის მფლობელი",
@@ -493,22 +493,22 @@ export const messages = {
   "supply_message": "ტოკენების სრული რაოდენობა, რომლებიც მიმოსვლაში იქნება",
   "description_message": "ტოკენის მიზნის მოკლე აღწერილობა",
   "url_message": "ვებსაიტი, სადაც მომხმარებლებს შეეძლებათ მეტი ინფორმაციის მოძიება ტოკენებზე",
-  "exchange_rate_message_0": "დააწესეთ ერთი ტოკენის ფასი, იმის განსაზღვრით, თუ რამდენ ტოკენს მიიღებს მონაწილე ყოველ დახარჯულ TRX-ზე.",
+  "exchange_rate_message_0": "დააწესეთ ერთი ტოკენის ფასი, იმის განსაზღვრით, თუ რამდენ ტოკენს მიიღებს მონაწილე ყოველ დახარჯულ XLT-ზე.",
   "exchange_rate_message_1": "მონაწილეები მიიღებენ",
   "exchange_rate_message_2": "ყოველ",
-  "exchange_rate_message_3": "TRX-ზე",
-  "participation_message_0": "განსაზღვრეთ მონაწილეობის პერიოდი, რომელშიც გამოიშვება ტოკენები. მონაწილეობის პერიოდში, მონაწილეებს შეეძლებათ გადაცვალონ TRX ",
+  "exchange_rate_message_3": "XLT-ზე",
+  "participation_message_0": "განსაზღვრეთ მონაწილეობის პერიოდი, რომელშიც გამოიშვება ტოკენები. მონაწილეობის პერიოდში, მონაწილეებს შეეძლებათ გადაცვალონ XLT ",
   "participation_message_1": " ტოკენებზე.",
   "frozen_supply_message_0": `მიწოდების ნაწილი შეიძლება გაიყინოს. მიწოდების ოდენობა შეიძლება განისაზღვროს და უნდა გაიყინოს სულ მცირე ერთი დღით. გაყინული მიწოდება შეიძლება ხელით მოიხსნას საწყისი თარიღიდან + მიღწეული გაყინვის დღეები. გაყინვის მიწოდება შესაძლოა საჭირო არ არის.`,
   "token_issued_successfully": "ტოკენები წარმატებით გამოშვებულია",
   "participation": "მონაწილეობა",
   "start_date": "დაწყების თარიღი",
   "end_date": "დასრულების თარიღი",
-  "token_spend_confirm": "მე ვადასტურებ, რომ ტოკენების ღირებულების სრული მიწოდების შექმნისათვის ერთჯერადი სრული გადასახადი შეადგენს 1024 TRX.",
-  "token_issue_guide_message_1": `ტრონის პროტოკოლზე გამოშვებული ტოკენი შეიძლება განხორციელდეს ნებისმიერის მიერ, რომელსაც აქვს სულ მცირე 1024 TRX თავის ანგარიშზე.`,
+  "token_spend_confirm": "მე ვადასტურებ, რომ ტოკენების ღირებულების სრული მიწოდების შექმნისათვის ერთჯერადი სრული გადასახადი შეადგენს 1024 XLT.",
+  "token_issue_guide_message_1": `ტრონის პროტოკოლზე გამოშვებული ტოკენი შეიძლება განხორციელდეს ნებისმიერის მიერ, რომელსაც აქვს სულ მცირე 1024 XLT თავის ანგარიშზე.`,
   "token_issue_guide_message_2":`ტოკენის გაცემისას, ის იქნება ნაჩვენები ტოკენის მიმოხილვის გვერდზე.
-    მომხმარებლებს მონაწილეობის მიღება შეუძლიათ მონაწილეობის პერიოდში და გადაცვალოთ თავიანთი TRX -ები ტოკენებზე.`,
-  "token_issue_guide_message_3":`ტოკენის გამოცემის შემდეგ, თქვენს ანგარიშზე დაჯდება მიწოდების ტოლი ტკენების რაოდენობა. როდესაც სხვა მომხმარებლები გადაცვლიან თავიანთ TRX-ებს ტოკენებზე, მაშინ ტოკენები მოხსნილი იქნება თქვენი ანგარიშიდან და თქვენ მიიღებთ TRX-ებს განსაზღვრული გადაცვლის კურსით.`,
+    მომხმარებლებს მონაწილეობის მიღება შეუძლიათ მონაწილეობის პერიოდში და გადაცვალოთ თავიანთი XLT -ები ტოკენებზე.`,
+  "token_issue_guide_message_3":`ტოკენის გამოცემის შემდეგ, თქვენს ანგარიშზე დაჯდება მიწოდების ტოლი ტკენების რაოდენობა. როდესაც სხვა მომხმარებლები გადაცვლიან თავიანთ XLT-ებს ტოკენებზე, მაშინ ტოკენები მოხსნილი იქნება თქვენი ანგარიშიდან და თქვენ მიიღებთ XLT-ებს განსაზღვრული გადაცვლის კურსით.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -520,7 +520,7 @@ export const messages = {
   "no_name_error": "საჭიროა სახელი",
   "no_supply_error": "სრული მიწოდება სულ მცირე უნდა იყოს 1",
   "coin_value_error": "ტოკენების ოდენობა სულ მცირე უნდა იყოს 1",
-  "tron_value_error": " TRX-ის რაოდენობა ქოინზე სულ მცირე უნდა იყოს 1",
+  "litetokens_value_error": " XLT-ის რაოდენობა ქოინზე სულ მცირე უნდა იყოს 1",
   "invalid_starttime_error": "მითითებული სასტარტო თარიღი არასწორია",
   "invalid_endtime_error": "მითითებული დასრულების თარიღი არასწორია",
   "no_description_error": "საჭიროა აღწერილობა",
@@ -581,7 +581,7 @@ export const messages = {
   "most_ranks": "რანგების უმეტესობამ მოიყო ეს რაუნდი",
   "view_live_ranking": "ცოცხალი რანგირების ხილვა",
   "open_team_page": "გუნდის გვერდის გახსნა",
-  "warning_votes": "საჭიროა სულ მცირე 1 ტრონის სიმძლავრე ხმის მიცემის დასაწყებად. At ტრონის სიმძლავრე მინიჭებულია  TRX-ის გაყინვით",
+  "warning_votes": "საჭიროა სულ მცირე 1 ტრონის სიმძლავრე ხმის მიცემის დასაწყებად. At ტრონის სიმძლავრე მინიჭებულია  XLT-ის გაყინვით",
   "account_page": "ანგარიშის გვერდზე",
   "loading_votes": "ხვების ჩატვირთვისას",
   "3_day_ranking": "3 დღის რანგირებაში",
@@ -593,7 +593,7 @@ export const messages = {
   "votes_remaining_message": "დარჩენილი ხმები",
   "open_wallet_start_voting_message": "გახსენით საფულე ხმის მიცემის დასაწყებად",
   "thanks_submitting_vote_message": "გმადლობთ, ხმის მიცემისათვის!",
-  "need_min_trx_to_vote_message": "თქვენ გჭირდებათ სულ მცირე 1 TRX, რათა შესძლოთ ხმის მიცემა",
+  "need_min_xlt_to_vote_message": "თქვენ გჭირდებათ სულ მცირე 1 XLT, რათა შესძლოთ ხმის მიცემა",
   "to_much_votes_massage": "თქვენ დახარჯეთ ნამეტანი ბევრი ხმა!",
   "all_votes_are_used_message": "ყველა ხმა გამოყენებულია!",
   "submissing_vote_message_title": "გმადლობთ, ხმის მიცემისათვის!",
@@ -651,10 +651,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "რა არის ტრონი",
-  "tron_explorer_api": "ტრონ ექსპლორერ API",
-  "tron_architechure": "ტრონის არქიტექტურა",
-  "tron_protobuf_doc": "ტრონის Protobuf დოკუმენტაცია",
+  "what_is_litetokens": "რა არის ტრონი",
+  "litetokens_explorer_api": "ტრონ ექსპლორერ API",
+  "litetokens_architechure": "ტრონის არქიტექტურა",
+  "litetokens_protobuf_doc": "ტრონის Protobuf დოკუმენტაცია",
   "report_an_error": "დაუშვით ბაგი / წინადადება",
   "frequently_asked_questions": "ხშირად დასმული შეკითხვები",
   "telegram_updates": "Telegram განახლებები",
@@ -722,23 +722,23 @@ export const messages = {
   */
   "ledger_guide": "Ledger Guide",
   "requirements": "Requirements",
-  "using_ledger_steps_message_0": "Using the Ledger with Tronscan requires the following steps:",
+  "using_ledger_steps_message_0": "Using the Ledger with Litescan requires the following steps:",
   "a": "A",
   "install_the": "Install the ",
   "app": "app",
   "install_latest_version_message_0": "Install the latest version of ",
   "opening_your_wallet": "Opening your wallet",
-  "open_the_tronscan_desktop_client": "Open the Tronscan Desktop client",
+  "open_the_litescan_desktop_client": "Open the Litescan Desktop client",
   "click_open_wallet_top_right": "Click &ldquo;Open Wallet&rdquo; at the top right",
   "choose_ledger": "Choose Ledger",
   "connect_unlock_ledger_with_pin": "Connect and unlock your device with your PIN code",
-  "open_tron_app_on_ledger": "Open the TRON app on your Ledger",
-  "ledger_connected_tronscan_message_0": "If your Ledger is connected properly then Tronscan will show &ldquo;Connected&rdquo",
+  "open_litetokens_app_on_ledger": "Open the LITETOKENS app on your Ledger",
+  "ledger_connected_litescan_message_0": "If your Ledger is connected properly then Litescan will show &ldquo;Connected&rdquo",
   "click_on_open_wallet": "Click on &ldquo;Open Wallet&rdquo",
-  "redirect_to_your_wallet_message": "You will be redirected to your wallet and you can view your TRON address",
+  "redirect_to_your_wallet_message": "You will be redirected to your wallet and you can view your LITETOKENS address",
   "using_ledger_to_sign_transactions": "Using the ledger to sign transactions",
-  "using_ledger_to_sign_transactions_message_0": "Make sure to keep the Ledger connected and the TRON app open to sign transactions using the Ledger while using Tronscan Desktop",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan will show a popup with the transaction details when a transaction signature is required. Signatures are required whenever you vote, send TRX, change account name, etc..",
+  "using_ledger_to_sign_transactions_message_0": "Make sure to keep the Ledger connected and the LITETOKENS app open to sign transactions using the Ledger while using Litescan Desktop",
+  "using_ledger_to_sign_transactions_message_1": "Litescan will show a popup with the transaction details when a transaction signature is required. Signatures are required whenever you vote, send XLT, change account name, etc..",
   /*
   ##################################################################################
   #                                                                                #
@@ -758,7 +758,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "applied for Super Representative",
-  "sr_candidature": "Super Representative Candidature",
+  "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",
@@ -769,13 +769,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -791,7 +791,7 @@ export const messages = {
   "total_BlockCount": "Total BlockCount",
   "new_address_seen": "New Address Seen",
   "transfer_contract": "Transfer Contract",
-  "TRX_transfer_between_addresses": "TRX transfer between addresses",
+  "XLT_transfer_between_addresses": "XLT transfer between addresses",
   "transfer_asset_contract": "Transfer Asset Contract",
   "token_transfer_between_addresses": "Token transfer between addresses",
   "participate_asset_issue_contract": "Participate Asset Issue Contract",
@@ -805,9 +805,9 @@ export const messages = {
   "withdraw_balance_contract": "Withdraw Balance Contract",
   "withdraw_balance": "Withdraw balance",
   "freeze_balance_contract": "Freeze Balance Contract",
-  "freeze_TRX": "Freeze TRX",
+  "freeze_XLT": "Freeze XLT",
   "unfreeze_balance_contract": "Unfreeze Balance Contract",
-  "unfreeze_TRX": "Unfreeze TRX",
+  "unfreeze_XLT": "Unfreeze XLT",
   "vote_witness_contract": "მოწმე საკონტრაქტო ხელშეკრულება",
   "vote_for_a_witness": "დავეთანხმე მოწმეზე",
   "asset_issue_contract": "ქონებრივი მდგომარეობის ხელშეკრულება",
@@ -816,7 +816,7 @@ export const messages = {
   "frozen_balance": "გაყინული ბალანსი",
   "frozen_days": "გაყინული დღეები",
   "counts": "ითვლის",
-  "TRX_exchange_rate": "TRX Exchange Rate",
+  "XLT_exchange_rate": "XLT Exchange Rate",
   "start_time": "დაწყების დრო",
   "end_time": "როის დასასრული",
   "contracts": "კონტრაქტები",
@@ -840,24 +840,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -869,8 +869,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 
 };

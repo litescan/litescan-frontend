@@ -13,7 +13,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Chinese                                                      #
@@ -138,11 +138,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "去中心化网络",
+  "litetokens_main_message": "去中心化网络",
   "transactions_last_hour": "过去一小时交易量",
   "block_height": "区块高度",
   "online_nodes": "线上节点",
-  "pice_per_1000trx": "价格（每1000TRX）",
+  "pice_per_1000xlt": "价格（每1000XLT）",
   "vote_for_super_representatives": "为超级代表投票",
   "view_super_representatives": "查看超级代表",
   "create_new_wallet": "创建新钱包",
@@ -204,14 +204,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "地址",
-  "trx_transferred_past_hour": "过去一小时TRX转账额",
+  "xlt_transferred_past_hour": "过去一小时XLT转账额",
   "transactions_past_hour": "过去一小时交易数目",
   "average_blocksize": "平均区块大小",
   "rich_list": "富豪榜",
-  "tron_transaction_chart": "TRON交易数图表",
+  "litetokens_transaction_chart": "LITETOKENS交易数图表",
   "transactions_per_day": "日交易数",
   "foundation": "基金会地址",
-  "foundation_address": "基金会锁仓TRX总数",
+  "foundation_address": "基金会锁仓XLT总数",
   "unfreeze_time": "解冻时间",
   "addresses_number": "地址数",
   /*
@@ -232,7 +232,7 @@ export const messages = {
   "do_not_send_2": "请勿使用您的钱包或通过交易所对以上测试网地址转账",
   "bandwidth": "带宽",
   "balance": "余额",
-  "tron_power": "投票权",
+  "litetokens_power": "投票权",
   "transactions": "交易",
   "no_transfers": "无转账",
   "no_tokens": "无通证",
@@ -240,8 +240,8 @@ export const messages = {
   "expires": "失效",
   "have_been_added_to_your_account": "已添加至账户！",
   "information_message_1": "主网不能申请测试币，请联系波场工作人员申请测试币。",
-  "information_message_2": "每个账户只能领取10次TRX。",
-  "request_trx_for_testing": "申请测试TRX",
+  "information_message_2": "每个账户只能领取10次XLT。",
+  "request_xlt_for_testing": "申请测试XLT",
   "token_balances": "通证余额",
   "produced_blocks": "出块数目",
   "voters": "选民",
@@ -250,10 +250,10 @@ export const messages = {
   "issuer": "发行者",
   "network": "网络",
   "current": "当前",
-  "trx_received": "已接收TRX",
-  "test_trx_temporarily_unavailable_message": "暂时无法领取测试TRX，请稍后再试。",
-  "not_enough_trx": "TRX余额不足",
-  "information_message_3": "成功请求TRX。 如果您没有收到任何TRX，那么现在没有可用的测试TRX，请您稍后再试。",
+  "xlt_received": "已接收XLT",
+  "test_xlt_temporarily_unavailable_message": "暂时无法领取测试XLT，请稍后再试。",
+  "not_enough_xlt": "XLT余额不足",
+  "information_message_3": "成功请求XLT。 如果您没有收到任何XLT，那么现在没有可用的测试XLT，请您稍后再试。",
   "send_to_following_address": "对以下地址转账",
   "change_website": "更改网址",
   "you_must_enter_url": "你必须要输入一个网址",
@@ -267,12 +267,12 @@ export const messages = {
   */
   "freeze": "冻结",
   "unfreeze": "解冻",
-  "freeze_trx_least": "至少需要1TRX才能成功冻结。",
-  "unable_unfreeze_trx_message": "解冻失败，可能尚未达到最低冻结期限。",
-  "freeze_trx_premessage_0": `再次冻结TRX获得TRON Power并解锁其他功能。例如，使用TRON Power可以`,
-  "freeze_trx_premessage_link": "为超级代表投票。",
-  "freeze_trx_premessage_1": ` 冻结的TRX将会被“锁定”三天，在此期间冻结的TRX不能用于交易，三天过后可以解冻TRX并正常用于交易。`,
-  "trx_amount": "TRX数额",
+  "freeze_xlt_least": "至少需要1XLT才能成功冻结。",
+  "unable_unfreeze_xlt_message": "解冻失败，可能尚未达到最低冻结期限。",
+  "freeze_xlt_premessage_0": `再次冻结XLT获得LITETOKENS Power并解锁其他功能。例如，使用LITETOKENS Power可以`,
+  "freeze_xlt_premessage_link": "为超级代表投票。",
+  "freeze_xlt_premessage_1": ` 冻结的XLT将会被“锁定”三天，在此期间冻结的XLT不能用于交易，三天过后可以解冻XLT并正常用于交易。`,
+  "xlt_amount": "XLT数额",
   "token_freeze_confirm_message_0": "确认冻结",
   "token_freeze_confirm_message_1": "至少3天",
   "frozen_supply": "锁仓数量",
@@ -286,7 +286,7 @@ export const messages = {
   "successfully_changed_name_to_message": "成功更改名字",
   "unable_to_rename_title": "无法重命名",
   "unable_to_rename_message": "更新名字时出现错误，请稍后重试",
-  "unfreeze_trx_confirm_message": "确定要解冻TRX？",
+  "unfreeze_xlt_confirm_message": "确定要解冻XLT？",
   "unfreeze_assets": "解冻资产",
   "sure_to_unfreeze_unlocked_tokens_message": "您确定要解冻通证吗？",
   /*
@@ -299,8 +299,8 @@ export const messages = {
   "apply_for_delegate": "申请成为超级代表",
   "apply_super_representative_candidate": "申请成为超级代表候选人",
   "your_personal_website_address": "个人网页地址",
-  "apply_for_delegate_predescription": "每个代币持有者都有机会成为TRON超级代表。然而，为了让网络和社区更加平稳有效地运作，我们制定了一套标准和规定，让符合条件的候选人成为超级代表推荐人。我们以推荐超级代表的形式，增加他们当选的机会。新推荐的超级代表每周更新并发布一次。",
-  "apply_for_delegate_description": "每个代币持有者都可以通过账户管理页面，申请成为超级代表候选人，或是在投票页面为候选人投票。每个用户可以为多个候选人投票，最高投票数必须少于或者等于持有TRX的数量。投票结果以每名用户的最终投票结果为准，票数会在每天的02:00(GMT+8)，08:00(GMT+8)，14:00(GMT+8)，20:00(GMT+8)刷新，用户也可以查看实时票数。票数最高的前27名候选人可以成为超级代表，超级代表负责打包交易出块，每次出块奖励32个TRX。27个超级代表和前100名代表候选人也可以根据票数获得节点奖励。申请成为候选人需要一次性扣除9,999TRX的手续费，用户为超级代表候选人投票不消耗TRX。",
+  "apply_for_delegate_predescription": "每个代币持有者都有机会成为LITETOKENS超级代表。然而，为了让网络和社区更加平稳有效地运作，我们制定了一套标准和规定，让符合条件的候选人成为超级代表推荐人。我们以推荐超级代表的形式，增加他们当选的机会。新推荐的超级代表每周更新并发布一次。",
+  "apply_for_delegate_description": "每个代币持有者都可以通过账户管理页面，申请成为超级代表候选人，或是在投票页面为候选人投票。每个用户可以为多个候选人投票，最高投票数必须少于或者等于持有XLT的数量。投票结果以每名用户的最终投票结果为准，票数会在每天的02:00(GMT+8)，08:00(GMT+8)，14:00(GMT+8)，20:00(GMT+8)刷新，用户也可以查看实时票数。票数最高的前27名候选人可以成为超级代表，超级代表负责打包交易出块，每次出块奖励32个XLT。27个超级代表和前100名代表候选人也可以根据票数获得节点奖励。申请成为候选人需要一次性扣除9,999XLT的手续费，用户为超级代表候选人投票不消耗XLT。",
   "unknown_error": "发生未知错误",
   "representative_understand": "我已了解如何成为波场超级代表",
   "generate_account": "点击生成账户密码及地址",
@@ -314,23 +314,23 @@ export const messages = {
   "most_votes": "最高得票",
   "start_end_time": "开始/结束时间",
   "scan_qr_code": "扫描二维码",
-  "receive_trx": "接收TRX",
-  "require_account_to_send": "发送TRX请先登录账户",
-  "require_account_to_receive": "接收TRX请先登录账户",
+  "receive_xlt": "接收XLT",
+  "require_account_to_send": "发送XLT请先登录账户",
+  "require_account_to_receive": "接收XLT请先登录账户",
   "successful_send": "转账成功！",
   "confirm_transaction": "确认交易",
   "last_confirmed": "最终确定",
-  "trx_produced": "生成交易数量",
+  "xlt_produced": "生成交易数量",
   "do_not_send_1": "请勿通过钱包或交易所对测试网地址转账！",
   "go_to_votelist": "前往投票列表",
-  "understand_tron_sr_message_0": "我知道怎么成为超级代表，我确认一次性扣除",
-  "understand_tron_sr_message_1": "的费用。",
+  "understand_litetokens_ev_message_0": "我知道怎么成为超级代表，我确认一次性扣除",
+  "understand_litetokens_ev_message_1": "的费用。",
   "invalid_url": "无效的网址",
   "apply_representative_error_message_0": "当您试图申请超级代表时出错了。",
-  "apply_representative_error_message_1": "请确保您的账户有足够的TRX来支付费用或者稍后再尝试。",
+  "apply_representative_error_message_1": "请确保您的账户有足够的XLT来支付费用或者稍后再尝试。",
   "open_external_link": "您正在打开外部链接",
   "private_key_untrusted_website_message_0": "请不要在不受信任的网站上输入您的私钥。",
-  "no_official_tron_website": "不是波场官方网站",
+  "no_official_litetokens_website": "不是波场官方网站",
   "continue_to_external_website": "继续前往外部网站",
   "url_changed": "网址已变更",
   "successfully_changed_website_message": "成功切换网址为",
@@ -345,11 +345,11 @@ export const messages = {
   "link_github": "链接Github",
   "you_must_enter_a_url": "您必须输入一个网址",
   "success": "操作成功",
-  "successfully_appied_sr_canidate_message_0": "成功申请成为超级代表候选人。",
-  "successfully_appied_sr_canidate_message_1": "您的帐户很快就会升级。",
+  "successfully_appied_ev_canidate_message_0": "成功申请成为超级代表候选人。",
+  "successfully_appied_ev_canidate_message_1": "您的帐户很快就会升级。",
   "landing_page": "着陆页",
-  "show_more_information_publish_sr_page": "显示更多关于如何发布页面的信息",
-  "create_sr_landing_page_message_0": "超级代表可以创建一个着陆页，在该页面上他们可以分享有关其团队和计划的更多信息",
+  "show_more_information_publish_ev_page": "显示更多关于如何发布页面的信息",
+  "create_ev_landing_page_message_0": "超级代表可以创建一个着陆页，在该页面上他们可以分享有关其团队和计划的更多信息",
   "set_github_url_message_0": "你已经配置你的Github模板了吗？ 然后可以使用下面的按钮设置URL",
   "set_github_link": "设置Github链接",
   "could_not_claim_rewards": "不能申请奖励",
@@ -357,7 +357,7 @@ export const messages = {
   "rewards_claimed": "奖励确认！",
   "successfully_claimed_rewards": "成功获得奖励",
   "claim_rewards": "获得奖励",
-  "sr_receive_reward_message_0": "作为代表，您将获得出块奖励。 这些奖励可以每24小时申领一次",
+  "ev_receive_reward_message_0": "作为代表，您将获得出块奖励。 这些奖励可以每24小时申领一次",
   "intro": "介绍",
   "budget_expenses": "预算费用",
   "server_configuration": "服务器配置",
@@ -385,15 +385,15 @@ export const messages = {
   "available": "可供购买",
   "testnet": "测试网",
   "days_to_freeze": "冻结天数",
-  "trx_token_fee_message": "发行新通证将花费1024TRX",
-  "trx_token_account_limit": "每个账户只能发行1种通证",
-  "trx_token_wallet_requirement": "发行通证需要首先打开钱包",
+  "xlt_token_fee_message": "发行新通证将花费1024XLT",
+  "xlt_token_account_limit": "每个账户只能发行1种通证",
+  "xlt_token_wallet_requirement": "发行通证需要首先打开钱包",
   "invalid_address": "无效地址",
   "insufficient_tokens": "通证不足",
   "fill_a_valid_number": "请填写有效的数值",
   "fill_a_valid_address": "请填写有效的地址",
   "make_another_transaction": "发起其他交易",
-  "token_exchange_confirm": "确认花费 {trx数额} 用于认购通证，总计获得{通证数额} 个代币。",
+  "token_exchange_confirm": "确认花费 {xlt数额} 用于认购通证，总计获得{通证数额} 个代币。",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "发生未知错误，请几分钟后再次尝试",
   "An_error_occurred": "发生错误",
   "create_a_token": "发行通证",
@@ -411,8 +411,8 @@ export const messages = {
   "how_much_buy_message": "您想购买多少数量的通证？",
   "buy_confirm_message_1": "是否确定要购买通证",
   "for": "共计",
-  "insufficient_trx": "TRX数量不足",
-  "not_enough_trx_message": "没有足够的TRX购买此数量的通证",
+  "insufficient_xlt": "XLT数量不足",
+  "not_enough_xlt_message": "没有足够的XLT购买此数量的通证",
   "ends": "结束",
   "starts": "开始",
   "can_be_unlocked": "将解锁于",
@@ -427,8 +427,8 @@ export const messages = {
   "search_address_or_url": "查询地址或URL",
   "the_lunch_test": "上线测试网的目的在于测试区块浏览器以及钱包的所有功能。",
   "please_keep_in_mind": "请注意，您注册的账户地址只用于测试网，请勿通过钱包或交易所向测试网地址进行转账。",
-  "tron_foundation": "波场基金会",
-  "trx_for_testing": "在账户管理页面成功申请后，TRX将发送至您的测试账户。",
+  "litetokens_foundation": "波场基金会",
+  "xlt_for_testing": "在账户管理页面成功申请后，XLT将发送至您的测试账户。",
   "dear_users": "亲爱的用户,",
   "finished": "结束",
   "token": "通证",
@@ -436,11 +436,11 @@ export const messages = {
   "need_to_login": "查看账户页面请先登录账户",
   "thanks_for_applying": "感谢您的申请！",
   "to_much_votes": "票数过多",
-  "no_trx_remaining": "无TRX余额",
+  "no_xlt_remaining": "无XLT余额",
   "show_more": "展示{国家长度} 更多内容",
-  "vote_guide_message": `使用TRX为超级代表投票。
-   每一个TRX享有一次投票机会。
-   投票不消耗TRX。可以为多个超级代表投票，投票不限次数。
+  "vote_guide_message": `使用XLT为超级代表投票。
+   每一个XLT享有一次投票机会。
+   投票不消耗XLT。可以为多个超级代表投票，投票不限次数。
    票数于每天2:00,8:00,14:00,20:00更新，同时代表排序会刷新。`,
   "search_address": "搜索地址",
   "token_transactions": "通证交易",
@@ -487,23 +487,23 @@ export const messages = {
   "supply_message": "创建的代币数量，如：比特币的发行总量为2100万",
   "description_message": "发行通证目的简述",
   "url_message": "展示更多通证信息的网址",
-  "exchange_rate_message_0": "规定单位通证的价值，明确每一TRX可以换取的通证数量。",
+  "exchange_rate_message_0": "规定单位通证的价值，明确每一XLT可以换取的通证数量。",
   "exchange_rate_message_1": "参与者可以获得",
   "exchange_rate_message_2": "每",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "规定通证发行周期，在发行期间，参与者可以用TRX购买",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "规定通证发行周期，在发行期间，参与者可以用XLT购买",
   "participation_message_1": " 通证。",
   "frozen_supply_message_0": `可锁定部分通证。明确具体的锁定数额，并锁定至少一天。被锁定的通证可以在到达锁定期限后手动解冻，锁定并非强制。`,
   "token_issued_successfully": "通证发行成功！",
   "participation": "参与时间",
   "start_date": "开始日期",
   "end_date": "结束日期",
-  "token_spend_confirm": "我已获知发行通证需一次性缴纳1024TRX。",
-  "token_issue_guide_message_1": `用户账户中有至少1024TRX，就可以在波场协议上发行通证。`,
+  "token_spend_confirm": "我已获知发行通证需一次性缴纳1024XLT。",
+  "token_issue_guide_message_1": `用户账户中有至少1024XLT，就可以在波场协议上发行通证。`,
   "token_issue_guide_message_2": `通证发行后，会在通证总览页面进行显示。
-    之后用户可以在发行期限内参与认购，用TRX兑换通证。`,
+    之后用户可以在发行期限内参与认购，用XLT兑换通证。`,
   "token_issue_guide_message_3": `在发行通证后，您的账户将会收到全部的发行数额。
-    当其他用户使用TRX兑换您发行的通证，兑换数额将从您的账户扣除，并以指定汇率获得相应数额的TRX。`,
+    当其他用户使用XLT兑换您发行的通证，兑换数额将从您的账户扣除，并以指定汇率获得相应数额的XLT。`,
   /*
   ##################################################################################
   #                                                                                #
@@ -514,8 +514,8 @@ export const messages = {
   "date_error": "结束日期早于开始日期，或与开始日期相同",
   "no_name_error": "请填写名称",
   "no_supply_error": "发行总量至少为1",
-  "coin_value_error": "单位通证数量对应的TRX价值至少为1",
-  "tron_value_error": "TRX的数量至少为1",
+  "coin_value_error": "单位通证数量对应的XLT价值至少为1",
+  "litetokens_value_error": "XLT的数量至少为1",
   "invalid_starttime_error": "所填写的开始日期无效",
   "invalid_endtime_error": "所填写的结束日期无效",
   "no_description_error": "请填写描述",
@@ -562,7 +562,7 @@ export const messages = {
   "pair": "交易对",
   "volume": "交易量",
   "usd": "美元",
-  "average_price": "TRX平均价格",
+  "average_price": "XLT平均价格",
   "click_the_chart_title_to_find_more": "点击图表标题，查看更多信息",
   /*
   ##################################################################################
@@ -576,7 +576,7 @@ export const messages = {
   "most_ranks": "排名上升最多",
   "view_live_ranking": "查看实时排名",
   "open_team_page": "查看团队页面",
-  "warning_votes": "投票需要至少1单位TRON Power，TRON Power 可以通过在(账户页面)冻结TRX获得。",
+  "warning_votes": "投票需要至少1单位LITETOKENS Power，LITETOKENS Power 可以通过在(账户页面)冻结XLT获得。",
   "account_page": "账户页面",
   "loading_votes": "投票加载中",
   "3_day_ranking": "三日投票排名(Top 10)",
@@ -588,7 +588,7 @@ export const messages = {
   "votes_remaining_message": "剩余票数",
   "open_wallet_start_voting_message": "进入钱包开始投票",
   "thanks_submitting_vote_message": "感谢您的投票!",
-  "need_min_trx_to_vote_message": "您至少需要持有1TRX才能开始投票",
+  "need_min_xlt_to_vote_message": "您至少需要持有1XLT才能开始投票",
   "to_much_votes_massage": "投票数量过多!",
   "all_votes_are_used_message": "您已用尽所有票数!",
   "submissing_vote_message_title": "感谢您的投票!",
@@ -646,10 +646,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "TRON是什么",
-  "tron_explorer_api": "波场浏览器API",
-  "tron_architechure": "波场架构",
-  "tron_protobuf_doc": "TRON Protobuf文档",
+  "what_is_litetokens": "LITETOKENS是什么",
+  "litetokens_explorer_api": "波场浏览器API",
+  "litetokens_architechure": "波场架构",
+  "litetokens_protobuf_doc": "LITETOKENS Protobuf文档",
   "report_an_error": "提交BUG/建议",
   "frequently_asked_questions": "常见问题",
   "telegram_updates": "Telegram更新",
@@ -723,17 +723,17 @@ export const messages = {
   "app": "APP",
   "install_latest_version_message_0": "安装最新版本的",
   "opening_your_wallet": "钱包打开中",
-  "open_the_tronscan_desktop_client": "打开波场区块链浏览器桌面版客户端",
+  "open_the_litescan_desktop_client": "打开波场区块链浏览器桌面版客户端",
   "click_open_wallet_top_right": "点击右上角的“打开钱包”",
   "choose_ledger": "选择Ledger",
   "connect_unlock_ledger_with_pin": "连接并使用密码解锁设备",
-  "open_tron_app_on_ledger": "在Ledger上打开TRON APP ",
-  "ledger_connected_tronscan_message_0": "如您的Ledger已正常连接，波场区块链浏览器将显示“已连接” ",
+  "open_litetokens_app_on_ledger": "在Ledger上打开LITETOKENS APP ",
+  "ledger_connected_litescan_message_0": "如您的Ledger已正常连接，波场区块链浏览器将显示“已连接” ",
   "click_on_open_wallet": "点击“打开钱包”",
   "redirect_to_your_wallet_message": "将跳转至您的钱包，可以在钱包查看您的波场地址",
   "using_ledger_to_sign_transactions": "使用Ledger对交易进行签名",
-  "using_ledger_to_sign_transactions_message_0": "在使用Ledger和桌面版波场区块链浏览器对交易进行签名的过程中，请不要中断Ledger的连接，并保持TRON APP处于开启状态",
-  "using_ledger_to_sign_transactions_message_1": "需要对交易签名时，区块链浏览器会弹出窗口，显示交易信息。在投票、发送TRX、更改账户名称等过程中，都需要进行交易签名。",
+  "using_ledger_to_sign_transactions_message_0": "在使用Ledger和桌面版波场区块链浏览器对交易进行签名的过程中，请不要中断Ledger的连接，并保持LITETOKENS APP处于开启状态",
+  "using_ledger_to_sign_transactions_message_1": "需要对交易签名时，区块链浏览器会弹出窗口，显示交易信息。在投票、发送XLT、更改账户名称等过程中，都需要进行交易签名。",
   /*
   ##################################################################################
   #                                                                                #
@@ -753,7 +753,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "申请成为超级代表",
-  "sr_candidature": "超级代表候选人",
+  "ev_candidature": "超级代表候选人",
   "created_token": "创建的通证",
   "token_creation": "通证创建",
   "bought": "买",
@@ -764,13 +764,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_trx": "购买TRX",
-  "buy_trx_message_0": "TRX可以直接使用法定货币或是其它加密货币来购买而不需要通过交易所。这是因为我们使用了来自Changelly.com的服务，这也是最简单最快捷的购买TRX的方法。支持兑换的加密货币种类和常见问题请参见：",
-  "buy_trx_using_changelly": "使用Changelly来购买TRX",
+  "buy_xlt": "购买XLT",
+  "buy_xlt_message_0": "XLT可以直接使用法定货币或是其它加密货币来购买而不需要通过交易所。这是因为我们使用了来自Changelly.com的服务，这也是最简单最快捷的购买XLT的方法。支持兑换的加密货币种类和常见问题请参见：",
+  "buy_xlt_using_changelly": "使用Changelly来购买XLT",
   "cant_load_widget": "无法加载控件",
   /*
   ##################################################################################
@@ -786,7 +786,7 @@ export const messages = {
   "total_BlockCount": "总区块数",
   "new_address_seen": "新产生地址数",
   "transfer_contract": "转账合约",
-  "TRX_transfer_between_addresses": "地址间转账",
+  "XLT_transfer_between_addresses": "地址间转账",
   "transfer_asset_contract": "通证转账合约",
   "token_transfer_between_addresses": "地址间转账通证",
   "participate_asset_issue_contract": "参与通证发行合约",
@@ -800,9 +800,9 @@ export const messages = {
   "withdraw_balance_contract": "提现合约",
   "withdraw_balance": "提现",
   "freeze_balance_contract": "冻结合约",
-  "freeze_TRX": "冻结TRX",
+  "freeze_XLT": "冻结XLT",
   "unfreeze_balance_contract": "解冻合约",
-  "unfreeze_TRX": "解冻TRX",
+  "unfreeze_XLT": "解冻XLT",
   "vote_witness_contract": "超级代表投票合约",
   "vote_for_a_witness": "选举超级代表",
   "asset_issue_contract": "资产发行合约",
@@ -811,7 +811,7 @@ export const messages = {
   "frozen_balance": "冻结数量",
   "frozen_days": "冻结天数",
   "counts": "票数",
-  "TRX_exchange_rate": "TRX汇率",
+  "XLT_exchange_rate": "XLT汇率",
   "start_time": "开始时间",
   "end_time": "结束时间",
   "contracts": "合约",
@@ -831,7 +831,7 @@ export const messages = {
   "note": "备注",
   "_percentage": "百分比",
   "foundation": "基金会地址",
-  "foundation_address": "基金会锁仓TRX总数",
+  "foundation_address": "基金会锁仓XLT总数",
   "unfreeze_time": "解冻时间",
   "addresses_number": "地址数",
   "copyright": "版权",
@@ -842,24 +842,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool": "编码转换工具",
-  "breakdown_supply_types": "TRX分布",
+  "litetokens_convert_tool": "编码转换工具",
+  "breakdown_supply_types": "XLT分布",
   "genesis": "创世块发行",
-  "TRX_distribution_overview": "TRX分布概览",
+  "XLT_distribution_overview": "XLT分布概览",
   "block_produce_rewards": "出块奖励",
   "node_rewards": "节点奖励",
   "independence_day_burned": "独立日烧毁",
   "fee_burned": "手续费烧毁",
   "current_total_supply": "当前总流通量",
   "foundation_freeze": "基金会冻结",
-  "price_per_1000_trx": "TRX价格（每1000TRX）",
+  "price_per_1000_xlt": "XLT价格（每1000XLT）",
   "in_USD": "以美元计",
   "in_BTC": "以比特币计",
-  "total_TRX_supply": "TRX总流通量",
+  "total_XLT_supply": "XLT总流通量",
   "market_capitalization": "市值",
   "circulating_supply": "流通量",
-  "list_trx": "交易所上币",
-  "burned_trx": "TRX烧毁数",
+  "list_xlt": "交易所上币",
+  "burned_xlt": "XLT烧毁数",
   "supply_notes": "全球范围可进行众筹和预售，除美国、中国及日本外",
   "14_day_transaction_history":" 过去14天交易数",
   "14_day_address_growth":" 过去14天地址增长",
@@ -871,7 +871,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
 */
-  "TRONRating": "TRON通证评级",
+  "LITETOKENSRating": "LITETOKENS通证评级",
   "rating_title": "波场区块链浏览器通证信誉评级系统",
   "modify_on": "修改日期",
   "rating_description": "波场区块链浏览器“通证信誉评级系统”旨在帮助用户了解、识别与判断不同通证，当您访问通证页面时，本评级服务将通过以下5种标志显示:",
@@ -910,8 +910,8 @@ export const messages = {
  */
   "my_token": "我发行的通证",
   "my_token_desc_1": "通证相关信息信息将展示在通证页，同时依据信息全面性和真实性获得",
-  "tron_rating": "波场通证信誉评级",
-  "my_token_desc_2": "如需修改信息，请使用公司邮箱或附其他证明文件，将修改信息按表格形式发送至token@tron.network",
+  "litetokens_rating": "波场通证信誉评级",
+  "my_token_desc_2": "如需修改信息，请使用公司邮箱或附其他证明文件，将修改信息按表格形式发送至token@litetokens.org",
   "brief_info": "简介",
   "website_official": "官方网站",
   "white_paper": "白皮书",
@@ -981,8 +981,8 @@ export const messages = {
   "part_pass": "个通证",
   "view_total": "当前共",
   "view_pass": "个通证可参与发行",
-  "token_overview_tron":"波场通证市场总览",
-  "token_participate_tron":"参与波场通证发行",
+  "token_overview_litetokens":"波场通证市场总览",
+  "token_participate_litetokens":"参与波场通证发行",
   "not_started":"尚未开始",
   "no_token_to_buy":"抱歉，所有流通通证已发行完毕，请等待冻结的通证解锁后进行参与。",
 
@@ -994,6 +994,6 @@ export const messages = {
 #                                                                                #
 ##################################################################################
 */
-  "pice_per_1trx": "价格",
-  "tron_power_freezing":"TRON power 可以通过冻结TRX来获得，每冻结1个TRX，可以获得1个TRON power。"
+  "pice_per_1xlt": "价格",
+  "litetokens_power_freezing":"LITETOKENS power 可以通过冻结XLT来获得，每冻结1个XLT，可以获得1个LITETOKENS power。"
 };

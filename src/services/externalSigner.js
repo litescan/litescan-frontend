@@ -1,7 +1,7 @@
 import {channel} from "./api";
-import {byteArray2hexStr} from "@tronscan/client/src/utils/bytes";
-import {hexStr2byteArray} from "@tronscan/client/src/lib/code";
-import {Transaction} from "@tronscan/client/src/protocol/core/Tron_pb";
+import {byteArray2hexStr} from "litescan-client/src/utils/bytes";
+import {hexStr2byteArray} from "litescan-client/src/lib/code";
+import {Transaction} from "litescan-client/src/protocol/core/Litetokens_pb";
 import {random} from "lodash";
 const uuidv1 = require("uuid/v1");
 

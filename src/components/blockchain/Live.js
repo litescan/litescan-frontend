@@ -3,8 +3,8 @@ import React from "react";
 import {connect} from "react-redux";
 import {channel} from "../../services/api";
 import {FormattedNumber} from "react-intl";
-import {ONE_TRX} from "../../constants";
-import {TronLoader} from "../common/loaders";
+import {ONE_XLT} from "../../constants";
+import {LitetokensLoader} from "../common/loaders";
 import {AddressLink, TokenLink} from "../common/Links";
 import {tu, t} from "../../utils/i18n";
 
@@ -83,10 +83,10 @@ class Live extends React.Component {
 
   listen = () => {
     this.listener = channel("/blockchain");
-    this.listener.on("transfer", trx => {
+    this.listener.on("transfer", xlt => {
       this.addEvent({
         type: "transfer",
-        ...trx,
+        ...xlt,
       });
     });
     this.listener.on("vote", event => {
@@ -143,11 +143,11 @@ class Live extends React.Component {
                 <div className="col-xs-8 col-sm-6">
                   {tu("asset")}{': '}
                   {
-                    event.tokenName === 'TRX' ?
+                    event.tokenName === 'XLT' ?
                         <b><FormattedNumber
                             maximumFractionDigits={7}
                             minimunFractionDigits={7}
-                            value={event.amount / ONE_TRX}/></b> :
+                            value={event.amount / ONE_XLT}/></b> :
                         <b><FormattedNumber
                             maximumFractionDigits={7}
                             minimunFractionDigits={7}
@@ -238,7 +238,7 @@ class Live extends React.Component {
               <div className="row">
                 <div className="col-xs-8 col-sm-6">
                   <h5 className="card-title text-left">
-                    <b>{tu("sr_candidature")}</b>
+                    <b>{tu("ev_candidature")}</b>
                   </h5>
                 </div>
                 <div className="col-xs-8 col-sm-6">
@@ -306,9 +306,9 @@ class Live extends React.Component {
               {
                 events.length === 0 ?
                     <div className="card">
-                      <TronLoader>
+                      <LitetokensLoader>
                         {tu("waiting_for_transactions")}
-                      </TronLoader>
+                      </LitetokensLoader>
                     </div> :
                     <div className="card">
                       <ul className="list-group list-group-flush">

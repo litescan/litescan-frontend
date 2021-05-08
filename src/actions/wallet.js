@@ -14,7 +14,7 @@ export const reloadWallet = () => async (dispatch, getState) => {
 
   if (app.account.isLoggedIn) {
     let {balances, frozen, ...wallet} = await Client.getAccountByAddress(app.account.address);
-    wallet.frozenTrx = frozen.total;
+    wallet.frozenXlt = frozen.total;
     dispatch(setActiveWallet(wallet));
     dispatch(setTokenBalances(balances, frozen));
   }

@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import {ONE_TRX} from "../../constants";
+import {ONE_XLT} from "../../constants";
 import {AddressLink} from "../common/Links";
 import {getNotifyPermission, requestNotifyPermissions, sendNotification} from "../../services/notifications";
 import SweetAlert from "react-bootstrap-sweetalert";
@@ -14,8 +14,8 @@ function Notification({ account, notification }) {
     case "transfer":
 
       let amount = notification.amount;
-      if (notification.tokenName.toUpperCase() === "TRX") {
-        amount = amount / ONE_TRX;
+      if (notification.tokenName.toUpperCase() === "XLT") {
+        amount = amount / ONE_XLT;
       }
 
       if (notification.transferFromAddress === account.address) {
@@ -97,16 +97,16 @@ class Notifications extends React.Component {
     }
 
     this.listener = channel("/address-" + wallet.current.address);
-    this.listener.on("transfer", trx => {
+    this.listener.on("transfer", xlt => {
 
-      let amount = trx.amount;
-      if (trx.tokenName.toUpperCase() === "TRX") {
-        amount = amount / ONE_TRX;
+      let amount = xlt.amount;
+      if (xlt.tokenName.toUpperCase() === "XLT") {
+        amount = amount / ONE_XLT;
       }
 
-      if (trx.transferToAddress === wallet.current.address) {
-        sendNotification(`Received ${amount} ${trx.tokenName} from ${trx.transferFromAddress}`, {
-          icon: require("../../images/tron-logo.jpg")
+      if (xlt.transferToAddress === wallet.current.address) {
+        sendNotification(`Received ${amount} ${xlt.tokenName} from ${xlt.transferFromAddress}`, {
+          icon: require("../../images/litetokens-logo.jpg")
         });
       }
 
@@ -114,7 +114,7 @@ class Notifications extends React.Component {
         notifications: [{
           id: this.id++,
           type: "transfer",
-          ...trx,
+          ...xlt,
         }, ...state.notifications.slice(0, 9)]
       }));
       this.props.reloadWallet();
@@ -124,7 +124,7 @@ class Notifications extends React.Component {
     this.listener.on("vote", vote => {
       if (vote.candidateAddress === wallet.current.address) {
         sendNotification(`Received ${vote.votes} votes from ${vote.voterAddress}`, {
-          icon: require("../../images/tron-logo.jpg")
+          icon: require("../../images/litetokens-logo.jpg")
         });
         this.setState(state => ({
           notifications: [{

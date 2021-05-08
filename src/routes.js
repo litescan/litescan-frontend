@@ -15,12 +15,12 @@ import {
   RepresentativesAsync,
   AccountAsync,
   NodeTesterAsync,
-  TronConvertToolAsync,
+  LitetokensConvertToolAsync,
   SystemAsync,
   DemoAsync,
   FaqAsync,
   MyTokenAsync,
-  TRONRatingAsync,
+  LITETOKENSRatingAsync,
   CopyrightAsync,
   LedgerHelpAsync,
   TokenOverviewAsync,
@@ -176,8 +176,8 @@ export const routes = [
     showInMenu: false
   },
   {
-    label: "TRONRating",
-    component: TRONRatingAsync,
+    label: "LITETOKENSRating",
+    component: LITETOKENSRatingAsync,
     path: "/rating",
     showInMenu: false
   },
@@ -224,10 +224,10 @@ export const routes = [
         component: NodeTesterAsync,
       },
       {
-        label: "tron_convert_tool",
-        path: "/tools/tron-convert-tool",
+        label: "litetokens_convert_tool",
+        path: "/tools/litetokens-convert-tool",
         icon: "fa fa-random",
-        component: TronConvertToolAsync,
+        component: LitetokensConvertToolAsync,
       },
       {
         path: "/tools/system",
@@ -236,23 +236,23 @@ export const routes = [
         component: SystemAsync
       },
       {
-        url: "https://github.com/tronscan/tronscan-desktop/releases",
+        url: "https://github.com/litescan/litescan-desktop/releases",
         icon: "fa fa-download",
         label: "desktop_explorer"
       },
       {
-        url: "https://test.tronscan.org/#/",
+        url: "https://test.litescan.org/#/",
         icon: "fa fa-link",
         label: "link_test_server"
       }
     ]
   },
   {
-        path: "list_trx",
-        label: "list_trx",
+        path: "list_xlt",
+        label: "list_xlt",
         icon: "fa fa-plus",
-        enurl: "https://tron.network/exchangesList?lng=en",
-        zhurl: "https://tron.network/exchangesList?lng=zh",
+        enurl: "https://litetokens.org/exchangesList?lng=en",
+        zhurl: "https://litetokens.org/exchangesList?lng=zh",
         linkHref:true
   },
   {
@@ -261,13 +261,13 @@ export const routes = [
     icon: "fa fa-question",
     component: null,
     routes: [
-      'TRON',
+      'LITETOKENS',
       {
-        url: "https://dn-peiwo-web.qbox.me/What_is_TRON1.4.pdf",
-        label: "what_is_tron",
+        url: "https://dn-peiwo-web.qbox.me/What_is_LITETOKENS1.4.pdf",
+        label: "what_is_litetokens",
       },
       '-',
-      'Tronscan',
+      'Litescan',
       {
         label: "frequently_asked_questions",
         component: FaqAsync,
@@ -285,38 +285,38 @@ export const routes = [
         path: "/help/ledger",
       },
       {
-        url: "https://t.me/tronscan",
+        url: "https://t.me/litescan",
         label: "telegram_updates",
       },
 
       '-',
       "Community",
       {
-        url: "https://www.reddit.com/r/tronix",
+        url: "https://www.reddit.com/r/litetokens",
         label: "reddit",
       },
       {
-        url: "https://t.me/tronscantalk",
+        url: "https://t.me/litescantalk",
         label: "telegram",
       },
       '-',
       "Development",
       {
-        url: "https://api.tronscan.org",
-        label: "tron_explorer_api"
+        url: "https://api.litescan.org",
+        label: "litetokens_explorer_api"
       },
       {
-        url: "https://dn-peiwo-web.qbox.me/Design_Book_of_TRON_Architecture1.4.pdf",
-        label: "tron_architechure",
+        url: "https://dn-peiwo-web.qbox.me/Design_Book_of_LITETOKENS_Architecture1.4.pdf",
+        label: "litetokens_architechure",
       },
       {
-        url: "https://dn-peiwo-web.qbox.me/TRON%20Protobuf%20Protocol%20Document.pdf",
-        label: "tron_protobuf_doc",
+        url: "https://dn-peiwo-web.qbox.me/LITETOKENS%20Protobuf%20Protocol%20Document.pdf",
+        label: "litetokens_protobuf_doc",
       },
       '-',
       "Feedback",
       {
-        url: "https://github.com/tronscan/tronscan-frontend/issues/new",
+        url: "https://github.com/litescan/litescan-frontend/issues/new",
         label: "report_an_error",
       },
     ]

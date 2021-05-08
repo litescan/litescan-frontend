@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Persian                                                      #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "متوجه شدم",
-  "app_title": "TRON Protocol",
+  "app_title": "LITETOKENS Protocol",
   "password": "رمز ورود",
   "money_price": "قیمت پول",
   "price": "قیمت",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "غیر متمرکز سازی وب",
+  "litetokens_main_message": "غیر متمرکز سازی وب",
   "transactions_last_hour": "تراکنش های یک ساعت اخیر",
   "block_height": "ارتفاع بلوک",
   "online_nodes": "نود های آنلاین",
-  "pice_per_1000trx": "قیمت (1000TRX هر)",
+  "pice_per_1000xlt": "قیمت (1000XLT هر)",
   "vote_for_super_representatives": "برای نمایندگان ممتاز رای دهید",
   "view_super_representatives": "مشاهده نمایندگان ممتاز",
   "create_new_wallet": "ایجاد کیف پول جدید",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "آدرس ها",
-  "trx_transferred_past_hour": "تی آر ایکس انتقالی در یک ساعت اخیر",
+  "xlt_transferred_past_hour": "تی آر ایکس انتقالی در یک ساعت اخیر",
   "transactions_past_hour": "تراکنش های یک ساعت اخیر",
   "average_blocksize": "میانگین اندازه بلوک",
   "rich_list": "لیست غنی",
-  "tron_transaction_chart": "نمودار تراکنش تی آرایکس",
+  "litetokens_transaction_chart": "نمودار تراکنش تی آرایکس",
   "transactions_per_day": "تراکنش روزانه",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -234,7 +234,7 @@ export const messages = {
   "do_not_send_2": "لطفا هیچ ترونی از آدرس ولت یا اکسچنج به این حساب واریز نکنید",
   "bandwidth": "پهنای باند",
   "balance": "مانده حساب",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "تراکنش ها",
   "no_transfers": "بدون انتقال",
   "no_tokens": "بدون توکن",
@@ -243,7 +243,7 @@ export const messages = {
   "have_been_added_to_your_account": "به حساب شما افزوده شده است!",
   "information_message_1": "بعد از درخواست ترون شما 10000 ترون برای تست در شبکه دریافت میکنید",
   "information_message_2": " شما به ازای هر حساب فقط یک بار میتوانید ترون درخواست کنید ",
-  "request_trx_for_testing": "درخواست ترون برای تست",
+  "request_xlt_for_testing": "درخواست ترون برای تست",
   "token_balances": "موجودی توکن",
   "produced_blocks": "بلوک های تولید شده",
   "voters": "رای دهندگان",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "صادر کننده",
   "network": "شبکه",
   "current": "در حال حاضر",
-  "trx_received": "TRX دریافت شد",
-  "test_trx_temporarily_unavailable_message": "تست تی آرایکس به طور موقت در دسترس نیست لطفا بعدا دوباره امتحان کنید",
-  "not_enough_trx": " کافی نیست TRX",
-  "information_message_3": "Successfully requested TRX. If you did not receive any TRX then there is no test TRX available right now and you should try again at a later time.",
+  "xlt_received": "XLT دریافت شد",
+  "test_xlt_temporarily_unavailable_message": "تست تی آرایکس به طور موقت در دسترس نیست لطفا بعدا دوباره امتحان کنید",
+  "not_enough_xlt": " کافی نیست XLT",
+  "information_message_3": "Successfully requested XLT. If you did not receive any XLT then there is no test XLT available right now and you should try again at a later time.",
   "send_to_following_address": "ارسال به آدرس زیر",
   "change_website": "تغییر وب سایت",
   "you_must_enter_url": "شما باید آدرس سایت را وارد کنید",
@@ -269,14 +269,14 @@ export const messages = {
   */
   "freeze": "مسدود",
   "unfreeze": "آزاد",
-  "freeze_trx_least": "شما حداقل به یک تی آرایکس برای مسدود کردن نیاز دارید",
-  "unable_unfreeze_trx_message": "تی آرایکس را نمیشود آزاد کرد این امر می تواند ناشی از آن باشد که حداقل دوره ی مسدودی هنوز به دست نیامده است.",
-  "freeze_trx_premessage_0": `تی آرایکس می تواند مسدود / قفل شده برای به دست آوردن نیرو TRON و فعال کردن ویژگی های اضافی باشد.
-    به عنوان مثال، با قدرت TRON شما می توانید `,
-  "freeze_trx_premessage_link": "به نمایندگان ممتاز رای دهید",
-  "freeze_trx_premessage_1": ` توکن های مسدود به مدت 3 روز "قفل شده اند". در این دوره تی آرایکس های مسدود قابل خرید و فروش نیستند.
+  "freeze_xlt_least": "شما حداقل به یک تی آرایکس برای مسدود کردن نیاز دارید",
+  "unable_unfreeze_xlt_message": "تی آرایکس را نمیشود آزاد کرد این امر می تواند ناشی از آن باشد که حداقل دوره ی مسدودی هنوز به دست نیامده است.",
+  "freeze_xlt_premessage_0": `تی آرایکس می تواند مسدود / قفل شده برای به دست آوردن نیرو LITETOKENS و فعال کردن ویژگی های اضافی باشد.
+    به عنوان مثال، با قدرت LITETOKENS شما می توانید `,
+  "freeze_xlt_premessage_link": "به نمایندگان ممتاز رای دهید",
+  "freeze_xlt_premessage_1": ` توکن های مسدود به مدت 3 روز "قفل شده اند". در این دوره تی آرایکس های مسدود قابل خرید و فروش نیستند.
    بعد از این دوره شما می توانید تی آرایکس ها را آزاد کنید و توکن ها رو بفروشید.`,
-  "trx_amount": "مقدار TRX",
+  "xlt_amount": "مقدار XLT",
   "token_freeze_confirm_message_0": "تایید مسدود سازی ",
   "token_freeze_confirm_message_1": "برای حداقل 3 روز",
   "frozen_supply": "موجودی مسدود",
@@ -290,7 +290,7 @@ export const messages = {
   "successfully_changed_name_to_message": "تغییر نام به صورت موفقیت آمیز بود",
   "unable_to_rename_title": "قادر به تغییر نام نیست",
   "unable_to_rename_message": "در هنگام بهروزرسانی نام حسابتان، چیزی اشتباه رفت، لطفا بعدا دوباره امتحان کنید",
-  "unfreeze_trx_confirm_message": "آیا مطمئن هستید که می خواهید TRX را آزاد کنید؟",
+  "unfreeze_xlt_confirm_message": "آیا مطمئن هستید که می خواهید XLT را آزاد کنید؟",
   "unfreeze_assets": "فعال کردن دارایی ها",
   "sure_to_unfreeze_unlocked_tokens_message": "آیا مطمئن هستید که میخواهید توکن های قفل نشده را فعال کنید؟",
   /*
@@ -328,23 +328,23 @@ export const messages = {
   "most_votes": "بیشترین رای ها",
   "start_end_time": "شروع / پایان زمان",
   "scan_qr_code": "کد را اسکن کنید ",
-  "receive_trx": "دریافت ترون",
+  "receive_xlt": "دریافت ترون",
   "require_account_to_send": "شما برای پرداخت کوین باید به حسابتان وارد شوید",
   "require_account_to_receive": "شما برای دریافت کوین باید وارد حساب کاربریتان شوید",
   "successful_send": "با موفقیت پرداخت شد",
   "confirm_transaction": "تایید تراکنش",
   "last_confirmed": "آخرین تایید ",
-  "trx_produced": "تراکنش های ایجاد شده",
+  "xlt_produced": "تراکنش های ایجاد شده",
   "do_not_send_1": "لطفا هیچ ترونی از آدرس کیف پول یا اکسچنج به این حساب واریز نکنید",
   "go_to_votelist": "برو به لیست رای",
-  "understand_tron_sr_message_0": "من درک می کنم که چگونه یک نماینده ترون باشم و تایید می کنم که بپردازم ",
-  "understand_tron_sr_message_1": "هزینه را.",
+  "understand_litetokens_ev_message_0": "من درک می کنم که چگونه یک نماینده ترون باشم و تایید می کنم که بپردازم ",
+  "understand_litetokens_ev_message_1": "هزینه را.",
   "invalid_url": "آدرس اینترنتی نامعتبر",
   "apply_representative_error_message_0": "هنگام تلاش برای اعمال کردن نماینده چیز اشتباهی رخ داد.",
   "apply_representative_error_message_1": "اطمینان حاصل کنید که تی آرایکس به اندازه کافی برای هزینه دارید یا بعدا دوباره امتحان کنید.",
   "open_external_link": "شما یک لینک خارجی را باز میکنید",
   "private_key_untrusted_website_message_0": "هرگز کلید خصوصی خود را در یک وب سایت غیرقابل اعتماد وارد نکنید.",
-  "no_official_tron_website": "سایت رسمی ترون نیست",
+  "no_official_litetokens_website": "سایت رسمی ترون نیست",
   "continue_to_external_website": "ادامه به سایت خارجی",
   "url_changed": "آدرس اینترنتی تغییر کرد",
   "successfully_changed_website_message": "وب سایت به صورت موفقیت آمیز تغییر کرد به ",
@@ -359,11 +359,11 @@ export const messages = {
   "link_github": "پیوند گیت هاب",
   "you_must_enter_a_url": "شما باید آدرس اینترنتی را وارد نمایید",
   "success": "موفق",
-  "successfully_appied_sr_canidate_message_0": "به طور موفقیت آمیز به عنوان کاندید نماینده ممتاز اعمال شد.",
-  "successfully_appied_sr_canidate_message_1": "حساب شما به زودی ارتقا خواهد یافت.",
+  "successfully_appied_ev_canidate_message_0": "به طور موفقیت آمیز به عنوان کاندید نماینده ممتاز اعمال شد.",
+  "successfully_appied_ev_canidate_message_1": "حساب شما به زودی ارتقا خواهد یافت.",
   "landing_page": "صفحه فرود",
-  "show_more_information_publish_sr_page": "نمایش اطلاعات بیشتر در مورد نحوه انتشار یک صفحه",
-  "create_sr_landing_page_message_0": "نمایندگان ممتاز می توانند یک صفحه فرود ایجاد کنند که در آن می توانند اطلاعات بیشتری در مورد تیم و برنامه های خود به اشتراک بگذارند",
+  "show_more_information_publish_ev_page": "نمایش اطلاعات بیشتر در مورد نحوه انتشار یک صفحه",
+  "create_ev_landing_page_message_0": "نمایندگان ممتاز می توانند یک صفحه فرود ایجاد کنند که در آن می توانند اطلاعات بیشتری در مورد تیم و برنامه های خود به اشتراک بگذارند",
   "set_github_url_message_0": "آیا قبلا قالب گیت هاب خود را پیکربندی کرده اید؟ سپس آدرس اینترنتی را با استفاده از دکمه زیر تنظیم کنید",
   "set_github_link": "تنظیم لینک گیت هاب",
   "could_not_claim_rewards": "نمیتوان اعمال پاداش کرد",
@@ -371,7 +371,7 @@ export const messages = {
   "rewards_claimed": "پاداش اعمال شد!",
   "successfully_claimed_rewards":  "پاداش موفقیت آمیز بود",
   "claim_rewards": "پاداش اعمالی",
-  "sr_receive_reward_message_0": "به عنوان یک نماینده شما پاداش برای تولید بلوک دریافت می کنید. این پاداش ها می تواند هر 24 ساعت اعمال شود",
+  "ev_receive_reward_message_0": "به عنوان یک نماینده شما پاداش برای تولید بلوک دریافت می کنید. این پاداش ها می تواند هر 24 ساعت اعمال شود",
   "intro": "معرفی",
   "budget_expenses": "هزینه های بودجه",
   "server_configuration": "پیکربندی سرور",
@@ -399,9 +399,9 @@ export const messages = {
   "available": "در دسترس",
   "testnet": "شبکه تست",
   "days_to_freeze": "تعداد روز برای مسدودی",
-  "trx_token_fee_message": "1024 تی آر ایکس برای صدور یک توکن جدید لازم است",
-  "trx_token_account_limit": "شما می توانید تنها یک توکن برای هر حساب ایجاد کنید",
-  "trx_token_wallet_requirement": "شما باید یک کیف پول باز کنید تا بتوانید یک توکن ایجاد کنید",
+  "xlt_token_fee_message": "1024 تی آر ایکس برای صدور یک توکن جدید لازم است",
+  "xlt_token_account_limit": "شما می توانید تنها یک توکن برای هر حساب ایجاد کنید",
+  "xlt_token_wallet_requirement": "شما باید یک کیف پول باز کنید تا بتوانید یک توکن ایجاد کنید",
   "invalid_address": "آدرس غیر معتبر است",
   "insufficient_tokens": "عدم وجود توکن کافی",
   "fill_a_valid_number": "لطفا با شماره معتبر پر کنید",
@@ -425,8 +425,8 @@ export const messages = {
   "how_much_buy_message": "شما چقدر توکن می خواهید خرید کنید؟",
   "buy_confirm_message_1": "مطمئنید که میخواهید خرید کنید",
   "for": "برای",
-  "insufficient_trx": "تی آرایکس کافی نیست",
-  "not_enough_trx_message": "تی آرایکس کافی برای خرید بسیاری از توکن ها را ندارید",
+  "insufficient_xlt": "تی آرایکس کافی نیست",
+  "not_enough_xlt_message": "تی آرایکس کافی برای خرید بسیاری از توکن ها را ندارید",
   "ends": "انتها",
   "starts": "ابتدا",
   "can_be_unlocked": "می تواند باز شود",
@@ -441,8 +441,8 @@ export const messages = {
   "search_address_or_url": "جستجوی آدرس ",
   "the_lunch_test": "هدف از راه اندازی شبکه ی تست بررسی و تست ویژگی های شبکه ی ترون و کیف پول آن است ",
   "please_keep_in_mind": "لطفا توجه داشته باشید، که از آنجا که آدرس حساب ثبت شده شما فقط برای شبکه تست استفاده می شود، تی آر ایکس را از کیف پول خود و یا اکسچنج به آدرس حساب شبکه تست ارسال نکنید",
-  "tron_foundation": "بنیاد ترون",
-  "trx_for_testing": "0",
+  "litetokens_foundation": "بنیاد ترون",
+  "xlt_for_testing": "0",
   "dear_users": "کاربران عزیز",
   "finished": "پایان یافته",
   "token": "توکن",
@@ -450,7 +450,7 @@ export const messages = {
   "need_to_login": "برای دسترسی به صفحه ی حسابتان باید ابتدا وارد حسابتان شوید",
   "thanks_for_applying": "تشکر برای درخواست!",
   "to_much_votes": "رای های خیلی زیاد",
-  "no_trx_remaining": "تی آر ایکسی باقی نمانده است",
+  "no_xlt_remaining": "تی آر ایکسی باقی نمانده است",
   "show_more": "نمایش {countriesLength} بیشتر",
   "vote_guide_message": `برای رای دادن به نمایندگان ممتاز از تی آر ایکس خود استفاده کنید.
    برای هر تی آر ایکس که در حسابتان نگهداری می کنید، شما یک رای برای استفاده کردن دارید.
@@ -503,7 +503,7 @@ export const messages = {
   "exchange_rate_message_0" : "تعیین قیمت توکن واحد با تعیین تعداد توکن هایی که یک شرکت کننده برای هر تی آر ایکس که می پردازند، دریافت می کند.",
   "exchange_rate_message_1": "شرکت کننده دریافت می کند",
   "exchange_rate_message_2": "برای هر",
-  "exchange_rate_message_3": "TRX",
+  "exchange_rate_message_3": "XLT",
   "participation_message_0": "تعیین دوره مشارکت که در آن توکن ها صادر می شوند. در طول مدت مشارکت، کاربران میتوانند تی آر ایکس را تبادل کنند برای ",
   "participation_message_1": " توکن ها.",
   "frozen_supply_message_0": `بخشی از عرضه می تواند مسدود شود. مقدار عرضه می تواند مشخص شود و باید مسدود باشد
@@ -513,11 +513,11 @@ export const messages = {
   "start_date": "تاریخ شروع",
   "end_date": "تاریخ پایان",
   "token_spend_confirm": "من تأیید میکنم که باید 1024 ترون را برای ساختن توکن خرج کنم",
-  "token_issue_guide_message_1":`صدور توکن در پروتکل TRON می تواند انجام شود توسط هر کسی که حداقل 1024 TRX را در حساب خود داشته باشد.`,
+  "token_issue_guide_message_1":`صدور توکن در پروتکل LITETOKENS می تواند انجام شود توسط هر کسی که حداقل 1024 XLT را در حساب خود داشته باشد.`,
   "token_issue_guide_message_2":`هنگامی که یک توکن صادر می شود، در صفحه مشاهده توکن نمایش داده می شود.
-    سپس کاربران می توانند در دوره مشارکت شرکت کنند و TRX را برای توکن ها مبادله کنند.`,
+    سپس کاربران می توانند در دوره مشارکت شرکت کنند و XLT را برای توکن ها مبادله کنند.`,
   "token_issue_guide_message_3":`بعد از صدور توکن، حساب شما مقدار توکن هایی را که برابر با کل عرضه هستند دریافت خواهد کرد.
-    هنگامی که دیگر کاربران TRX را برای توکن ها مبادله می کنند، پس از آن، توکن ها از حساب شما خارج خواهند شد و شما می توانید  TRX برابر با نرخ تبادل ارز مشخص شده را دریافت کنید.`,
+    هنگامی که دیگر کاربران XLT را برای توکن ها مبادله می کنند، پس از آن، توکن ها از حساب شما خارج خواهند شد و شما می توانید  XLT برابر با نرخ تبادل ارز مشخص شده را دریافت کنید.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -529,7 +529,7 @@ export const messages = {
   "no_name_error": "نام لازم است",
   "no_supply_error": "کل عرضه باید حداقل 1 باشد",
   "coin_value_error": "مقدار توکن باید حداقل 1 باشد",
-  "tron_value_error": "مقدار تی آر ایکس به ازای هر کوین باید حداقل 1 باشد",
+  "litetokens_value_error": "مقدار تی آر ایکس به ازای هر کوین باید حداقل 1 باشد",
   "invalid_starttime_error": "تاریخ شروع ارائه شده نامعتبر است",
   "invalid_endtime_error": "تاریخ پایان ارائه شده نامعتبر است",
   "no_description_error": "توضیحات لازم است",
@@ -590,7 +590,7 @@ export const messages = {
   "most_ranks": "بیشترین رتبه کسب شده در این دوره",
   "view_live_ranking": "مشاهده رتبه به صورت زنده",
   "open_team_page": "باز کردن صفحه تیم",
-  "warning_votes": "برای شروع رأی گیری لازم است حداقل 1 ترون نیرو باشد.  نیرو ترون توسط انجماد TRX در",
+  "warning_votes": "برای شروع رأی گیری لازم است حداقل 1 ترون نیرو باشد.  نیرو ترون توسط انجماد XLT در",
   "account_page": "صفحه حساب",
   "loading_votes": "بارگزاری آرا",
   "3_day_ranking": "رتبه 3 روزه",
@@ -602,7 +602,7 @@ export const messages = {
   "votes_remaining_message": "رأی باقی مانده است",
   "open_wallet_start_voting_message": "کیسه باز برای شروع رأی گیری",
   "thanks_submitting_vote_message": "متشکرم برای ارسال رای شما",
-  "need_min_trx_to_vote_message": "شما باید حداقل یک TRX داشته باشید تا بتوانید رای دهید",
+  "need_min_xlt_to_vote_message": "شما باید حداقل یک XLT داشته باشید تا بتوانید رای دهید",
   "to_much_votes_massage": "شما به تعداد زیادی رای می دهید",
   "all_votes_are_used_message": "همه آرا استفاده می شود",
   "submissing_vote_message_title": "از رای شما سپاسگذاریم.",
@@ -660,10 +660,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "TRON چیست",
-  "tron_explorer_api": "مرورگر TRON API",
-  "tron_architechure": "معماری TRON",
-  "tron_protobuf_doc": "مستندات TRON Protobuf",
+  "what_is_litetokens": "LITETOKENS چیست",
+  "litetokens_explorer_api": "مرورگر LITETOKENS API",
+  "litetokens_architechure": "معماری LITETOKENS",
+  "litetokens_protobuf_doc": "مستندات LITETOKENS Protobuf",
   "report_an_error": "خطا / پیشنهاد ی را ارسال کنید",
   "frequently_asked_questions": "سوالات متداول",
   "telegram_updates": "به روز رسانی ها در تلگرام",
@@ -737,12 +737,12 @@ export const messages = {
   "app": "برنامه",
   "install_latest_version_message_0": "نصب آخرین ورژن ",
   "opening_your_wallet": "باز کردن کیف پول خودتان",
-  "open_the_tronscan_desktop_client": "برنامه دسکتاپ ترون اسکن را باز کنید",
+  "open_the_litescan_desktop_client": "برنامه دسکتاپ ترون اسکن را باز کنید",
   "click_open_wallet_top_right": "روی ؛ باز کردن کیف پول ؛ در سمت راست بالا کلیک کنید",
   "choose_ledger": "لجر را انتخاب کنید",
   "connect_unlock_ledger_with_pin": "اتصال شوید و دستگاه خود را با کد پین خودتان باز کنید",
-  "open_tron_app_on_ledger": "برنامه ترون را در لجر خودتان باز کنید",
-  "ledger_connected_tronscan_message_0": "اگر لجر شما به درستی وصل شده باشد، ترون اسکن نشان داده خواهد شد ؛ متصل شد ",
+  "open_litetokens_app_on_ledger": "برنامه ترون را در لجر خودتان باز کنید",
+  "ledger_connected_litescan_message_0": "اگر لجر شما به درستی وصل شده باشد، ترون اسکن نشان داده خواهد شد ؛ متصل شد ",
   "click_on_open_wallet": "روی ؛ باز کردن کیف پول  کلیک کنید",
   "redirect_to_your_wallet_message": "شما به کیف پول خود هدایت می شوید و می توانید آدرس ترون خود را مشاهده کنید",
   "using_ledger_to_sign_transactions": "با استفاده از لجر تراکنش ها را امضاء کنید",
@@ -767,7 +767,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "applied for Super Representative",
-  "sr_candidature": "Super Representative Candidature",
+  "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",
@@ -778,13 +778,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -800,7 +800,7 @@ export const messages = {
   "total_BlockCount": "Total BlockCount",
   "new_address_seen": "آدرس جدید دیده می شود",
   "transfer_contract": "قرارداد انتقال",
-  "TRX_transfer_between_addresses": "انتقال TRX بین آدرس ها",
+  "XLT_transfer_between_addresses": "انتقال XLT بین آدرس ها",
   "transfer_asset_contract": "قرارداد دارایی انتقال",
   "token_transfer_between_addresses": "نقل قول بین آدرس ها",
   "participate_asset_issue_contract": "مشارکت در قرارداد اموال",
@@ -814,9 +814,9 @@ export const messages = {
   "withdraw_balance_contract": "برداشت قرارداد تعادل",
   "withdraw_balance": "تعادل را بردارید",
   "freeze_balance_contract": "قرارداد تعادل یخ",
-  "freeze_TRX": "TRX را ببندید",
+  "freeze_XLT": "XLT را ببندید",
   "unfreeze_balance_contract": "لغو قرارداد تعادل",
-  "unfreeze_TRX": "باز کردن TRX",
+  "unfreeze_XLT": "باز کردن XLT",
   "vote_witness_contract": "رای گیری شاهد قرارداد",
   "vote_for_a_witness": "رای دادن به یک شاهد",
   "asset_issue_contract": "قرارداد اموال",
@@ -825,7 +825,7 @@ export const messages = {
   "frozen_balance": "تعادل منجمد",
   "frozen_days": "روزهای منجمد",
   "counts": "شمارش",
-  "TRX_exchange_rate": "نرخ ارز TRX",
+  "XLT_exchange_rate": "نرخ ارز XLT",
   "start_time": "زمان شروع",
   "end_time": "زمان پایان",
   "contracts": "قراردادها",
@@ -849,24 +849,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -878,8 +878,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 
 };

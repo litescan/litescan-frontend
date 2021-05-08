@@ -1,8 +1,8 @@
 import React, {Fragment} from "react";
 import {Client} from "../../../services/api";
 import {AddressLink, TransactionHashLink} from "../../common/Links";
-import {TRXPrice} from "../../common/Price";
-import {ONE_TRX} from "../../../constants";
+import {XLTPrice} from "../../common/Price";
+import {ONE_XLT} from "../../../constants";
 import {tu, t} from "../../../utils/i18n";
 import TimeAgo from "react-timeago";
 import {Truncate} from "../../common/text";
@@ -10,7 +10,7 @@ import {withTimers} from "../../../utils/timing";
 import {FormattedNumber, injectIntl} from "react-intl";
 import SmartTable from "../../common/SmartTable.js"
 import {upperFirst} from "lodash";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 
 class Transfers extends React.Component {
 
@@ -130,8 +130,8 @@ class Transfers extends React.Component {
         align: 'right',
         className: 'ant_table',
         render: (text, record, index) => {
-          return <div>{record.tokenName === "TRX" ?
-              <TRXPrice amount={record.amount / ONE_TRX}/> :
+          return <div>{record.tokenName === "XLT" ?
+              <XLTPrice amount={record.amount / ONE_XLT}/> :
               <span><FormattedNumber value={record.amount}/> {record.tokenName}</span>}
           </div>
 
@@ -162,7 +162,7 @@ class Transfers extends React.Component {
 
     return (
         <Fragment>
-        {loading && <div className="loading-style" style={{marginTop: '-20px'}}><TronLoader/></div>}
+        {loading && <div className="loading-style" style={{marginTop: '-20px'}}><LitetokensLoader/></div>}
         <div className="row transfers">
           <div className="col-md-12 table_pos">
             {total? <div className="table_pos_info">{tableInfo}</div>: ''}

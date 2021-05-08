@@ -9,7 +9,7 @@ import TimeAgoI18N from "../../common/TimeAgoI18N";
 import {FormattedDate, FormattedNumber, FormattedTime} from "react-intl";
 import {AddressLink, BlockNumberLink} from "../../common/Links";
 import {CopyText} from "../../common/Copy";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import Transactions from "../../common/Transactions";
 import {Truncate} from "../../common/text";
 import Transfers from "../../common/Transfers";
@@ -34,14 +34,14 @@ class Block extends React.Component {
           icon: "fa fa-exchange-alt",
           path: "",
           label: <span>{tu("transactions")}</span>,
-          cmp: () => <TronLoader/>,
+          cmp: () => <LitetokensLoader/>,
         },
         transfers: {
           id: "transfers",
           icon: "fa fa-handshake",
           path: "/transfers",
           label: <span>{tu("transfers")}</span>,
-          cmp: () => <TronLoader/>,
+          cmp: () => <LitetokensLoader/>,
         },
       },
     };
@@ -127,9 +127,9 @@ class Block extends React.Component {
       <main className="container header-overlap">
         {
           loading ? <div className="card">
-            <TronLoader>
+            <LitetokensLoader>
               {tu("loading_block")} {block.number}
-            </TronLoader>
+            </LitetokensLoader>
           </div> :
           <div className="row">
             <div className="col-md-12 ">

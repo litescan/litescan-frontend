@@ -51,7 +51,7 @@ class System extends Component {
         <table className="table table-hover m-0 bg-white">
           <tbody>
           <tr>
-            <td colSpan="2" className="bg-dark text-white border-top-0">Tronscan</td>
+            <td colSpan="2" className="bg-dark text-white border-top-0">Litescan</td>
           </tr>
           <tr>
             <th style={{width: 300}}>{tu("Sync")}:</th>

@@ -153,13 +153,13 @@ module.exports = {
             test: /\.(js|jsx|mjs)$/,
             include: [
               paths.appSrc,
-              path.resolve(paths.appNodeModules, "@tronscan/client/src"),
+              path.resolve(paths.appNodeModules, "litescan-client/src"),
               path.resolve(paths.appNodeModules, "query-string"),
               path.resolve(paths.appNodeModules, "strict-uri-encode"),
               path.resolve(paths.appNodeModules, "instascan/src/camera.js"),
               path.resolve(paths.appNodeModules, "instascan/src/scanner.js"),
               path.resolve(paths.appNodeModules, "instascan/index.js"),
-              '/home/rovak/workspace/tronscan-node-client/src',
+              '/home/rovak/workspace/litescan-node-client/src',
             ],
             loader: require.resolve('babel-loader'),
             options: {

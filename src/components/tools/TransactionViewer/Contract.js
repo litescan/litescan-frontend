@@ -1,8 +1,8 @@
 import React, {Fragment} from "react";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {AddressLink, ExternalLink} from "../../common/Links";
 import Field from "./Field";
-import {TRXPrice} from "../../common/Price";
+import {XLTPrice} from "../../common/Price";
 import {tu} from "../../../utils/i18n";
 import {FormattedNumber, FormattedDate, injectIntl} from "react-intl";
 
@@ -17,7 +17,7 @@ export default function Contract({contract}) {
           <div className="card-body">
             <h5 className="card-title text-center">{tu("transfer_contract")}</h5>
             <p>
-              {tu("TRX_transfer_between_addresses")}
+              {tu("XLT_transfer_between_addresses")}
             </p>
           </div>
           <div className="table-responsive">
@@ -25,7 +25,7 @@ export default function Contract({contract}) {
               <tbody>
                 <Field label="from"><AddressLink address={contract.from} /></Field>
                 <Field label="to"><AddressLink address={contract.to} /></Field>
-                <Field label="amount"><TRXPrice amount={contract.amount / ONE_TRX} /></Field>
+                <Field label="amount"><XLTPrice amount={contract.amount / ONE_XLT} /></Field>
               </tbody>
             </table>
           </div>
@@ -65,7 +65,7 @@ export default function Contract({contract}) {
                 <table className="table">
                   <Field label="to"><AddressLink address={contract.ownerAddress} /></Field>
                   <Field label="issuer"><AddressLink address={contract.toAddress} /></Field>
-                  <Field label="amount">{contract.amount / ONE_TRX}</Field>
+                  <Field label="amount">{contract.amount / ONE_XLT}</Field>
                   <Field label="token">{contract.token}</Field>
                 </table>
             </div>
@@ -138,12 +138,12 @@ export default function Contract({contract}) {
           <div className="card-body">
             <h5 className="card-title text-center">{tu("freeze_balance_contract")}</h5>
             <p>
-              {tu("freeze_TRX")}
+              {tu("freeze_XLT")}
             </p>
           </div>
           <table className="table">
             <Field label="owner_address"><AddressLink address={contract.ownerAddress} /></Field>
-            <Field label="frozen_balance">{contract.frozenBalance / ONE_TRX}</Field>
+            <Field label="frozen_balance">{contract.frozenBalance / ONE_XLT}</Field>
             <Field label="frozen_days">{contract.frozenDuration}</Field>
           </table>
         </Fragment>
@@ -155,7 +155,7 @@ export default function Contract({contract}) {
             <div className="card-body">
               <h5 className="card-title text-center">{tu("unfreeze_balance_contract")}</h5>
               <p>
-                {tu("unfreeze_TRX")}
+                {tu("unfreeze_XLT")}
               </p>
             </div>
             <table className="table">
@@ -207,7 +207,7 @@ export default function Contract({contract}) {
             <Field label="owner_address"><AddressLink address={contract.ownerAddress} /></Field>
             <Field label="token_name">{contract.name}</Field>
             <Field label="total_supply">{contract.totalSupply}</Field>
-            <Field label="TRX_exchange_rate">{contract.trxNum / ONE_TRX} : {contract.num}</Field>
+            <Field label="XLT_exchange_rate">{contract.xltNum / ONE_XLT} : {contract.num}</Field>
             <Field label="start_time"><FormattedDate value={contract.startTime}/></Field>
             <Field label="end_time"><FormattedDate value={contract.endTime}/></Field>
             <Field label="description">{contract.description}</Field>

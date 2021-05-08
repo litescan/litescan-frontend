@@ -5,10 +5,10 @@ import {Client} from "../../../services/api";
 import {tu} from "../../../utils/i18n";
 import {FormattedNumber} from "react-intl";
 import {TokenBalances} from "./TokenBalances";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {AddressLink, ExternalLink} from "../../common/Links";
-import {TRXPrice} from "../../common/Price";
-import {TronLoader} from "../../common/loaders";
+import {XLTPrice} from "../../common/Price";
+import {LitetokensLoader} from "../../common/loaders";
 import Transactions from "../../common/Transactions";
 import Votes from "../../common/Votes";
 import Transfers from "../../common/Transfers";
@@ -46,9 +46,9 @@ class Address extends React.Component {
           path: "",
           label: <span>{tu("transfers")}</span>,
           cmp: () => (
-              <TronLoader>
+              <LitetokensLoader>
                 {tu("loading_transfers")}
-              </TronLoader>
+              </LitetokensLoader>
           )
         },
         transactions: {
@@ -57,9 +57,9 @@ class Address extends React.Component {
           path: "/transactions",
           label: <span>{tu("transactions")}</span>,
           cmp: () => (
-              <TronLoader>
+              <LitetokensLoader>
                 {tu("loading_transactions")}
-              </TronLoader>
+              </LitetokensLoader>
           )
         },
       },
@@ -86,7 +86,7 @@ class Address extends React.Component {
   }
 
   async loadVotes(address) {
-    let votes = await xhr.get("https://api.tronscan.org/api/vote?sort=-votes&limit=40&start=0&candidate=" + address);
+    let votes = await xhr.get("https://api.litescan.org/api/vote?sort=-votes&limit=40&start=0&candidate=" + address);
 
     let data = votes.data.data.slice(0, 10);
     let totalVotes = votes.data.totalVotes;
@@ -251,7 +251,7 @@ class Address extends React.Component {
     let totalVotes;
     let producer;
 
-    let uploadURL =   "https://server.tron.network/api/v2/node/info_upload?address=" + match.params.id
+    let uploadURL =   "https://server.litetokens.org/api/v2/node/info_upload?address=" + match.params.id
     for (let can in candidates) {
       if (address.address === candidates[can].address) {
         rank = candidates[can].rank;
@@ -270,9 +270,9 @@ class Address extends React.Component {
           <div className="col-md-12 ">
             {
               loading ? <div className="card">
-                  <TronLoader>
+                  <LitetokensLoader>
                     {tu("loading_address")} {address.address}
-                  </TronLoader>
+                  </LitetokensLoader>
                 </div> :
                 <Fragment>
                   <div className="card">
@@ -358,17 +358,17 @@ class Address extends React.Component {
                             <td>
                               <ul className="list-unstyled m-0">
                                 <li>
-                                  <TRXPrice amount={address.balance / ONE_TRX}/>
+                                  <XLTPrice amount={address.balance / ONE_XLT}/>
                                 </li>
                               </ul>
                             </td>
                           </tr>
                           <tr>
-                            <th>{tu("tron_power")}:</th>
+                            <th>{tu("litetokens_power")}:</th>
                             <td>
                               <ul className="list-unstyled m-0">
                                 <li>
-                                  <TRXPrice showCurreny={false} amount={address.frozen.total / ONE_TRX}/>
+                                  <XLTPrice showCurreny={false} amount={address.frozen.total / ONE_XLT}/>
                                 </li>
                               </ul>
                             </td>
@@ -378,8 +378,8 @@ class Address extends React.Component {
                             <td>
                               <ul className="list-unstyled m-0">
                                 <li>
-                                  <TRXPrice amount={(address.balance + address.frozen.total) / ONE_TRX} />{' '}
-                                  <span className="small">(<TRXPrice amount={(address.balance + address.frozen.total) / ONE_TRX} currency="USD" showPopup={false} />)</span>
+                                  <XLTPrice amount={(address.balance + address.frozen.total) / ONE_XLT} />{' '}
+                                  <span className="small">(<XLTPrice amount={(address.balance + address.frozen.total) / ONE_XLT} currency="USD" showPopup={false} />)</span>
                                 </li>
                               </ul>
                             </td>

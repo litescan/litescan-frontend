@@ -34,7 +34,7 @@ class MyToken extends Component {
     let {wallet} = this.props;
     if (wallet !== null) {
 
-      xhr.get("https://www.tronapp.co:9009/api/mytoken?owner=" + wallet.address).then((result) => {
+      xhr.get("https://www.litetokensapp.co:9009/api/mytoken?owner=" + wallet.address).then((result) => {
 
         if (result.data.data['Data'][0]) {
           this.setState({
@@ -57,7 +57,7 @@ class MyToken extends Component {
   };
 
   download = () => {
-    window.open("http://coin.top/tokenTemplate/TronscanTokenInformationSubmissionTemplate.xlsx");
+    window.open("http://coin.top/tokenTemplate/LitescanTokenInformationSubmissionTemplate.xlsx");
   }
 
   render() {
@@ -106,7 +106,7 @@ class MyToken extends Component {
                 <div className="card-body">
                   <div className="news_unit">
                     <h2>{tu('my_token')}</h2>
-                    <p>{tu("my_token_desc_1")}<a href="#/rating" style={{color: 'red'}}> "{tu('tron_rating')}"</a></p>
+                    <p>{tu("my_token_desc_1")}<a href="#/rating" style={{color: 'red'}}> "{tu('litetokens_rating')}"</a></p>
                     <p>{tu("my_token_desc_2")}</p>
                     <hr/>
                   </div>

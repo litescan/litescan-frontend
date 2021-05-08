@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Czech                                                        #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "OK",
-  "app_title": "TRON Protocol",
+  "app_title": "LITETOKENS Protocol",
   "password": "heslo",
   "money_price": "cena",
   "price": "cena",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "Decentralizace webu",
+  "litetokens_main_message": "Decentralizace webu",
   "transactions_last_hour": "Transakce za poslední hodinu",
   "block_height": "Velikost bloku",
   "online_nodes": "Online nódy",
-  "pice_per_1000trx": "Cena (za 1000TRX)",
+  "pice_per_1000xlt": "Cena (za 1000XLT)",
   "vote_for_super_representatives": "Hlasovat pro Super Reprezentanta",
   "view_super_representatives": "Zobrazit Super Reprezentanty",
   "create_new_wallet": "Vytvoøit novou penìženku",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "adres",
-  "trx_transferred_past_hour": "TRX odeslané za poslední hodinu",
+  "xlt_transferred_past_hour": "XLT odeslané za poslední hodinu",
   "transactions_past_hour": "Transakce za poslední hodinu",
   "average_blocksize": "Prùmìrná velikost bloku",
   "rich_list": "Seznam bohatých",
-  "tron_transaction_chart": "TRON Transaction Chart",
+  "litetokens_transaction_chart": "LITETOKENS Transaction Chart",
   "transactions_per_day": "Transactions Per Day",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "Zmìna názvu",
   "account_name": "Název úètu",
   "show_qr_code": "Zobrazit QR kód",
-  "do_not_send_2": "Neposílejte TRX ze své penìženky nebo z burzy na výše uvedenou adresu úètu na testovací síti!",
+  "do_not_send_2": "Neposílejte XLT ze své penìženky nebo z burzy na výše uvedenou adresu úètu na testovací síti!",
   "bandwidth": "šíøka pásma",
   "balance": "zùstatek",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "transakce",
   "no_transfers": "Žádné transfery",
   "no_tokens": "Žádné tokeny",
   "free_bandwidth": "šíøka pásma zdarma",
   "expires": "vyprší",
   "have_been_added_to_your_account": "bylo pøipsáno na váš úèet!",
-  "information_message_1": "Po vyžádání TRX obdržíte 10000 TRX, které mùžete použít k testování na testovací síti.",
-  "information_message_2": "Vyžádat si TRX je možné pouze 10x pro jeden úèet.",
-  "request_trx_for_testing": "Vyžádat si TRX na testování",
+  "information_message_1": "Po vyžádání XLT obdržíte 10000 XLT, které mùžete použít k testování na testovací síti.",
+  "information_message_2": "Vyžádat si XLT je možné pouze 10x pro jeden úèet.",
+  "request_xlt_for_testing": "Vyžádat si XLT na testování",
   "token_balances": "zùstatky tokenù",
   "produced_blocks": "vytvoøené bloky",
   "voters": "volièi",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "vydavatel",
   "network": "sí",
   "current": "aktuální",
-  "trx_received": "obdrženo TRX",
-  "test_trx_temporarily_unavailable_message": "Testování TRX je doèasnì nedostupné. Prosím, zkus to pozdìji.",
-  "not_enough_trx": "Málo TRX",
-  "information_message_3": "TRX úspìšnì vyžádáno. Pokud jste neobdrželi žádné TRX, není v souèasné dobì k dispozici žádný TRX k testování a mìli byste to zkusit pozdìji.",
+  "xlt_received": "obdrženo XLT",
+  "test_xlt_temporarily_unavailable_message": "Testování XLT je doèasnì nedostupné. Prosím, zkus to pozdìji.",
+  "not_enough_xlt": "Málo XLT",
+  "information_message_3": "XLT úspìšnì vyžádáno. Pokud jste neobdrželi žádné XLT, není v souèasné dobì k dispozici žádný XLT k testování a mìli byste to zkusit pozdìji.",
   "send_to_following_address": "Poslat na následující adresu",
   "change_website": "Zmìnit webovou stránku",
   "you_must_enter_url": "Musíte zadat URL",
@@ -269,14 +269,14 @@ export const messages = {
   */
   "freeze": "zmrazit",
   "unfreeze": "rozmrazit",
-  "freeze_trx_least": "Ke zmrazení je nutné mít na úètu minimálnì 1 TRX",
-  "unable_unfreeze_trx_message": "Rozmrazení TRX nemožné. To mùže být zpùsobeno tím, že ještì neubìhla požadovaná doba od posledního zmrazení.",
-  "freeze_trx_premessage_0": `TRX mùžete zmrazit za úèelem získání TRON Power a uvolnìní dalších funkcí.
-   For example, with TRON Power you can `,
-  "freeze_trx_premessage_link": "hlasovat pro Super Reprezentanty.",
-  "freeze_trx_premessage_1": ` Zmrazené tokeny jsou "zamèené" na dobu 3 dnù. Bìhem této doby není možné se zmrazenými TRX obchodovat.
-   Po uplynutí této doby mùžete TRX rozmrazit a opìt s nimi obchodovat.`,
-  "trx_amount": "Množství TRX",
+  "freeze_xlt_least": "Ke zmrazení je nutné mít na úètu minimálnì 1 XLT",
+  "unable_unfreeze_xlt_message": "Rozmrazení XLT nemožné. To mùže být zpùsobeno tím, že ještì neubìhla požadovaná doba od posledního zmrazení.",
+  "freeze_xlt_premessage_0": `XLT mùžete zmrazit za úèelem získání LITETOKENS Power a uvolnìní dalších funkcí.
+   For example, with LITETOKENS Power you can `,
+  "freeze_xlt_premessage_link": "hlasovat pro Super Reprezentanty.",
+  "freeze_xlt_premessage_1": ` Zmrazené tokeny jsou "zamèené" na dobu 3 dnù. Bìhem této doby není možné se zmrazenými XLT obchodovat.
+   Po uplynutí této doby mùžete XLT rozmrazit a opìt s nimi obchodovat.`,
+  "xlt_amount": "Množství XLT",
   "token_freeze_confirm_message_0": "Potvrzuji zmrazení ",
   "token_freeze_confirm_message_1": "minimálnì na 3 dny",
   "frozen_supply": "Zmrazené tokeny",
@@ -290,7 +290,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Název úspìšnì zmìnìn na",
   "unable_to_rename_title": "Nemožné pøejmenovat",
   "unable_to_rename_message": "Bìhem zmìny názvu úètu došlo k neoèekávané chybì, prosím zkuste to pozdìji znovu",
-  "unfreeze_trx_confirm_message": "Opravdu chcete rozmrazit TRX?",
+  "unfreeze_xlt_confirm_message": "Opravdu chcete rozmrazit XLT?",
   "unfreeze_assets": "Rozmrazit tokeny",
   "sure_to_unfreeze_unlocked_tokens_message": "Urèitì chcete rozmrazit odemèené tokeny?",
   /*
@@ -303,19 +303,19 @@ export const messages = {
   "apply_for_delegate": "kandidovat na delegáta",
   "apply_super_representative_candidate": "Podat si žádost o kandidaturu na Super Reprezentanta",
   "your_personal_website_address": "adresa vaší osobní webové stránky",
-  "apply_for_delegate_predescription":`Každý držitel tokenù má možnost stát se TRON Super Reprezentantem.
+  "apply_for_delegate_predescription":`Každý držitel tokenù má možnost stát se LITETOKENS Super Reprezentantem.
    Aby však sí a komunita fungovala efektivnì a bez problémù,
-   vytvoøili jsme pro kandidáty, kteøí se chtìjí stát doporuèeným Super reprezentantem, sadu standardù a regulací. Doporuèované SR budeme propagovat, abychom zvýšili jejich šance na zvolení. Noví doporuèení Super Reprezentanti jsou aktualizováni a zveøejòováni jednou týdnì.`,
+   vytvoøili jsme pro kandidáty, kteøí se chtìjí stát doporuèeným Super reprezentantem, sadu standardù a regulací. Doporuèované EV budeme propagovat, abychom zvýšili jejich šance na zvolení. Noví doporuèení Super Reprezentanti jsou aktualizováni a zveøejòováni jednou týdnì.`,
   "apply_for_delegate_description": `
-   Pokud se držitelé TRX chtìjí stát super delegátem, mohou si podat žádost prostøednictvím funkce správy úètu a hlasovat pro kandidáty.
+   Pokud se držitelé XLT chtìjí stát super delegátem, mohou si podat žádost prostøednictvím funkce správy úètu a hlasovat pro kandidáty.
    Každý úèet mùže aktualizovat aktuální informace o volièi a také mùže hlasovat pro nìkolik kandidátù.
-   Maximální poèet hlasù je menší nebo roven poètu TRX, které uživatelé mají v držení.
-   (Pokud máte urèité množství TRX, mùžete odeslat pouze tolik hlasù, jejichž poèet je menší nebo roven tomuto množství TRX).
-   Výsledek hlasování bude vypoèítán na základì koneèných informací o úètu každého volièe v každém hlasovacím cyklu, který se poèítá vždy od 0:00 do 24:00. Držitelé TRX s nejvìtším poètem hlasù se stanou super delegáty.
+   Maximální poèet hlasù je menší nebo roven poètu XLT, které uživatelé mají v držení.
+   (Pokud máte urèité množství XLT, mùžete odeslat pouze tolik hlasù, jejichž poèet je menší nebo roven tomuto množství XLT).
+   Výsledek hlasování bude vypoèítán na základì koneèných informací o úètu každého volièe v každém hlasovacím cyklu, který se poèítá vždy od 0:00 do 24:00. Držitelé XLT s nejvìtším poètem hlasù se stanou super delegáty.
    Každá transakce v rámci sítì je validována všemi Super Delegáty, za což dostávají pøíslušnou odmìnu.
-   Bìhem procesu podávání žádostí a hlasování pro super delegáty nebude utracen žádný TRX.`,
+   Bìhem procesu podávání žádostí a hlasování pro super delegáty nebude utracen žádný XLT.`,
   "unknown_error": "došlo k neznámé chybì",
-  "representative_understand": "Rozumím tomu, jak se stát TRON reprezentantem",
+  "representative_understand": "Rozumím tomu, jak se stát LITETOKENS reprezentantem",
   "generate_account": "Klikni pro vygenerování adresy úètu a hesla",
   "create_account_confirm_1": "Beru na vìdomí, že pokud zapomenu své heslo, ztratím pøístup ke svým tokenùm",
   "create_account_confirm_2": "Beru na vìdomí, že pokud zapomenu své heslo, není nikdo, kdo by mi pomohl mé heslo obnovit",
@@ -327,23 +327,23 @@ export const messages = {
   "most_votes": "vìtšina hlasù",
   "start_end_time": "Zaèátek / Konec",
   "scan_qr_code": "Naèti kód pomocí QR èteèky",
-  "receive_trx": "obdržet TRX",
+  "receive_xlt": "obdržet XLT",
   "require_account_to_send": "Na odeslání mincí musíte být pøihlášeni",
   "require_account_to_receive": "Na pøíjem mincí musíte být pøihlášeni",
   "successful_send": "Úspìšnì odesláno!",
   "confirm_transaction": "potvrdit transakci",
   "last_confirmed": "Poslední potvrzená",
-  "trx_produced": "Vytvoøeno transakcí",
-  "do_not_send_1": "Neposílejte TRX ze své penìženky ani z burzy na vaši adresu na testovací síti!",
+  "xlt_produced": "Vytvoøeno transakcí",
+  "do_not_send_1": "Neposílejte XLT ze své penìženky ani z burzy na vaši adresu na testovací síti!",
   "go_to_votelist": "Pøejít na hlasovací seznam",
-  "understand_tron_sr_message_0": "Chápu, co znamená být TRON reprezentantem a potvrzuji, že zaplatím",
-  "understand_tron_sr_message_1": "poplatek.",
+  "understand_litetokens_ev_message_0": "Chápu, co znamená být LITETOKENS reprezentantem a potvrzuji, že zaplatím",
+  "understand_litetokens_ev_message_1": "poplatek.",
   "invalid_url": "Neplatná URL",
   "apply_representative_error_message_0": "Pøi podání pøihlášky na reprezentanta došlo k neznámé chybì.",
-  "apply_representative_error_message_1": "Zkontrolujte, zda máte dostatek TRX na poplatek, v opaèném pøípadì to zkuste pozdìji.",
+  "apply_representative_error_message_1": "Zkontrolujte, zda máte dostatek XLT na poplatek, v opaèném pøípadì to zkuste pozdìji.",
   "open_external_link": "Sppouštíte externí odkaz",
   "private_key_untrusted_website_message_0": "Nikdy nevkládejte soukromý klíè na nedùvìryhodném webu.",
-  "no_official_tron_website": "není oficiální TRON web.",
+  "no_official_litetokens_website": "není oficiální LITETOKENS web.",
   "continue_to_external_website": "Pokraèovat na externí web",
   "url_changed": "URL zmìnìna",
   "successfully_changed_website_message": "Webová stránka úspìšnì zmìnìna na ",
@@ -358,11 +358,11 @@ export const messages = {
   "link_github": "Propojit Github",
   "you_must_enter_a_url": "Musíte zadat URL",
   "success": "Úspìch",
-  "successfully_appied_sr_canidate_message_0": "Pøihláška kandidáta na Super reprezentanta úspìšnì podána.",
-  "successfully_appied_sr_canidate_message_1": "Váš úèet bude zanedlouho upgradován.",
+  "successfully_appied_ev_canidate_message_0": "Pøihláška kandidáta na Super reprezentanta úspìšnì podána.",
+  "successfully_appied_ev_canidate_message_1": "Váš úèet bude zanedlouho upgradován.",
   "landing_page": "Domovská stránka",
-  "show_more_information_publish_sr_page": "Zobrazit více informací jak publikovat stránku",
-  "create_sr_landing_page_message_0": "Super Reprezentanti si mohou vytvoøit domovskou stránku, na které mohou zveøejnit více informací o svém týmu a plánech",
+  "show_more_information_publish_ev_page": "Zobrazit více informací jak publikovat stránku",
+  "create_ev_landing_page_message_0": "Super Reprezentanti si mohou vytvoøit domovskou stránku, na které mohou zveøejnit více informací o svém týmu a plánech",
   "set_github_url_message_0": "Nakonfiguroval jste už svou Github šablonu? Pak tedy nastavte svou URL pomocí tlaèítka níže",
   "set_github_link": "Nastavit Github odkaz",
   "could_not_claim_rewards": "Nebylo možné vyžádat si odmìny",
@@ -370,7 +370,7 @@ export const messages = {
   "rewards_claimed": "Odmìny vyžádány!",
   "successfully_claimed_rewards":  "Odmìny úspìšnì vyžádány",
   "claim_rewards": "Vyžádat si odmìny",
-  "sr_receive_reward_message_0": "Jako reprezentantovi vám náleží odmìna za generování blokù. O tuto odmìnu mùžete žádat každých 24 hodin",
+  "ev_receive_reward_message_0": "Jako reprezentantovi vám náleží odmìna za generování blokù. O tuto odmìnu mùžete žádat každých 24 hodin",
   "intro": "Intro",
   "budget_expenses": "Budget Expenses",
   "server_configuration": "Server Configuration",
@@ -398,15 +398,15 @@ export const messages = {
   "available": "dostupný",
   "testnet": "Testovací sí",
   "days_to_freeze": "Dnù ke zmrazení",
-  "trx_token_fee_message": "K vydání nového tokenu je potøeba 1024 TRX.",
-  "trx_token_account_limit": "Mùžete vytvoøit pouze jeden token pod jedním úètem",
-  "trx_token_wallet_requirement": "Musíte otevøít penìženku, abyste mohli vytvoøit token",
+  "xlt_token_fee_message": "K vydání nového tokenu je potøeba 1024 XLT.",
+  "xlt_token_account_limit": "Mùžete vytvoøit pouze jeden token pod jedním úètem",
+  "xlt_token_wallet_requirement": "Musíte otevøít penìženku, abyste mohli vytvoøit token",
   "invalid_address": "neplatná adresa",
   "insufficient_tokens": "Nedostateèné množství tokenù",
   "fill_a_valid_number": "Prosím vyplòte platné èíslo",
   "fill_a_valid_address": "Prosím vyplòte platnou adresu",
   "make_another_transaction": "Provést další transakci",
-  "token_exchange_confirm": "Potvrzuji, že na distribuci tokenù vydám {trxAmount}, a dostanu za to celkem {tokenAmount} tokenù.",
+  "token_exchange_confirm": "Potvrzuji, že na distribuci tokenù vydám {xltAmount}, a dostanu za to celkem {tokenAmount} tokenù.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "Došlo k neznámé chybì, prosím zkuste to za nìkolik minut znovu",
   "An_error_occurred": "Došlo k chybì",
   "create_a_token": "Vytvoøit token",
@@ -424,8 +424,8 @@ export const messages = {
   "how_much_buy_message": "Kolik tokenù chcete nakoupit?",
   "buy_confirm_message_1": "Urèitì chcete koupit",
   "for": "za",
-  "insufficient_trx": "Nedostateèné množství TRX",
-  "not_enough_trx_message": "Na nákup tolika tokenù nemáte dostateèné množství TRX",
+  "insufficient_xlt": "Nedostateèné množství XLT",
+  "not_enough_xlt_message": "Na nákup tolika tokenù nemáte dostateèné množství XLT",
   "ends": "konèí",
   "starts": "zaèíná",
   "can_be_unlocked": "can be unlocked",
@@ -436,12 +436,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Zadejte platnou adresu TRON penìženky. Vložení neplatné adresy povede ke ztrátì TRX.",
+  "address_warning": "Zadejte platnou adresu LITETOKENS penìženky. Vložení neplatné adresy povede ke ztrátì XLT.",
   "search_address_or_url": "Vyhledat adresu nebo URL",
   "the_lunch_test": "Spuštìním testovací sítì chceme otestovat všechny funkce prohlížeèe blockchainu i penìženky.",
-  "please_keep_in_mind": "Nezapomeòte, že vaše registrovaná adresa úètu se používá pouze pro testovací sí, neposílejte tedy TRX ze své penìženky nebo z burzy na adresu na testovací síti.",
-  "tron_foundation": "Nadace TRON",
-  "trx_for_testing": "TRX urèené k testování budou odeslány na váš testovací úèet, jakmile si o to ze svého úètu zažádáte.",
+  "please_keep_in_mind": "Nezapomeòte, že vaše registrovaná adresa úètu se používá pouze pro testovací sí, neposílejte tedy XLT ze své penìženky nebo z burzy na adresu na testovací síti.",
+  "litetokens_foundation": "Nadace LITETOKENS",
+  "xlt_for_testing": "XLT urèené k testování budou odeslány na váš testovací úèet, jakmile si o to ze svého úètu zažádáte.",
   "dear_users": "Milí uživaatelé,",
   "finished": "Ukonèeno",
   "token": "token",
@@ -449,11 +449,11 @@ export const messages = {
   "need_to_login": "Na stránku úètu se dostanete až po pøihlášení",
   "thanks_for_applying": "Dìkujeme za podání žádosti!",
   "to_much_votes": "Pøíliš mnoho hlasù",
-  "no_trx_remaining": "Žádné TRX k dispozici",
+  "no_xlt_remaining": "Žádné XLT k dispozici",
   "show_more": "Zobrazit {countriesLength} více",
-  "vote_guide_message": `Své TRX použijte k hlasování pro Super Reprezentanty.
-   Za každý TRX na svém úètì máte jeden použitelný hlas.
-   TRX nebudou utraceny. Pro nìkolik reprezentantù mùžete hlasovat tolikrát, kolikrát budete chtít.
+  "vote_guide_message": `Své XLT použijte k hlasování pro Super Reprezentanty.
+   Za každý XLT na svém úètì máte jeden použitelný hlas.
+   XLT nebudou utraceny. Pro nìkolik reprezentantù mùžete hlasovat tolikrát, kolikrát budete chtít.
    Finální hlasy budou seèteny ve 24:00 a poté bude aktualizován seznam delegátù.`,
   "search_address": "Vyhledat adresu",
   "token_transactions": "Transakce tokenù",
@@ -499,23 +499,23 @@ export const messages = {
   "supply_message": "Celkové množství tokenù v obìhu",
   "description_message": "Krátký popis úèelu tokenù",
   "url_message": "Webová stránka, kde uživatelé mohou najít informace o tokenu",
-  "exchange_rate_message_0": "Specifikujte cenu jednoho tokenu urèením poètu tokenù, které uživatel obdrží za 1 TRX.",
+  "exchange_rate_message_0": "Specifikujte cenu jednoho tokenu urèením poètu tokenù, které uživatel obdrží za 1 XLT.",
   "exchange_rate_message_1": "Uživatel obdrží",
   "exchange_rate_message_2": "za každých",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Specifikujte období, ve kterém budou tokeny vydány. Bìhem tohoto období uživatelé mohou smìòovat TRX za ",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Specifikujte období, ve kterém budou tokeny vydány. Bìhem tohoto období uživatelé mohou smìòovat XLT za ",
   "participation_message_1": " tokeny.",
   "frozen_supply_message_0": `Èást mincí v obìhu je možné zmrazit. Urèíte specifické množství mincí a ty poté minimálnì na 1 den zmrazíte. Zmrazené tokeny mohou být rozmrazeny manuálnì po poèáteèním datu a poté, co bude dosažen poèet dní zmrazení. Zmmrazení všech tokenù není požadováno.`,
   "token_issued_successfully": "Token úspìšnì vydán",
   "participation": "úèast",
   "start_date": "Poèáteèní datum",
   "end_date": "Koncové datum",
-  "token_spend_confirm": "Beru na vìdomí, že za celkové množství vydaných tokenù bude úètován jednorázový poplatek 1024 TRX.",
-  "token_issue_guide_message_1": `Token na TRON protokolu mùže vydat každý, kdo má na úètu alespoò 1024 TRX.`,
+  "token_spend_confirm": "Beru na vìdomí, že za celkové množství vydaných tokenù bude úètován jednorázový poplatek 1024 XLT.",
+  "token_issue_guide_message_1": `Token na LITETOKENS protokolu mùže vydat každý, kdo má na úètu alespoò 1024 XLT.`,
   "token_issue_guide_message_2":`Jakmile je token vydán, zobrazí se na stránce s pøehledem tokenù.
-    Uživatelé si následnì bìhem daného odobí mohou vymìnit své TRX za tokeny.`,
+    Uživatelé si následnì bìhem daného odobí mohou vymìnit své XLT za tokeny.`,
   "token_issue_guide_message_3":`Po vydání tokenù obdržíte na svùj úèet tokeny v hodnotì odpovídající celkovému množství v obìhu.
-    Když ostatní uživatelé vymìní své TRX za vámi vydaný token, budou tokeny odepsány z vašeho úètu a vy obdržíte TRX v hodnotì odpovídající aktuálnímu kursu.`,
+    Když ostatní uživatelé vymìní své XLT za vámi vydaný token, budou tokeny odepsány z vašeho úètu a vy obdržíte XLT v hodnotì odpovídající aktuálnímu kursu.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -527,7 +527,7 @@ export const messages = {
   "no_name_error": "Požadován název",
   "no_supply_error": "Celkové množství musí být minimálnì 1",
   "coin_value_error": "Množství tokenù musí být minimálnì 1",
-  "tron_value_error": "Množství TRX za jednu minci musí být minimálnì 1",
+  "litetokens_value_error": "Množství XLT za jednu minci musí být minimálnì 1",
   "invalid_starttime_error": "Zadané poèáteèní datum je neplatné",
   "invalid_endtime_error": "Zadané koncové datum je neplatné",
   "no_description_error": "Vyžadován popis",
@@ -588,7 +588,7 @@ export const messages = {
   "most_ranks": "Nejvyšší pøíèka získaná v tomto kole",
   "view_live_ranking": "Zobrazit live poøadí",
   "open_team_page": "Otevøít stránku týmmu",
-  "warning_votes": "K zahájení hlasování je zapotøebí minimálnì 1 TRON Power. TRON Power získáte zmrazením TRX na",
+  "warning_votes": "K zahájení hlasování je zapotøebí minimálnì 1 LITETOKENS Power. LITETOKENS Power získáte zmrazením XLT na",
   "account_page": "Úèet",
   "loading_votes": "Naèítám hlasy",
   "3_day_ranking": "Poøadí za 3 dny",
@@ -600,7 +600,7 @@ export const messages = {
   "votes_remaining_message": "Zbývá hlasù",
   "open_wallet_start_voting_message": "Otevøete penìženku a zaènìte hlasovat",
   "thanks_submitting_vote_message": "Dìkujeme za odeslání hlasu!",
-  "need_min_trx_to_vote_message": "Abyste mohli hlasovat, potøebujete minimálnì 1 TRX",
+  "need_min_xlt_to_vote_message": "Abyste mohli hlasovat, potøebujete minimálnì 1 XLT",
   "to_much_votes_massage": "Vyplýtvali jste pøíliš mnoho hlasù!",
   "all_votes_are_used_message": "Využili jste všechny hlasy!",
   "submissing_vote_message_title": "Dìkujeme za hlasování!",
@@ -658,10 +658,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "Co to je TRON",
-  "tron_explorer_api": "API TRON prohlížeèe",
-  "tron_architechure": "TRON Architektura",
-  "tron_protobuf_doc": "TRON Protobuf Dokumentace",
+  "what_is_litetokens": "Co to je LITETOKENS",
+  "litetokens_explorer_api": "API LITETOKENS prohlížeèe",
+  "litetokens_architechure": "LITETOKENS Architektura",
+  "litetokens_protobuf_doc": "LITETOKENS Protobuf Dokumentace",
   "report_an_error": "Odeslat bug / návrh",
   "frequently_asked_questions": "Frequently Asked Questions",
   "telegram_updates": "Telegram Updates",
@@ -686,7 +686,7 @@ export const messages = {
   "save_keystore_file": "Uložte si váš Keystore soubor",
   "download_keystore_file": "Stáhnout šifrovaný klíè",
   "do_not_lose_it": "Neztrate ho!",
-  "do_not_lose_it_message_0": "Nadace TRON vám nepomùže s obnovou ztraceného klíèe.",
+  "do_not_lose_it_message_0": "Nadace LITETOKENS vám nepomùže s obnovou ztraceného klíèe.",
   "do_not_share_it": "Nikomu ho neukazujte!",
   "do_not_share_it_message_0": "Pokud použijete tento soubor na škodlivém webu, mùžete o všechny mince pøijít.",
   "make_a_backup": "Vytvoøte si zálohu!",
@@ -729,23 +729,23 @@ export const messages = {
   */
   "ledger_guide": "Ledger Guide",
   "requirements": "Requirements",
-  "using_ledger_steps_message_0": "Using the Ledger with Tronscan requires the following steps:",
+  "using_ledger_steps_message_0": "Using the Ledger with Litescan requires the following steps:",
   "a": "A",
   "install_the": "Install the ",
   "app": "app",
   "install_latest_version_message_0": "Install the latest version of ",
   "opening_your_wallet": "Opening your wallet",
-  "open_the_tronscan_desktop_client": "Open the Tronscan Desktop client",
+  "open_the_litescan_desktop_client": "Open the Litescan Desktop client",
   "click_open_wallet_top_right": "Click &ldquo;Open Wallet&rdquo; at the top right",
   "choose_ledger": "Choose Ledger",
   "connect_unlock_ledger_with_pin": "Connect and unlock your device with your PIN code",
-  "open_tron_app_on_ledger": "Open the TRON app on your Ledger",
-  "ledger_connected_tronscan_message_0": "If your Ledger is connected properly then Tronscan will show &ldquo;Connected&rdquo",
+  "open_litetokens_app_on_ledger": "Open the LITETOKENS app on your Ledger",
+  "ledger_connected_litescan_message_0": "If your Ledger is connected properly then Litescan will show &ldquo;Connected&rdquo",
   "click_on_open_wallet": "Click on &ldquo;Open Wallet&rdquo",
-  "redirect_to_your_wallet_message": "You will be redirected to your wallet and you can view your TRON address",
+  "redirect_to_your_wallet_message": "You will be redirected to your wallet and you can view your LITETOKENS address",
   "using_ledger_to_sign_transactions": "Using the ledger to sign transactions",
-  "using_ledger_to_sign_transactions_message_0": "Make sure to keep the Ledger connected and the TRON app open to sign transactions using the Ledger while using Tronscan Desktop",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan will show a popup with the transaction details when a transaction signature is required. Signatures are required whenever you vote, send TRX, change account name, etc..",
+  "using_ledger_to_sign_transactions_message_0": "Make sure to keep the Ledger connected and the LITETOKENS app open to sign transactions using the Ledger while using Litescan Desktop",
+  "using_ledger_to_sign_transactions_message_1": "Litescan will show a popup with the transaction details when a transaction signature is required. Signatures are required whenever you vote, send XLT, change account name, etc..",
   /*
   ##################################################################################
   #                                                                                #
@@ -765,7 +765,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "applied for Super Representative",
-  "sr_candidature": "Super Representative Candidature",
+  "ev_candidature": "Super Representative Candidature",
   "created_token": "vytvořený token",
   "token_creation": "Vytvoření Token",
   "bought": "koupit",
@@ -776,13 +776,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -798,7 +798,7 @@ export const messages = {
   "total_BlockCount": "Total BlockCount",
   "new_address_seen": "New Address Seen",
   "transfer_contract": "Transfer Contract",
-  "TRX_transfer_between_addresses": "TRX transfer between addresses",
+  "XLT_transfer_between_addresses": "XLT transfer between addresses",
   "transfer_asset_contract": "Transfer Asset Contract",
   "token_transfer_between_addresses": "Token transfer between addresses",
   "participate_asset_issue_contract": "Participate Asset Issue Contract",
@@ -812,9 +812,9 @@ export const messages = {
   "withdraw_balance_contract": "Withdraw Balance Contract",
   "withdraw_balance": "Withdraw balance",
   "freeze_balance_contract": "Freeze Balance Contract",
-  "freeze_TRX": "Freeze TRX",
+  "freeze_XLT": "Freeze XLT",
   "unfreeze_balance_contract": "Unfreeze Balance Contract",
-  "unfreeze_TRX": "Unfreeze TRX",
+  "unfreeze_XLT": "Unfreeze XLT",
   "vote_witness_contract": "Vote Witness Contract",
   "vote_for_a_witness": "Vote for a Witness",
   "asset_issue_contract": "Asset Issue Contract",
@@ -823,7 +823,7 @@ export const messages = {
   "frozen_balance": "Frozen Balance",
   "frozen_days": "Frozen Days",
   "counts": "counts",
-  "TRX_exchange_rate": "TRX Exchange Rate",
+  "XLT_exchange_rate": "XLT Exchange Rate",
   "start_time": "Doba spuštění",
   "end_time": "Čas ukončení",
   "contracts": "kontrakt",
@@ -848,24 +848,24 @@ export const messages = {
    #                                                                                #
    ##################################################################################
  */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -878,7 +878,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 };

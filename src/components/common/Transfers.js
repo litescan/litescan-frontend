@@ -3,8 +3,8 @@ import {Sticky, StickyContainer} from "react-sticky";
 import Paging from "./Paging";
 import {Client} from "../../services/api";
 import {AddressLink, TransactionHashLink} from "./Links";
-import {TRXPrice} from "./Price";
-import {ONE_TRX} from "../../constants";
+import {XLTPrice} from "./Price";
+import {ONE_XLT} from "../../constants";
 import {tu} from "../../utils/i18n";
 import TimeAgo from "react-timeago";
 import {Truncate} from "./text";
@@ -125,8 +125,8 @@ class Transfers extends React.Component {
                       </td>
                       <td className="text-nowrap text-right">
                           {
-                              transfer.tokenName === "TRX" ?
-                                  <TRXPrice amount={transfer.amount / ONE_TRX} /> :
+                              transfer.tokenName === "XLT" ?
+                                  <XLTPrice amount={transfer.amount / ONE_XLT} /> :
                                   <span><FormattedNumber value={transfer.amount} /> {transfer.tokenName}</span>
                           }
                       </td>

@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Swedish                                                      #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "OK",
-  "app_title": "TRON protokollet",
+  "app_title": "LITETOKENS protokollet",
   "password": "lösenord",
   "money_price": "pris",
   "price": "pris",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "Decentralisera Webben",
+  "litetokens_main_message": "Decentralisera Webben",
   "transactions_last_hour": "Transaktioner senaste timmen",
   "block_height": "Block Höjd",
   "online_nodes": "Noder Onlines",
-  "pice_per_1000trx": "Pris (per 1000TRX)",
+  "pice_per_1000xlt": "Pris (per 1000XLT)",
   "vote_for_super_representatives": "Rösta för Super Representatives",
   "view_super_representatives": "Se Super Representatives",
   "create_new_wallet": "Skapa en ny plånbok",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "adresser",
-  "trx_transferred_past_hour": "TRX överförda den senaste timmen",
+  "xlt_transferred_past_hour": "XLT överförda den senaste timmen",
   "transactions_past_hour": "Transaktioner den senaste timmen ",
   "average_blocksize": "Medel Block Storlek",
   "rich_list": "Rich List",
-  "tron_transaction_chart": "TRON Transaktionskarta",
+  "litetokens_transaction_chart": "LITETOKENS Transaktionskarta",
   "transactions_per_day": "Transaktioner per dag",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "Byt Namn",
   "account_name": "Kontonamn",
   "show_qr_code": "Visa QR Kod",
-  "do_not_send_2": "Skicka inte TRX från din egna plånbok eller börs till ovanstående konto för testnet!.",
+  "do_not_send_2": "Skicka inte XLT från din egna plånbok eller börs till ovanstående konto för testnet!.",
   "bandwidth": "bandbredd",
   "balance": "balans",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "transaktioner",
   "no_transfers": "Inga överföringar",
   "no_tokens": "Inga Tokens",
   "free_bandwidth": "Gratis Bandbredd",
   "expires": "förfaller",
   "have_been_added_to_your_account": "har lagts till i ditt konto!",
-  "information_message_1": "När du efterfråga TRX så kommer du att få 1000 TRX som du kan använda för testning på testnet.",
-  "information_message_2": "Du kan bara efterfråga TRX 10 gånger per konto.",
-  "request_trx_for_testing": "Efterfråga TRX för testning",
+  "information_message_1": "När du efterfråga XLT så kommer du att få 1000 XLT som du kan använda för testning på testnet.",
+  "information_message_2": "Du kan bara efterfråga XLT 10 gånger per konto.",
+  "request_xlt_for_testing": "Efterfråga XLT för testning",
   "token_balances": "token balanser",
   "produced_blocks": "producerade blocks",
   "voters": "röstare",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "utgivare",
   "network": "nätverk",
   "current": "nuvarande",
-  "trx_received": "TRX mottaget",
-  "test_trx_temporarily_unavailable_message": "Test TRX är för tillfället oåtkomligt. Var vänlig försök igen senare.",
-  "not_enough_trx": "Inte tillräckligt med TRX",
-  "information_message_3": "Förfrågan om TRX lyckades. Om du inte fick någon TRX så är det för att det inte finns några test TRX just nu. Du bör försöka igen vid en senare tidpunkt.",
+  "xlt_received": "XLT mottaget",
+  "test_xlt_temporarily_unavailable_message": "Test XLT är för tillfället oåtkomligt. Var vänlig försök igen senare.",
+  "not_enough_xlt": "Inte tillräckligt med XLT",
+  "information_message_3": "Förfrågan om XLT lyckades. Om du inte fick någon XLT så är det för att det inte finns några test XLT just nu. Du bör försöka igen vid en senare tidpunkt.",
   "send_to_following_address": "Skicka till följande address",
   "change_website": "Ändra webbplats",
   "you_must_enter_url": "Du måste ange en webbadress",
@@ -269,11 +269,11 @@ export const messages = {
   */
   "freeze": "frysa",
   "unfreeze": "frigöra",
-  "freeze_trx_least": "Du behöver minst 1 TRX för att frysa",
-  "freeze_trx_premessage_0": "TRX kan vara fryst/låst för att vinna TRON Power och aktivera ytterligare funktioner. Med TRON Power kan du till exempel",
-  "freeze_trx_premessage_link": "rösta på Super Representatives.",
-  "freeze_trx_premessage_1": "Frysta tokens är låsta för en period på 3 dagar. Under denna period kan inte frysta TRX handlas. Efter denna period kan du frigöra TRX och handla tokens.",
-  "trx_amount": "TRX Antal",
+  "freeze_xlt_least": "Du behöver minst 1 XLT för att frysa",
+  "freeze_xlt_premessage_0": "XLT kan vara fryst/låst för att vinna LITETOKENS Power och aktivera ytterligare funktioner. Med LITETOKENS Power kan du till exempel",
+  "freeze_xlt_premessage_link": "rösta på Super Representatives.",
+  "freeze_xlt_premessage_1": "Frysta tokens är låsta för en period på 3 dagar. Under denna period kan inte frysta XLT handlas. Efter denna period kan du frigöra XLT och handla tokens.",
+  "xlt_amount": "XLT Antal",
   "token_freeze_confirm_message_0": "Jag bekräftar att frysa ",
   "token_freeze_confirm_message_1": "i minst 3 dagar",
   "frozen_supply": "Frusna Tillgångar",
@@ -287,7 +287,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Namnet har ändrats till",
   "unable_to_rename_title": "Kan inte byta namn",
   "unable_to_rename_message": "Något gick fel när du uppdaterade ditt kontonamn, snälla försök igen senare",
-  "unfreeze_trx_confirm_message": "Är du säker på att du vill frigöra TRX?",
+  "unfreeze_xlt_confirm_message": "Är du säker på att du vill frigöra XLT?",
   "unfreeze_assets": "Unfreeze Assets",
   "sure_to_unfreeze_unlocked_tokens_message": "Är du säker på att du vill frigöra olåsta tokens?",
   /*
@@ -300,19 +300,19 @@ export const messages = {
   "apply_for_delegate": "ansöka om ombudet",
   "apply_super_representative_candidate": "Ansök om att bli en Super Representative kandidat",
   "your_personal_website_address": "din personliga webbadress",
-  "apply_for_delegate_predescription":`Varje token innehavare har möjlighet att bli en TRON Super Representative.
+  "apply_for_delegate_predescription":`Varje token innehavare har möjlighet att bli en LITETOKENS Super Representative.
    För att nätverket och samhället ska fungera mer smidigt och effektivt har vi dock skapat en uppsättning standarder och regler för kvalificerade kandidater att bli rekommenderade superrepresentanter.
-   Vi kommer att främja rekommenderade SR: er för att öka deras chanser att bli valda.
+   Vi kommer att främja rekommenderade EV: er för att öka deras chanser att bli valda.
    Nya rekommenderade Super Representatives uppdateras och publiceras en gång i`,
   "apply_for_delegate_description": `
-   TRX hållare kan ansöka om att bli Super Representative genom att använda konto hanterings funktionen, och rösta för kandidater.
+   XLT hållare kan ansöka om att bli Super Representative genom att använda konto hanterings funktionen, och rösta för kandidater.
    Varje konto kan uppdatera sin röst information och är också tillåten att rösta på flera kandidater.
-   Det maximala antalet röster är mindre eller lika med antalet TRX varje innehavare har varje gång. (Om du har ett antal TRX,
+   Det maximala antalet röster är mindre eller lika med antalet XLT varje innehavare har varje gång. (Om du har ett antal XLT,
    så kan du rösta mindre eller lika mycket av ditt innehav). Resultated av rösterna kommer att beräknas baserat på slutliga
    röst informationen av varje konto i varje röst cyckel som är mellan 00:00 till 24:00. T
-   RX innehavare med flest röster kommer att bli super ombud. Alla transaktioner gjorda i nätverket är tvingade till att bli validerade av alla SuperOmbud, och viss bonus kommer att delas ut. TRX kommer inte att konsumeras i röstnings processen av super ombud.`,
+   RX innehavare med flest röster kommer att bli super ombud. Alla transaktioner gjorda i nätverket är tvingade till att bli validerade av alla SuperOmbud, och viss bonus kommer att delas ut. XLT kommer inte att konsumeras i röstnings processen av super ombud.`,
   "unknown_error": "okänt fel inträffade",
-  "representative_understand": "Jag förstår hur man blir en TRON Representant",
+  "representative_understand": "Jag förstår hur man blir en LITETOKENS Representant",
   "generate_account": "Klicka för att generera din konto address och lösenord",
   "create_account_confirm_1": "Jag förstår att om jag glömmer/tappar mitt lösenord, så kommer jag aldrig att kunna återfå mina tillgångar",
   "create_account_confirm_2": "Jag förstår att om jag glömmer/tappar mitt lösenord, så kommer ingen kunna hjälpa mig att åter få det",
@@ -324,23 +324,23 @@ export const messages = {
   "most_votes": "flesta röster",
   "start_end_time": "Start / Slut Tid",
   "scan_qr_code": "Scanna koden med en QR Kod scanner",
-  "receive_trx": "mottag TRX",
+  "receive_xlt": "mottag XLT",
   "require_account_to_send": "Du måste vara inloggad för att skicka tokens",
   "require_account_to_receive": "Du måste vara inloggad för att mottaga tokens",
   "successful_send": "Lyckad sändning!",
   "confirm_transaction": "konfirmera transaktion",
   "last_confirmed": "Senast Konfimerad",
-  "trx_produced": "Transanktioner Producerade",
-  "do_not_send_1": "Skicka inte TRX från din egna plånbok eller börs till till din testnet address!.",
+  "xlt_produced": "Transanktioner Producerade",
+  "do_not_send_1": "Skicka inte XLT från din egna plånbok eller börs till till din testnet address!.",
   "go_to_votelist": "Gå till röst listan",
-  "understand_tron_sr_message_0": "Jag förstår hur man blir en TRON representative och jag godkänner att spendera en",
-  "understand_tron_sr_message_1": "avgift.",
+  "understand_litetokens_ev_message_0": "Jag förstår hur man blir en LITETOKENS representative och jag godkänner att spendera en",
+  "understand_litetokens_ev_message_1": "avgift.",
   "invalid_url": "Ogiltig webbadress",
   "apply_representative_error_message_0": "Något gick fel när du försökte ansöka om representant.",
-  "apply_representative_error_message_1": "Se till att du har tillräckligt med TRX för avgiften, eller försök igen senare.",
+  "apply_representative_error_message_1": "Se till att du har tillräckligt med XLT för avgiften, eller försök igen senare.",
   "open_external_link": "Du öppnar en extern länk",
   "private_key_untrusted_website_message_0": "Ange aldrig din privata nyckel på en otillförlitlig webbplats.",
-  "no_official_tron_website": "är inte en officiell TRON webbplats.",
+  "no_official_litetokens_website": "är inte en officiell LITETOKENS webbplats.",
   "continue_to_external_website": "Fortsätt till extern webbplats",
   "url_changed": "URL ändrats",
   "successfully_changed_website_message": "Har ändrats webbplatsen till",
@@ -355,11 +355,11 @@ export const messages = {
   "link_github": "Länk Github",
   "you_must_enter_a_url": "Du måste ange en webbadress",
   "success": "Framgång",
-  "successfully_appied_sr_canidate_message_0": "Framgångsrikt ansökt om att vara Super Representative Candidate.",
-  "successfully_appied_sr_canidate_message_1": "Ditt konto kommer att uppgraderas inom kort.",
+  "successfully_appied_ev_canidate_message_0": "Framgångsrikt ansökt om att vara Super Representative Candidate.",
+  "successfully_appied_ev_canidate_message_1": "Ditt konto kommer att uppgraderas inom kort.",
   "landing_page": "Landningssida",
-  "show_more_information_publish_sr_page": "Visa mer Information om hur man publicerar en sida",
-  "create_sr_landing_page_message_0": "Superrepresentanter kan skapa en målsida där de kan dela mer information om deras lag och planer",
+  "show_more_information_publish_ev_page": "Visa mer Information om hur man publicerar en sida",
+  "create_ev_landing_page_message_0": "Superrepresentanter kan skapa en målsida där de kan dela mer information om deras lag och planer",
   "set_github_url_message_0": "Har du redan konfigurerat din Github-mall? Ange sedan webbadressen med hjälp av knappen nedan",
   "set_github_link": "Ange Github Link",
   "could_not_claim_rewards": "Kunde inte hävda belöningar",
@@ -367,7 +367,7 @@ export const messages = {
   "rewards_claimed": "Belöningar krävde!",
   "successfully_claimed_rewards":  "Framgångsrikt anspråk på belöningar",
   "claim_rewards": "Krav på belöningar",
-  "sr_receive_reward_message_0": "Som representant får du belöningar för att producera block. Dessa belöningar kan hävdas var 24: e timme",
+  "ev_receive_reward_message_0": "Som representant får du belöningar för att producera block. Dessa belöningar kan hävdas var 24: e timme",
   "intro": "Intro",
   "budget_expenses": "Budgetkostnader",
   "server_configuration": "Server Konfiguration",
@@ -395,15 +395,15 @@ export const messages = {
   "available": "tillgänlig",
   "testnet": "Testnet",
   "days_to_freeze": "Dagar att frysa",
-  "trx_token_fee_message": "1024 TRX är nödvändigt för att utfärda en ny token",
-  "trx_token_account_limit": "Du kan skapa endast en token per konto",
-  "trx_token_wallet_requirement": "Du behöver öppna en plånbok för att kunna skapa en token",
+  "xlt_token_fee_message": "1024 XLT är nödvändigt för att utfärda en ny token",
+  "xlt_token_account_limit": "Du kan skapa endast en token per konto",
+  "xlt_token_wallet_requirement": "Du behöver öppna en plånbok för att kunna skapa en token",
   "invalid_address": "ogiltig adress",
   "insufficient_tokens": "otillräcklig med tokens",
   "fill_a_valid_number": "Var vänlig fyll i ett giltigt nummer",
   "fill_a_valid_address": "Var vänlig fyll i en giltig address",
   "make_another_transaction": "Gör en annan transaktion",
-  "token_exchange_confirm": "Jag har godkänt att spendera {trxAmount} av token distribution, och får totalt {tokenAmount} tokens.",
+  "token_exchange_confirm": "Jag har godkänt att spendera {xltAmount} av token distribution, och får totalt {tokenAmount} tokens.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "Ett okänt fel inträffade, var vänlig försök igen om några minuter",
   "An_error_occurred": "Ett fel inträffade",
   "create_a_token": "Skapa ett token",
@@ -421,8 +421,8 @@ export const messages = {
   "how_much_buy_message": "Hur mycket tokens vill du köpa?",
   "buy_confirm_message_1": "Är du säker på att du vill köpa",
   "for": "för",
-  "insufficient_trx": "Otillräcklig TRX",
-  "not_enough_trx_message": "Du kan bara sätta ditt kontonamn en gång!",
+  "insufficient_xlt": "Otillräcklig XLT",
+  "not_enough_xlt_message": "Du kan bara sätta ditt kontonamn en gång!",
   "ends": "avsluta",
   "starts": "börjar",
   "can_be_unlocked": "kan låsa upp",
@@ -433,12 +433,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Ange endast en giltig TRON plånbok adress. Felaktiga adresser kan leda till förlust av TRX.",
+  "address_warning": "Ange endast en giltig LITETOKENS plånbok adress. Felaktiga adresser kan leda till förlust av XLT.",
   "search_address_or_url": "Sök efter adress eller URL",
   "the_lunch_test": "Lanseringen av testnet syftar till att testa alla funktioner i våran blockchain explorer och plånbok",
-  "please_keep_in_mind": "Vänligen tänk på, att eftersom din registrerade kontoadress används endast för testnet, skicka inte TRX från din egen plånbok eller exchange till ditt konto på testnet.",
-  "tron_foundation": "TRON Foundation",
-  "trx_for_testing": "TRX för testning kommer att skickas till ditt test-konto när du framgångsrikt ansöka via kontohantering.",
+  "please_keep_in_mind": "Vänligen tänk på, att eftersom din registrerade kontoadress används endast för testnet, skicka inte XLT från din egen plånbok eller exchange till ditt konto på testnet.",
+  "litetokens_foundation": "LITETOKENS Foundation",
+  "xlt_for_testing": "XLT för testning kommer att skickas till ditt test-konto när du framgångsrikt ansöka via kontohantering.",
   "dear_users": "Kära användare,",
   "finished": "Färdig",
   "token": "token",
@@ -446,11 +446,11 @@ export const messages = {
   "need_to_login": "Du måste vara inloggad för att få tillgång till kontosida",
   "thanks_for_applying": "Tack för ansökningen",
   "to_much_votes": "För mycket röster",
-  "no_trx_remaining": "Inga TRX kvar",
+  "no_xlt_remaining": "Inga XLT kvar",
   "show_more": "Visa {countriesLength} Mer",
-  "vote_guide_message": `Använd dina TRX för att rösta för Super Representatives.
-   För varje TRX du håller i ditt konto har du en röst att spendera.
-   TRX kommer att förbrukas. Du kan rösta hur många gånger för varje representant du vill.
+  "vote_guide_message": `Använd dina XLT för att rösta för Super Representatives.
+   För varje XLT du håller i ditt konto har du en röst att spendera.
+   XLT kommer att förbrukas. Du kan rösta hur många gånger för varje representant du vill.
    Dem sista rösterna kommer att räknas vi kl 24 och listan med deligaten kommer att uppdateras`,
   "search_address": "Sök efter address",
   "token_transactions": "Token Transanktioner",
@@ -496,21 +496,21 @@ export const messages = {
   "supply_message": "Totala antalet tokens som kommer vara i cirkulation",
   "description_message": "Kort beskrivning av syfte med token",
   "url_message": "En webbsida där användare kan hitta mer information om din token",
-  "exchange_rate_message_0": "Ange priset för en enda token genom att definiera hur många token en deltagare kommer att få för varje TRX de spenderar.",
+  "exchange_rate_message_0": "Ange priset för en enda token genom att definiera hur många token en deltagare kommer att få för varje XLT de spenderar.",
   "exchange_rate_message_1": "Deltagare kommer att få",
   "exchange_rate_message_2": "för varje",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Ange deltagandeperioden för vilken tokens kommer att utfärdas. Under deltagandeperioden kan användare byta TRX för tokens",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Ange deltagandeperioden för vilken tokens kommer att utfärdas. Under deltagandeperioden kan användare byta XLT för tokens",
   "participation_message_1": " tokens.",
   "frozen_supply_message_0": `En del av tillgången kan frysas. Mängden av tillgången kan specificeras och måste frysas i minst 1 dag. Den frusna tillgången kan manuellt frysas efter startdatum + de frusna dagarna har uppnåtts. Frysning av tillgångarna behöver inte frysas.`,
   "token_issued_successfully": "Token är framgångsrikt utfärdade",
   "participation": "deltaga",
   "start_date": "Start Datum",
   "end_date": "Slut Datum",
-  "token_spend_confirm": "Jag godkänner att skapandet av de totala tillgångarna av tokens kommer att kosta en engångskostnad av 1024 TRX.",
-  "token_issue_guide_message_1": "Utfärdande av token på TRON Protocol kan göras av vem som helst som har minst 1024 TRX på sitt konto",
-  "token_issue_guide_message_2": "När en token är utfärdad så kommer det att visas på token översikts sida. Användare kan deltaga inom deltagande perioden och växla sina TRX för tokens." ,
-  "token_issue_guide_message_3": "När du har utfärdat token kommer ditt konto att få mängden tokens lika med det totala utbudet. När andra användare byter ut deras TRX för tokens kommer tokens att dras tillbaka från ditt konto och du kommer att ta emot TRX lika med angiven växelkurs.",
+  "token_spend_confirm": "Jag godkänner att skapandet av de totala tillgångarna av tokens kommer att kosta en engångskostnad av 1024 XLT.",
+  "token_issue_guide_message_1": "Utfärdande av token på LITETOKENS Protocol kan göras av vem som helst som har minst 1024 XLT på sitt konto",
+  "token_issue_guide_message_2": "När en token är utfärdad så kommer det att visas på token översikts sida. Användare kan deltaga inom deltagande perioden och växla sina XLT för tokens." ,
+  "token_issue_guide_message_3": "När du har utfärdat token kommer ditt konto att få mängden tokens lika med det totala utbudet. När andra användare byter ut deras XLT för tokens kommer tokens att dras tillbaka från ditt konto och du kommer att ta emot XLT lika med angiven växelkurs.",
   /*
   ##################################################################################
   #                                                                                #
@@ -522,7 +522,7 @@ export const messages = {
   "no_name_error": "Namn är nödvändigt",
   "no_supply_error": "Totala Tillgångar måste vara mins 1",
   "coin_value_error": "Token antal måste vara minst 1",
-  "tron_value_error": "Mängden TRX per token måste vara minst 1",
+  "litetokens_value_error": "Mängden XLT per token måste vara minst 1",
   "invalid_starttime_error": "Angiven start datum är fel",
   "invalid_endtime_error": "Angiven slut datum är fel",
   "no_description_error": "Beskrivning är nödvändig",
@@ -583,7 +583,7 @@ export const messages = {
   "most_ranks": "Högsta Rang Intjänad Denna Runda",
   "view_live_ranking": "Se Live Rang",
   "open_team_page": "Öppna Team Sida",
-  "warning_votes": "Minst 1 TRON Power är nödvändig för att börja rösta. TRON Power fås gengom att frysa TRX på",
+  "warning_votes": "Minst 1 LITETOKENS Power är nödvändig för att börja rösta. LITETOKENS Power fås gengom att frysa XLT på",
   "account_page": "Kontosida",
   "loading_votes": "Laddar omröstningar",
   "3_day_ranking": "3 Days Ranking",
@@ -595,7 +595,7 @@ export const messages = {
   "votes_remaining_message": "Röster Kvar",
   "open_wallet_start_voting_message": "Öppna plånbok för att börja rösta",
   "thanks_submitting_vote_message": "Tack för din röst",
-  "need_min_trx_to_vote_message": "Du behöver minst 1 TRCX för att kunna rösta!",
+  "need_min_xlt_to_vote_message": "Du behöver minst 1 TRCX för att kunna rösta!",
   "to_much_votes_massage": "Du har spenderat för många röster!",
   "all_votes_are_used_message": "Alla röster är använda!",
   "submissing_vote_message_title": "Tack för att du röstar!",
@@ -653,10 +653,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "Vad är TRON",
-  "tron_explorer_api": "TRON Explorer API",
-  "tron_architechure": "TRON Arkitektur",
-  "tron_protobuf_doc": "TRON Protobuf Dokumentation",
+  "what_is_litetokens": "Vad är LITETOKENS",
+  "litetokens_explorer_api": "LITETOKENS Explorer API",
+  "litetokens_architechure": "LITETOKENS Arkitektur",
+  "litetokens_protobuf_doc": "LITETOKENS Protobuf Dokumentation",
   "report_an_error": "Anmäl en bug / förslag",
   "frequently_asked_questions": "Vanliga frågor",
   "telegram_updates": "Telegramuppdateringar",
@@ -681,7 +681,7 @@ export const messages = {
   "save_keystore_file": "Spara din Keystore-fil",
   "download_keystore_file": "Ladda ner Krypterad nyckel",
   "do_not_lose_it": "Förlora den inte!",
-  "do_not_lose_it_message_0": "TRON Foundation kan inte hjälpa dig återskapa din förlorade nyckel.",
+  "do_not_lose_it_message_0": "LITETOKENS Foundation kan inte hjälpa dig återskapa din förlorade nyckel.",
   "do_not_share_it": "Dela den inte!",
   "do_not_share_it_message_0": "Dina pengar kan bli stulna om du använder den här filen på en skadlig webbplats.",
   "make_a_backup": "Skapa en backup!",
@@ -724,23 +724,23 @@ export const messages = {
   */
   "ledger_guide": "Ledger Guide",
   "requirements": "Krav",
-  "using_ledger_steps_message_0": "Använda Ledger med Tronscan kräver följande steg:",
+  "using_ledger_steps_message_0": "Använda Ledger med Litescan kräver följande steg:",
   "a": "En",
   "install_the": "Installera ",
   "app": "app",
   "install_latest_version_message_0": "Installera den senaste versionen av ",
   "opening_your_wallet": "Öppna din wallet",
-  "open_the_tronscan_desktop_client": "Öppna Tronscan Desktop-klienten",
+  "open_the_litescan_desktop_client": "Öppna Litescan Desktop-klienten",
   "click_open_wallet_top_right": "Klicka på knappen 'Öppna plånbok' längst upp till höger.",
   "choose_ledger": "Välj Ledger",
   "connect_unlock_ledger_with_pin": "Anslut och låsa upp din enhet med din PIN-kod",
-  "open_tron_app_on_ledger": "Öppna TRON-appen på din Ledger",
-  "ledger_connected_tronscan_message_0": "Om din Ledger är korrekt ansluten kommer Tronscan att visa 'Connected'",
+  "open_litetokens_app_on_ledger": "Öppna LITETOKENS-appen på din Ledger",
+  "ledger_connected_litescan_message_0": "Om din Ledger är korrekt ansluten kommer Litescan att visa 'Connected'",
   "click_on_open_wallet": "Klicka på 'Open Wallet'",
-  "redirect_to_your_wallet_message": "Du kommer att omdirigeras till din plånbok och du kan se din TRON-adress",
+  "redirect_to_your_wallet_message": "Du kommer att omdirigeras till din plånbok och du kan se din LITETOKENS-adress",
   "using_ledger_to_sign_transactions": "Använda bokstaven för att skriva transaktioner",
-  "using_ledger_to_sign_transactions_message_0": "Medan du använder Tronscan Desktop appen och signerar transaktionen kontrollerar du att bokstaven är ansluten och TRON-appen är öppen.",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan visar en transaktionssignatur via en popup med transaktionsinformationen, om så krävs. Signering är nödvändig för följande åtgärder: Delta i SR-röst, skicka TRX, ändra kontonamn etc.",
+  "using_ledger_to_sign_transactions_message_0": "Medan du använder Litescan Desktop appen och signerar transaktionen kontrollerar du att bokstaven är ansluten och LITETOKENS-appen är öppen.",
+  "using_ledger_to_sign_transactions_message_1": "Litescan visar en transaktionssignatur via en popup med transaktionsinformationen, om så krävs. Signering är nödvändig för följande åtgärder: Delta i EV-röst, skicka XLT, ändra kontonamn etc.",
   /*
   ##################################################################################
   #                                                                                #
@@ -760,7 +760,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "applied for Super Representative",
-  "sr_candidature": "Super Representative Candidature",
+  "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",
   "bought": "bought",
@@ -771,13 +771,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -793,7 +793,7 @@ export const messages = {
   "total_BlockCount": "Totalt BlockCount",
   "new_address_seen": "Ny adress sedd",
   "transfer_contract": "Överföringskontrakt",
-  "TRX_transfer_between_addresses": "TRX överför mellan adresser",
+  "XLT_transfer_between_addresses": "XLT överför mellan adresser",
   "transfer_asset_contract": "Överför tillgångskontrakt",
   "token_transfer_between_addresses": "Tokenöverföring mellan adresser",
   "participate_asset_issue_contract": "Deltagande av tillgångsprocessavtal",
@@ -807,9 +807,9 @@ export const messages = {
   "withdraw_balance_contract": "Dra ut Balansavtalet",
   "withdraw_balance": "Dra ut balans",
   "freeze_balance_contract": "Frysbalansavtal",
-  "freeze_TRX": "Frysa TRX",
+  "freeze_XLT": "Frysa XLT",
   "unfreeze_balance_contract": "frigöra Balans Kontrakt",
-  "unfreeze_TRX": "frigöra TRX",
+  "unfreeze_XLT": "frigöra XLT",
   "vote_witness_contract": "Rösta vittne kontrakt",
   "vote_for_a_witness": "Rösta för ett vittne",
   "asset_issue_contract": "Asset Issue Contract",
@@ -818,7 +818,7 @@ export const messages = {
   "frozen_balance": "Frysbalans",
   "frozen_days": "Frozen Days",
   "counts": "antal",
-  "TRX_exchange_rate": "TRX växelkurs",
+  "XLT_exchange_rate": "XLT växelkurs",
   "start_time": "Starttid",
   "end_time": "Sluttid",
   "contracts": "Kontrakt",
@@ -842,24 +842,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -871,8 +871,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 
 };

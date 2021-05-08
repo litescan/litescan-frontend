@@ -11,11 +11,11 @@ import {getQueryParam} from "../../../utils/url";
 import SearchInput from "../../../utils/SearchInput";
 import {toastr} from 'react-redux-toastr'
 import SmartTable from "../../common/SmartTable.js"
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {login} from "../../../actions/app";
 import {reloadWallet} from "../../../actions/wallet";
 import {upperFirst} from "lodash";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import xhr from "axios/index";
 
 class TokenList extends Component {
@@ -45,9 +45,9 @@ class TokenList extends Component {
     let result;
 
     if (filter.name)
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
+      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
     else
-      result = await xhr.get("https://www.tronapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
+      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
 
     let total = result.data.data['Total'];
     let tokens = result.data.data['Data'];
@@ -137,8 +137,8 @@ class TokenList extends Component {
     }
     this.setState({buyAmount: value});
     this.buyAmount.value = value;
-    let priceTRX = value * (price / ONE_TRX);
-    this.priceTRX.innerHTML = intl.formatNumber(priceTRX);
+    let priceXLT = value * (price / ONE_XLT);
+    this.priceXLT.innerHTML = intl.formatNumber(priceXLT);
   }
 
   preBuyTokens = (token) => {
@@ -194,7 +194,7 @@ class TokenList extends Component {
                   />
                 </div>
                 <div className="text-center mt-3 text-muted">
-                  <b>= <span ref={ref => this.priceTRX = ref}>0</span> TRX</b>
+                  <b>= <span ref={ref => this.priceXLT = ref}>0</span> XLT</b>
                 </div>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.buyTokens(token)
@@ -213,9 +213,9 @@ class TokenList extends Component {
       return;
     }
     let {currentWallet, wallet} = this.props;
-    let tokenCosts = buyAmount * (token.price / ONE_TRX);
+    let tokenCosts = buyAmount * (token.price / ONE_XLT);
 
-    if ((currentWallet.balance / ONE_TRX) < tokenCosts) {
+    if ((currentWallet.balance / ONE_XLT) < tokenCosts) {
       this.setState({
         alert: (
             <SweetAlert
@@ -228,7 +228,7 @@ class TokenList extends Component {
                   this.setState({alert: null})
                 }}><i className="fa fa-times" ariaHidden="true"></i></a>
                 <span>
-                  {tu("not_enough_trx_message")}
+                  {tu("not_enough_xlt_message")}
                 </span>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.setState({alert: null})
@@ -251,7 +251,7 @@ class TokenList extends Component {
                 }}><i className="fa fa-times" ariaHidden="true"></i></a>
                 <h5 style={{color: 'black'}}>{tu("buy_confirm_message_1")}</h5>
                 <span>
-                {buyAmount} {token.name} {t("for")} {buyAmount * (token.price / ONE_TRX)} TRX?
+                {buyAmount} {token.name} {t("for")} {buyAmount * (token.price / ONE_XLT)} XLT?
                 </span>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.confirmTransaction(token)
@@ -432,7 +432,7 @@ class TokenList extends Component {
     return (
         <main className="container header-overlap token_black">
           {alert}
-          {loading && <div className="loading-style"><TronLoader/></div>}
+          {loading && <div className="loading-style"><LitetokensLoader/></div>}
           {
             <div className="row">
               <div className="col-md-12 table_pos">

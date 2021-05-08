@@ -7,9 +7,9 @@ import {filter} from "lodash";
 import {AddressLink} from "./common/Links";
 import Paging from "./common/Paging";
 import {Client} from "../services/api";
-import {CIRCULATING_SUPPLY, ONE_TRX} from "../constants";
+import {CIRCULATING_SUPPLY, ONE_XLT} from "../constants";
 import {Sticky, StickyContainer} from "react-sticky";
-import {TRXPrice} from "./common/Price";
+import {XLTPrice} from "./common/Price";
 import {WidgetIcon} from "./common/Icon";
 import xhr from "axios/index";
 
@@ -39,7 +39,7 @@ class Accounts extends Component {
     //   limit: pageSize,
     //   start: (page-1) * pageSize,
     // });
-      let accountData = await xhr.get("https://assistapi.tronscan.org/api/account?sort=-balance&limit="+ pageSize + "&start=" + (page - 1) * pageSize);
+      let accountData = await xhr.get("https://assistapi.litescan.org/api/account?sort=-balance&limit="+ pageSize + "&start=" + (page - 1) * pageSize);
       let accountsTotal = accountData.data.total;
       let accounts = accountData.data.data;
       this.setState({
@@ -103,16 +103,16 @@ class Accounts extends Component {
                       </th>
                       <td className="d-md-table-cell text-nowrap">
                         <FormattedNumber
-                            value={(((account.balance / ONE_TRX) / CIRCULATING_SUPPLY) * 100)}
+                            value={(((account.balance / ONE_XLT) / CIRCULATING_SUPPLY) * 100)}
                             minimumFractionDigits={8}
                             maximumFractionDigits={8}
                         /> %
                       </td>
                       <td className="text-nowrap d-md-table-cell">
-                        <FormattedNumber value={account.power / ONE_TRX}/>
+                        <FormattedNumber value={account.power / ONE_XLT}/>
                       </td>
                       <td className="text-nowrap">
-                        <TRXPrice amount={account.balance / ONE_TRX}/>
+                        <XLTPrice amount={account.balance / ONE_XLT}/>
                       </td>
                     </tr>
                 ))

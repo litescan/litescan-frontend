@@ -4,17 +4,17 @@ import React, {Fragment} from "react";
 import {injectIntl} from "react-intl";
 import {tu} from "../../../utils/i18n";
 import {Client} from "../../../services/api";
-import {isAddressValid} from "@tronscan/client/src/utils/crypto";
+import {isAddressValid} from "litescan-client/src/utils/crypto";
 import SendOption from "./../SendOption";
 import {find, round} from "lodash";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {Alert} from "reactstrap";
 import {reloadWallet} from "../../../actions/wallet";
 import {FormattedNumber} from "react-intl";
 import SweetAlert from "react-bootstrap-sweetalert";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import {login} from "../../../actions/app";
-import {pkToAddress} from "@tronscan/client/src/utils/crypto";
+import {pkToAddress} from "litescan-client/src/utils/crypto";
 
 class SendForm extends React.Component {
 
@@ -62,8 +62,8 @@ class SendForm extends React.Component {
 
     this.setState({isLoading: true, modal: null});
 
-    if (token === "TRX") {
-      amount = amount * ONE_TRX;
+    if (token === "XLT") {
+      amount = amount * ONE_XLT;
     }
 
     let {success} = await Client.sendWithNote(token, account.address, to, amount, note)(account.key);
@@ -280,7 +280,7 @@ class SendForm extends React.Component {
     return (
         <form>
           {modal}
-          {isLoading && <TronLoader/>}
+          {isLoading && <LitetokensLoader/>}
           <div className="form-group">
             <label>{tu("to")}</label>
             <div className="input-group mb-3">

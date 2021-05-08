@@ -96,7 +96,7 @@ export default class Blocks extends React.Component {
                   <BlockNumberLink number={block.number}/>
                 </th>
                 <td className="text-nowrap"><TimeAgo date={block.timestamp} /></td>
-                <td style={{width: 100}}><FormattedNumber value={block.nrOfTrx} /></td>
+                <td style={{width: 100}}><FormattedNumber value={block.nrOfXlt} /></td>
                 <td>
                   <FormattedNumber value={block.size}/>
                 </td>

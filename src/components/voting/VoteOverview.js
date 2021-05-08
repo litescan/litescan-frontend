@@ -8,9 +8,9 @@ import Countdown from "react-countdown-now";
 import {Sticky, StickyContainer} from "react-sticky";
 import {connect} from "react-redux";
 import {Alert} from "reactstrap";
-import {BarLoader, TronLoader} from "../common/loaders";
+import {BarLoader, LitetokensLoader} from "../common/loaders";
 import SweetAlert from "react-bootstrap-sweetalert";
-import {ONE_TRX} from "../../constants";
+import {ONE_XLT} from "../../constants";
 import {login} from "../../actions/app";
 import {reloadWallet} from "../../actions/wallet";
 import {Link} from "react-router-dom";
@@ -19,7 +19,7 @@ import palette from "google-palette";
 import {Truncate} from "../common/text";
 import {withTimers} from "../../utils/timing";
 import {loadVoteList, loadVoteTimer} from "../../actions/votes";
-import {pkToAddress} from "@tronscan/client/src/utils/crypto";
+import {pkToAddress} from "litescan-client/src/utils/crypto";
 
 function VoteChange({value, arrow = false}) {
   if (value > 0) {
@@ -95,15 +95,15 @@ class VoteOverview extends React.Component {
     let {wallet} = this.props;
     let {votes} = this.state;
 
-    let trxBalance = 0;
+    let xltBalance = 0;
 
     if (wallet.isOpen) {
-      trxBalance = wallet.current.frozenTrx / ONE_TRX;
+      xltBalance = wallet.current.frozenXlt / ONE_XLT;
     }
 
     let votesSpend = sumBy(Object.values(votes), vote => parseInt(vote, 10) || 0);
 
-    let votesAvailable = trxBalance - votesSpend;
+    let votesAvailable = xltBalance - votesSpend;
     let spendAll = (votesSpend > 0 && votesAvailable === 0);
 
     let voteState = 0;
@@ -114,17 +114,17 @@ class VoteOverview extends React.Component {
       voteState = -1;
     }
 
-    if (trxBalance === 0) {
+    if (xltBalance === 0) {
       voteState = -2;
     }
 
     return {
-      trxBalance,
+      xltBalance,
       votesSpend,
       votesAvailable,
       spendAll,
       voteState,
-      votePercentage: (votesSpend / trxBalance) * 100,
+      votePercentage: (votesSpend / xltBalance) * 100,
     };
   };
 
@@ -201,7 +201,7 @@ class VoteOverview extends React.Component {
       case -2:
         return (
           <span className="text-danger">
-            {tu("need_min_trx_to_vote_message")}
+            {tu("need_min_xlt_to_vote_message")}
           </span>
         );
     }
@@ -217,7 +217,7 @@ class VoteOverview extends React.Component {
     let {votingEnabled, votesSubmitted, submittingVotes } = this.state;
     let {intl, account} = this.props;
 
-    let {trxBalance} = this.getVoteStatus();
+    let {xltBalance} = this.getVoteStatus();
 
     if (!account.isLoggedIn) {
       return (
@@ -235,7 +235,7 @@ class VoteOverview extends React.Component {
       );
     }
 
-    if (trxBalance <= 0) {
+    if (xltBalance <= 0) {
       return (
         <div className="text-center">
           {tu("warning_votes")}{' '}
@@ -273,7 +273,7 @@ class VoteOverview extends React.Component {
 
     return (
       <div>
-        <button className="btn btn-tron btn-block" onClick={this.enableVoting}>
+        <button className="btn btn-litetokens btn-block" onClick={this.enableVoting}>
           {tu("click_to_start_voting")}
         </button>
       </div>
@@ -434,9 +434,9 @@ class VoteOverview extends React.Component {
     let totalVotes = sumBy(candidates, c => c.votes);
 
     let biggestGainer = sortBy(candidates, c => c.change_cycle * -1)[0] || {};
-    let {trxBalance} = this.getVoteStatus();
+    let {xltBalance} = this.getVoteStatus();
 
-    let voteSize = Math.ceil(trxBalance / 20);
+    let voteSize = Math.ceil(xltBalance / 20);
 
     return (
       <main className="container header-overlap">
@@ -497,9 +497,9 @@ class VoteOverview extends React.Component {
 
         {
           loading ? <div className="card mt-2">
-              <TronLoader>
+              <LitetokensLoader>
                 {tu("loading_super_representatives")}
-              </TronLoader>
+              </LitetokensLoader>
             </div> :
             <div className="row mt-2">
               <div className="col-md-12">

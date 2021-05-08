@@ -1,19 +1,19 @@
 <h1 align="center">
   <br>
-  <img width="40%" src="https://raw.githubusercontent.com/tron-explorer/docs/master/images/tron-banner.png">
+  <img width="40%" src="https://raw.githubusercontent.com/litescan/docs/master/images/tron-banner.png">
   <br>
-  Tronscan Frontend
+  Litescan Frontend
   <br>
 </h1>
 
 <h4 align="center">
-  React.js Frontend for <a href="https://tronscan.org">Tronscan.org</a>
+  React.js Frontend for <a href="https://litescan.org">Litescan.org</a>
 </h4>
 
 <p align="center">
   <a href="#requirements">Requirements</a> •
   <a href="#installation">Running</a> •
-  <a href="https://tronscan.org">tronscan.org</a>
+  <a href="https://litescan.org">litescan.org</a>
 </p>
 
 ## Features
@@ -42,7 +42,7 @@
 
 ## Configuring API URL
 
-By default the Explorer will connect to https://api.tronscan.org for its data. 
+By default the Explorer will connect to https://api.litescan.org for its data. 
 
 When developing locally the url can be changed by defining the `API_URL` environment variable
 
@@ -52,7 +52,7 @@ When developing locally the url can be changed by defining the `API_URL` environ
 
 ## Building Desktop Apps
 
-Tronscan.org can be published as a Desktop app wrapped in Electron.
+Litescan.org can be published as a Desktop app wrapped in Electron.
 
 To build a Windows, Mac and Linux app run the following command:
 

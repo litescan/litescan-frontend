@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {loadTokens} from "../../actions/tokens";
 import {login} from "../../actions/app";
 import {filter, trim, some, sumBy} from "lodash";
-import {ASSET_ISSUE_COST, ONE_TRX} from "../../constants";
+import {ASSET_ISSUE_COST, ONE_XLT} from "../../constants";
 import {FormattedNumber, FormattedDate, injectIntl} from "react-intl";
 import {addDays, addHours, isAfter} from "date-fns";
 import "react-datetime/css/react-datetime.css";
@@ -17,7 +17,7 @@ import ExchangeRate from "./ExchangeRate.js"
 import FreezeSupply from "./FreezeSupply.js"
 import Confirm from "./Confirm.js"
 import xhr from "axios/index";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import {Steps} from 'antd';
 
 class TokenCreate extends Component {
@@ -38,7 +38,7 @@ class TokenCreate extends Component {
       abbr: "",
       totalSupply: null,
       numberOfCoins: 1,
-      numberOfTron: 1,
+      numberOfLitetokens: 1,
       startTime: startTime,
       endTime: endTime,
       description: "",
@@ -53,7 +53,7 @@ class TokenCreate extends Component {
         totalSupply: null,
         description: null,
         url: null,
-        tronAmount: null,
+        litetokensAmount: null,
         tokenAmount: null,
         startDate: null,
         endDate: null,
@@ -123,7 +123,7 @@ class TokenCreate extends Component {
               title={intl.formatMessage({id: 'in_progress'})}
               style={{marginLeft: '-240px', marginTop: '-195px', width: '450px', height: '300px'}}
           >
-            <TronLoader/>
+            <LitetokensLoader/>
           </SweetAlert>,
       loading: true
     });
@@ -135,7 +135,7 @@ class TokenCreate extends Component {
         shortName: trim(this.state.abbr),
         totalSupply: this.state.totalSupply,
         num: this.state.numberOfCoins,
-        trxNum: this.state.numberOfTron * ONE_TRX,
+        xltNum: this.state.numberOfLitetokens * ONE_XLT,
         startTime: this.state.startTime,
         endTime: this.state.endTime,
         description: this.state.description,
@@ -144,7 +144,7 @@ class TokenCreate extends Component {
       })(account.key);
 
       if (result.success) {
-        let result_img = await xhr.post("https://www.tronapp.co:9009/api/uploadLogo", {
+        let result_img = await xhr.post("https://www.litetokensapp.co:9009/api/uploadLogo", {
           imageData: logoData,
           owner_address: account.address
         });
@@ -263,7 +263,7 @@ class TokenCreate extends Component {
                     onConfirm={this.hideModal}
                     style={{marginLeft: '-240px', marginTop: '-195px'}}
                 >
-                  {tu("trx_token_wallet_requirement")}
+                  {tu("xlt_token_wallet_requirement")}
                 </SweetAlert>
           }
       );
@@ -280,7 +280,7 @@ class TokenCreate extends Component {
                     onConfirm={this.hideModal}
                     style={{marginLeft: '-240px', marginTop: '-195px'}}
                 >
-                  {tu("trx_token_fee_message")}
+                  {tu("xlt_token_fee_message")}
                 </SweetAlert>
           }
       );
@@ -327,7 +327,7 @@ class TokenCreate extends Component {
                 <div className="card">
                   <div className="card-body">
                     <div className="text-center p-3">
-                      {tu("trx_token_account_limit")}
+                      {tu("xlt_token_account_limit")}
                     </div>
                   </div>
                 </div>

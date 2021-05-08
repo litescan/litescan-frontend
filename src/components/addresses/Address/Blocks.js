@@ -33,7 +33,7 @@ export default function Blocks({blocks = []}) {
                 <BlockNumberLink number={block.number}/>
               </th>
               <td className="d-none d-md-table-cell"><TimeAgo date={block.timestamp} /></td>
-              <td className="d-none d-md-table-cell" style={{width: 100}}><FormattedNumber value={block.nrOfTrx} /></td>
+              <td className="d-none d-md-table-cell" style={{width: 100}}><FormattedNumber value={block.nrOfXlt} /></td>
               <td className="text-nowrap text-right">
                 <FormattedNumber value={block.size}/>
               </td>

@@ -2,12 +2,12 @@ import React, {Component, Fragment} from 'react';
 import {connect} from "react-redux";
 import {loadWitnesses, loadStatisticData} from "../../actions/network";
 import {tu} from "../../utils/i18n";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import {FormattedNumber} from "react-intl";
 import {injectIntl} from "react-intl";
 import _, {filter, maxBy, sortBy, trim, sumBy} from "lodash";
 import {AddressLink, BlockNumberLink} from "../common/Links";
-import {SR_MAX_COUNT} from "../../constants";
+import {EV_MAX_COUNT} from "../../constants";
 import {WidgetIcon} from "../common/Icon";
 import {RepresentativesRingPieReact} from "../common/RingPieChart";
 import {loadVoteList, loadVoteTimer} from "../../actions/votes";
@@ -43,7 +43,7 @@ class Representatives extends Component {
   isinSync(account) {
     let {witnesses} = this.props;
     let maxBlockNumber = maxBy(witnesses, witness => witness.latestBlockNumber).latestBlockNumber;
-    return account.latestBlockNumber > maxBlockNumber - SR_MAX_COUNT;
+    return account.latestBlockNumber > maxBlockNumber - EV_MAX_COUNT;
   }
 
   getPiechart() {
@@ -72,9 +72,9 @@ class Representatives extends Component {
     if (witnesses.length === 0 || this.props.voteList.length === 0) {
       return (
           <div className="card">
-            <TronLoader>
+            <LitetokensLoader>
               {tu("loading_representatives")}
-            </TronLoader>
+            </LitetokensLoader>
           </div>
       );
     }
@@ -84,7 +84,7 @@ class Representatives extends Component {
 
     return (
         <div className="card border-0">
-          <table className="table table-hover table-striped bg-white m-0 sr" style={{border:'1px solid #DFD7CA'}}>
+          <table className="table table-hover table-striped bg-white m-0 ev" style={{border:'1px solid #DFD7CA'}}>
             <thead className="thead-dark">
             <tr>
               <th className="text-right d-none d-lg-table-cell" style={{width: 20}}>#</th>
@@ -123,7 +123,7 @@ class Representatives extends Component {
     let witnesses = this.getWitnesses();
     let pieChart = this.getPiechart();
 
-    let productivityWitnesses = witnesses.slice(0, SR_MAX_COUNT);
+    let productivityWitnesses = witnesses.slice(0, EV_MAX_COUNT);
 
     let mostProductive = sortBy(productivityWitnesses, w => w.productivity * -1)[0];
     let leastProductive = _(productivityWitnesses)
@@ -136,7 +136,7 @@ class Representatives extends Component {
           <div className={witnesses.length === 0 || pieChart.length === 0 ? 'card' : ''}>
             {
               witnesses.length === 0 || pieChart.length === 0 ?
-                  <TronLoader/> :
+                  <LitetokensLoader/> :
                   <div className="row ">
                     <div className="col-md-6">
                       <div className="mt-3 mt-md-3">
@@ -278,8 +278,8 @@ function Row({account, showSync = true, index, state, props}) {
         </td>
         <td className="text-right d-none d-xl-table-cell">
           {
-            account.producedTrx !== 0 ?
-                <FormattedNumber value={account.producedTrx}/> :
+            account.producedXlt !== 0 ?
+                <FormattedNumber value={account.producedXlt}/> :
                 '-'
           }
         </td>

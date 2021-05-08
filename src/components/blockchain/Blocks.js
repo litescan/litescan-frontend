@@ -107,7 +107,7 @@ class Blocks extends React.Component {
                                 </td>
                                 <td className="text-nowrap"><TimeAgo date={block.timestamp} /></td>
                                 <td className="" style={{width: 100}}>
-                                  <FormattedNumber value={block.nrOfTrx} />
+                                  <FormattedNumber value={block.nrOfXlt} />
                                 </td>
                                 <td className="d-sm-table-cell">
                                   {block.witnessName}

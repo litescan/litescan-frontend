@@ -12,8 +12,8 @@ import {
   SET_PRICE, SET_SYNC_STATUS,
   SET_THEME
 } from "../actions/app";
-import {passwordToAddress, pkToAddress} from "@tronscan/client/src/utils/crypto";
-import {base64DecodeFromString} from "@tronscan/client/src/lib/code";
+import {passwordToAddress, pkToAddress} from "litescan-client/src/utils/crypto";
+import {base64DecodeFromString} from "litescan-client/src/lib/code";
 import {IS_DESKTOP} from "../constants";
 
 const initialState = {
@@ -54,11 +54,11 @@ const initialState = {
     address: undefined,
     isLoggedIn: false,
   },
-  activeCurrency: Lockr.get("currency", 'TRX'),
+  activeCurrency: Lockr.get("currency", 'XLT'),
   currencyConversions: [
     {
-      name: 'TRX',
-      id: 'trx',
+      name: 'XLT',
+      id: 'xlt',
       fractions: 6,
     },
     {
@@ -82,7 +82,7 @@ const initialState = {
   ],
   flags: {
     mobileLogin: false,
-    showSr: false,
+    showEv: false,
     scanTransactionQr: false,
   }
 };

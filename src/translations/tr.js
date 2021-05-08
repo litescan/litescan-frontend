@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Turkish                                                      #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "TAMAM",
-  "app_title": "TRON Protokolü",
+  "app_title": "LITETOKENS Protokolü",
   "password": "parola",
   "money_price": "fiyat",
   "price": "fiyat",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "İnterneti merkezi olmaktan çıkart",
+  "litetokens_main_message": "İnterneti merkezi olmaktan çıkart",
   "transactions_last_hour": "Son saatte yapılan işlem adeti",
   "block_height": "Blok yüksekliği",
   "online_nodes": "Çevrimiçi Düğüm Adeti",
-  "pice_per_1000trx": "Fiyat (1000 TRX başına)",
+  "pice_per_1000xlt": "Fiyat (1000 XLT başına)",
   "vote_for_super_representatives": "Süper Temsilcileri Oyla",
   "view_super_representatives": "Süper Temsilcileri görüntüle",
   "create_new_wallet": "Yeni cüzdan oluştur",
@@ -194,7 +194,7 @@ export const messages = {
   "loading_transfers": "Loading Transfers",
   "loading_transactions": "Loading Transactions",
   "loading_block": "Loading Block",
-  "current_power": "Mevcut TRON Power",
+  "current_power": "Mevcut LITETOKENS Power",
   "produce_distribution": "Blok Üreticileri Çizelgesi",
   "confirm_token_issue": "Jeton Basımı Onayla",
   "_to": "şuna:",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "adresler",
-  "trx_transferred_past_hour": "Son bir saatte aktarılan TRX miktarı",
+  "xlt_transferred_past_hour": "Son bir saatte aktarılan XLT miktarı",
   "transactions_past_hour": "Son bir saatte yapılan işlem adeti",
   "average_blocksize": "Ortalama Blok Boyutu",
   "rich_list": "Varlıklılar Listesi",
-  "tron_transaction_chart": "TRON İşlem Grafiği",
+  "litetokens_transaction_chart": "LITETOKENS İşlem Grafiği",
   "transactions_per_day": "Günlük İşlem Adeti",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "İsmi Değiştir",
   "account_name": "Hesap İsmi",
   "show_qr_code": "Kare kodu görüntüle",
-  "do_not_send_2": "Kendi cüzdanınızdan ya da bir borsadan yukarıdaki test ağı adresine TRX göndermeyin!",
+  "do_not_send_2": "Kendi cüzdanınızdan ya da bir borsadan yukarıdaki test ağı adresine XLT göndermeyin!",
   "bandwidth": "bantgenişliği",
   "balance": "bakiye",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "işlemler",
   "no_transfers": "Aktarım yok",
   "no_tokens": "Jeton bulunmuyor",
   "free_bandwidth": "Boştaki Bantgenişliği",
   "expires": "sonlanır",
   "have_been_added_to_your_account": "hesabınıza eklendi!",
-  "information_message_1": "TRX talep ettiğinizde, test ağında denemek üzere 10000 TRX alırsınız.",
-  "information_message_2": "Bir hesap sadece 10 kere TRX talep edilebilir.",
-  "request_trx_for_testing": "Test etmek için TRX talep et",
+  "information_message_1": "XLT talep ettiğinizde, test ağında denemek üzere 10000 XLT alırsınız.",
+  "information_message_2": "Bir hesap sadece 10 kere XLT talep edilebilir.",
+  "request_xlt_for_testing": "Test etmek için XLT talep et",
   "token_balances": "Jeton bakiyeleri",
   "produced_blocks": "üretilen bloklar",
   "voters": "Oy verenler",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "tanımlayan",
   "network": "ağ",
   "current": "mevcut",
-  "trx_received": "TRX alındı",
-  "test_trx_temporarily_unavailable_message": "Deneme amaçlı TRX geçici olarak mevcut değil. Lütfen daha sonra tekrar deneyiniz.",
-  "not_enough_trx": "Yeterli TRX bulunamadı",
-  "information_message_3": "TRX başarılı bir şekilde talep edildi. Eğer ulaşmaz ise, şu anda test TRX'i bulunmamaktadır ve sonraki bir vakitte tekrar denemeniz gerekmektedir.",
+  "xlt_received": "XLT alındı",
+  "test_xlt_temporarily_unavailable_message": "Deneme amaçlı XLT geçici olarak mevcut değil. Lütfen daha sonra tekrar deneyiniz.",
+  "not_enough_xlt": "Yeterli XLT bulunamadı",
+  "information_message_3": "XLT başarılı bir şekilde talep edildi. Eğer ulaşmaz ise, şu anda test XLT'i bulunmamaktadır ve sonraki bir vakitte tekrar denemeniz gerekmektedir.",
   "send_to_following_address": "Alıcı'nın adresi",
   "change_website": "Website'yi değiştir",
   "you_must_enter_url": "Bir URL girmelisiniz",
@@ -269,14 +269,14 @@ export const messages = {
   */
   "freeze": "dondur",
   "unfreeze": "çöz",
-  "freeze_trx_least": "Dondurabilmek için en az 1 TRX gerekmektedir",
-  "unable_unfreeze_trx_message": "TRX çözülemiyor. Böyle olmasının sebebi en kısa dondurma süresine henüz ulaşılmamış olması olabilir.",
-  "freeze_trx_premessage_0": `TRON Power kazanmak ve farklı faydalar edinmek için TRX dondurulabilir/kilitlenebilir.
-   Örneğin, TRON Power ile `,
-  "freeze_trx_premessage_1": `Dondurulmuş jetonlar 3 gün süre ile kilitlenmiş durumdadır. Donmuş durumdaki TRX bu süre içerisinde alınıp satılamaz.
-   Bu süre sonunda TRX'i çözüp jeton alıp satabilirsiniz.`,
-  "freeze_trx_premessage_link": "Süper Temsilciler için oy verebililrsiniz.",
-  "trx_amount": "TRX Miktarı",
+  "freeze_xlt_least": "Dondurabilmek için en az 1 XLT gerekmektedir",
+  "unable_unfreeze_xlt_message": "XLT çözülemiyor. Böyle olmasının sebebi en kısa dondurma süresine henüz ulaşılmamış olması olabilir.",
+  "freeze_xlt_premessage_0": `LITETOKENS Power kazanmak ve farklı faydalar edinmek için XLT dondurulabilir/kilitlenebilir.
+   Örneğin, LITETOKENS Power ile `,
+  "freeze_xlt_premessage_1": `Dondurulmuş jetonlar 3 gün süre ile kilitlenmiş durumdadır. Donmuş durumdaki XLT bu süre içerisinde alınıp satılamaz.
+   Bu süre sonunda XLT'i çözüp jeton alıp satabilirsiniz.`,
+  "freeze_xlt_premessage_link": "Süper Temsilciler için oy verebililrsiniz.",
+  "xlt_amount": "XLT Miktarı",
   "token_freeze_confirm_message_0": "Dondurma işlemini onaylıyorum ",
   "token_freeze_confirm_message_1": "en az 3 gün süre ile",
   "frozen_supply": "Dondurulmuş durumdaki Kaynaklar",
@@ -290,7 +290,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Hesap adı başarı ile değişti. Yeni isim",
   "unable_to_rename_title": "Hesap adı değiştirilemedi",
   "unable_to_rename_message": "Hesap adınız güncellenirken bir hata oluştu, lütfen daha sonra tekrar deneyiniz",
-  "unfreeze_trx_confirm_message": "TRX çözmek istediğinizden emin misiniz?",
+  "unfreeze_xlt_confirm_message": "XLT çözmek istediğinizden emin misiniz?",
   "unfreeze_assets": "Varlıkları Çöz",
   "sure_to_unfreeze_unlocked_tokens_message": "Jetonları çözmek istediğinize emin misiniz?",
   /*
@@ -303,22 +303,22 @@ export const messages = {
   "apply_for_delegate": "temsilci olmak için başvur",
   "apply_super_representative_candidate": "Süper Temsilci Adayı olmak için başvur",
   "your_personal_website_address": "kişisel web sitesi adresiniz",
-  "apply_for_delegate_predescription": `Her jeton sahibi TRON Süper Temsilcisi olma fırsatına sahiptir.
+  "apply_for_delegate_predescription": `Her jeton sahibi LITETOKENS Süper Temsilcisi olma fırsatına sahiptir.
    Bununla birlikte, ağ ve topluluğun daha sorunsuz ve etkin bir şekilde çalışması için,
    uygun durumdaki adayların tavsiye edilen Süper Temsilciler olabilmeleri için
-   bir dizi standart ve kurallar belirledik. Tavsiye edilen SR'leri seçilme şanslarını arttırmak için
+   bir dizi standart ve kurallar belirledik. Tavsiye edilen EV'leri seçilme şanslarını arttırmak için
    ön plana çıkartacağız. Yeni tavsiye edilen Süper Temsilciler haftada bir güncellenecek ve yayınlanacaktır.`,
   "apply_for_delegate_description": `
-   TRX sahipleri, hesap yönetimi fonksiyonunu kullanıp süper temsilci olmak için başvurabilirler ve adaylar için oy kullanabilirler.
+   XLT sahipleri, hesap yönetimi fonksiyonunu kullanıp süper temsilci olmak için başvurabilirler ve adaylar için oy kullanabilirler.
    Her hesap mevcut oylayıcı bilgisini güncelleyebilir ve aynı anda birden çok adaya oy verebilir.
-   Verilebilecek en çok oy sayısı kullanıcının elindeki TRX adetine eşit ya da az miktarda olabilir.
-   (Eğer sizde belli bir sayıda TRX varsa, o sayıdan az ya da o sayıya eşit sayıda oy verebilirsiniz).
+   Verilebilecek en çok oy sayısı kullanıcının elindeki XLT adetine eşit ya da az miktarda olabilir.
+   (Eğer sizde belli bir sayıda XLT varsa, o sayıdan az ya da o sayıya eşit sayıda oy verebilirsiniz).
    Oyların sonucu 00:00 ile 23:59 arasındaki bir oylama döngüsü içinde, her hesabın nihai  oylama
-   bilgisine göre hesaplanacaktır. En çok oyu bulunan TRX sahipleri süper temsilci olacaktır.
+   bilgisine göre hesaplanacaktır. En çok oyu bulunan XLT sahipleri süper temsilci olacaktır.
    Tüm Süper Temsilcilerin ağda yapılan her işlemi onaylamaları gerekmektedir, bu emeklerinin karşılığında bazı bonuslar alacaktırlar.
-   Süper Temsilci başvurusunda ve oylamasında TRX harcanmayacaktır.`,
+   Süper Temsilci başvurusunda ve oylamasında XLT harcanmayacaktır.`,
   "unknown_error": "bir bilinmeyen hata oluştu",
-  "representative_understand": "TRON temsilcisi nasıl olunacağını anladım",
+  "representative_understand": "LITETOKENS temsilcisi nasıl olunacağını anladım",
   "generate_account": "Hesap adresi ve parolası üretmek için tıklayınız",
   "create_account_confirm_1": "Parolamı unutmam/kaybetmem halinde varlıklarıma hiç bir zaman erişemeyeceğimi anlıyorum",
   "create_account_confirm_2": "Parolamı unutmam/kaybetmem halinde kimsenin varlıklarımı kurtarmak için bana yardımcı olamayacağını anlıyorum",
@@ -330,23 +330,23 @@ export const messages = {
   "most_votes": "en çok oylar",
   "start_end_time": "Başlangıç / Bitiş Zamanı",
   "scan_qr_code": "Bir kare kod tarayıcısı ile kare kodu tarayın",
-  "receive_trx": "TRX al",
+  "receive_xlt": "XLT al",
   "require_account_to_send": "Para göndermek için giriş yapmalısınız",
   "require_account_to_receive": "Para almak için giriş yapmalısınız",
   "successful_send": "Gönderim başarılı!",
   "confirm_transaction": "işlemi onayla",
   "last_confirmed": "Son Onay",
-  "trx_produced": "Üretilen İşlemler",
-  "do_not_send_1": "Kendi cüzdanınızdan ya da bir borsadan kendi test ağı adresinize TRX göndermeyin!",
+  "xlt_produced": "Üretilen İşlemler",
+  "do_not_send_1": "Kendi cüzdanınızdan ya da bir borsadan kendi test ağı adresinize XLT göndermeyin!",
   "go_to_votelist": "Oylama listesine git",
-  "understand_tron_sr_message_0": "Nasıl süper temsilci olunacağını anladım ve bunun için bir ücret ödeyeceğimi",
-  "understand_tron_sr_message_1": "onaylıyorum.",
+  "understand_litetokens_ev_message_0": "Nasıl süper temsilci olunacağını anladım ve bunun için bir ücret ödeyeceğimi",
+  "understand_litetokens_ev_message_1": "onaylıyorum.",
   "invalid_url": "Geçersiz URL",
   "apply_representative_error_message_0": "Temsilci başvurusu yaparken bir şeyler yanlış gitti.",
-  "apply_representative_error_message_1": "Ücret için yeteri kadar TRX bulunduğunuzdan emin olun, ya da tekrar deneyin.",
+  "apply_representative_error_message_1": "Ücret için yeteri kadar XLT bulunduğunuzdan emin olun, ya da tekrar deneyin.",
   "open_external_link": "Bir dış bağlantıyı açmaktasınız",
   "private_key_untrusted_website_message_0": "Güvenli olmayan bir web sitesi hiç bir zaman özel anahtarınızı girmeyiniz.",
-  "no_official_tron_website": "resmi bir TRON sitesi değildir.",
+  "no_official_litetokens_website": "resmi bir LITETOKENS sitesi değildir.",
   "continue_to_external_website": "Dış siteye devam et",
   "url_changed": "URL değiştirildi",
   "successfully_changed_website_message": "Website başarıyla şuna değiştirildi ",
@@ -361,11 +361,11 @@ export const messages = {
   "link_github": "GitHub Bağla",
   "you_must_enter_a_url": "Bir URL girmelisiniz",
   "success": "Başarılı",
-  "successfully_appied_sr_canidate_message_0": "Süper Temsilci Adaylığına başarıyla başvuruldu.",
-  "successfully_appied_sr_canidate_message_1": "Hesabınız kısa süre içinde güncellenecektir.",
+  "successfully_appied_ev_canidate_message_0": "Süper Temsilci Adaylığına başarıyla başvuruldu.",
+  "successfully_appied_ev_canidate_message_1": "Hesabınız kısa süre içinde güncellenecektir.",
   "landing_page": "Başlangıç Sayfası",
-  "show_more_information_publish_sr_page": "Bir sayfanın nasıl yayınlanacağı hakkında daha fazla bilgi göster",
-  "create_sr_landing_page_message_0": "Süper Temsilciler bir başlangıç sayfayı belirleyerek takımları ve planları hakkında daha fazla bilgi paylaşabilirler",
+  "show_more_information_publish_ev_page": "Bir sayfanın nasıl yayınlanacağı hakkında daha fazla bilgi göster",
+  "create_ev_landing_page_message_0": "Süper Temsilciler bir başlangıç sayfayı belirleyerek takımları ve planları hakkında daha fazla bilgi paylaşabilirler",
   "set_github_url_message_0": "Zaten Github şablonunuzu yapılandırdınız mı? O zaman URL'yi aşağıdaki düğme ile tanımlayınız",
   "set_github_link": "Github Bağlantısını Ayarla",
   "could_not_claim_rewards": "Ödüller talep edilemedi",
@@ -373,7 +373,7 @@ export const messages = {
   "rewards_claimed": "Ödüller talep edildi!",
   "successfully_claimed_rewards":  "Ödüller başarıyla talep edildi",
   "claim_rewards": "Ödül Talebi",
-  "sr_receive_reward_message_0": "Bir temsilci olarak, blok ürettiğiniz için ödül alırsınız. Bu ödüller her 24 saatte bir talep edilebilir",
+  "ev_receive_reward_message_0": "Bir temsilci olarak, blok ürettiğiniz için ödül alırsınız. Bu ödüller her 24 saatte bir talep edilebilir",
   "intro": "Başlangıç",
   "budget_expenses": "Bütçe Harcamaları",
   "server_configuration": "Sunucu Yapılandırması",
@@ -401,15 +401,15 @@ export const messages = {
   "available": "müsait",
   "testnet": "Test ağı",
   "days_to_freeze": "Dondurulacağı günler",
-  "trx_token_fee_message": "Yeni bir jeton çıkartılması için 1024 TRX gerekmektedir",
-  "trx_token_account_limit": "Bir hesap sadece bir jeton üretebilir",
-  "trx_token_wallet_requirement": "Jeton üretmek için bir cüzdan açmanız gerekmektedir",
+  "xlt_token_fee_message": "Yeni bir jeton çıkartılması için 1024 XLT gerekmektedir",
+  "xlt_token_account_limit": "Bir hesap sadece bir jeton üretebilir",
+  "xlt_token_wallet_requirement": "Jeton üretmek için bir cüzdan açmanız gerekmektedir",
   "invalid_address": "geçersiz adres",
   "insufficient_tokens": "Yetersiz jeton",
   "fill_a_valid_number": "Geçerli bir sayı girin",
   "fill_a_valid_address": "Geçerli bir adres girin",
   "make_another_transaction": "Başka bir işlem yap",
-  "token_exchange_confirm": "Jeton dağıtımı için {trxAmount} harcamayı ve toplam {tokenAmount} jeton almayı onaylıyorum.",
+  "token_exchange_confirm": "Jeton dağıtımı için {xltAmount} harcamayı ve toplam {tokenAmount} jeton almayı onaylıyorum.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "Bilinmeyen bir hata oluştu, lütfen birkaç dakika içinde tekrar deneyiniz",
   "An_error_occurred": "Bir hata oluştu",
   "create_a_token": "Bir jeton üret",
@@ -427,8 +427,8 @@ export const messages = {
   "how_much_buy_message": "Ne kadar jeton almak istiyorsunuz?",
   "buy_confirm_message_1": "Satın almak istediğinizden emin misiniz",
   "for": "için",
-  "insufficient_trx": "Yetersiz TRX",
-  "not_enough_trx_message": "Belirtilen miktarda jeton alabileceğiniz kadar TRX bulunmuyor",
+  "insufficient_xlt": "Yetersiz XLT",
+  "not_enough_xlt_message": "Belirtilen miktarda jeton alabileceğiniz kadar XLT bulunmuyor",
   "ends": "biter",
   "starts": "başlar",
   "can_be_unlocked": "şu tarihte çözülebilir",
@@ -439,12 +439,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Sadece geçerli TRON cüzdan adresleri giriniz. Doğru olmayan adresler TRX kaybına sebep olabilir.",
+  "address_warning": "Sadece geçerli LITETOKENS cüzdan adresleri giriniz. Doğru olmayan adresler XLT kaybına sebep olabilir.",
   "search_address_or_url": "Adres ya da URL ile arat",
   "the_lunch_test": "Test ağının başlatılması ile, blokzinciri tarayıcımızın ve cüzdanımızın bütün özelliklerinin test edilmesi hedeflenmektedir.",
-  "plese_keep_in_mind": "Kayıtlı hesabınız yalnızca test ağında kullanıldığı için test ağındaki hesap adresinize kendi cüzdanınızdan ya da bir borsadan TRX göndermemeniz gerektiğini lütfen unutmayın.",
-  "tron_foundation": "TRON Vakfı",
-  "trx_for_testing": "Hesap yönetimi kısmından başarılı bir şekilde başvurduğunuzda, deneme amaçlı TRX deneme hesabınıza gönderilecektir.",
+  "plese_keep_in_mind": "Kayıtlı hesabınız yalnızca test ağında kullanıldığı için test ağındaki hesap adresinize kendi cüzdanınızdan ya da bir borsadan XLT göndermemeniz gerektiğini lütfen unutmayın.",
+  "litetokens_foundation": "LITETOKENS Vakfı",
+  "xlt_for_testing": "Hesap yönetimi kısmından başarılı bir şekilde başvurduğunuzda, deneme amaçlı XLT deneme hesabınıza gönderilecektir.",
   "dear_users": "Muhterem kullanıcılar,",
   "finished": "Sonlandı",
   "token": "jeton",
@@ -452,11 +452,11 @@ export const messages = {
   "need_to_login": "Hesap sayfasına erişmek için giriş yapmalısınız",
   "thanks_for_applying": "Başvurduğunuz için teşekkürler!",
   "to_much_votes": "Şu kadar oy",
-  "no_trx_remaining": "TRX kalmadı",
+  "no_xlt_remaining": "XLT kalmadı",
   "show_more": "Fazlasını {countriesLength} Göster",
-  "vote_guide_message": `Kendi TRX'lerinizi kullanarak Süper Temsciler için oy verin.
-   Hesabınızda tuttuğunuz her TRX başına harcayabileceğiniz bir adet oy bulunmaktadır.
-   TRX harcanmayacaktır. İstediğiniz miktarda temsilci için, istediğiniz sayıda oylama yapabilirsiniz.
+  "vote_guide_message": `Kendi XLT'lerinizi kullanarak Süper Temsciler için oy verin.
+   Hesabınızda tuttuğunuz her XLT başına harcayabileceğiniz bir adet oy bulunmaktadır.
+   XLT harcanmayacaktır. İstediğiniz miktarda temsilci için, istediğiniz sayıda oylama yapabilirsiniz.
    Oyların son sayımı gece yarısı 00'da yapılacak ve seçilmişlerin listesi güncellenecektir.`,
   "search_address": "Adres ara",
   "token_transactions": "Jeton İşlemleri",
@@ -502,11 +502,11 @@ export const messages = {
   "supply_message": "Dolaşımdaki jetonların toplam miktarı",
   "description_message": "Jeton'un amacını ifade eden kısa bir tanım",
   "url_message": "Kullanıcıların jeton hakkında daha fazla bilgi bulabilecekleri bir web sitesi",
-  "exchange_rate_message_0": "Katılımcıların harcadıkları her TRX başına kaç tane jeton alacaklarını tanımlayarak tek bir jetonun fiyatını belirleyin.",
+  "exchange_rate_message_0": "Katılımcıların harcadıkları her XLT başına kaç tane jeton alacaklarını tanımlayarak tek bir jetonun fiyatını belirleyin.",
   "exchange_rate_message_1": "Katılımcılar şunları alacaktır",
   "exchange_rate_message_2": "her bir",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Jetonların verileceği katılım süresini belirleyin. Katılım süresi içinde kullanıcılar TRX'lerini vererek",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Jetonların verileceği katılım süresini belirleyin. Katılım süresi içinde kullanıcılar XLT'lerini vererek",
   "participation_message_1": " jetonları alabilirler",
   "frozen_supply_message_0": `Varlığınızın bir miktarını dondurabilirsiniz. Tanımlayabileceğiniz bu miktar
    en az 1 gün dondurulmuş olarak kalmalıdır. Dondurulan miktar başlangıç tarihi + dondurulan
@@ -515,14 +515,14 @@ export const messages = {
   "participation": "katılım",
   "start_date": "Başlama Tarihi",
   "end_date": "Bitiş Tarihi",
-  "token_spend_confirm": "Jeton arzının tamamnını yaratmanın bir defalık toplam 1024 TRX ücrete tabi olduğunu onaylarım.",
-  "token_issue_guide_message_1": `TRON Protokolünde jeton üretimi
-   hesabında en az 1024 TRX bulunan herkes tarafından yapılabilir.`,
+  "token_spend_confirm": "Jeton arzının tamamnını yaratmanın bir defalık toplam 1024 XLT ücrete tabi olduğunu onaylarım.",
+  "token_issue_guide_message_1": `LITETOKENS Protokolünde jeton üretimi
+   hesabında en az 1024 XLT bulunan herkes tarafından yapılabilir.`,
   "token_issue_guide_message_2":`Bir jeton üretilir üretilmez jetonlara genel bakış sayfasında görünecektir.
-   Kullanıcılar katılım süresi boyunca katılım sağlayarak TRX'leri ile jeton alabilirler.`,
+   Kullanıcılar katılım süresi boyunca katılım sağlayarak XLT'leri ile jeton alabilirler.`,
   "token_issue_guide_message_3":`Jeton üretildikten sonra hesabınıza toplam arzı kadar miktarda jeton gelecektir.
-   Diğer kullanıcılar TRX ile jeton aldıklarında, jetonlar hesabınızdan çekilir
-   ve siz tanımlı jeton fiyatı üzerinden TRX alırsınız.`,
+   Diğer kullanıcılar XLT ile jeton aldıklarında, jetonlar hesabınızdan çekilir
+   ve siz tanımlı jeton fiyatı üzerinden XLT alırsınız.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -534,7 +534,7 @@ export const messages = {
   "no_name_error": "İsim bilgisi gereklidir",
   "no_supply_error": "Toplam arz miktarı en az 1 olmalıdır",
   "coin_value_error": "Jeton miktarı en az 1 olmalıdır",
-  "tron_value_error": "Jeton başına TRX miktarı en az 1 olmalıdır",
+  "litetokens_value_error": "Jeton başına XLT miktarı en az 1 olmalıdır",
   "invalid_starttime_error": "Girilen başlangıç tarihi geçersiz",
   "invalid_endtime_error": "Girilen bitiş tarihi geçersiz",
   "no_description_error": "Tanımlama gereklidir",
@@ -595,7 +595,7 @@ export const messages = {
   "most_ranks": "Bu turda elde edilen en yüksek sıra",
   "view_live_ranking": "Canlı sıralamayı görüntüle",
   "open_team_page": "Takım sayfasını aç",
-  "warning_votes": "Oy vermeye başlamak için en az 1 TRON Power gereklidir. TRON Power TRX dondurularak şurada",
+  "warning_votes": "Oy vermeye başlamak için en az 1 LITETOKENS Power gereklidir. LITETOKENS Power XLT dondurularak şurada",
   "account_page": "Hesap Sayfası",
   "loading_votes": "Oylar yükleniyor",
   "3_day_ranking": "3 günlük sıralama",
@@ -607,7 +607,7 @@ export const messages = {
   "votes_remaining_message": "Kalan oy hakkınız",
   "open_wallet_start_voting_message": "Cüzdan'ı açarak oy vermeye başlayabilirsiniz",
   "thanks_submitting_vote_message": "Oyunuzu gönderdiğiniz için teşekkürler!",
-  "need_min_trx_to_vote_message": "Oy verebilmek için bakiyeniz en az 1 TRX olmalıdır",
+  "need_min_xlt_to_vote_message": "Oy verebilmek için bakiyeniz en az 1 XLT olmalıdır",
   "to_much_votes_massage": "Çok fazla oy harcadınız!",
   "all_votes_are_used_message": "Tüm oylar kullanıldı!",
   "submissing_vote_message_title": "Oylama için teşekkürler!",
@@ -665,10 +665,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "TRON nedir",
-  "tron_explorer_api": "TRON Gezgini API",
-  "tron_architechure": "TRON Mimarisi",
-  "tron_protobuf_doc": "TRON Protobuf Belgeleri",
+  "what_is_litetokens": "LITETOKENS nedir",
+  "litetokens_explorer_api": "LITETOKENS Gezgini API",
+  "litetokens_architechure": "LITETOKENS Mimarisi",
+  "litetokens_protobuf_doc": "LITETOKENS Protobuf Belgeleri",
   "report_an_error": "Bir hata / öneri bildirin",
   "frequently_asked_questions": "Sıklıkla Sorulan Sorular",
   "telegram_updates": "Telegram Güncellemeleri",
@@ -693,7 +693,7 @@ export const messages = {
   "save_keystore_file": "Anahtar Deposu Dosyanızı Kaydedin",
   "download_keystore_file": "Şifrelenmiş Anahtarı İndirin",
   "do_not_lose_it": "Kaybetmeyin!",
-  "do_not_lose_it_message_0": "Kayıp bir anahtarı bulmanıza TRON Vakfı yardım edemez.",
+  "do_not_lose_it_message_0": "Kayıp bir anahtarı bulmanıza LITETOKENS Vakfı yardım edemez.",
   "do_not_share_it": "Paylaşmayın!",
   "do_not_share_it_message_0": "Eğer bu dosyayı kötücül bir sitede kullanırsanız varlıklarınız çalınabilir.",
   "make_a_backup": "Yedekleyin!",
@@ -736,23 +736,23 @@ export const messages = {
   */
   "ledger_guide": "Ledger Rehberi",
   "requirements": "Gereksinimler",
-  "using_ledger_steps_message_0": "TRON ile Ledger'ı kullanmak için aşağıdaki adımların izlenmesi gerekir:",
+  "using_ledger_steps_message_0": "LITETOKENS ile Ledger'ı kullanmak için aşağıdaki adımların izlenmesi gerekir:",
   "a": "Bir",
   "install_the": "İsmi",
   "app": "olan uygulamanın yüklenmesi",
   "install_latest_version_message_0": "Bu uygulamanın son sürümünün yüklenmesi: ",
   "opening_your_wallet": "Cüzdanınızın açılması",
-  "open_the_tronscan_desktop_client": "Tronscan Desktop uygulamasını açınız",
+  "open_the_litescan_desktop_client": "Litescan Desktop uygulamasını açınız",
   "click_open_wallet_top_right": "Sağ üst köşedeki 'CÜZDAN'I AÇ' kısmına tıklayınız",
   "choose_ledger": "Ledger'ı tercih etmeniz",
   "connect_unlock_ledger_with_pin": "Cihazı bağlayıp PIN kodunuz ile cihazın kilidini çözmeniz",
-  "open_tron_app_on_ledger": "Ledger'da TRON app'i açmanız",
-  "ledger_connected_tronscan_message_0": "Ledger düzgün bir şekilde bağlandığında Tronscan ekranında 'Bağlandı' ifadesi görünür",
+  "open_litetokens_app_on_ledger": "Ledger'da LITETOKENS app'i açmanız",
+  "ledger_connected_litescan_message_0": "Ledger düzgün bir şekilde bağlandığında Litescan ekranında 'Bağlandı' ifadesi görünür",
   "click_on_open_wallet": "Cüzdan'ı aç 'menüsüne tıklayınız'",
-  "redirect_to_your_wallet_message": "Cüzdanınıza yönlendirilecek ve TRON adresinizi görüntüleyebileceksiniz",
+  "redirect_to_your_wallet_message": "Cüzdanınıza yönlendirilecek ve LITETOKENS adresinizi görüntüleyebileceksiniz",
   "using_ledger_to_sign_transactions": "Ledger'ı kullanarak işlemleri imzalamak",
-  "using_ledger_to_sign_transactions_message_0": "Ledger'ın bağlı olduğundan emin olun. Ledger'daki TRON app ile Tronscan Desktop kullanırken yapılan işlemleri imzalayabileceksiniz",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan imzalanması gereken bir işlem olduğunda, işlem detayları gösteren bir pencere açacaktır. İmzalar oy kullandığınızda, TRX gönderdiğinizde, hesap adını değiştirdiğinizde vb. gerekmektedir.",
+  "using_ledger_to_sign_transactions_message_0": "Ledger'ın bağlı olduğundan emin olun. Ledger'daki LITETOKENS app ile Litescan Desktop kullanırken yapılan işlemleri imzalayabileceksiniz",
+  "using_ledger_to_sign_transactions_message_1": "Litescan imzalanması gereken bir işlem olduğunda, işlem detayları gösteren bir pencere açacaktır. İmzalar oy kullandığınızda, XLT gönderdiğinizde, hesap adını değiştirdiğinizde vb. gerekmektedir.",
   /*
   ##################################################################################
   #                                                                                #
@@ -772,7 +772,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "Süper Temsilcilik için başvuruldu",
-  "sr_candidature": "Süper Temsilci Adaylığı",
+  "ev_candidature": "Süper Temsilci Adaylığı",
   "created_token": "jeton oluşturuldu",
   "token_creation": "Jeton Oluşturma",
   "bought": "satın alındı",
@@ -783,13 +783,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -805,7 +805,7 @@ export const messages = {
   "total_BlockCount": "Toplam blok adeti",
   "new_address_seen": "Görülen yeni adres",
   "transfer_contract": "Aktarım Sözleşmesi",
-  "TRX_transfer_between_addresses": "Adresler arası TRX aktarımı",
+  "XLT_transfer_between_addresses": "Adresler arası XLT aktarımı",
   "transfer_asset_contract": "Varlık aktarımı sözleşmesi",
   "token_transfer_between_addresses": "Adresler arası jeton aktarımı",
   "participate_asset_issue_contract": "Varlık oluşturma sözleşmesine katılım",
@@ -819,9 +819,9 @@ export const messages = {
   "withdraw_balance_contract": "Bakiye Çekim Sözleşmesi",
   "withdraw_balance": "Bakiye'ye çek",
   "freeze_balance_contract": "Bakiye Dondurma Sözleşmesi",
-  "freeze_TRX": "TRX'i dondur",
+  "freeze_XLT": "XLT'i dondur",
   "unfreeze_balance_contract": "Bakiye Çözme Sözleşmesi",
-  "unfreeze_TRX": "TRX'i çöz",
+  "unfreeze_XLT": "XLT'i çöz",
   "vote_witness_contract": "Tanık Oylama Sözleşmesi",
   "vote_for_a_witness": "Bir tanık için oy ver",
   "asset_issue_contract": "Varlık Oluşturma Sözleşmesi",
@@ -830,7 +830,7 @@ export const messages = {
   "frozen_balance": "Dondurulmuş Bakiye",
   "frozen_days": "Dondurulan Gün",
   "counts": "sayılır",
-  "TRX_exchange_rate": "TRX Değişim Oranı",
+  "XLT_exchange_rate": "XLT Değişim Oranı",
   "start_time": "Başladığı Saat",
   "end_time": "Bittiği Saat",
   "contracts": "Sözleşmeler",
@@ -854,24 +854,24 @@ export const messages = {
    #                                                                                #
    ##################################################################################
  */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -883,7 +883,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 };

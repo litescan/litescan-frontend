@@ -1,4 +1,4 @@
-import {Client as ApiClient} from "@tronscan/client";
+import {Client as ApiClient} from "litescan-client";
 import io from 'socket.io-client';
 
 export const Client = new ApiClient();

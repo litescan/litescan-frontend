@@ -209,7 +209,7 @@ export class ExternalLink extends React.PureComponent {
             </ModalHeader>
             <ModalBody className="text-center p-3" onClick={this.hideModal}>
               <span
-                  className="font-weight-bold text-truncate d-block">{url}</span> {t("no_official_tron_website")} &nbsp;
+                  className="font-weight-bold text-truncate d-block">{url}</span> {t("no_official_litetokens_website")} &nbsp;
               {tu("private_key_untrusted_website_message_0")}
             </ModalBody>
             <ModalFooter>
@@ -264,7 +264,7 @@ export const BlockHashLink = ({hash}) => (
 );
 
 export const TransactionHashLink = ({hash, children}) => (
-    <Link className="color-tron-100 list-item-word" to={`/transaction/${hash}`}>{children}</Link>
+    <Link className="color-litetokens-100 list-item-word" to={`/transaction/${hash}`}>{children}</Link>
 );
 
 export const BlockNumberLink = ({number, children = null}) => {

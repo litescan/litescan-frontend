@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Ukrainian                                                    #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "OK",
-  "app_title": "TRON Protocol",
+  "app_title": "LITETOKENS Protocol",
   "password": "Пароль",
   "money_price": "вартість",
   "price": "ціна",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "Децентралізований Інтернет",
+  "litetokens_main_message": "Децентралізований Інтернет",
   "transactions_last_hour": "Транзакцій за останню годину",
   "block_height": "Висота блоку",
   "online_nodes": "Вузлів онлайн",
-  "pice_per_1000trx": "Ціна (за 1000TRX)",
+  "pice_per_1000xlt": "Ціна (за 1000XLT)",
   "vote_for_super_representatives": "Голосування за Супер-представників",
   "view_super_representatives": "Огляд Супер-представників",
   "create_new_wallet": "Створити новий Гаманець",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "адреси",
-  "trx_transferred_past_hour": "Кількість TRX переданих за останню годину",
+  "xlt_transferred_past_hour": "Кількість XLT переданих за останню годину",
   "transactions_past_hour": "Трансакції за останню годину",
   "average_blocksize": "Середній розмір блоку",
   "rich_list": "розширений список",
-  "tron_transaction_chart": "Діаграма трансакцій TRON",
+  "litetokens_transaction_chart": "Діаграма трансакцій LITETOKENS",
   "transactions_per_day": "Операції в день",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "Змінити ім'я",
   "account_name": "Назва облікового запису",
   "show_qr_code": "Показати QR код",
-  "do_not_send_2": "Не відправляйте TRX з вашого власного гаманця або біржі на зазначену адресу облікового запису тест-мережі!",
+  "do_not_send_2": "Не відправляйте XLT з вашого власного гаманця або біржі на зазначену адресу облікового запису тест-мережі!",
   "bandwidth": "пропускна здатність",
   "balance": "баланс",
-  "tron_power": "TRON Power",
+  "litetokens_power": "LITETOKENS Power",
   "transactions": "трансакції",
   "no_transfers": "Переводи відсутні",
   "no_tokens": "Токени відсутні",
   "free_bandwidth": "безкоштовна пропускна здатність",
   "expires": "закінчується",
   "have_been_added_to_your_account": "були додані до вашого облікового запису!",
-  "information_message_1": "При розміщенні запиту на отримання TRX, Ви отримаєте 10000 TRX які Ви можете використати в тестовій мережі.",
-  "information_message_2": "Обмеження на запит TRX - 10 разів на один обліковий запис.",
-  "request_trx_for_testing": "Запит TRX для тестування",
+  "information_message_1": "При розміщенні запиту на отримання XLT, Ви отримаєте 10000 XLT які Ви можете використати в тестовій мережі.",
+  "information_message_2": "Обмеження на запит XLT - 10 разів на один обліковий запис.",
+  "request_xlt_for_testing": "Запит XLT для тестування",
   "token_balances": "Баланс токенів",
   "produced_blocks": "вироблено блоків",
   "voters": "виборці",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "видавець",
   "network": "мережа",
   "current": "поточний",
-  "trx_received": "TRX отримано",
-  "test_trx_temporarily_unavailable_message": "Тестові TRX тимчасово недоступні. Будь ласка спробуйте пізніше.",
-  "not_enough_trx": "Недостатньо TRX",
-  "information_message_3": "Запит на отримання ТRX успішний. Якщо ви не отримали TRX, значить відсутні тестові TRX, які можливо отримати прямо зараз, і вам слід спробувати ще раз пізніше.",
+  "xlt_received": "XLT отримано",
+  "test_xlt_temporarily_unavailable_message": "Тестові XLT тимчасово недоступні. Будь ласка спробуйте пізніше.",
+  "not_enough_xlt": "Недостатньо XLT",
+  "information_message_3": "Запит на отримання ТRX успішний. Якщо ви не отримали XLT, значить відсутні тестові XLT, які можливо отримати прямо зараз, і вам слід спробувати ще раз пізніше.",
   "send_to_following_address": "Надіслати на наступну адресу",
   "change_website": "Змінити веб-сайт",
   "you_must_enter_url": "Ви повинні ввести URL-адресу",
@@ -269,12 +269,12 @@ export const messages = {
   */
   "freeze": "заморозити",
   "unfreeze": "розморозити",
-  "freeze_trx_least": "Вам потрібен як мінімум 1 TRX для заморозки",
-  "unable_unfreeze_trx_message": "Неможливо розморозити TRX. Це може бути викликано тим, що мінімальний період заморожування ще не досягнуто.",
-  "freeze_trx_premessage_0": `TRX можна заморозити/заблокувати, щоб отримати TRON Power та використати додаткові функції. Наприклад, з TRON Power ви можете `,
-  "freeze_trx_premessage_link": "голосувати за Супер-представників.",
-  "freeze_trx_premessage_1": ` Заморожені токени "заблоковані" протягом 3 днів. Протягом цього періоду заморожі TRX не можливо продати. Після цього періоду ви можете розморозити і продавати TRX.`,
-  "trx_amount": "Кількість TRX ",
+  "freeze_xlt_least": "Вам потрібен як мінімум 1 XLT для заморозки",
+  "unable_unfreeze_xlt_message": "Неможливо розморозити XLT. Це може бути викликано тим, що мінімальний період заморожування ще не досягнуто.",
+  "freeze_xlt_premessage_0": `XLT можна заморозити/заблокувати, щоб отримати LITETOKENS Power та використати додаткові функції. Наприклад, з LITETOKENS Power ви можете `,
+  "freeze_xlt_premessage_link": "голосувати за Супер-представників.",
+  "freeze_xlt_premessage_1": ` Заморожені токени "заблоковані" протягом 3 днів. Протягом цього періоду заморожі XLT не можливо продати. Після цього періоду ви можете розморозити і продавати XLT.`,
+  "xlt_amount": "Кількість XLT ",
   "token_freeze_confirm_message_0": "Я підтверджую заморозку ",
   "token_freeze_confirm_message_1": "мінімум на 3 дні",
   "frozen_supply": "Надано для заморожування",
@@ -288,7 +288,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Ім'я змінено успішно на",
   "unable_to_rename_title": "Перейменування неможливе",
   "unable_to_rename_message": "Щось пішло не так в процесі оновлення назви Вашого облікового запису, спробуйте пізніше ще раз",
-  "unfreeze_trx_confirm_message": "Ви дійсно бажаєте розморозити TRX?",
+  "unfreeze_xlt_confirm_message": "Ви дійсно бажаєте розморозити XLT?",
   "unfreeze_assets": "Розморозити активи",
   "sure_to_unfreeze_unlocked_tokens_message": "Ви впевнені, що хочете розморозити розблоковані токени?",
   /*
@@ -306,16 +306,16 @@ export const messages = {
    Ми будемо просувати наших супер-представників задля збільшення їх шанси бути обраними.
    Щотижня ми будемо оновлювати дані про супер-представників`,
   "apply_for_delegate_description": `
-   Власники TRX можуть подати заявку, щоб стати Супер-представником, використовуючи функцію управління обліковим записом, а також проголосувати за кандидатів.
+   Власники XLT можуть подати заявку, щоб стати Супер-представником, використовуючи функцію управління обліковим записом, а також проголосувати за кандидатів.
    Кожний обліковий запис може переглядати поточні дані про виборців, а також дозволяє проголосувати за декількох кандидатів.
-   Максимальна кількість голосів має бути меншою або дорівнює кількості TRX у користувачів, які користувачі мають кожного разу при голосуванні.
-   (Якщо у вас є певна кількість TRX, ви можете віддати менше або рівне цим TRX кількість голосів).
+   Максимальна кількість голосів має бути меншою або дорівнює кількості XLT у користувачів, які користувачі мають кожного разу при голосуванні.
+   (Якщо у вас є певна кількість XLT, ви можете віддати менше або рівне цим XLT кількість голосів).
    Результат голосування буде розраховуватися на підставі остаточної інформації про виборців кожного рахунку в кожному
-   циклі голосування, який триває з 00:00 до 24:00. Власники TRX з більшістю голосів стануть суперделегатами.
+   циклі голосування, який триває з 00:00 до 24:00. Власники XLT з більшістю голосів стануть суперделегатами.
    Кожна трансакція, здійснена в мережі, повинна бути перевірена усіма Супер-представниками, які отримають за це бонуси.
-   TRX не буде витрачатися в процесі голосування за Супер-представників.`,
+   XLT не буде витрачатися в процесі голосування за Супер-представників.`,
   "unknown_error": "сталася невідома помилка",
-  "representative_understand": "Я розумію як стати Представником TRON",
+  "representative_understand": "Я розумію як стати Представником LITETOKENS",
   "generate_account": "Натисніть, щоб створити адресу та пароль свого облікового запису",
   "create_account_confirm_1": "Я розумію, що якщо я забуду/втрачу свій пароль, то ніколи не зможу отримати доступ до своїх активів",
   "create_account_confirm_2": "Я розумію, що якщо я забуду/втрачу свій пароль, то ніхто не зможе допомогти мені відновити його",
@@ -327,23 +327,23 @@ export const messages = {
   "most_votes": "більшість голосів",
   "start_end_time": "Час Початку/Кінця",
   "scan_qr_code": "Проскануйте код QR Code сканером",
-  "receive_trx": "отримати TRX",
+  "receive_xlt": "отримати XLT",
   "require_account_to_send": "Ви повинні увійти в систему для відправки монет",
   "require_account_to_receive": "Ви повинні увійти в систему для отримання монет",
   "successful_send": "Успішно відправлено!",
   "confirm_transaction": "підтвердити трансакцію",
   "last_confirmed": "Останній підтверджений",
-  "trx_produced": "Трансакцію проведено /TRX  випущено ",
-  "do_not_send_1": "Не відправляйте TRX з вашого власного гаманця або біржі на зазначену адресу облікового запису тест-мережі!",
+  "xlt_produced": "Трансакцію проведено /XLT  випущено ",
+  "do_not_send_1": "Не відправляйте XLT з вашого власного гаманця або біржі на зазначену адресу облікового запису тест-мережі!",
   "go_to_votelist": "До списку виборців",
-  "understand_tron_sr_message_0": "Я розумію, як бути представником ТРОН, і я підтверджую витрати",
-  "understand_tron_sr_message_1": "гонорар.",
+  "understand_litetokens_ev_message_0": "Я розумію, як бути представником ТРОН, і я підтверджую витрати",
+  "understand_litetokens_ev_message_1": "гонорар.",
   "invalid_url": "Недійсна URL-адреса",
   "apply_representative_error_message_0": "Помилка під час спроби подати заявку на представника.",
-  "apply_representative_error_message_1": "Переконайтеся, що у вас є достатньо TRX для оплати, або повторіть спробу пізніше.",
+  "apply_representative_error_message_1": "Переконайтеся, що у вас є достатньо XLT для оплати, або повторіть спробу пізніше.",
   "open_external_link": " Ви відкриваєте посилання на зовнішній ресурс.",
   "private_key_untrusted_website_message_0": "Ніколи не вводьте свій приватний ключ на ненадійний веб-сайт.",
-  "no_official_tron_website": " не є офіційним сайтом TRON.",
+  "no_official_litetokens_website": " не є офіційним сайтом LITETOKENS.",
   "continue_to_external_website": "продовжити на зовнішньому веб-сайті",
   "url_changed": "URL змінено",
   "successfully_changed_website_message": "Веб-сайт успішно змінено",
@@ -358,11 +358,11 @@ export const messages = {
   "link_github": "перейти на Github",
   "you_must_enter_a_url": "Ви повинні ввести URL-адресу",
   "success": "Успішно",
-  "successfully_appied_sr_canidate_message_0": "Подана заявка на кандидата в Супер Представники ",
-  "successfully_appied_sr_canidate_message_1": "Ваш обліковий запис незабаром буде оновлено.",
+  "successfully_appied_ev_canidate_message_0": "Подана заявка на кандидата в Супер Представники ",
+  "successfully_appied_ev_canidate_message_1": "Ваш обліковий запис незабаром буде оновлено.",
   "landing_page": "Цільова сторінка",
-  "show_more_information_publish_sr_page": "Показати більше Інформації про публічну сторінку",
-  "create_sr_landing_page_message_0": " Супер Представники можуть створити цільову сторінку, на якій вони зможуть розмістити більше інформації про свою команду та свої плани.",
+  "show_more_information_publish_ev_page": "Показати більше Інформації про публічну сторінку",
+  "create_ev_landing_page_message_0": " Супер Представники можуть створити цільову сторінку, на якій вони зможуть розмістити більше інформації про свою команду та свої плани.",
   "set_github_url_message_0": " Ви вже налаштували свій шаблон Github? Потім встановіть URL-адресу, використовуючи кнопку нижче.",
   "set_github_link": "Встановіть Github посилання",
   "could_not_claim_rewards": " Не можуть претендувати на винагороду",
@@ -370,7 +370,7 @@ export const messages = {
   "rewards_claimed": "Заявлені Нагороди!",
   "successfully_claimed_rewards":  " Успішні заяви про винагороду",
   "claim_rewards": "Заявки на винагороду",
-  "sr_receive_reward_message_0": "Як представник ви отримуєте винагороду за виробництво блоків. Ці винагороди можна вимагати кожні 24 години",
+  "ev_receive_reward_message_0": "Як представник ви отримуєте винагороду за виробництво блоків. Ці винагороди можна вимагати кожні 24 години",
   "intro": "вступ",
   "budget_expenses": "Витрати бюджету",
   "server_configuration": "Конфігурація сервера",
@@ -398,15 +398,15 @@ export const messages = {
   "available": "наявні",
   "testnet": "Тестова мережа",
   "days_to_freeze": "Днів заморзки",
-  "trx_token_fee_message": "1024 TRX необхідно для випуску нового токену",
-  "trx_token_account_limit": "Ви можете створити тільки 1 токен для кожного облікового запису",
-  "trx_token_wallet_requirement": "Вам потрібно відкрити гаманець, для створення токену",
+  "xlt_token_fee_message": "1024 XLT необхідно для випуску нового токену",
+  "xlt_token_account_limit": "Ви можете створити тільки 1 токен для кожного облікового запису",
+  "xlt_token_wallet_requirement": "Вам потрібно відкрити гаманець, для створення токену",
   "invalid_address": "некоректна адреса",
   "insufficient_tokens": "Недостатньо токенів",
   "fill_a_valid_number": "Будь ласка, введіть коректний номер",
   "fill_a_valid_address": "Будь ласка, введіть коректну адресу",
   "make_another_transaction": "Здійсніть іншу трансакцію",
-  "token_exchange_confirm": "Я підтверджую витрату {trxAmount} на розподіл токенов, і отримання {tokenAmount} токенів.",
+  "token_exchange_confirm": "Я підтверджую витрату {xltAmount} на розподіл токенов, і отримання {tokenAmount} токенів.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "Виникла невідома помилка, будь ласка, спробуйте ще раз через кілька хвилин",
   "An_error_occurred": "Виникла помилка",
   "create_a_token": "Створити токен",
@@ -424,8 +424,8 @@ export const messages = {
   "how_much_buy_message": "Яку кількість токенів ви бажаєте купити?",
   "buy_confirm_message_1": "Ви дійсно бажаєте купити",
   "for": "для",
-  "insufficient_trx": "Недостатньо TRX",
-  "not_enough_trx_message": "У вас недостатньо TRX, щоб купити так багато токенів",
+  "insufficient_xlt": "Недостатньо XLT",
+  "not_enough_xlt_message": "У вас недостатньо XLT, щоб купити так багато токенів",
   "ends": "кінці",
   "starts": "починається",
   "can_be_unlocked": "може бути розблоковано",
@@ -436,12 +436,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Введіть тільки дійсну адресу гаманця TRON. Неправильні адреси можуть призвести до втрати TRX.",
+  "address_warning": "Введіть тільки дійсну адресу гаманця LITETOKENS. Неправильні адреси можуть призвести до втрати XLT.",
   "search_address_or_url": "Пошук за адресою або URL",
   "the_lunch_test": "Запуск тестової мережі націлений на тестування всіх функцій нашого блокчейн-оглядача і гаманця.",
-  "please_keep_in_mind": "Будь ласка, майте на увазі, що ваша адреса облікового запису зареєстрована тільки для використання в тестовій мережі, не відправляйте TRX з вашого власного гаманця або біржі на адресу облікового запису в тестовій мережі.",
-  "tron_foundation": "TRON Foundation",
-  "trx_for_testing": "TRX для тестування буде відправлено до вашого тестового облікового запису після успішного застосування через керування обліковим записом.",
+  "please_keep_in_mind": "Будь ласка, майте на увазі, що ваша адреса облікового запису зареєстрована тільки для використання в тестовій мережі, не відправляйте XLT з вашого власного гаманця або біржі на адресу облікового запису в тестовій мережі.",
+  "litetokens_foundation": "LITETOKENS Foundation",
+  "xlt_for_testing": "XLT для тестування буде відправлено до вашого тестового облікового запису після успішного застосування через керування обліковим записом.",
   "dear_users": "Шановні користувачі,",
   "finished": "Завершено",
   "token": "токен",
@@ -449,11 +449,11 @@ export const messages = {
   "need_to_login": "Ви повинні увійти в систему, щоб отримати доступ до сторінки облікового запису",
   "thanks_for_applying": "Дякуємо за подану заявку!",
   "to_much_votes": "більше голосів голосів",
-  "no_trx_remaining": "TRX не залишилося",
+  "no_xlt_remaining": "XLT не залишилося",
   "show_more": "Показати {countriesLength} більше",
-  "vote_guide_message": `Використовуйте TRX для голосування за Супер-Представників.
-   За кожен TRX який є в обліковому записі, Ви отримуєте один голос для голосування.
-   TRX НЕ будуть витрачатися. Ви можете голосувати скільки завгодно разів за кількох бажаних представників.
+  "vote_guide_message": `Використовуйте XLT для голосування за Супер-Представників.
+   За кожен XLT який є в обліковому записі, Ви отримуєте один голос для голосування.
+   XLT НЕ будуть витрачатися. Ви можете голосувати скільки завгодно разів за кількох бажаних представників.
    Фінальні голоси будуть підраховані за 24 години і список делегатів буде оновлено`,
   "search_address": "Пошук за адресою",
   "token_transactions": "Трансакції токенів",
@@ -499,25 +499,25 @@ export const messages = {
   "supply_message": "Загальна кількість токенов, які будуть в обігу",
   "description_message": "Короткий опис призначення токену",
   "url_message": "Веб сайт, де користувачі можуть знайти більше інформації про токен",
-  "exchange_rate_message_0": "Вкажіть ціну одного токена, визначивши, скільки токенов учасник отримає за кожен витрачений TRX.",
+  "exchange_rate_message_0": "Вкажіть ціну одного токена, визначивши, скільки токенов учасник отримає за кожен витрачений XLT.",
   "exchange_rate_message_1": "Учасник отримає",
   "exchange_rate_message_2": "за кожен/кожні",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Вкажіть період участі, в якому будуть випущені токени. Протягом періоду участі користувачі можуть обміняти TRX на ",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Вкажіть період участі, в якому будуть випущені токени. Протягом періоду участі користувачі можуть обміняти XLT на ",
   "participation_message_1": " токени.",
   "frozen_supply_message_0": `Частина від обсягу може бути заморожена. Обсяг може бути вказаний і буде заморожений як мінімум на 1 день.. Заморожений обсяг може бути вручну розморожений після дати початку + або сплив час заморозки. заморожений обсяг не потрібен.`,
   "token_issued_successfully": "Токен успішно випущений",
   "participation": "учасник",
   "start_date": "Дата початку",
   "end_date": "Дата кінця",
-  "token_spend_confirm": "Я підтверджую, що створення загального обсягу токенов дорівнює в цілому 1024 TRX",
-  "token_issue_guide_message_1": `Випуск токена на Протоколі TRON можливо
-    для кожного, хто має хоча б 1024 TRX на своєму Обліковому записі`,
+  "token_spend_confirm": "Я підтверджую, що створення загального обсягу токенов дорівнює в цілому 1024 XLT",
+  "token_issue_guide_message_1": `Випуск токена на Протоколі LITETOKENS можливо
+    для кожного, хто має хоча б 1024 XLT на своєму Обліковому записі`,
   "token_issue_guide_message_2": `Коли токен випущений, це повинно бути відображено на сторінці огляду токена.
-   Потім користувачі можуть брати участь під час періоду участі і обміну TRX на токени.`,
+   Потім користувачі можуть брати участь під час періоду участі і обміну XLT на токени.`,
   "token_issue_guide_message_3":`Після випуску токена ваш аккаунт отримає кількість токенов, що дорівнює загальному обсягу.
-    Коли інші користувачі обмінюють свої TRX на токени, то токени будуть списуватися з Вашого облікового запису і Ви будете
-    отримувати TRX, у кількості відповідно до зазначеного обмінного курсу.`,
+    Коли інші користувачі обмінюють свої XLT на токени, то токени будуть списуватися з Вашого облікового запису і Ви будете
+    отримувати XLT, у кількості відповідно до зазначеного обмінного курсу.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -529,7 +529,7 @@ export const messages = {
   "no_name_error": "Відсутнє ім’я",
   "no_supply_error": "Загальний обсяг повинен бути рівний хоча б 1",
   "coin_value_error": "Кількість токенов має дорівнювати хоча б 1",
-  "tron_value_error": "Кількість TRX за монету має дорівнювати хоча б 1",
+  "litetokens_value_error": "Кількість XLT за монету має дорівнювати хоча б 1",
   "invalid_starttime_error": "Надана  дата початку не коректна",
   "invalid_endtime_error": "Надана  дата закінченя не коректна",
   "no_description_error": "необхідний опис ",
@@ -590,7 +590,7 @@ export const messages = {
   "most_ranks": "Вищий рейтинг за раунд",
   "view_live_ranking": "Подивитися рейтинг наживу",
   "open_team_page": "Відкрити сторінку команди",
-  "warning_votes": " Для початку голосування потрібно хоча б 1 TRON Power. TRON Power досягається заморожуванням TRX на",
+  "warning_votes": " Для початку голосування потрібно хоча б 1 LITETOKENS Power. LITETOKENS Power досягається заморожуванням XLT на",
   "account_page": "Сторінці Облікового запису",
   "loading_votes": "Завантаження голосів",
   "3_day_ranking": "Рейтинг за 3 дні",
@@ -602,7 +602,7 @@ export const messages = {
   "votes_remaining_message": "Голосів Лишилось",
   "open_wallet_start_voting_message": "Відкрийте гаманець, щоб розпочати голосування",
   "thanks_submitting_vote_message": "Дякуємо, що подали свій голос!",
-  "need_min_trx_to_vote_message": "Вам потрібно мати принаймні 1 TRX, для голосування",
+  "need_min_xlt_to_vote_message": "Вам потрібно мати принаймні 1 XLT, для голосування",
   "to_much_votes_massage": "Ви витрачаєте багато голосів!",
   "all_votes_are_used_message": "Всі голоси використані!",
   "submissing_vote_message_title": "Дякуємо за голосування!",
@@ -660,10 +660,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "Що таке TRON",
-  "tron_explorer_api": "TRON Explorer API",
-  "tron_architechure": "TRON Архітектура",
-  "tron_protobuf_doc": "TRON Protobuf документація",
+  "what_is_litetokens": "Що таке LITETOKENS",
+  "litetokens_explorer_api": "LITETOKENS Explorer API",
+  "litetokens_architechure": "LITETOKENS Архітектура",
+  "litetokens_protobuf_doc": "LITETOKENS Protobuf документація",
   "report_an_error": "Надіслати помилку / пропозицію",
   "frequently_asked_questions": " Питання що часто задаються",
   "telegram_updates": "інформування через Telegram ",
@@ -688,7 +688,7 @@ export const messages = {
   "save_keystore_file": "Зберегти файл ключа",
   "download_keystore_file": "Завантажити файл ключа",
   "do_not_lose_it": "Не згубіть його!",
-  "do_not_lose_it_message_0": "TRON Foundation не зможе допомогти Вам його відновити.",
+  "do_not_lose_it_message_0": "LITETOKENS Foundation не зможе допомогти Вам його відновити.",
   "do_not_share_it": "Не діліться ним!",
   "do_not_share_it_message_0": "Ваші кошти можуть бути викрадені, якщо ви використаєте цей файл на сайті зловмисників ",
   "make_a_backup": "Створіть резервну копію!",
@@ -731,23 +731,23 @@ export const messages = {
   */
   "ledger_guide": "Посібник для роботи",
   "requirements": "Вимоги",
-  "using_ledger_steps_message_0": " Використання підручника з Tronscan вимагає наступних кроків:",
+  "using_ledger_steps_message_0": " Використання підручника з Litescan вимагає наступних кроків:",
   "a": "A",
   "install_the": "Встановіть ",
   "app": "app",
   "install_latest_version_message_0": " Встановити останню версію",
   "opening_your_wallet": "Відкрийте ваш гаманкць",
-  "open_the_tronscan_desktop_client": "Відкрийте клієнт Tronscan Desktop",
+  "open_the_litescan_desktop_client": "Відкрийте клієнт Litescan Desktop",
   "click_open_wallet_top_right": " Натисніть & ldquo; Відкрити гаманець & rdquo; у верхньому правому куті",
   "choose_ledger": "Вибрати підпис",
   "connect_unlock_ledger_with_pin": "Підключіть та розблокуйте свій пристрій за допомогою PIN-коду",
-  "open_tron_app_on_ledger": "Відкрийте додаток TRON у своєму  Ledger",
-  "ledger_connected_tronscan_message_0": "Якщо ваш Ledger правильно під'єднано, то Tronscan відображатиметься & ldquo; Підключено & rdquo",
+  "open_litetokens_app_on_ledger": "Відкрийте додаток LITETOKENS у своєму  Ledger",
+  "ledger_connected_litescan_message_0": "Якщо ваш Ledger правильно під'єднано, то Litescan відображатиметься & ldquo; Підключено & rdquo",
   "click_on_open_wallet": "Натисніть & ldquo; Відкрити гаманець & rdquo",
-  "redirect_to_your_wallet_message": "Ви будете пере направлені до свого гаманця, і ви там зможете переглянути свою адресу TRON",
+  "redirect_to_your_wallet_message": "Ви будете пере направлені до свого гаманця, і ви там зможете переглянути свою адресу LITETOKENS",
   "using_ledger_to_sign_transactions": "Використання Ledger для затвердження трансакції",
-  "using_ledger_to_sign_transactions_message_0": "При використанні Tronscan Desktop, не забудьте залишити підключеним Ledger, щоб  могти затвердити трансакції у відкритому додатоку TRON",
-  "using_ledger_to_sign_transactions_message_1": " Tronscan показуватиме спливаюче вікно з деталями трансакцій і коли буде потрібна підписка трансакції. Підписи потрібні будуть кожного разу коли ви голосуєте, коли відправте TRX, змінюєте ім'я облікового запису, тощо..",
+  "using_ledger_to_sign_transactions_message_0": "При використанні Litescan Desktop, не забудьте залишити підключеним Ledger, щоб  могти затвердити трансакції у відкритому додатоку LITETOKENS",
+  "using_ledger_to_sign_transactions_message_1": " Litescan показуватиме спливаюче вікно з деталями трансакцій і коли буде потрібна підписка трансакції. Підписи потрібні будуть кожного разу коли ви голосуєте, коли відправте XLT, змінюєте ім'я облікового запису, тощо..",
   /*
   ##################################################################################
   #                                                                                #
@@ -767,7 +767,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": " застосовується для Супер Представника",
-  "sr_candidature": "Кандидат у Супер-представники",
+  "ev_candidature": "Кандидат у Супер-представники",
   "created_token": "створений токен",
   "token_creation": "Створення Token",
   "bought": "куплено",
@@ -778,13 +778,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Buy TRON",
-  "buy_tron_message_0": "TRX can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase trx. A list of supported currencies and a FAQ can be found at ",
-  "buy_tron_using_changelly": "Buy TRON using Changelly",
+  "buy_litetokens": "Buy LITETOKENS",
+  "buy_litetokens_message_0": "XLT can be purchased directly with Fiat or other Crypto-Currencies without a stock exchange. It uses a service from Changelly.com and is the easiest and fastest way to purchase xlt. A list of supported currencies and a FAQ can be found at ",
+  "buy_litetokens_using_changelly": "Buy LITETOKENS using Changelly",
   "cant_load_widget": "Can't load widget",
   /*
   ##################################################################################
@@ -800,7 +800,7 @@ export const messages = {
   "total_BlockCount": " Загальна кількість блоків ",
   "new_address_seen": "Виявлена нова адреса",
   "transfer_contract": " Передача контракту",
-  "TRX_transfer_between_addresses": " Передача TRX між адресами ",
+  "XLT_transfer_between_addresses": " Передача XLT між адресами ",
   "transfer_asset_contract": "Договір про передачу активів",
   "token_transfer_between_addresses": "Передача токена між адресами ",
   "participate_asset_issue_contract": "Участь у договорі про випуск активів",
@@ -814,9 +814,9 @@ export const messages = {
   "withdraw_balance_contract": "Withdraw Balance Contract",
   "withdraw_balance": "Зняти баланс",
   "freeze_balance_contract": "Freeze Balance Contract",
-  "freeze_TRX": "заморозити TRX",
+  "freeze_XLT": "заморозити XLT",
   "unfreeze_balance_contract": "Unfreeze Balance Contract",
-  "unfreeze_TRX": "розморозити TRX",
+  "unfreeze_XLT": "розморозити XLT",
   "vote_witness_contract": "Vote Witness Contract",
   "vote_for_a_witness": " Проголосуйте за свідка ",
   "asset_issue_contract": " Договір про випуск активів",
@@ -825,7 +825,7 @@ export const messages = {
   "frozen_balance": "Заморозити Баланс",
   "frozen_days": " Заморожені дні",
   "counts": " підрахунок",
-  "TRX_exchange_rate": "TRX курс обміну",
+  "XLT_exchange_rate": "XLT курс обміну",
   "start_time": "Час початку",
   "end_time": "час закінчення",
   "contracts": "Контракти",
@@ -849,24 +849,24 @@ export const messages = {
     #                                                                                #
     ##################################################################################
   */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -878,7 +878,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 };

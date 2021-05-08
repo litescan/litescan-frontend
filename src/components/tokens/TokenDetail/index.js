@@ -5,15 +5,15 @@ import {FormattedDate, FormattedNumber, FormattedRelative, FormattedTime, inject
 import TokenHolders from "./TokenHolders";
 import {NavLink, Route, Switch} from "react-router-dom";
 import {AddressLink, ExternalLink} from "../../common/Links";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import Transfers from "./Transfers.js";
 import TokenInfo from "./TokenInfo.js";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {login} from "../../../actions/app";
 import {reloadWallet} from "../../../actions/wallet";
 import {connect} from "react-redux";
 import SweetAlert from "react-bootstrap-sweetalert";
-import {pkToAddress} from "@tronscan/client/src/utils/crypto";
+import {pkToAddress} from "litescan-client/src/utils/crypto";
 import {Link} from "react-router-dom";
 import {some} from "lodash";
 import xhr from "axios/index";
@@ -51,7 +51,7 @@ class TokenDetail extends React.Component {
     this.setState({loading: true, token: {name}});
 
     //let token = await Client.getToken(name);
-    let result = await xhr.get("https://www.tronapp.co:9009/api/token?name=" + name);
+    let result = await xhr.get("https://www.litetokensapp.co:9009/api/token?name=" + name);
     let token = result.data.data;
     let {total: totalAddresses} = await Client.getTokenHolders(name);
 
@@ -177,8 +177,8 @@ class TokenDetail extends React.Component {
     }
     this.setState({buyAmount: value});
     this.buyAmount.value = value;
-    let priceTRX = value * (price / ONE_TRX);
-    this.priceTRX.innerHTML = intl.formatNumber(priceTRX);
+    let priceXLT = value * (price / ONE_XLT);
+    this.priceXLT.innerHTML = intl.formatNumber(priceXLT);
   }
 
   preBuyTokens = (token) => {
@@ -234,7 +234,7 @@ class TokenDetail extends React.Component {
                   />
                 </div>
                 <div className="text-center mt-3 text-muted">
-                  <b>= <span ref={ref => this.priceTRX = ref}>0</span> TRX</b>
+                  <b>= <span ref={ref => this.priceXLT = ref}>0</span> XLT</b>
                 </div>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.buyTokens(token)
@@ -252,9 +252,9 @@ class TokenDetail extends React.Component {
       return;
     }
     let {currentWallet, wallet} = this.props;
-    let tokenCosts = buyAmount * (token.price / ONE_TRX);
+    let tokenCosts = buyAmount * (token.price / ONE_XLT);
 
-    if ((currentWallet.balance / ONE_TRX) < tokenCosts) {
+    if ((currentWallet.balance / ONE_XLT) < tokenCosts) {
       this.setState({
         alert: (
             <SweetAlert
@@ -267,7 +267,7 @@ class TokenDetail extends React.Component {
                   this.setState({alert: null})
                 }}><i className="fa fa-times" ariaHidden="true"></i></a>
                 <span>
-                  {tu("not_enough_trx_message")}
+                  {tu("not_enough_xlt_message")}
                 </span>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.setState({alert: null})
@@ -290,7 +290,7 @@ class TokenDetail extends React.Component {
                 }}><i className="fa fa-times" ariaHidden="true"></i></a>
                 <h5 style={{color: 'black'}}>{tu("buy_confirm_message_1")}</h5>
                 <span>
-                {buyAmount} {token.name} {t("for")} {buyAmount * (token.price / ONE_TRX)} TRX?
+                {buyAmount} {token.name} {t("for")} {buyAmount * (token.price / ONE_XLT)} XLT?
                 </span>
                 <button className="btn btn-danger btn-block mt-3" onClick={() => {
                   this.confirmTransaction(token)
@@ -372,9 +372,9 @@ class TokenDetail extends React.Component {
           {alert}
           {
             loading ? <div className="card">
-                  <TronLoader>
+                  <LitetokensLoader>
                     {tu("loading_token")} {token.name}
-                  </TronLoader>
+                  </LitetokensLoader>
                 </div> :
                 <div className="row">
                   {token &&

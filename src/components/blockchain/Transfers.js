@@ -7,11 +7,11 @@ import TimeAgo from "react-timeago";
 import {FormattedNumber} from "react-intl";
 import {Client} from "../../services/api";
 import {AddressLink, BlockNumberLink, TransactionHashLink} from "../common/Links";
-import {ONE_TRX} from "../../constants";
+import {ONE_XLT} from "../../constants";
 import {getQueryParams} from "../../utils/url";
 import Paging from "../common/Paging";
 import {Sticky, StickyContainer} from "react-sticky";
-import {TRXPrice} from "../common/Price";
+import {XLTPrice} from "../common/Price";
 import {Truncate} from "../common/text";
 
 class Transfers extends React.Component {
@@ -102,33 +102,33 @@ class Transfers extends React.Component {
                         </thead>
                         <tbody>
                         {
-                            transfers.map((trx, index) => (
-                                <tr key={trx.transactionHash}>
+                            transfers.map((xlt, index) => (
+                                <tr key={xlt.transactionHash}>
                                   <th className="text-nowrap">
                                     <Truncate>
-                                      <TransactionHashLink hash={trx.transactionHash}>{trx.transactionHash}</TransactionHashLink>
+                                      <TransactionHashLink hash={xlt.transactionHash}>{xlt.transactionHash}</TransactionHashLink>
                                     </Truncate>
                                   </th>
                                   <td className="d-md-table-cell">
-                                    <BlockNumberLink number={trx.block}/>
+                                    <BlockNumberLink number={xlt.block}/>
                                   </td>
                                   <td className="text-nowrap d-lg-table-cell">
-                                    <TimeAgo date={trx.timestamp} />
+                                    <TimeAgo date={xlt.timestamp} />
                                   </td>
                                   <td className="d-md-table-cell">
-                                    <AddressLink address={trx.transferFromAddress} />
+                                    <AddressLink address={xlt.transferFromAddress} />
                                   </td>
                                   <td className="d-sm-table-cell transfer-cell">
-                                    <AddressLink address={trx.transferToAddress} />
+                                    <AddressLink address={xlt.transferToAddress} />
                                   </td>
                                   <td className="text-nowrap text-right">
                                       {
-                                          trx.tokenName.toUpperCase() === 'TRX' ?
+                                          xlt.tokenName.toUpperCase() === 'XLT' ?
                                               <Fragment>
-                                                <TRXPrice amount={trx.amount / ONE_TRX}/>
+                                                <XLTPrice amount={xlt.amount / ONE_XLT}/>
                                               </Fragment> :
                                               <Fragment>
-                                                <FormattedNumber value={trx.amount}/> {trx.tokenName}
+                                                <FormattedNumber value={xlt.amount}/> {xlt.tokenName}
                                               </Fragment>
                                       }
                                   </td>

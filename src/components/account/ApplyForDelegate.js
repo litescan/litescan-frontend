@@ -103,8 +103,8 @@ class ApplyForDelegate extends Component {
                      checked={check}
                      onChange={(ev) => this.setState({ check: ev.target.checked })} />
               <label className="form-check-label">
-                {tu("understand_tron_sr_message_0")}
-                <b> <FormattedNumber value={WITNESS_CREATE_COST}/> TRX</b> {t("understand_tron_sr_message_1")}
+                {tu("understand_litetokens_ev_message_0")}
+                <b> <FormattedNumber value={WITNESS_CREATE_COST}/> XLT</b> {t("understand_litetokens_ev_message_1")}
               </label>
             </div>
           </div>

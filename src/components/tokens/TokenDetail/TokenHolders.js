@@ -2,10 +2,10 @@ import React, {Fragment} from "react";
 import {tu} from "../../../utils/i18n";
 import {AddressLink} from "../../common/Links";
 import {Client} from "../../../services/api";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import SmartTable from "../../common/SmartTable.js"
 import {FormattedNumber, injectIntl} from "react-intl";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import {upperFirst} from "lodash";
 
 class TokenHolders extends React.Component {
@@ -120,7 +120,7 @@ class TokenHolders extends React.Component {
     }
     return (
       <Fragment>
-        {loading && <div className="loading-style" style={{marginTop: '-20px'}}><TronLoader/></div>}
+        {loading && <div className="loading-style" style={{marginTop: '-20px'}}><LitetokensLoader/></div>}
         <div className="row transfers">
           <div className="col-md-12 table_pos">
             {total? <div className="table_pos_info">{tableInfo}</div>: ''}

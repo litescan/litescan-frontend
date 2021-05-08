@@ -7,8 +7,8 @@ import {clearConstellations, constellationPreset} from "../../lib/constellation/
 import CountUp from 'react-countup';
 import {Client} from "../../services/api";
 import {Link} from "react-router-dom";
-import {TRXPrice} from "../common/Price";
-import {TRXBurned} from "../common/Burned";
+import {XLTPrice} from "../common/Price";
+import {XLTBurned} from "../common/Burned";
 import RecentBlocks from "./RecentBlocks";
 import {KEY_ENTER} from "../../utils/constants";
 import {withTimers} from "../../utils/timing";
@@ -16,7 +16,7 @@ import RecentTransfers from "./RecentTransfers";
 import {tu} from "../../utils/i18n";
 import {toastr} from "react-redux-toastr";
 import {HrefLink} from "../common/Links";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import {LineReactAdd, LineReactTx,LineReactHighChartTx,LineReactHighChartAdd} from "../common/LineCharts";
 
 const subDays = require("date-fns/sub_days");
@@ -40,7 +40,7 @@ class Home extends Component {
 
   async loadNodes() {
    // let {total} = await Client.getNodeLocations();
-    let {data} = await xhr.get("https://server.tron.network/api/v2/node/nodemap");
+    let {data} = await xhr.get("https://server.litetokens.org/api/v2/node/nodemap");
     this.setState({
       onlineNodes: data.data.length
     })
@@ -48,7 +48,7 @@ class Home extends Component {
 
   async loadAccounts() {
     //let totalAccounts = await Client.getAccounts();
-    let accountData = await xhr.get("https://assistapi.tronscan.org/api/account");
+    let accountData = await xhr.get("https://assistapi.litescan.org/api/account");
     let totalAccounts = accountData.data.total;
     this.setState({
       totalAccounts: totalAccounts
@@ -69,7 +69,7 @@ class Home extends Component {
     */
 
     //let {txOverviewStats} = await Client.getTxOverviewStats();
-    let overviewData = await xhr.get("https://assistapi.tronscan.org/api/stats/overview");
+    let overviewData = await xhr.get("https://assistapi.litescan.org/api/stats/overview");
     let txOverviewStats = overviewData.data.data;
     let temp = [];
     let addressesTemp = [];
@@ -164,10 +164,10 @@ class Home extends Component {
   getLogo = () => {
     let {theme} = this.props;
     switch (theme) {
-      case "tron":
-        return require("../../images/tron-banner-tronblue.png");
+      case "litetokens":
+        return require("../../images/litetokens-banner-litetokensblue.png");
       default:
-        return require("../../images/tron-banner-1.png");
+        return require("../../images/litetokens-banner-1.png");
     }
   };
 
@@ -194,7 +194,7 @@ class Home extends Component {
                          {/*className="animated ad-600ms zoomIn"/>*/}
                   {/*</p>*/}
                   {/*<h2 className="mb-5 text-muted animated fadeIn ad-1600ms" style={{fontSize: 32}}>*/}
-                    {/*{tu("tron_main_message")}*/}
+                    {/*{tu("litetokens_main_message")}*/}
                   {/*</h2>*/}
                   <div className={
                     "input-group input-group-lg mb-4" +
@@ -202,7 +202,7 @@ class Home extends Component {
                     (hasFound ? " animated bounceOut" : "")
                   }>
                     <input type="text"
-                           className="form-control p-3 bg-tron-light  color-grey-100 border-0 box-shadow-none"
+                           className="form-control p-3 bg-litetokens-light  color-grey-100 border-0 box-shadow-none"
                            style={{fontSize: 13,borderRadius:0}}
                            value={search}
                            onKeyDown={this.onSearchKeyDown}
@@ -249,14 +249,14 @@ class Home extends Component {
 
                     <div className="col-md-3 col-sm-12 col-xs-12">
                       <Link to="/markets" className="hvr-underline-from-center hvr-underline-white text-muted">
-                        <h2><TRXPrice amount={1} currency="USD" source="home"/></h2>
-                        <p className="m-0">{tu("pice_per_1trx")}</p>
+                        <h2><XLTPrice amount={1} currency="USD" source="home"/></h2>
+                        <p className="m-0">{tu("pice_per_1xlt")}</p>
                       </Link>
                     </div>
                     {/*<div className="col-md-2 col-sm-6">*/}
                       {/*<Link to="/blockchain/stats/supply" className="hvr-underline-from-center hvr-underline-white text-muted">*/}
-                        {/*<h2><TRXBurned /></h2>*/}
-                        {/*<p className="m-0">{tu("burned_trx")}</p>*/}
+                        {/*<h2><XLTBurned /></h2>*/}
+                        {/*<p className="m-0">{tu("burned_xlt")}</p>*/}
                       {/*</Link>*/}
                     {/*</div>*/}
                   </div>
@@ -269,7 +269,7 @@ class Home extends Component {
               <div className="row mt-4">
                 <div className="col-md-6 mt-3 mt-md-0 ">
                   <div className="card" style={styles.card}>
-                    <div className="card-header bg-tron-light color-grey-100 text-center pb-0" style={styles.card}>
+                    <div className="card-header bg-litetokens-light color-grey-100 text-center pb-0" style={styles.card}>
                       <h5 className="m-0 lh-150">
                         <Link to="blockchain/stats/txOverviewStats">
                           {tu("14_day_transaction_history")}
@@ -281,7 +281,7 @@ class Home extends Component {
                       <div style={{minWidth:255,height: 200}}>
                         {
                           txOverviewStats === null ?
-                              <TronLoader/> :
+                              <LitetokensLoader/> :
                               <LineReactHighChartTx style={{minWidth:255,height: 200}} data={txOverviewStats} intl={intl} source='home'/>
                         }
                       </div>
@@ -291,7 +291,7 @@ class Home extends Component {
                 </div>
                 <div className="col-md-6 mt-3 mt-md-0 ">
                   <div className="card" style={styles.card}>
-                    <div className="card-header bg-tron-light color-grey-100 text-center pb-0" style={styles.card}>
+                    <div className="card-header bg-litetokens-light color-grey-100 text-center pb-0" style={styles.card}>
                       <h5 className="m-0 lh-150">
                         <Link to="blockchain/stats/addressesStats">
                           {tu("14_day_address_growth")}
@@ -303,7 +303,7 @@ class Home extends Component {
                       <div style={{minWidth:255,height: 200}}>
                         {
                           addressesStats === null ?
-                              <TronLoader/> :
+                              <LitetokensLoader/> :
                               <LineReactHighChartAdd style={{minWidth:255,height: 200}} data={addressesStats} intl={intl} source='home'/>
                         }
                       </div>
@@ -325,22 +325,22 @@ class Home extends Component {
             <div className="container">
               <div className="row text-center text-xs-center text-sm-left text-md-left">
                 <div className="col-xs-12 col-sm-4 col-md-4">
-                  <h5>TRON</h5>
+                  <h5>LITETOKENS</h5>
                   <div className="line"></div>
                   <ul className="list-unstyled quick-links pt-3">
-                    <li className="p-2"><HrefLink href="https://stateoftrondapps.com/"><i
+                    <li className="p-2"><HrefLink href="https://stateoflitetokensdapps.com/"><i
                         className="fa fa-angle-right mr-4"/> DApps</HrefLink></li>
-                    <li className="p-2"><HrefLink href={activeLanguage == 'zh'?'https://tron.network/exchangesList?lng=zh':'https://tron.network/exchangesList?lng=en'}><i
-                        className="fa fa-angle-right mr-4"/> List TRX</HrefLink></li>
-                    <li className="p-2"><HrefLink href="https://medium.com/@Tronfoundation"><i className="fa fa-angle-right mr-4"/> TRON Labs</HrefLink>
+                    <li className="p-2"><HrefLink href={activeLanguage == 'zh'?'https://litetokens.org/exchangesList?lng=zh':'https://litetokens.org/exchangesList?lng=en'}><i
+                        className="fa fa-angle-right mr-4"/> List XLT</HrefLink></li>
+                    <li className="p-2"><HrefLink href="https://medium.com/@Litetokensfoundation"><i className="fa fa-angle-right mr-4"/> LITETOKENS Labs</HrefLink>
                     </li>
-                    <li className="p-2"><HrefLink href="https://www.facebook.com/tronfoundation/"><i
+                    <li className="p-2"><HrefLink href="https://www.facebook.com/litetokens/"><i
                         className="fa fa-angle-right mr-4"/> Facebook</HrefLink></li>
-                    <li className="p-2"><HrefLink href="https://twitter.com/tronfoundation"><i
+                    <li className="p-2"><HrefLink href="https://twitter.com/litetokens"><i
                         className="fa fa-angle-right mr-4"/> Twitter</HrefLink></li>
-                    <li className="p-2"><HrefLink href="https://tronfoundation.slack.com/"><i
+                    <li className="p-2"><HrefLink href="https://litetokensfoundation.slack.com/"><i
                         className="fa fa-angle-right mr-4"/> Slack</HrefLink></li>
-                    <li className="p-2"><HrefLink href="https://www.reddit.com/r/tronix"><i
+                    <li className="p-2"><HrefLink href="https://www.reddit.com/r/litetokens"><i
                         className="fa fa-angle-right mr-4"/> Reddit</HrefLink></li>
                   </ul>
                 </div>
@@ -348,16 +348,16 @@ class Home extends Component {
                   <h5>Development</h5>
                   <div className="line"></div>
                   <ul className="list-unstyled quick-links pt-3">
-                    <li className="p-2"><HrefLink href="https://github.com/tronprotocol"><i
+                    <li className="p-2"><HrefLink href="https://github.com/litetokens"><i
                         className="fa fa-angle-right mr-4"/> Github</HrefLink></li>
-                    <li className="p-2"><HrefLink href="https://github.com/tronprotocol/java-tron"><i
-                        className="fa fa-angle-right mr-4"/> java-tron</HrefLink></li>
+                    <li className="p-2"><HrefLink href="https://github.com/litetokens/java-litetokens"><i
+                        className="fa fa-angle-right mr-4"/> java-litetokens</HrefLink></li>
                     <li className="p-2">
-                      <HrefLink href="https://github.com/tronprotocol/Documentation">
+                      <HrefLink href="https://github.com/litetokens/Documentation">
                         <i className="fa fa-angle-right mr-4"/> Documentation
                       </HrefLink>
                     </li>
-                    <li className="p-2"><HrefLink href="http://wiki.tron.network/en/latest/"><i
+                    <li className="p-2"><HrefLink href="http://wiki.litetokens.org/en/latest/"><i
                         className="fa fa-angle-right mr-4"/> Wiki</HrefLink></li>
                   </ul>
                 </div>
@@ -379,21 +379,21 @@ class Home extends Component {
                 <div className="col-xs-12 col-sm-12 col-md-12">
                   <ul className="list-unstyled list-inline social text-center" style={{marginBottom:4}}>
                     <li className="list-inline-item">
-                      <HrefLink href="https://www.facebook.com/tronfoundation/"><i
+                      <HrefLink href="https://www.facebook.com/litetokens/"><i
                           className="fab fa-facebook"/></HrefLink>
                     </li>
                     <li className="list-inline-item">
-                      <HrefLink href="https://www.github.com/tronprotocol"><i className="fab fa-github"/></HrefLink>
+                      <HrefLink href="https://www.github.com/litetokens"><i className="fab fa-github"/></HrefLink>
                     </li>
                     <li className="list-inline-item">
-                      <HrefLink href="https://twitter.com/tronfoundation"><i className="fab fa-twitter"/></HrefLink>
+                      <HrefLink href="https://twitter.com/litetokens"><i className="fab fa-twitter"/></HrefLink>
                     </li>
                     <li className="list-inline-item">
-                      <HrefLink href="mailto:service@tron.network" target="_blank"><i
+                      <HrefLink href="mailto:service@litetokens.org" target="_blank"><i
                           className="fa fa-envelope"/></HrefLink>
                     </li>
                     <li className="list-inline-item">
-                      <HrefLink href="https://www.reddit.com/r/Tronix" target="_blank"><i
+                      <HrefLink href="https://www.reddit.com/r/Litetokensix" target="_blank"><i
                           className="fab fa-reddit-alien"/></HrefLink>
                     </li>
                   </ul>
@@ -402,7 +402,7 @@ class Home extends Component {
               </div>
               <div className="row ">
                 <div className="col-xs-12 col-sm-12 col-md-12 text-center mb-3">
-                  <Link to="/help/copyright">Copyright© 2017-2018 {tu("tron_foundation")}</Link>
+                  <Link to="/help/copyright">© {tu("litetokens_foundation")}</Link>
                 </div>
               </div>
             </div>

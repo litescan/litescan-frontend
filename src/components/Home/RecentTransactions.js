@@ -3,9 +3,9 @@ import {tu} from "../../utils/i18n";
 import {injectIntl} from "react-intl";
 import {loadTransactions} from "../../actions/blockchain";
 import {connect} from "react-redux";
-import {TronLoader} from "../common/loaders";
-import {ONE_TRX} from "../../constants";
-import {TRXPrice} from "../common/Price";
+import {LitetokensLoader} from "../common/loaders";
+import {ONE_XLT} from "../../constants";
+import {XLTPrice} from "../common/Price";
 import {AddressLink, TransactionHashLink} from "../common/Links";
 import TimeAgo from "react-timeago";
 import {Link} from "react-router-dom";
@@ -36,7 +36,7 @@ class RecentTransactions extends Component {
     if (transactions === null) {
       return (
         <div className="text-center d-flex justify-content-center">
-          <TronLoader/>
+          <LitetokensLoader/>
         </div>
       );
     }
@@ -44,7 +44,7 @@ class RecentTransactions extends Component {
     if (transactions.length === 0) {
       return (
         <div className="text-center d-flex justify-content-center">
-          <TronLoader/>
+          <LitetokensLoader/>
         </div>
       );
     }
@@ -80,7 +80,7 @@ class RecentTransactions extends Component {
                     </div>
                     <div>
                       <i className="fas fa-exchange-alt mr-1"/>
-                      <TRXPrice amount={transaction.amount / ONE_TRX} />
+                      <XLTPrice amount={transaction.amount / ONE_XLT} />
                     </div>
                   </div>
                 </div>

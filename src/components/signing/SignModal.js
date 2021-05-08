@@ -2,7 +2,7 @@ import React from "react";
 import {Modal, ModalBody, ModalHeader} from "reactstrap";
 import {ExternalSigner} from "../../services/externalSigner";
 import {Client} from "../../services/api";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import QRCode from "qrcode.react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import {Link} from "react-router-dom";
@@ -116,9 +116,9 @@ class SignModal extends React.Component {
         <Modal isOpen={true} fade={false} className="modal-dialog-centered" toggle={() => { cancel(); this.hideModal(); }}>
           <ModalHeader className="text-center">Signing Transaction on External Device</ModalHeader>
           <ModalBody>
-            <TronLoader>
+            <LitetokensLoader>
               Waiting for signed response from external device
-            </TronLoader>
+            </LitetokensLoader>
           </ModalBody>
         </Modal>
       )

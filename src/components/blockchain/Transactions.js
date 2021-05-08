@@ -111,24 +111,24 @@ class Transactions extends React.Component {
                       </thead>
                       <tbody>
                       {
-                        transactions.map((trx) => (
-                          <tr key={trx.hash}>
+                        transactions.map((xlt) => (
+                          <tr key={xlt.hash}>
                             <th>
                               <Truncate>
-                                <TransactionHashLink hash={trx.hash}>{trx.hash}</TransactionHashLink>
+                                <TransactionHashLink hash={xlt.hash}>{xlt.hash}</TransactionHashLink>
                               </Truncate>
                             </th>
                             <td className="d-md-table-cell">
-                              <BlockNumberLink number={trx.block}/>
+                              <BlockNumberLink number={xlt.block}/>
                             </td>
                             <td className="text-nowrap d-lg-table-cell">
-                              <TimeAgo date={trx.timestamp}/>
+                              <TimeAgo date={xlt.timestamp}/>
                             </td>
                             <td className="d-sm-table-cell">
-                              <AddressLink address={trx.ownerAddress}/>
+                              <AddressLink address={xlt.ownerAddress}/>
                             </td>
                             <td className="d-md-table-cell">
-                              {ContractTypes[trx.contractType]}
+                              {ContractTypes[xlt.contractType]}
                             </td>
                           </tr>
                         ))

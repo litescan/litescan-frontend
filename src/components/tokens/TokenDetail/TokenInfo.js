@@ -1,6 +1,6 @@
 import React from "react";
 import {FormattedDate, FormattedNumber, FormattedRelative, FormattedTime, injectIntl} from "react-intl";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {tu} from "../../../utils/i18n";
 import {withTimers} from "../../../utils/timing";
 
@@ -38,7 +38,7 @@ class TokenInfo extends React.Component {
             <tr>
               <th>{tu("price")}:</th>
               <td>
-                <FormattedNumber value={token.price / ONE_TRX} maximumFractionDigits={6}/> TRX
+                <FormattedNumber value={token.price / ONE_XLT} maximumFractionDigits={6}/> XLT
               </td>
             </tr>
             <tr>
@@ -62,7 +62,7 @@ class TokenInfo extends React.Component {
             <tr>
               <th>{tu("fund_raised")}:</th>
               <td>
-                <FormattedNumber value={token.participated / ONE_TRX}/> TRX
+                <FormattedNumber value={token.participated / ONE_XLT}/> XLT
               </td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@ class TokenInfo extends React.Component {
               <td colSpan="2">
                 <i className="fa fa-exclamation-circle" aria-hidden="true"
                    style={{color: '#999999', marginRight: '10px'}}></i>
-                <span style={{color: '#999999', fontSize: '12px'}}>{tu('change_info')}</span>&nbsp;<a href='mailto:token@tron.network' style={{color:'red',fontSize: '12px'}}>{tu('contact_us')}</a></td>
+                <span style={{color: '#999999', fontSize: '12px'}}>{tu('change_info')}</span>&nbsp;<a href='mailto:token@litetokens.org' style={{color:'red',fontSize: '12px'}}>{tu('contact_us')}</a></td>
             </tr>
 
             </tbody>

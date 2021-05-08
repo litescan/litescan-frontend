@@ -14,7 +14,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   #                                                                                #
-  #         Template for translating the tronscan.org website                      #
+  #         Template for translating the litescan.org website                      #
   #         Version: 1.6-13082018                                                  #
   #         Update Date: 13.08.2018                                                #
   #         Language: Romania                                                      #
@@ -37,7 +37,7 @@ export const messages = {
   ##################################################################################
   */
   "ok": "OK",
-  "app_title": "Protocol TRON",
+  "app_title": "Protocol LITETOKENS",
   "password": "parolă",
   "money_price": "preț",
   "price": "preț",
@@ -140,11 +140,11 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "tron_main_message": "Decentralizare Web",
+  "litetokens_main_message": "Decentralizare Web",
   "transactions_last_hour": "Tranzacții din ultima oră",
   "block_height": "Înălțime Block",
   "online_nodes": "Noduri Online",
-  "pice_per_1000trx": "Preț (per 1000TRX)",
+  "pice_per_1000xlt": "Preț (per 1000XLT)",
   "vote_for_super_representatives": "Votați pentru Super Reprezentanți",
   "view_super_representatives": "Vizualizare Super Reprezentanți",
   "create_new_wallet": "Creați un nou Portofel",
@@ -206,14 +206,14 @@ export const messages = {
   ##################################################################################
   */
   "addresses": "adrese",
-  "trx_transferred_past_hour": "TRX transferat în ultima oră",
+  "xlt_transferred_past_hour": "XLT transferat în ultima oră",
   "transactions_past_hour": "Tranzacții în ultima oră",
   "average_blocksize": "Mărimea medie de block",
   "rich_list": "Listă bogați",
-  "tron_transaction_chart": "Diagramă tranzacții TRON",
+  "litetokens_transaction_chart": "Diagramă tranzacții LITETOKENS",
   "transactions_per_day": "Tranzacții pe zi",
   "foundation": "Foundation Addresses",
-  "foundation_address": "Foundation Freeze TRX Total Number",
+  "foundation_address": "Foundation Freeze XLT Total Number",
   "unfreeze_time": "Unfreeze Time",
   "addresses_number": "Addresses Number",
   /*
@@ -231,19 +231,19 @@ export const messages = {
   "change_name": "Schimbare Nume",
   "account_name": "Nume Cont",
   "show_qr_code": "Arată Cod QR",
-  "do_not_send_2": "Nu trimiteți TRX din propriul portofel sau exchange la adresa de cont de la rețeaua de test!",
+  "do_not_send_2": "Nu trimiteți XLT din propriul portofel sau exchange la adresa de cont de la rețeaua de test!",
   "bandwidth": "lățime de bandă",
   "balance": "balanță",
-  "tron_power": "Putere TRON",
+  "litetokens_power": "Putere LITETOKENS",
   "transactions": "tranzacții",
   "no_transfers": "Nici un Transfer",
   "no_tokens": "Nici un Token",
   "free_bandwidth": "Lățime de bandă gratuită",
   "expires": "expiră",
   "have_been_added_to_your_account": "au fost adăugați în contul dumneavoastră!",
-  "information_message_1": "Când solicitați TRX veți primi 10000 TRX pe care îi puteți folosi pentru testare la rețeaua de test.",
-  "information_message_2": "Puteți să solicitați TRX de 10 ori per cont.",
-  "request_trx_for_testing": "Cerere TRX pentru testare",
+  "information_message_1": "Când solicitați XLT veți primi 10000 XLT pe care îi puteți folosi pentru testare la rețeaua de test.",
+  "information_message_2": "Puteți să solicitați XLT de 10 ori per cont.",
+  "request_xlt_for_testing": "Cerere XLT pentru testare",
   "token_balances": "balanțe token",
   "produced_blocks": "blocuri produse",
   "voters": "votanți",
@@ -252,10 +252,10 @@ export const messages = {
   "issuer": "emitent",
   "network": "rețea",
   "current": "curent",
-  "trx_received": "TRX primit",
-  "test_trx_temporarily_unavailable_message": "TRX de testare nu există momentan. Vă rugăm încercați mai târziu.",
-  "not_enough_trx": "Nu există destul TRX",
-  "information_message_3": "Ați cerut cu succes TRX. Dacă nu ați primit TRX înseamnă că deocamdată nu există TRX de testare și ar trebui să încercați din nou mai tarziu.",
+  "xlt_received": "XLT primit",
+  "test_xlt_temporarily_unavailable_message": "XLT de testare nu există momentan. Vă rugăm încercați mai târziu.",
+  "not_enough_xlt": "Nu există destul XLT",
+  "information_message_3": "Ați cerut cu succes XLT. Dacă nu ați primit XLT înseamnă că deocamdată nu există XLT de testare și ar trebui să încercați din nou mai tarziu.",
   "send_to_following_address": "Trimiteți la adresa următoare",
   "change_website": "Schimbați site-ul web",
   "you_must_enter_url": "Trebuie să introduceți un URL",
@@ -269,14 +269,14 @@ export const messages = {
   */
   "freeze": "înghețare",
   "unfreeze": "dezghețare",
-  "freeze_trx_least": "Aveți nevoie de cel puțin 1 TRX ca să înghețați",
-  "unable_unfreeze_trx_message": "Imposibil de dezghețat TRX. Aceast lucru poate fi cauzat de faptul că perioada de înghețare minimă nu a fost atinsă.",
-  "freeze_trx_premessage_0": `TRX poate fi înghețat/blocat pentru a caștiga TRON Power și a debloca caracteristici adiționale.
-   De exemplu, cu TRON Power puteți să `,
-  "freeze_trx_premessage_link": "votați pentru Super Reprezentanți.",
-  "freeze_trx_premessage_1": ` Tokenii înghețați sunt "blocați" pentru o perioadă de 3 zile. În această perioadă TRX-ul înghețat nu poate fi tranzacționat.
-   După această perioadă puteți să dezghețați TRX și să tranzacționați tokeni.`,
-  "trx_amount": "Cantitate TRX",
+  "freeze_xlt_least": "Aveți nevoie de cel puțin 1 XLT ca să înghețați",
+  "unable_unfreeze_xlt_message": "Imposibil de dezghețat XLT. Aceast lucru poate fi cauzat de faptul că perioada de înghețare minimă nu a fost atinsă.",
+  "freeze_xlt_premessage_0": `XLT poate fi înghețat/blocat pentru a caștiga LITETOKENS Power și a debloca caracteristici adiționale.
+   De exemplu, cu LITETOKENS Power puteți să `,
+  "freeze_xlt_premessage_link": "votați pentru Super Reprezentanți.",
+  "freeze_xlt_premessage_1": ` Tokenii înghețați sunt "blocați" pentru o perioadă de 3 zile. În această perioadă XLT-ul înghețat nu poate fi tranzacționat.
+   După această perioadă puteți să dezghețați XLT și să tranzacționați tokeni.`,
+  "xlt_amount": "Cantitate XLT",
   "token_freeze_confirm_message_0": "Confirm înghețarea ",
   "token_freeze_confirm_message_1": "pentru cel puțin 3 zile",
   "frozen_supply": "Supply Înghețat",
@@ -290,7 +290,7 @@ export const messages = {
   "successfully_changed_name_to_message": "Numele s-a schimbat cu succes în",
   "unable_to_rename_title": "Imposibil de redenumit",
   "unable_to_rename_message": "Ceva nu a mers bine în timp ce se updata numele contului, vă rugăm încercați mai târziu",
-  "unfreeze_trx_confirm_message": "Sunteți sigur că vreți să dezghețați TRX?",
+  "unfreeze_xlt_confirm_message": "Sunteți sigur că vreți să dezghețați XLT?",
   "unfreeze_assets": "Active dezghețate",
   "sure_to_unfreeze_unlocked_tokens_message": "Sunteți sigur că doriți să dezghețați tokenii activați?",
   /*
@@ -303,21 +303,21 @@ export const messages = {
   "apply_for_delegate": "aplicați pentru delegat",
   "apply_super_representative_candidate": "Aplicați ca să fiți un Candidat Super Reprezentant",
   "your_personal_website_address": "adresa personală de website",
-  "apply_for_delegate_predescription": `Fiecare deținător de tokeni are oportunitatea să devină un Super Reprezentant TRON.
+  "apply_for_delegate_predescription": `Fiecare deținător de tokeni are oportunitatea să devină un Super Reprezentant LITETOKENS.
    Cu toate acestea, pentru ca rețeaua și comunitatea să funcționeze mai usor și mai eficient, am creat un set de standarde și regulamente
-   pentru candidații eligibili să devină Super Reprezentanți recomandați. Vom promova SR-ii recomandați pentru a le crește șansele de a fi aleși.
+   pentru candidații eligibili să devină Super Reprezentanți recomandați. Vom promova EV-ii recomandați pentru a le crește șansele de a fi aleși.
    Recomandații noi pentru Super Reprezenanți sunt actualizați și afișați o dată pe săptămână.`,
   "apply_for_delegate_description": `
-   Deținătorii TRX pot aplice să devină super delegat folosind funcția de management de cont, și să voteze pentru candidați.
+   Deținătorii XLT pot aplice să devină super delegat folosind funcția de management de cont, și să voteze pentru candidați.
    Fiecare cont poate updata informațiile curente de vot și îi este permis să voteze pentru mai multi candidati.
-   Numărul maxim de voturi este mai mic sau egal cu cantitatea de TRX pe care utilizatorii o dețin de fiecare dată.
-   (Dacă aveți o sumă anumită de TRX, puteți să votați mai puțin sau egal cu un număr anumit de voturi).
+   Numărul maxim de voturi este mai mic sau egal cu cantitatea de XLT pe care utilizatorii o dețin de fiecare dată.
+   (Dacă aveți o sumă anumită de XLT, puteți să votați mai puțin sau egal cu un număr anumit de voturi).
    Rezultatul voturilor va fi calculat pe baza informațiilor finale de vot din fiecare cont
-   în fiecare ciclu de la 00:00:00 p.m. am la 11:59:59 pm. Deținătorii TRX cu cele mai multe voturi vor deveni super delegați.
+   în fiecare ciclu de la 00:00:00 p.m. am la 11:59:59 pm. Deținătorii XLT cu cele mai multe voturi vor deveni super delegați.
    Fiecare tranzacție făcută în rețea este necesară pentru a fi validată de toți SuperDelegații, și unele bonusuri vor fi primite.
-   TRX-ul nu va fi consumat în procesul de aplicare și votare de super delegat.`,
+   XLT-ul nu va fi consumat în procesul de aplicare și votare de super delegat.`,
   "unknown_error": "a apărut o eroare necunoscută",
-  "representative_understand": "Înțeleg ce înseamnă să fiu un reprezentant TRON",
+  "representative_understand": "Înțeleg ce înseamnă să fiu un reprezentant LITETOKENS",
   "generate_account": "Clic pentru a genera adresa și parola de cont",
   "create_account_confirm_1": "Înțeleg că dacă îmi uit/pierd parola nu voi mai putea accesa bunurile",
   "create_account_confirm_2": "Înțeleg că dacă îmi uit/pierd parola nimeni nu va putea să ma ajute să o recuperez",
@@ -329,23 +329,23 @@ export const messages = {
   "most_votes": "cele mai multe voturi",
   "start_end_time": "Start / Sfârșit Timp",
   "scan_qr_code": "Scanați codul cu un scaner Cod QR",
-  "receive_trx": "primit TRX",
+  "receive_xlt": "primit XLT",
   "require_account_to_send": "Trebuie să fiți logat ca să trimiteți coins",
   "require_account_to_receive": "Trebuie să fiți logat ca să primiți coins",
   "successful_send": "Trimis cu succes!",
   "confirm_transaction": "confirm tranzacția",
   "last_confirmed": "Ultima Confirmată",
-  "trx_produced": "Tranzacții Produse",
-  "do_not_send_1": "Nu trimiteți TRX din propriul portofel sau exchange la adresa de rețea de test!",
+  "xlt_produced": "Tranzacții Produse",
+  "do_not_send_1": "Nu trimiteți XLT din propriul portofel sau exchange la adresa de rețea de test!",
   "go_to_votelist": "Mergeți la lista de voturi",
-  "understand_tron_sr_message_0": "Înțeleg ce înseamnă să fiu un reprezentant TRON și confirm să achit o",
-  "understand_tron_sr_message_1": "taxă.",
+  "understand_litetokens_ev_message_0": "Înțeleg ce înseamnă să fiu un reprezentant LITETOKENS și confirm să achit o",
+  "understand_litetokens_ev_message_1": "taxă.",
   "invalid_url": "Invalid URL",
   "apply_representative_error_message_0": "Ceva nu a mers bine în timp ce încercați să aplicați pentru reprezentare.",
-  "apply_representative_error_message_1": "Asigurați-vă că aveți destul TRX pentru taxă, sau încercați mai tarziu.",
+  "apply_representative_error_message_1": "Asigurați-vă că aveți destul XLT pentru taxă, sau încercați mai tarziu.",
   "open_external_link": "Deschideți un link extern",
   "private_key_untrusted_website_message_0": "Nu introduceți niciodată cheia privată pe un website nesigur.",
-  "no_official_tron_website": "acesta nu este un site oficial TRON.",
+  "no_official_litetokens_website": "acesta nu este un site oficial LITETOKENS.",
   "continue_to_external_website": "Continuați către site-ul extern",
   "url_changed": "URL schimbat",
   "successfully_changed_website_message": "Website schimbat cu succes în ",
@@ -360,11 +360,11 @@ export const messages = {
   "link_github": "Legătură Github",
   "you_must_enter_a_url": "Trebuie să introduceți un URL",
   "success": "Succes",
-  "successfully_appied_sr_canidate_message_0": "Ați aplicat cu succes pentru Super Reprezentant.",
-  "successfully_appied_sr_canidate_message_1": "În câteva momente, contul dumneavoastră va fi upgradat.",
+  "successfully_appied_ev_canidate_message_0": "Ați aplicat cu succes pentru Super Reprezentant.",
+  "successfully_appied_ev_canidate_message_1": "În câteva momente, contul dumneavoastră va fi upgradat.",
   "landing_page": "Pagină Intrare",
-  "show_more_information_publish_sr_page": "Arată mai multe informații despre cum să publici o pagină",
-  "create_sr_landing_page_message_0": "Super Reprezentanții pot crea o pagină de intrare în care pot prezenta informații despre echipa și planurile lor",
+  "show_more_information_publish_ev_page": "Arată mai multe informații despre cum să publici o pagină",
+  "create_ev_landing_page_message_0": "Super Reprezentanții pot crea o pagină de intrare în care pot prezenta informații despre echipa și planurile lor",
   "set_github_url_message_0": "Ați configurat deja template-ul de Github? Atunci setați URL-ul folosind butonul de mai jos",
   "set_github_link": "Setați Link-ul Github",
   "could_not_claim_rewards": "Nu s-au putut primi recompense",
@@ -372,7 +372,7 @@ export const messages = {
   "rewards_claimed": "Recompensă primită!",
   "successfully_claimed_rewards":  "S-au primit recompense cu succes",
   "claim_rewards": "Solicitare Recompensă",
-  "sr_receive_reward_message_0": "În calitate de reprezentant primiți recompense pentru producere de blocuri. Aceste recompense pot fi solicitate la fiecare 24 de ore",
+  "ev_receive_reward_message_0": "În calitate de reprezentant primiți recompense pentru producere de blocuri. Aceste recompense pot fi solicitate la fiecare 24 de ore",
   "intro": "Intro",
   "budget_expenses": "Cheltuieli bugetare",
   "server_configuration": "Configurație Server",
@@ -400,15 +400,15 @@ export const messages = {
   "available": "disponibil",
   "testnet": "Rețea de test",
   "days_to_freeze": "Zile de înghețare",
-  "trx_token_fee_message": "1024 TRX se necesită pentru a emite un nou token",
-  "trx_token_account_limit": "Puteți crea doar un token per cont",
-  "trx_token_wallet_requirement": "Trebuie să deschideți un portofel pentru a crea un token",
+  "xlt_token_fee_message": "1024 XLT se necesită pentru a emite un nou token",
+  "xlt_token_account_limit": "Puteți crea doar un token per cont",
+  "xlt_token_wallet_requirement": "Trebuie să deschideți un portofel pentru a crea un token",
   "invalid_address": "adresă invalidă",
   "insufficient_tokens": "tokeni insuficienți",
   "fill_a_valid_number": "Vă rugăm introduceți un număr valid",
   "fill_a_valid_address": "Vă rugăm introduceți o adresă validă",
   "make_another_transaction": "Faceți altă tranzacție",
-  "token_exchange_confirm": "Confirmm să achit {trxAmount} pe distribuția de token, și să primesc un total de {tokenAmount} tokeni.",
+  "token_exchange_confirm": "Confirmm să achit {xltAmount} pe distribuția de token, și să primesc un total de {tokenAmount} tokeni.",
   "An_unknown_error_occurred,_please_try_again_in_a_few_minutes": "A apărut o eroare necunoscută, vă rugăm încercați din nou în câteva minute",
   "An_error_occurred": "A apărut o eroare",
   "create_a_token": "Creați un token",
@@ -426,8 +426,8 @@ export const messages = {
   "how_much_buy_message": "Cați tokeni ați dori să cumpărați?",
   "buy_confirm_message_1": "Sunteți sigur că vreți să cumpărați",
   "for": "pentru",
-  "insufficient_trx": "TRX insuficient",
-  "not_enough_trx_message": "Nu aveți suficient TRX pentru a cumpăra atâția tokeni",
+  "insufficient_xlt": "XLT insuficient",
+  "not_enough_xlt_message": "Nu aveți suficient XLT pentru a cumpăra atâția tokeni",
   "ends": "sfârșește",
   "starts": "începe",
   "can_be_unlocked": "poate fi descuiat",
@@ -438,12 +438,12 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "address_warning": "Introduceți numai o adresă validă de portofel TRON. Adresele incorecte pot duce la pierdere de TRX.",
+  "address_warning": "Introduceți numai o adresă validă de portofel LITETOKENS. Adresele incorecte pot duce la pierdere de XLT.",
   "search_address_or_url": "Căutare de adresă sau URL",
   "the_lunch_test": "Lansarea rețelei de test are ca scop testarea caracteristicilor explorerului si portofelului de blockchain.",
-  "please_keep_in_mind": "Vă rugăm să rețineți, că din moment ce adresa înregistrată de cont este folosită doar pentru rețeaua de test, nu trimiteți TRX din propriul portofel sau exchange la adresa de cont a rețelei de test.",
-  "tron_foundation": "Fundația TRON",
-  "trx_for_testing": "TRX pentru testare va fi trimis la contul dumneavoastră de test în momentul în care vă logați cu succes prin contul de management.",
+  "please_keep_in_mind": "Vă rugăm să rețineți, că din moment ce adresa înregistrată de cont este folosită doar pentru rețeaua de test, nu trimiteți XLT din propriul portofel sau exchange la adresa de cont a rețelei de test.",
+  "litetokens_foundation": "Fundația LITETOKENS",
+  "xlt_for_testing": "XLT pentru testare va fi trimis la contul dumneavoastră de test în momentul în care vă logați cu succes prin contul de management.",
   "dear_users": "Dragi utilizatori,",
   "finished": "Terminat",
   "token": "token",
@@ -451,11 +451,11 @@ export const messages = {
   "need_to_login": "Trebuie sa fiți logat pentru a accesa pagina de cont",
   "thanks_for_applying": "Mulțumim pentru aplicare!",
   "to_much_votes": "Prea multe voturi",
-  "no_trx_remaining": "Nici un TRX rămas",
+  "no_xlt_remaining": "Nici un XLT rămas",
   "show_more": "Arată {countriesLength} mai mult",
-  "vote_guide_message": `Folosiți TRX pentru a vota pentru Super Reprezentanți.
-   Pentru fiecare TRX pe care îl ţineţi în contul dumneavoastră aveţi un vot pentru a-l folosi.
-   TRX nu va fi consumat. Puteţi vota ori de câte ori pentru mai mulţi reprezentanţi de câte ori doriți.
+  "vote_guide_message": `Folosiți XLT pentru a vota pentru Super Reprezentanți.
+   Pentru fiecare XLT pe care îl ţineţi în contul dumneavoastră aveţi un vot pentru a-l folosi.
+   XLT nu va fi consumat. Puteţi vota ori de câte ori pentru mai mulţi reprezentanţi de câte ori doriți.
    Voturile finale vor fi numărate la ora 24 şi va fi actualizată lista delegatilor.`,
   "search_address": "Căutați adresă",
   "token_transactions": "tranzacţii Tokeni",
@@ -501,11 +501,11 @@ export const messages = {
   "supply_message": "Suma totală de tokeni care va fi în circulaţie",
   "description_message": "O scurtă descriere a scopului tokenului",
   "url_message": "Un site web unde utilizatorii pot găsi mai multe informaţii despre token",
-  "exchange_rate_message_0": "Specifica preţul de unui singur token prin definirea a câte tichete un participant va primi pentru fiecare TRX pe care îl cheltuie.",
+  "exchange_rate_message_0": "Specifica preţul de unui singur token prin definirea a câte tichete un participant va primi pentru fiecare XLT pe care îl cheltuie.",
   "exchange_rate_message_1": "participanții vor primi",
   "exchange_rate_message_2": "pentru fiecare",
-  "exchange_rate_message_3": "TRX",
-  "participation_message_0": "Specificați perioada de participare în care tokenii vor fi emiși. In timpul perioadei de participare utilizatorii pot schimba TRX pentru ",
+  "exchange_rate_message_3": "XLT",
+  "participation_message_0": "Specificați perioada de participare în care tokenii vor fi emiși. In timpul perioadei de participare utilizatorii pot schimba XLT pentru ",
   "participation_message_1": " tokeni.",
   "frozen_supply_message_0": `O parte din supply poate fi înghețată. Cantitatea de supply poate fi specificată şi trebuie să fie îngheţată
    pentru un minim de 1 zi. Supplyul înghețat poate fi în mod manual degheţat după data de început +
@@ -514,12 +514,12 @@ export const messages = {
   "participation": "participare",
   "start_date": "Dată Start",
   "end_date": "Dată Sfârșit",
-  "token_spend_confirm": "Confirm că supply-ul total al tokenilor costă o taxă unică de 1024 TRX.",
-  "token_issue_guide_message_1": `Emiterea unui token pe TRON Protocol se poate face de oricine are cel puțin 1024 TRX în contul lui.`,
+  "token_spend_confirm": "Confirm că supply-ul total al tokenilor costă o taxă unică de 1024 XLT.",
+  "token_issue_guide_message_1": `Emiterea unui token pe LITETOKENS Protocol se poate face de oricine are cel puțin 1024 XLT în contul lui.`,
   "token_issue_guide_message_2":`Atunci când un token este emis acesta va fi indicat pe pagina de prezentare token.
-    Utilizatorii pot apoi să participe în perioada de participare şi să schimbe TRXul lor pentru tokeni.`,
+    Utilizatorii pot apoi să participe în perioada de participare şi să schimbe XLTul lor pentru tokeni.`,
   "token_issue_guide_message_3":`După emiterea tokenului contul va primi suma de tokeni egală cu supply-ul total.
-    Când alţi utilizatori schimbă TRXul lor pentru tokeni atunci tokenii vor fi retrași din contul dumneavoastră şi veți primi TRX egal cu cursul de schimb specificat.`,
+    Când alţi utilizatori schimbă XLTul lor pentru tokeni atunci tokenii vor fi retrași din contul dumneavoastră şi veți primi XLT egal cu cursul de schimb specificat.`,
   /*
   ##################################################################################
   #                                                                                #
@@ -531,7 +531,7 @@ export const messages = {
   "no_name_error": "Numele este necesar",
   "no_supply_error": "Supply-ul total trebuie să fie cel puţin 1",
   "coin_value_error": "Cantitatea token trebuie să fie cel puţin 1",
-  "tron_value_error": "Cantitatea de TRX per coin trebuie să fie cel puţin 1",
+  "litetokens_value_error": "Cantitatea de XLT per coin trebuie să fie cel puţin 1",
   "invalid_starttime_error": "Data de începere furnizată nu este validă",
   "invalid_endtime_error": "Data de sfârşit furnizată nu este validă",
   "no_description_error": "Descrierea este necesară",
@@ -592,7 +592,7 @@ export const messages = {
   "most_ranks": "Cele mai multe ranguri câștigate runda aceasta",
   "view_live_ranking": "Vizualizare Rang Live",
   "open_team_page": "Dechide pagina echipei",
-  "warning_votes": "Cel puțin 1 TRON Putere este necesar pentru a începe votul. Puterea TRON este câștigată înghețând TRX pe",
+  "warning_votes": "Cel puțin 1 LITETOKENS Putere este necesar pentru a începe votul. Puterea LITETOKENS este câștigată înghețând XLT pe",
   "account_page": "Pagina de Cont",
   "loading_votes": "Încărcare Voturi",
   "3_day_ranking": "Rangul pe 3 zile",
@@ -604,7 +604,7 @@ export const messages = {
   "votes_remaining_message": "Voturi Rămase",
   "open_wallet_start_voting_message": "Deschideți portofelul pentru a începe a vota",
   "thanks_submitting_vote_message": "Mulțumim pentru votul efectuat!",
-  "need_min_trx_to_vote_message": "Aveți nevoie de cel puțin 1 TRX pentru a vota",
+  "need_min_xlt_to_vote_message": "Aveți nevoie de cel puțin 1 XLT pentru a vota",
   "to_much_votes_massage": "Ați folosit prea multe voturi!",
   "all_votes_are_used_message": "Toate voturile sunt folosite!",
   "submissing_vote_message_title": "Mulțumim pentru vot!",
@@ -662,10 +662,10 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "what_is_tron": "Ce este TRON",
-  "tron_explorer_api": "TRON Explorer API",
-  "tron_architechure": "Arhitectura TRON ",
-  "tron_protobuf_doc": "Documentare TRON Protobuf ",
+  "what_is_litetokens": "Ce este LITETOKENS",
+  "litetokens_explorer_api": "LITETOKENS Explorer API",
+  "litetokens_architechure": "Arhitectura LITETOKENS ",
+  "litetokens_protobuf_doc": "Documentare LITETOKENS Protobuf ",
   "report_an_error": "Arată un bug / sugestie",
   "frequently_asked_questions": "Întrebări frecvente",
   "telegram_updates": "Update-uri Telegram",
@@ -690,7 +690,7 @@ export const messages = {
   "save_keystore_file": "Salvați-vă fișierul Keystore",
   "download_keystore_file": "Descărcați Cheia Criptată",
   "do_not_lose_it": "Nu o pierdeți!",
-  "do_not_lose_it_message_0": "Fundația TRON nu vă poate ajuta să recuperați o cheie pierdută.",
+  "do_not_lose_it_message_0": "Fundația LITETOKENS nu vă poate ajuta să recuperați o cheie pierdută.",
   "do_not_share_it": "Nu o dați și altora!",
   "do_not_share_it_message_0": "Fondurile dumneavoastră pot fi furate dacă folosiți un fișier sau site malware.",
   "make_a_backup": "Faceți o rezervă!",
@@ -733,23 +733,23 @@ export const messages = {
   */
   "ledger_guide": "Ghidul Registrului",
   "requirements": "Cerințe",
-  "using_ledger_steps_message_0": "Folosirea Registrului cu Tronscan necesită următorii pași:",
+  "using_ledger_steps_message_0": "Folosirea Registrului cu Litescan necesită următorii pași:",
   "a": "A",
   "install_the": "Instalați ",
   "app": "app",
   "install_latest_version_message_0": "Instalați ultima versiune a ",
   "opening_your_wallet": "Dechiderea portofelului",
-  "open_the_tronscan_desktop_client": "Deschideți clientul desktop Tronscan",
+  "open_the_litescan_desktop_client": "Deschideți clientul desktop Litescan",
   "click_open_wallet_top_right": "Clic pe 'Deschide Portofelul' sus dreapta",
   "choose_ledger": "Alegeți Registrul",
   "connect_unlock_ledger_with_pin": "Conectați-vă și descuiați dispozitivul cu codul PIN",
-  "open_tron_app_on_ledger": "Dechideți TRON app în Registru",
-  "ledger_connected_tronscan_message_0": "Dacă Registrul este conectat corect atunci Tronscan va arăta 'Conectat'",
+  "open_litetokens_app_on_ledger": "Dechideți LITETOKENS app în Registru",
+  "ledger_connected_litescan_message_0": "Dacă Registrul este conectat corect atunci Litescan va arăta 'Conectat'",
   "click_on_open_wallet": "Clic pe 'Deschide Portofelul'",
-  "redirect_to_your_wallet_message": "Veți fi redirecționat către portofel și vă veți putea vizualiza adresa TRON",
+  "redirect_to_your_wallet_message": "Veți fi redirecționat către portofel și vă veți putea vizualiza adresa LITETOKENS",
   "using_ledger_to_sign_transactions": "Folosirea registrului pentru a semna tranzacții",
-  "using_ledger_to_sign_transactions_message_0": "Asigurați-vă că țineți Registrul conectat și TRON app deschis pentru a semna tranzacții folosind Registrul în timp ce folosiți Tronscan Desktop",
-  "using_ledger_to_sign_transactions_message_1": "Tronscan va arăta un popup cu detaliile tranzacției când se necesită o semnătură de tranzacție. Semnăturile sunt necesare indiferent dacă votați, trimiteți TRX, schimbați numele contului, etc.",
+  "using_ledger_to_sign_transactions_message_0": "Asigurați-vă că țineți Registrul conectat și LITETOKENS app deschis pentru a semna tranzacții folosind Registrul în timp ce folosiți Litescan Desktop",
+  "using_ledger_to_sign_transactions_message_1": "Litescan va arăta un popup cu detaliile tranzacției când se necesită o semnătură de tranzacție. Semnăturile sunt necesare indiferent dacă votați, trimiteți XLT, schimbați numele contului, etc.",
   /*
   ##################################################################################
   #                                                                                #
@@ -769,7 +769,7 @@ export const messages = {
   ##################################################################################
   */
   "applied_for_super_representative": "aplicat pentru Super Reprezentanți",
-  "sr_candidature": "Candidatură Super Reprezentanți",
+  "ev_candidature": "Candidatură Super Reprezentanți",
   "created_token": "token creat",
   "token_creation": "Creare Token",
   "bought": "cumpărat",
@@ -780,13 +780,13 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # buy Tron                                                                       #
+  # buy Litetokens                                                                       #
   #                                                                                #
   ##################################################################################
   */
-  "buy_tron": "Cumpărați TRON",
-  "buy_tron_message_0": "TRX poate fi cumpărat direct cu Fiat sau altă Crypto-Valută fără o bursă de exchange. Se poate folosi un serviciu de la Changelly.com și este metoda cea mai ușoară și rapidă de a cumpăra trx. O listă cu monedele acceptate și o secțiune de Întrebări Frecvente pot fi găsite la ",
-  "buy_tron_using_changelly": "Cumpărați  TRON folosind Changelly",
+  "buy_litetokens": "Cumpărați LITETOKENS",
+  "buy_litetokens_message_0": "XLT poate fi cumpărat direct cu Fiat sau altă Crypto-Valută fără o bursă de exchange. Se poate folosi un serviciu de la Changelly.com și este metoda cea mai ușoară și rapidă de a cumpăra xlt. O listă cu monedele acceptate și o secțiune de Întrebări Frecvente pot fi găsite la ",
+  "buy_litetokens_using_changelly": "Cumpărați  LITETOKENS folosind Changelly",
   "cant_load_widget": "Nu se poate încărca widget-ul",
   /*
   ##################################################################################
@@ -802,7 +802,7 @@ export const messages = {
   "total_BlockCount": "Total Număr Blocuri",
   "new_address_seen": "Adresă nouă Vizualizări",
   "transfer_contract": "Contract de Transfer",
-  "TRX_transfer_between_addresses": "Transfer TRX între adrese",
+  "XLT_transfer_between_addresses": "Transfer XLT între adrese",
   "transfer_asset_contract": "Contract de Transfer Bunuri",
   "token_transfer_between_addresses": "Transfer Tokeni între adrese",
   "participate_asset_issue_contract": "Participare bunuri emitere contract",
@@ -816,9 +816,9 @@ export const messages = {
   "withdraw_balance_contract": "Contract de Retragere Balanță",
   "withdraw_balance": "Retragere Balanță",
   "freeze_balance_contract": "Contract Înghețare Balanță",
-  "freeze_TRX": "Înghețare TRX",
+  "freeze_XLT": "Înghețare XLT",
   "unfreeze_balance_contract": "Contract Dezghețare Balanță",
-  "unfreeze_TRX": "Dezghețare TRX",
+  "unfreeze_XLT": "Dezghețare XLT",
   "vote_witness_contract": "Contract votare witness",
   "vote_for_a_witness": "Votare pentru un Witness",
   "asset_issue_contract": "Contract Emitere Bunuri",
@@ -827,7 +827,7 @@ export const messages = {
   "frozen_balance": "Balanță Înghețată",
   "frozen_days": "Zile Înghețare",
   "counts": "numărători",
-  "TRX_exchange_rate": "Rată de schimb TRX",
+  "XLT_exchange_rate": "Rată de schimb XLT",
   "start_time": "Timp Începere",
   "end_time": "Timp Sfârșit",
   "contracts": "Contracte",
@@ -851,24 +851,24 @@ export const messages = {
    #                                                                                #
    ##################################################################################
  */
-  "tron_convert_tool":"Encode Convert Tool",
+  "litetokens_convert_tool":"Encode Convert Tool",
   "breakdown_supply_types":"Breakdown By Supply Types",
   "genesis":"Genesis",
-  "TRX_distribution_overview": "TRX DISTRIBUTION OVERVIEW",
+  "XLT_distribution_overview": "XLT DISTRIBUTION OVERVIEW",
   "block_produce_rewards":"Block Produce Rewards",
   "node_rewards":"Node Rewards",
   "independence_day_burned":"Independence Day Burned",
   "fee_burned":"Fee Burned",
   "current_total_supply":"Current Total Supply",
   "foundation_freeze":"Foundation Freeze",
-  "price_per_1000_trx":"PRICE PER 1000 TRX",
+  "price_per_1000_xlt":"PRICE PER 1000 XLT",
   "in_USD":"In USD",
   "in_BTC":"In BTC",
-  "total_TRX_supply":"Total TRX Supply",
+  "total_XLT_supply":"Total XLT Supply",
   "market_capitalization":"Market Capitalization",
   "circulating_supply":"Circulating Supply",
-  "list_trx":"List TRX",
-  "burned_trx":"TRX Burned",
+  "list_xlt":"List XLT",
+  "burned_xlt":"XLT Burned",
   "supply_notes":"Crowdsale and pre-sale available globally, except in the US, China, and Japan",
   "14_day_transaction_history":"14 day Transaction History",
   "14_day_address_growth":"14 day Address Growth",
@@ -880,8 +880,8 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "pice_per_1trx": "Price",
-  "tron_power_freezing":"TRON power can be gained through freezing TRX, 1 TRX for 1 TRON power."
+  "pice_per_1xlt": "Price",
+  "litetokens_power_freezing":"LITETOKENS power can be gained through freezing XLT, 1 XLT for 1 LITETOKENS power."
 
 
 };

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {HrefLink} from "../common/Links";
 import {tu} from "../../utils/i18n";
 
-export default class TRONRating extends Component {
+export default class LITETOKENSRating extends Component {
 
   render() {
 

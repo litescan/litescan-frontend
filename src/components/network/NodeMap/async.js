@@ -1,6 +1,6 @@
 import React from "react";
 import {asyncComponent} from "react-async-component";
-import {TronLoader} from "../../common/loaders";
+import {LitetokensLoader} from "../../common/loaders";
 import {tu} from "../../../utils/i18n";
 
 const $script = require("scriptjs");
@@ -9,9 +9,9 @@ const $script = require("scriptjs");
 export const NodeMapAsync = asyncComponent({
   LoadingComponent: () => (
     <div className="card">
-      <TronLoader>
+      <LitetokensLoader>
         {tu("loading_map")}
-      </TronLoader>
+      </LitetokensLoader>
     </div>
   ),
   resolve: () => new Promise(resolve =>

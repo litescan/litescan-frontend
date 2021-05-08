@@ -55,10 +55,10 @@ class Confirm extends Component {
   }
 
   render() {
-    let {numberOfCoins, numberOfTron, name, abbr, frozenSupply, totalSupply, startTime, endTime, showFrozenSupply, checkbox} = this.state;
+    let {numberOfCoins, numberOfLitetokens, name, abbr, frozenSupply, totalSupply, startTime, endTime, showFrozenSupply, checkbox} = this.state;
     let {nextStep} = this.props;
     let {errors} = this.state;
-    let exchangeRate = numberOfTron / numberOfCoins;
+    let exchangeRate = numberOfLitetokens / numberOfCoins;
 
     return (
 
@@ -109,7 +109,7 @@ class Confirm extends Component {
                 <tr>
                   <td className="text-nowrap" style={{borderTop: '0px'}}>{tu("token_price")}:</td>
                   <td style={{borderTop: '0px'}}> 1 {name || tu("token")} = <FormattedNumber
-                      value={exchangeRate}/> TRX
+                      value={exchangeRate}/> XLT
                   </td>
                 </tr>
                 <tr>

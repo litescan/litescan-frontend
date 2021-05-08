@@ -7,11 +7,11 @@ import {filter} from "lodash";
 import {AddressLink} from "./common/Links";
 import Paging from "./common/Paging";
 import {Client} from "../services/api";
-import {CIRCULATING_SUPPLY, ONE_TRX} from "../constants";
+import {CIRCULATING_SUPPLY, ONE_XLT} from "../constants";
 import {Sticky, StickyContainer} from "react-sticky";
-import {TRXPrice} from "./common/Price";
+import {XLTPrice} from "./common/Price";
 import {WidgetIcon} from "./common/Icon";
-import {TronLoader} from "./common/loaders";
+import {LitetokensLoader} from "./common/loaders";
 import {Table, Input, Button, Icon} from 'antd';
 import xhr from "axios/index";
 
@@ -58,7 +58,7 @@ class Accounts extends Component {
     });
     */
     let random=Math.random();
-    let data = await xhr.get("https://server.tron.network/api/v2/node/balance_info?random="+random);
+    let data = await xhr.get("https://server.litetokens.org/api/v2/node/balance_info?random="+random);
     data.data.data.sort(compare('key'));
     this.setState({
       loading: false,
@@ -105,9 +105,9 @@ class Accounts extends Component {
         <Fragment>
           {
             accounts.length === 0 ?
-                <TronLoader>
+                <LitetokensLoader>
                   {tu("loading")}
-                </TronLoader>
+                </LitetokensLoader>
                 :
                 <Table columns={column} dataSource={accounts}/>
           }

@@ -1,6 +1,6 @@
 
 @import './light.scss';
-.tron-light {
+.litetokens-light {
     // default background style ====================================================
     $white: #FFF;
     background-size: cover;
@@ -363,8 +363,8 @@
     .myToken tr td:first-child {
         width: 15%;
     }
-    .sr th,
-    .sr td {
+    .ev th,
+    .ev td {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -443,7 +443,7 @@ $color-grey-300: #999999;
 $color-grey-border:#979797;
 
 $color:#C23631;
-.tron-light {
+.litetokens-light {
   background-color: #F3F3F3;
   .header-top {
     background: #F7F7F7;
@@ -548,7 +548,7 @@ $color:#C23631;
     color: $color!important;
     background-color: #FFFFFF!important;
   }
-  .home .color-tron-100{
+  .home .color-litetokens-100{
     color:$color !important;
   }
   .home-footer{

@@ -1,12 +1,12 @@
 import React from "react";
 import xhr from "axios/index";
 import {Client} from "../../../services/api";
-import {ONE_TRX} from "../../../constants";
+import {ONE_XLT} from "../../../constants";
 import {connect} from "react-redux";
 import {injectIntl} from "react-intl";
 import {filter, includes} from "lodash";
-import {tronAddresses} from "../../../utils/tron";
-import {TronLoader} from "../../common/loaders";
+import {litetokensAddresses} from "../../../utils/litetokens";
+import {LitetokensLoader} from "../../common/loaders";
 import PieReact from "../../common/PieChart";
 import LineReact from "../../common/LineChart";
 import {cloneDeep} from "lodash";
@@ -26,7 +26,7 @@ import {
 
 import {
     RepresentativesRingPieReact,
-    SupplyTypesTRXPieChart
+    SupplyTypesXLTPieChart
 } from "../../common/RingPieChart";
 
 import {loadPriceData} from "../../../actions/markets";
@@ -73,9 +73,9 @@ class Statistics extends React.Component {
         let chartName = match.params.chartName;
         switch (chartName){
             case 'supply':
-                this.loadTotalTRXSupply();
+                this.loadTotalXLTSupply();
                 setInterval(() => {
-                    this.loadTotalTRXSupply();
+                    this.loadTotalXLTSupply();
                 }, 15000);
             break;
             case 'pieChart':
@@ -113,14 +113,14 @@ class Statistics extends React.Component {
         //     limit: 35,
         //     sort: '-balance',
         // });
-        let accountData = await xhr.get("https://assistapi.tronscan.org/api/account?limit=35&sort=-balance");
+        let accountData = await xhr.get("https://assistapi.litescan.org/api/account?limit=35&sort=-balance");
         let accounts = accountData.data;
         this.setState({
-            accounts: filter(accounts, account => !includes(tronAddresses, account.address))
+            accounts: filter(accounts, account => !includes(litetokensAddresses, account.address))
                 .slice(0, 10)
                 .map(account => ({
                     name: account.address,
-                    value: account.balance / ONE_TRX,
+                    value: account.balance / ONE_XLT,
                 }))
         });
     }
@@ -144,7 +144,7 @@ class Statistics extends React.Component {
 
         let valueStats = stats.value.map(row => ({
             timestamp: row.timestamp,
-            value: row.value / ONE_TRX,
+            value: row.value / ONE_XLT,
         }));
 
         blockStats = blockStats.map(row => ({
@@ -158,11 +158,11 @@ class Statistics extends React.Component {
             blockStats,
         });
     }
-    async loadTotalTRXSupply(){
+    async loadTotalXLTSupply(){
         let {intl} = this.props;
         let random = Math.random();
-        let balanceData = await xhr.get("https://server.tron.network/api/v2/node/balance_info?random=" + random);
-        let TRONFoundationTotal = balanceData.data.total;
+        let balanceData = await xhr.get("https://server.litetokens.org/api/v2/node/balance_info?random=" + random);
+        let LITETOKENSFoundationTotal = balanceData.data.total;
         let {blocks} = await Client.getBlocks({
             limit: 1,
             sort: '-number',
@@ -172,19 +172,19 @@ class Statistics extends React.Component {
         let blockProduceRewardsNum = blockHeight * 32;
         let address = await Client.getAddress('TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy');
         let startFeeBurnedNum = Math.abs(-9223372036854.775808)
-        let feeBurnedNum = (startFeeBurnedNum - Math.abs(address.balance / ONE_TRX)).toFixed(2);
+        let feeBurnedNum = (startFeeBurnedNum - Math.abs(address.balance / ONE_XLT)).toFixed(2);
         let genesisNum = 100000000000;
         let independenceDayBurned = 1000000000;
         let currentTotalSupply = genesisNum + blockProduceRewardsNum + nodeRewardsNum - independenceDayBurned - feeBurnedNum;
-        let circulatingNum = (currentTotalSupply  - TRONFoundationTotal).toFixed(2);
+        let circulatingNum = (currentTotalSupply  - LITETOKENSFoundationTotal).toFixed(2);
         let supplyTypesChartData = [
-            {value: TRONFoundationTotal, name: 'foundation_freeze', selected: true},
+            {value: LITETOKENSFoundationTotal, name: 'foundation_freeze', selected: true},
             {value: circulatingNum, name: 'circulating_supply', selected: true},
         ]
-        let trxPriceData = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/tronix/?convert=EUR`);
-        let priceUSD = ((parseFloat(trxPriceData.data[0].price_usd))*1000).toFixed(2);
-        let priceBTC = ((parseFloat(trxPriceData.data[0].price_btc))*1000).toFixed(5);
-        let marketCapitalization = ((parseFloat(trxPriceData.data[0].price_usd)*currentTotalSupply)).toFixed(2);
+        let xltPriceData = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/litetokens/?convert=EUR`);
+        let priceUSD = ((parseFloat(xltPriceData.data[0].price_usd))*1000).toFixed(2);
+        let priceBTC = ((parseFloat(xltPriceData.data[0].price_btc))*1000).toFixed(5);
+        let marketCapitalization = ((parseFloat(xltPriceData.data[0].price_usd)*currentTotalSupply)).toFixed(2);
         this.setState({
             supplyTypesChart: supplyTypesChartData,
             genesisNum:intl.formatNumber(genesisNum),
@@ -196,7 +196,7 @@ class Statistics extends React.Component {
             priceUSD:priceUSD,
             priceBTC:priceBTC,
             marketCapitalization:marketCapitalization,
-            foundationFreeze:intl.formatNumber(TRONFoundationTotal),
+            foundationFreeze:intl.formatNumber(LITETOKENSFoundationTotal),
             circulatingNum:intl.formatNumber(circulatingNum)
         });
     }
@@ -225,7 +225,7 @@ class Statistics extends React.Component {
 
     async loadVolume(){
         let {intl} = this.props;
-        let volumeData = await xhr.get("https://server.tron.network/api/v2/node/market_data");
+        let volumeData = await xhr.get("https://server.litetokens.org/api/v2/node/market_data");
         let volumeUSD = volumeData.data.market_cap_by_available_supply
 
         let volume = volumeUSD.map(function (v, i) {
@@ -266,7 +266,7 @@ class Statistics extends React.Component {
         let birthday = new Date("2017/10/10");
         let timerBirthday = birthday.getTime();
         let dayNum = Math.floor((timerToday - timerBirthday) / 1000 / 3600 / 24);
-        let {data} = await xhr.get("https://min-api.cryptocompare.com/data/histoday?fsym=TRX&tsym=USD&limit=" + dayNum);
+        let {data} = await xhr.get("https://min-api.cryptocompare.com/data/histoday?fsym=XLT&tsym=USD&limit=" + dayNum);
         let priceStatsTemp = data['Data'];
         this.setState({
             priceStats: priceStatsTemp
@@ -296,7 +296,7 @@ class Statistics extends React.Component {
 
     async loadTxOverviewStats() {
         // let {txOverviewStats} = await Client.getTxOverviewStats();
-        let overviewData = await xhr.get("https://assistapi.tronscan.org/api/stats/overview");
+        let overviewData = await xhr.get("https://assistapi.litescan.org/api/stats/overview");
         let txOverviewStats = overviewData.data.data;
         let temp = [];
         let addressesTemp = [];
@@ -432,7 +432,7 @@ class Statistics extends React.Component {
         let {match, intl} = this.props;
         let {txOverviewStats, addressesStats, blockSizeStats, blockchainSizeStats, priceStats, transactionStats, transactionValueStats, blockStats, accounts, volumeStats, pieChart, supplyTypesChart, summit,genesisNum,blockProduceRewardsNum,nodeRewardsNum,independenceDayBurned,feeBurnedNum,currentTotalSupply,priceUSD,priceBTC,marketCapitalization,foundationFreeze,circulatingNum} = this.state;
         let unit;
-        let uploadURL = "http://server.tron.network/api/v2/node/overview_upload";
+        let uploadURL = "http://server.litetokens.org/api/v2/node/overview_upload";
         if (match.params.chartName === 'blockchainSizeStats' || match.params.chartName === 'addressesStats') {
             unit = 'increase';
         } else {
@@ -475,7 +475,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             txOverviewStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactTx source='singleChart' style={{height: 500}}
                                                              data={txOverviewStats} intl={intl}/>
                                         }
@@ -486,7 +486,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             addressesStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactAdd source='singleChart' style={{height: 500}} data={addressesStats} intl={intl}/>
                                         }
                                     </div>
@@ -496,7 +496,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             blockSizeStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactBlockSize source='singleChart' style={{height: 500}}
                                                                     data={blockSizeStats}
                                                                     intl={intl}/>
@@ -508,7 +508,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             blockchainSizeStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactBlockchainSize source='singleChart' style={{height: 500}}
                                                                          data={blockchainSizeStats} intl={intl}/>
                                         }
@@ -519,7 +519,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             priceStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactPrice source='singleChart' style={{height: 500}}
                                                                 data={priceStats} intl={intl}/>
                                         }
@@ -530,7 +530,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             accounts === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <PieReact style={{height: 500}} data={accounts}/>
                                         }
                                     </div>
@@ -540,9 +540,9 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             transactionValueStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReact message={{
-                                                    id: 'trx_transferred_past_hour',
+                                                    id: 'xlt_transferred_past_hour',
                                                     href: 'transactionValueStats'
                                                 }}
                                                            style={{height: 500}} data={transactionValueStats}
@@ -556,7 +556,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             transactionStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReact
                                                     message={{id: 'transactions_past_hour', href: 'transactionStats'}}
                                                     style={{height: 500}} data={transactionStats}
@@ -570,7 +570,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             blockStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReact message={{id: 'average_blocksize', href: 'blockStats'}}
                                                            style={{height: 500}} data={blockStats}
                                                            keysData={['timestamp', 'value']}
@@ -583,7 +583,7 @@ class Statistics extends React.Component {
                                     <div style={{height: 500}}>
                                         {
                                             volumeStats === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <LineReactVolumeUsd source='singleChart'
                                                                     style={{height: 500}}
                                                                     data={volumeStats}
@@ -597,7 +597,7 @@ class Statistics extends React.Component {
                                     <div>
                                         {
                                             pieChart === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <RepresentativesRingPieReact source='singleChart'
                                                                              message={{id: 'produce_distribution'}}
                                                                              intl={intl}
@@ -613,7 +613,7 @@ class Statistics extends React.Component {
                                     <div>
                                         {
                                             supplyTypesChart === null ?
-                                                <TronLoader/> :
+                                                <LitetokensLoader/> :
                                                 <div className="row" style={{fontSize : 12,marginRight:0}}>
                                                     <div className="col-md-5">
                                                         <div className="table-responsive">
@@ -622,7 +622,7 @@ class Statistics extends React.Component {
                                                             <tr>
                                                                 <th style={{border:0}}>
                                                                     <i className="fa fa-puzzle-piece" ></i>
-                                                                    <span style={{marginTop:2}}>{tu('TRX_distribution_overview')}</span>
+                                                                    <span style={{marginTop:2}}>{tu('XLT_distribution_overview')}</span>
                                                                 </th>
                                                             </tr>
                                                             </thead>
@@ -632,42 +632,42 @@ class Statistics extends React.Component {
                                                                     {tu('genesis')}:
                                                                 </td>
                                                                 <td>
-                                                                    {genesisNum} TRX
+                                                                    {genesisNum} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>+  {tu('block_produce_rewards')}:
                                                                 </td>
                                                                 <td>
-                                                                    {blockProduceRewardsNum} TRX
+                                                                    {blockProduceRewardsNum} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>+ {tu('node_rewards')}:
                                                                 </td>
                                                                 <td>
-                                                                    {nodeRewardsNum} TRX
+                                                                    {nodeRewardsNum} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>- {tu('independence_day_burned')}:
                                                                 </td>
                                                                 <td>
-                                                                    {independenceDayBurned} TRX
+                                                                    {independenceDayBurned} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>- {tu('fee_burned')}:
                                                                 </td>
                                                                 <td>
-                                                                    {feeBurnedNum} TRX
+                                                                    {feeBurnedNum} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>= <b>{tu('current_total_supply')}:</b><br/>
                                                                 </td>
                                                                 <td>
-                                                                    <b>{intl.formatNumber(currentTotalSupply)} TRX</b>
+                                                                    <b>{intl.formatNumber(currentTotalSupply)} XLT</b>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -675,14 +675,14 @@ class Statistics extends React.Component {
                                                                     <Link to="/blockchain/foundation" style={{color:'red',}}>{tu("foundation_freeze")}</Link>
                                                                 </td>
                                                                 <td>
-                                                                    {foundationFreeze} TRX
+                                                                    {foundationFreeze} XLT
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>{tu('circulating_supply')}:
                                                                 </td>
                                                                 <td>
-                                                                    {circulatingNum} TRX
+                                                                    {circulatingNum} XLT
                                                                 </td>
                                                             </tr>
                                                             </tbody>
@@ -693,7 +693,7 @@ class Statistics extends React.Component {
                                                             <table className="table" style={{marginBottom:0}}>
                                                                 <thead>
                                                                 <tr>
-                                                                    <th style={{border:0}}><br/><i className="fa fa-coins" ></i> {tu('price_per_1000_trx')}</th>
+                                                                    <th style={{border:0}}><br/><i className="fa fa-coins" ></i> {tu('price_per_1000_xlt')}</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody><tr>
@@ -724,7 +724,7 @@ class Statistics extends React.Component {
                                                                 <span className="counter">
                                                                     <CountUp start={0} end={currentTotalSupply} duration={2}  separator="," decimals={2} />
                                                                 </span>
-                                                                <h4>{tu('total_TRX_supply')}</h4>
+                                                                <h4>{tu('total_XLT_supply')}</h4>
                                                             </div>
                                                             <div className="counters col-md-6 col-sm-6">
                                                                 <span className="counter">
@@ -735,7 +735,7 @@ class Statistics extends React.Component {
                                                         </div>
                                                         <div className="card">
                                                             <div className="card-body">
-                                                                <SupplyTypesTRXPieChart
+                                                                <SupplyTypesXLTPieChart
                                                                     message={{id: 'breakdown_supply_types'}}
                                                                     intl={intl}
                                                                     data={supplyTypesChart}

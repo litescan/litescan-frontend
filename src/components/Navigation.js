@@ -1,11 +1,11 @@
 /*eslint-disable no-script-url*/
 import React, {Fragment, PureComponent} from 'react'
 import {injectIntl} from "react-intl";
-import logo from '../images/tron-banner-inverted.png'
-import tronLogoBlue from '../images/tron-banner-tronblue.png'
-import tronLogoDark from '../images/tron-banner-1.png'
-import tronLogoTestNet from "../images/tron-logo-testnet.png";
-import tronLogoInvertedTestNet from "../images/tron-logo-inverted-testnet.png";
+import logo from '../images/litetokens-banner-inverted.png'
+import litetokensLogoBlue from '../images/litetokens-banner-litetokensblue.png'
+import litetokensLogoDark from '../images/litetokens-banner-1.png'
+import litetokensLogoTestNet from "../images/litetokens-logo-testnet.png";
+import litetokensLogoInvertedTestNet from "../images/litetokens-logo-inverted-testnet.png";
 import {flatRoutes, routes} from "../routes"
 import {Link, NavLink, withRouter} from "react-router-dom"
 import {filter, find, isString, isUndefined, trim} from "lodash"
@@ -16,18 +16,18 @@ import {Badge} from "reactstrap"
 import Avatar from "./common/Avatar"
 import {AddressLink, HrefLink} from "./common/Links"
 import {FormattedNumber} from "react-intl"
-import {IS_TESTNET, ONE_TRX} from "../constants"
+import {IS_TESTNET, ONE_XLT} from "../constants"
 import {matchPath} from 'react-router'
 import {doSearch, getSearchType} from "../services/search"
 import {readFileContentsFromEvent} from "../services/file"
 import {decryptString, validatePrivateKey} from "../services/secureKey";
 import SweetAlert from "react-bootstrap-sweetalert";
-import {pkToAddress} from "@tronscan/client/src/utils/crypto";
+import {pkToAddress} from "litescan-client/src/utils/crypto";
 import Notifications from "./account/Notifications";
 import SendModal from "./transfer/Send/SendModal";
-import {bytesToString} from "@tronscan/client/src/utils/bytes";
-import {hexStr2byteArray} from "@tronscan/client/src/lib/code";
-import {isAddressValid} from "@tronscan/client/src/utils/crypto";
+import {bytesToString} from "litescan-client/src/utils/bytes";
+import {hexStr2byteArray} from "litescan-client/src/lib/code";
+import {isAddressValid} from "litescan-client/src/utils/crypto";
 import ReceiveModal from "./transfer/Receive/ReceiveModal";
 import {toastr} from 'react-redux-toastr'
 import Lockr from "lockr";
@@ -228,7 +228,7 @@ class Navigation extends PureComponent {
       case "dark":
         this.props.setTheme("light");
         break;
-      case "tron":
+      case "litetokens":
         this.props.setTheme("dark");
         break;
 
@@ -248,7 +248,7 @@ class Navigation extends PureComponent {
       case "dark":
         icon = "fa fa-sun";
         break;
-      case "tron":
+      case "litetokens":
         icon = "fas fa-user-astronaut";
         break;
     }
@@ -284,16 +284,16 @@ class Navigation extends PureComponent {
     if (IS_TESTNET) {
       switch (theme) {
         case "light":
-          return tronLogoTestNet;
+          return litetokensLogoTestNet;
         default:
-          return tronLogoInvertedTestNet;
+          return litetokensLogoInvertedTestNet;
       }
     } else {
       switch (theme) {
-        case "tron":
-          return tronLogoBlue;
+        case "litetokens":
+          return litetokensLogoBlue;
         case "light":
-          return tronLogoDark;
+          return litetokensLogoDark;
         default:
           return logo;
       }
@@ -355,11 +355,11 @@ class Navigation extends PureComponent {
                     <li className="dropdown-divider"/>
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-credit-card mr-2"/>
-                      <FormattedNumber value={wallet.current.balance / ONE_TRX}/> TRX
+                      <FormattedNumber value={wallet.current.balance / ONE_XLT}/> XLT
                     </Link>
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-bolt mr-2"/>
-                      <FormattedNumber value={wallet.current.frozenTrx / ONE_TRX}/> TRON {tu("power")}
+                      <FormattedNumber value={wallet.current.frozenXlt / ONE_XLT}/> LITETOKENS {tu("power")}
                     </Link>
                     <Link className="dropdown-item" to="/account">
                       <i className="fa fa-tachometer-alt mr-2"/>
@@ -474,7 +474,7 @@ class Navigation extends PureComponent {
             <div className="container py-2 d-flex px-0">
               <div className="ml-4">
                 <Link to="/">
-                  <img src={this.getLogo()} className="logo" alt="Tron"/>
+                  <img src={this.getLogo()} className="logo" alt="Litetokens"/>
                 </Link>
               </div>
               {
@@ -486,7 +486,7 @@ class Navigation extends PureComponent {
               {
                 (syncStatus && syncStatus.sync.progress < 95) &&
                 <div className="col mx-auto text-danger text-center py-2">
-                  Tronscan is syncing, data might not be up-to-date ({Math.round(syncStatus.sync.progress)}%)
+                  Litescan is syncing, data might not be up-to-date ({Math.round(syncStatus.sync.progress)}%)
                 </div>
               }
               <div className="ml-auto navbar navbar-expand-md navbar-dark py-0">
@@ -631,10 +631,10 @@ class Navigation extends PureComponent {
                 activeComponent && <h4 className="pt-4">
                   <span className="text-uppercase">{tu(activeComponent.label)}</span> &nbsp;&nbsp;
                   {activeComponent.label === 'overview' &&
-                  <small className='text-muted'>{tu('token_overview_tron')}</small>
+                  <small className='text-muted'>{tu('token_overview_litetokens')}</small>
                   }
                   {activeComponent.label === 'participate' &&
-                  <small className='text-muted'>{tu('token_participate_tron')}</small>
+                  <small className='text-muted'>{tu('token_participate_litetokens')}</small>
                   }
                 </h4>
               }

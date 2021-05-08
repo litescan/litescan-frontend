@@ -5,7 +5,7 @@ import {Modal, ModalBody, ModalHeader} from "reactstrap";
 import {tu, t} from "../../utils/i18n";
 import {FormattedNumber} from "react-intl";
 import {Client} from "../../services/api";
-import {ONE_TRX} from "../../constants";
+import {ONE_XLT} from "../../constants";
 import {reloadWallet} from "../../actions/wallet";
 import {NumberField} from "../common/Fields";
 
@@ -40,12 +40,12 @@ class FreezeBalanceModal extends React.PureComponent {
 
   onAmountChanged = (value) => {
 
-    let {trxBalance} = this.props;
+    let {xltBalance} = this.props;
 
     let amount = parseInt(value);
     if (!isNaN(amount)) {
       amount = amount > 0 ? Math.floor(amount) : Math.abs(amount);
-      amount = amount < trxBalance ? amount : trxBalance;
+      amount = amount < xltBalance ? amount : xltBalance;
     } else {
       amount = "";
     }
@@ -61,7 +61,7 @@ class FreezeBalanceModal extends React.PureComponent {
     let {amount} = this.state;
     this.setState({loading: true});
 
-    let {success} = await Client.freezeBalance(account.address, amount * ONE_TRX, 3)(account.key);
+    let {success} = await Client.freezeBalance(account.address, amount * ONE_XLT, 3)(account.key);
     if (success) {
       this.confirmModal({amount});
       this.setState({loading: false});
@@ -73,9 +73,9 @@ class FreezeBalanceModal extends React.PureComponent {
   render() {
 
     let {amount, confirmed, loading} = this.state;
-    let {trxBalance,frozenTrx} = this.props;
+    let {xltBalance,frozenXlt} = this.props;
 
-    let isValid = !loading && (amount > 0 && trxBalance >= amount && confirmed);
+    let isValid = !loading && (amount > 0 && xltBalance >= amount && confirmed);
     return (
         <Modal isOpen={true} toggle={this.hideModal} fade={false} className="modal-dialog-centered">
           <ModalHeader className="text-center" toggle={this.hideModal}>
@@ -84,9 +84,9 @@ class FreezeBalanceModal extends React.PureComponent {
           <ModalBody className="text-center">
             <form>
               <div className="form-group">
-                <div className="text-left">{tu("current_power")}: <span style={{fontWeight: 800}}>{frozenTrx/ONE_TRX}</span>
+                <div className="text-left">{tu("current_power")}: <span style={{fontWeight: 800}}>{frozenXlt/ONE_XLT}</span>
                 </div>
-                <label>{tu("trx_amount")}</label>
+                <label>{tu("xlt_amount")}</label>
 
                 <NumberField
                     min={1}
@@ -102,7 +102,7 @@ class FreezeBalanceModal extends React.PureComponent {
                        onChange={(ev) => this.setState({confirmed: ev.target.checked})}/>
                 <label className="form-check-label">
                   {tu("token_freeze_confirm_message_0")} <b><FormattedNumber
-                    value={amount}/> TRX</b> {t("token_freeze_confirm_message_1")}
+                    value={amount}/> XLT</b> {t("token_freeze_confirm_message_1")}
                 </label>
               </div>
               <p className="mt-3">
@@ -125,7 +125,7 @@ function mapStateToProps(state) {
   return {
     account: state.app.account,
     tokenBalances: state.account.tokens,
-    trxBalance: state.account.trxBalance,
+    xltBalance: state.account.xltBalance,
   };
 }
 

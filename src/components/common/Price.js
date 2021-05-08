@@ -4,7 +4,7 @@ import {FormattedNumber} from "react-intl";
 import {Tooltip} from "reactstrap";
 import {alpha} from "../../utils/str";
 import {connect} from "react-redux";
-import {ONE_TRX} from "../../constants";
+import {ONE_XLT} from "../../constants";
 let PriceContext = React.createContext({
   priceBTC: 0,
   priceUSD: 0,
@@ -22,9 +22,9 @@ class PriceProviderCmp extends React.PureComponent {
         BTC: 0,
         EUR: 0,
         USD: 0,
-        TRX: 1,
+        XLT: 1,
       },
-      priceShown: props.activeCurrency || 'TRX',
+      priceShown: props.activeCurrency || 'XLT',
       currencies: {},
       activePrice: 1,
     };
@@ -44,15 +44,15 @@ class PriceProviderCmp extends React.PureComponent {
 
   async loadPrices() {
 
-    let {data} = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/tronix/?convert=EUR`);
-    let {data: dataEth} = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/tronix/?convert=ETH`);
+    let {data} = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/litetokens/?convert=EUR`);
+    let {data: dataEth} = await xhr.get(`https://api.coinmarketcap.com/v1/ticker/litetokens/?convert=ETH`);
 
     let newPrices = {
       BTC: parseFloat(data[0].price_btc),
       EUR: parseFloat(data[0].price_eur),
       USD: parseFloat(data[0].price_usd),
       ETH: parseFloat(dataEth[0].price_eth),
-      TRX: 1,
+      XLT: 1,
     };
 
     this.setState((state) => ({
@@ -88,7 +88,7 @@ const mapDispatchToProps = {
 
 export let PriceProvider = connect(mapStateToProps, mapDispatchToProps)(PriceProviderCmp);
 
-export class TRXPrice extends React.PureComponent {
+export class XLTPrice extends React.PureComponent {
 
   constructor() {
     super();
@@ -123,21 +123,21 @@ export class TRXPrice extends React.PureComponent {
                                                 onMouseOver={() => this.setState({open: true})}
                                                 onMouseOut={() => this.setState({open: false})}
                                                 {...props}>
-                              {name == 'TRX' ? amount / ONE_TRX : amount} {name}
+                              {name == 'XLT' ? amount / ONE_XLT : amount} {name}
                                         </span>}
                             </FormattedNumber>
                               {
                                   showPopup && <Tooltip placement="top" isOpen={open} target={id}>
-                                    TRX <FormattedNumber value={amount / ONE_TRX} maximumFractionDigits={6}
+                                    XLT <FormattedNumber value={amount / ONE_XLT} maximumFractionDigits={6}
                                                          minimumFractionDigits={6}/> <br/>
-                                    BTC <FormattedNumber value={priceValues.prices.BTC * (amount / ONE_TRX)}
+                                    BTC <FormattedNumber value={priceValues.prices.BTC * (amount / ONE_XLT)}
                                                          maximumFractionDigits={priceValues.currencies.BTC.fractions || 2}/>
                                     <br/>
-                                    ETH <FormattedNumber value={priceValues.prices.ETH * (amount / ONE_TRX)}
+                                    ETH <FormattedNumber value={priceValues.prices.ETH * (amount / ONE_XLT)}
                                                          maximumFractionDigits={priceValues.currencies.ETH.fractions || 2}/><br/>
-                                    USD <FormattedNumber value={priceValues.prices.USD * (amount / ONE_TRX)}
+                                    USD <FormattedNumber value={priceValues.prices.USD * (amount / ONE_XLT)}
                                                          maximumFractionDigits={priceValues.currencies.USD.fractions || 2}/><br/>
-                                    EUR <FormattedNumber value={priceValues.prices.EUR * (amount / ONE_TRX)}
+                                    EUR <FormattedNumber value={priceValues.prices.EUR * (amount / ONE_XLT)}
                                                          maximumFractionDigits={priceValues.currencies.EUR.fractions || 2}/>
                                   </Tooltip>
                               }
@@ -157,7 +157,7 @@ export class TRXPrice extends React.PureComponent {
                             </FormattedNumber>
                               {
                                   showPopup && <Tooltip placement="top" isOpen={open} target={id}>
-                                    TRX <FormattedNumber value={amount} maximumFractionDigits={6}
+                                    XLT <FormattedNumber value={amount} maximumFractionDigits={6}
                                                          minimumFractionDigits={6}/> <br/>
                                     <span className="text-capitalize">satoshi</span> <FormattedNumber value={priceValues.prices.BTC * amount * Math.pow(10, 8)}
                                                              maximumFractionDigits={priceValues.currencies.BTC.fractions || 2}/>
@@ -186,7 +186,7 @@ export class TRXPrice extends React.PureComponent {
                             </FormattedNumber>
                               {
                                   showPopup && <Tooltip placement="top" isOpen={open} target={id}>
-                                    TRX <FormattedNumber value={amount} maximumFractionDigits={6}
+                                    XLT <FormattedNumber value={amount} maximumFractionDigits={6}
                                                          minimumFractionDigits={6}/> <br/>
                                     BTC <FormattedNumber value={priceValues.prices.BTC * amount}
                                                          maximumFractionDigits={priceValues.currencies.BTC.fractions || 2}/>

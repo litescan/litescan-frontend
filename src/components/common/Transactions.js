@@ -5,7 +5,7 @@ import {Client} from "../../services/api";
 import {TransactionHashLink} from "./Links";
 import {tu} from "../../utils/i18n";
 import TimeAgo from "react-timeago";
-import {TronLoader} from "./loaders";
+import {LitetokensLoader} from "./loaders";
 import {Truncate} from "./text";
 import {ContractTypes} from "../../utils/protocol";
 
@@ -19,9 +19,9 @@ export default class Transactions extends React.Component {
       transactions: [],
       total: 0,
       emptyState: props.EmptyState || (
-        <TronLoader>
+        <LitetokensLoader>
           Loading Transactions
-        </TronLoader>
+        </LitetokensLoader>
       )
     };
   }

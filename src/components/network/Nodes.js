@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {loadNodes} from "../../actions/network";
 import {filter, maxBy, sortBy, sumBy} from "lodash";
 import {tu} from "../../utils/i18n";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 import {NodeMapAsync} from "./NodeMap/async";
 import {getQueryParam} from "../../utils/url";
 import {Client} from "../../services/api";
@@ -68,7 +68,7 @@ class Nodes extends Component {
     if (nodes.length === 0) {
       return (
           <div className="d-flex justify-content-center p-4">
-            <TronLoader/>
+            <LitetokensLoader/>
           </div>
       );
     }
@@ -91,7 +91,7 @@ class Nodes extends Component {
 
   loadNodes = async () => {
    // let {nodes, status} = await Client.getNodeLocations();
-    let {data} = await xhr.get("https://server.tron.network/api/v2/node/nodemap");
+    let {data} = await xhr.get("https://server.litetokens.org/api/v2/node/nodemap");
 
     this.setState({
       nodes:data.data,
@@ -111,9 +111,9 @@ class Nodes extends Component {
       return (
           <main className="container header-overlap">
             <div className="card">
-              <TronLoader>
+              <LitetokensLoader>
                 {tu("first_node_sync_message")}
-              </TronLoader>
+              </LitetokensLoader>
             </div>
           </main>
       );
@@ -123,9 +123,9 @@ class Nodes extends Component {
       return (
           <main className="container header-overlap">
             <div className="card">
-              <TronLoader>
+              <LitetokensLoader>
                 {tu("loading_nodes")}
-              </TronLoader>
+              </LitetokensLoader>
             </div>
           </main>
       );
@@ -179,7 +179,7 @@ class Nodes extends Component {
                       <div style={{height: 500}}>
                         {
                           countries === null ?
-                              <TronLoader/> :
+                              <LitetokensLoader/> :
                               <BarReact style={{height: 500}} data={countries}/>
                         }
                       </div>

@@ -18,11 +18,11 @@ $color-grey: #d2d1d1;
 @import "utilities/text-colors";
 @import "utilities/general";
 @import "wallet";
-@import "./themes/tron-light.scss";
-@import "./themes/tron-dark.scss";
+@import "./themes/litetokens-light.scss";
+@import "./themes/litetokens-dark.scss";
 @import "./themes/light.scss";
 @import "./themes/dark.scss";
-@import "./themes/tron.scss";
+@import "./themes/litetokens.scss";
 @import "representative";
 //@import "animations";
 //@import "node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
@@ -340,13 +340,13 @@ tr a {
 }
 
 // Buttons
-.btn-tron {
+.btn-litetokens {
   color: #fff;
   background-color: $dark-red;
   border-color: $light-red;
 }
 
-.btn-tron:hover {
+.btn-litetokens:hover {
   color: #fff;
   background-color: $light-red;
   border-color: $dark-red;
@@ -494,7 +494,7 @@ tr a {
   }
 }
 
-.news-sr {
+.news-ev {
   .carousel-item img {
     max-height: 300px;
     max-width: 100%;
@@ -901,8 +901,8 @@ th {
   display: inline-block !important;
 }
 
-.sr th,
-.sr td {
+.ev th,
+.ev td {
   padding-left: 10px;
   padding-right: 10px;
 }

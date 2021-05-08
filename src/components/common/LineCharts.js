@@ -163,7 +163,7 @@ export class LineReactHighChartTx extends React.Component {
 
 
         // if (source !== 'main') {
-        //     _config.title.text = intl.formatMessage({id: 'tron_transaction_chart'});
+        //     _config.title.text = intl.formatMessage({id: 'litetokens_transaction_chart'});
         //     _config.title.link = '#/blockchain/stats/txOverviewStats';
         //     _config.toolbox.feature = {
         //         restore: {
@@ -357,7 +357,7 @@ export class LineReactTx extends React.Component {
         }
 
         if (source !== 'home') {
-            _config.title.text = intl.formatMessage({id: 'tron_transaction_chart'});
+            _config.title.text = intl.formatMessage({id: 'litetokens_transaction_chart'});
             _config.title.link = '#/blockchain/stats/txOverviewStats';
             _config.toolbox.feature = {
                 restore: {

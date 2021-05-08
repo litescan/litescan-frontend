@@ -4,7 +4,7 @@ import {find} from "lodash";
 
 const initialState = {
   tokens: [],
-  trxBalance: 0,
+  xltBalance: 0,
   totalTransactions: 0,
   recentTransactions: [],
   frozen: {
@@ -25,11 +25,11 @@ export function accountReducer(state = initialState, action) {
     }
 
     case SET_TOKEN_BALANCES: {
-      let {balance: trxBalance = 0} = find(action.tokens, tb => tb.name.toUpperCase() === "TRX") || {};
+      let {balance: xltBalance = 0} = find(action.tokens, tb => tb.name.toUpperCase() === "XLT") || {};
 
       return {
         ...state,
-        trxBalance,
+        xltBalance,
         tokens: action.tokens,
         frozen: {
           ...action.frozen,

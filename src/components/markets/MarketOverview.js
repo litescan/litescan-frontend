@@ -226,7 +226,7 @@ export default class MarketOverview extends Component {
                     <ExternalLink url={market.link}>{market.pair}</ExternalLink>
                   </td>
                   <td className="text-nowrap d-none d-md-table-cell">
-                    <TRXPrice amount={market.volumeNative} />
+                    <XLTPrice amount={market.volumeNative} />
                   </td>
                   <td className="text-nowrap d-none d-md-table-cell">
                     <FormattedNumber value={market.volumePercentage} maximumFractionDigits={2} />%

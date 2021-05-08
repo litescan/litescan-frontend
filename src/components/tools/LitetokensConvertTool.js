@@ -4,9 +4,9 @@ import {tu} from "../../utils/i18n";
 import {connect} from "react-redux";
 import {BlockNumberLink} from "../common/Links";
 import {FormattedNumber} from "react-intl";
-import {TronLoader} from "../common/loaders";
+import {LitetokensLoader} from "../common/loaders";
 
-class TronConvertTool extends Component {
+class LitetokensConvertTool extends Component {
 
   constructor(props) {
     super(props);
@@ -43,12 +43,12 @@ class TronConvertTool extends Component {
             <div className="row" style={{justifyContent: 'center'}}>
                 {
                     <div className={this.state.loader?"loader-hidden col-md-12":"show col-md-12"} >
-                        <TronLoader/>
+                        <LitetokensLoader/>
                     </div>
                 }
                 {
                   <div className={this.state.loader?"show col-md-12":"hidden col-md-12"} style={{width:'100%',height:'100%',minHeight:'750px',paddingTop:'15px',border:0 }} >
-                    <iframe id="convertTool" style={{width:'100%',height:'100%',minHeight:'750px',paddingTop:'15px',border:0 }} src="https://cdnsrcpro.tronscan.org:4443"></iframe>
+                    <iframe id="convertTool" style={{width:'100%',height:'100%',minHeight:'750px',paddingTop:'15px',border:0 }} src="https://cdnsrcpro.litescan.org:4443"></iframe>
                   </div>
                 }
 
@@ -65,4 +65,4 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(TronConvertTool)
+export default connect(mapStateToProps, mapDispatchToProps)(LitetokensConvertTool)

@@ -36,17 +36,17 @@ export class ExchangeRate extends PureComponent {
 
   isValid = () => {
 
-    let { numberOfCoins, numberOfTron, startTime, endTime } = this.state;
+    let { numberOfCoins, numberOfLitetokens, startTime, endTime } = this.state;
 
     let newErrors = {
-      tronAmount: null,
+      litetokensAmount: null,
       tokenAmount: null,
       startDate: null,
       endDate: null,
     };
 
-    if (numberOfTron <= 0)
-      newErrors.tronAmount = tu("tron_value_error");
+    if (numberOfLitetokens <= 0)
+      newErrors.litetokensAmount = tu("litetokens_value_error");
 
     if (numberOfCoins <= 0)
       newErrors.tokenAmount = tu("coin_value_error");
@@ -87,11 +87,11 @@ export class ExchangeRate extends PureComponent {
 
 
   render() {
-    let {numberOfCoins, numberOfTron, name, startTime, endTime} = this.state;
+    let {numberOfCoins, numberOfLitetokens, name, startTime, endTime} = this.state;
 
     let {errors} = this.state;
 
-    let exchangeRate = numberOfTron / numberOfCoins;
+    let exchangeRate = numberOfLitetokens / numberOfCoins;
     let {activeLanguage, language, nextStep} = this.props;
 
     if (activeLanguage === "en") {
@@ -130,19 +130,19 @@ export class ExchangeRate extends PureComponent {
               
               <div className="form-row">
                 <div className="form-group col-md-6">
-                  <label>* <span>TRX</span> {tu("amount")}</label>
+                  <label>* <span>XLT</span> {tu("amount")}</label>
                   <NumberField
                       className="form-control"
-                      value={numberOfTron}
+                      value={numberOfLitetokens}
                       min={1}
-                      onChange={(value) => this.setState({numberOfTron: value})}/>
-                  {numberOfTron === "" && ErrorLabel(errors.tronAmount)}
+                      onChange={(value) => this.setState({numberOfLitetokens: value})}/>
+                  {numberOfLitetokens === "" && ErrorLabel(errors.litetokensAmount)}
                 </div>
               </div>
               <div className="form-row">
                 <p className="col-md-12">
                   <span>{tu("token_price")}</span>: 1 {name || tu("token")} = <FormattedNumber
-                    value={exchangeRate} maximumFractionDigits={7} minimunFractionDigits={7}/> TRX
+                    value={exchangeRate} maximumFractionDigits={7} minimunFractionDigits={7}/> XLT
                 </p>
               </div>
               <div className="form-row">

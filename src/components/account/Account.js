@@ -6,11 +6,11 @@ import xhr from "axios";
 import {injectIntl} from "react-intl";
 import {FormattedDate, FormattedNumber, FormattedRelative, FormattedTime} from "react-intl";
 import {Link} from "react-router-dom";
-import {TRXPrice} from "../common/Price";
+import {XLTPrice} from "../common/Price";
 import FreezeBalanceModal from "./FreezeBalanceModal";
 import {AddressLink, ExternalLink, HrefLink, TokenLink} from "../common/Links";
 import SweetAlert from "react-bootstrap-sweetalert";
-import {IS_TESTNET, ONE_TRX} from "../../constants";
+import {IS_TESTNET, ONE_XLT} from "../../constants";
 import {Client} from "../../services/api";
 import {reloadWallet} from "../../actions/wallet";
 import {login} from "../../actions/app";
@@ -23,7 +23,7 @@ import ChangeNameModal from "./ChangeNameModal";
 import {addDays, getTime} from "date-fns";
 import TestNetRequest from "./TestNetRequest";
 import Transactions from "../common/Transactions";
-import {pkToAddress} from "@tronscan/client/src/utils/crypto";
+import {pkToAddress} from "litescan-client/src/utils/crypto";
 import _ from "lodash";
 
 class Account extends Component {
@@ -35,7 +35,7 @@ class Account extends Component {
       modal: null,
       showFreezeBalance: false,
       showBuyTokens: false,
-      sr: null,
+      ev: null,
       issuedAsset: null,
       showBandwidth: false,
       privateKey: ""
@@ -65,13 +65,13 @@ class Account extends Component {
 
     this.setState({
       issuedAsset: null,
-      sr: null,
+      ev: null,
     });
 
     if (currentWallet && currentWallet.representative.enabled) {
-      let sr = await Client.getSuperRepresentative(currentWallet.address);
+      let ev = await Client.getSuperRepresentative(currentWallet.address);
       this.setState({
-        sr,
+        ev,
       });
     }
 
@@ -91,7 +91,7 @@ class Account extends Component {
     let {tokenBalances = []} = this.props;
 
     tokenBalances = _(tokenBalances)
-      .filter(tb => tb.name.toUpperCase() !== "TRX")
+      .filter(tb => tb.name.toUpperCase() !== "XLT")
       .filter(tb => tb.balance > 0)
       .sortBy(tb => tb.name)
       .value();
@@ -240,7 +240,7 @@ class Account extends Component {
             frozen.balances.map((balance, index) => (
                 <tr key={index}>
                   <td>
-                    <TRXPrice amount={balance.amount / ONE_TRX}/>
+                    <XLTPrice amount={balance.amount / ONE_XLT}/>
                   </td>
                   <td className="text-right">
                     <FormattedDate value={balance.expires}/>&nbsp;
@@ -291,7 +291,7 @@ class Account extends Component {
       confirm = this.showFreezeBalance;
     if (param === 'unfreeze')
       confirm = this.showUnfreezeModal;
-    if (param === 'applySR')
+    if (param === 'applyEV')
       confirm = this.applyForDelegate;
     if (param === 'claimRewards')
       confirm = this.claimRewards;
@@ -348,13 +348,13 @@ class Account extends Component {
 
     let {privateKey} = this.state;
 
-    let {trxBalance, currentWallet} = this.props;
+    let {xltBalance, currentWallet} = this.props;
 
-    if (trxBalance === 0) {
+    if (xltBalance === 0) {
       this.setState({
         modal: (
-            <SweetAlert warning title={tu("not_enough_trx")} onConfirm={this.hideModal}>
-              {tu("freeze_trx_least")}
+            <SweetAlert warning title={tu("not_enough_xlt")} onConfirm={this.hideModal}>
+              {tu("freeze_xlt_least")}
             </SweetAlert>
         )
       });
@@ -365,14 +365,14 @@ class Account extends Component {
     this.setState({
       modal: (
           <FreezeBalanceModal
-              frozenTrx={currentWallet.frozenTrx}
+              frozenXlt={currentWallet.frozenXlt}
               privateKey={privateKey}
               onHide={this.hideModal}
               onError={() => {
                 this.setState({
                   modal: (
                       <SweetAlert warning title={tu("Error")} onConfirm={this.hideModal}>
-                        Something went wrong while trying to freeze TRX
+                        Something went wrong while trying to freeze XLT
                       </SweetAlert>
                   )
                 });
@@ -398,7 +398,7 @@ class Account extends Component {
               confirmBtnBsStyle="danger"
               cancelBtnBsStyle="default"
               cancelBtnText={tu("cancel")}
-              title={tu("unfreeze_trx_confirm_message")}
+              title={tu("unfreeze_xlt_confirm_message")}
               onConfirm={this.unfreeze}
               onCancel={this.hideModal}
           >
@@ -460,8 +460,8 @@ class Account extends Component {
     if (success) {
       this.setState({
         modal: (
-            <SweetAlert success title="TRX Unfrozen" onConfirm={this.hideModal}>
-              {tu("success_unfrozen_trx")}
+            <SweetAlert success title="XLT Unfrozen" onConfirm={this.hideModal}>
+              {tu("success_unfrozen_xlt")}
             </SweetAlert>
         )
       });
@@ -470,7 +470,7 @@ class Account extends Component {
       this.setState({
         modal: (
             <SweetAlert warning title={tu("unable_to_unfreeze")} onConfirm={this.hideModal}>
-              {tu("unable_unfreeze_trx_message")}
+              {tu("unable_unfreeze_xlt_message")}
             </SweetAlert>
         ),
       });
@@ -510,7 +510,7 @@ class Account extends Component {
     this.setState({
       modal: (
           <SweetAlert success title={tu("tokens_frozen")} onConfirm={this.hideModal}>
-            {tu("successfully_frozen")} {amount} TRX
+            {tu("successfully_frozen")} {amount} XLT
           </SweetAlert>
       )
     });
@@ -590,7 +590,7 @@ class Account extends Component {
               cancelBtnText={tu("cancel")}
               confirmBtnText={tu("link_github")}
               title={tu("link_to_github")}
-              placeHolder="github username or https://github.com/{username}/tronsr-template"
+              placeHolder="github username or https://github.com/{username}/litetokensev-template"
               onCancel={this.hideModal}
               validationMsg={tu("you_must_enter_a_url")}
               onConfirm={async (name) => {
@@ -624,14 +624,14 @@ class Account extends Component {
   };
 
   hasGithubLink = () => {
-    let {sr} = this.state;
-    return sr && (trim(sr.githubLink).length !== 0);
+    let {ev} = this.state;
+    return ev && (trim(ev.githubLink).length !== 0);
   };
 
   detectGithubUrl = async (input) => {
 
     let urls = [
-      `https://raw.githubusercontent.com/${input}/tronsr-template/master/logo.png`,
+      `https://raw.githubusercontent.com/${input}/litetokensev-template/master/logo.png`,
       `https://raw.githubusercontent.com/${input}/master/logo.png`,
     ];
 
@@ -655,7 +655,7 @@ class Account extends Component {
     let key = await Client.auth(account.key);
 
     let [name, repo] = url.split("/");
-    let githubLink = name + "/" + (repo || "tronsr-template");
+    let githubLink = name + "/" + (repo || "litetokensev-template");
 
     await Client.updateSuperRepresentative(key, {
       address: currentWallet.address,
@@ -697,8 +697,8 @@ class Account extends Component {
                 this.setState({
                   modal: (
                       <SweetAlert success title={tu("success")} onConfirm={this.hideModal}>
-                        {tu("successfully_appied_sr_canidate_message_0")} <br/>
-                        {tu("successfully_appied_sr_canidate_message_1")}
+                        {tu("successfully_appied_ev_canidate_message_0")} <br/>
+                        {tu("successfully_appied_ev_canidate_message_1")}
                       </SweetAlert>
                   )
                 });
@@ -730,7 +730,7 @@ class Account extends Component {
 
   render() {
 
-    let {modal, sr, issuedAsset, showBandwidth, showBuyTokens} = this.state;
+    let {modal, ev, issuedAsset, showBandwidth, showBuyTokens} = this.state;
     let {account, frozen, totalTransactions, currentWallet, wallet} = this.props;
 
     if (!wallet.isOpen || !currentWallet) {
@@ -755,7 +755,7 @@ class Account extends Component {
         <main className="container header-overlap">
           {modal}
           <div className="text-center alert alert-light alert-dismissible fade show" role="alert">
-              {tu("tron_power_freezing")}
+              {tu("litetokens_power_freezing")}
             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -781,19 +781,19 @@ class Account extends Component {
                 <i className="icon-big fa fa-bolt fa-7x" style={{color: '#ffc107'}}/>
                 <div className="card-body">
                   <h3 className="text-warning">
-                    <FormattedNumber value={currentWallet.frozenTrx / ONE_TRX}/>
+                    <FormattedNumber value={currentWallet.frozenXlt / ONE_XLT}/>
                   </h3>
-                  TRON {tu("power")}
+                  LITETOKENS {tu("power")}
                 </div>
               </div>
             </div>
 
             <div className="col-md-4 mt-3 mt-md-0">
               <div className="card h-100 widget-icon">
-                <img src={require("../../images/tron-icon.svg")} style={styles.tronBalance}/>
+                <img src={require("../../images/litetokens-icon.svg")} style={styles.litetokensBalance}/>
                 <div className="card-body text-center">
                   <h3 className="text-danger">
-                    <TRXPrice amount={currentWallet.balance / ONE_TRX}/>
+                    <XLTPrice amount={currentWallet.balance / ONE_XLT}/>
                   </h3>
                   {tu("balance")}
                 </div>
@@ -818,7 +818,7 @@ class Account extends Component {
                           <td>
                             {currentWallet.name || "-"}
                             {
-                              (trim(currentWallet.name) === "" && (currentWallet.balance > 0 || currentWallet.frozenTrx > 0)) &&
+                              (trim(currentWallet.name) === "" && (currentWallet.balance > 0 || currentWallet.frozenXlt > 0)) &&
                               <a href="javascript:" className="float-right text-primary" onClick={() => {
                                 this.changeName()
                               }}>
@@ -976,13 +976,13 @@ class Account extends Component {
               <div className="card">
                 <div className="card-body px-0 border-0">
                   <h5 className="card-title text-center m-0">
-                    TRON {tu("power")}
+                    LITETOKENS {tu("power")}
                   </h5>
                 </div>
                 <div className="card-body text-center pt-0">
                   <p className="card-text">
-                    {tu("freeze_trx_premessage_0")}<Link to="/votes"
-                                                         className="text-primary">{t("freeze_trx_premessage_link")}</Link><br/>{tu("freeze_trx_premessage_1")}
+                    {tu("freeze_xlt_premessage_0")}<Link to="/votes"
+                                                         className="text-primary">{t("freeze_xlt_premessage_link")}</Link><br/>{tu("freeze_xlt_premessage_1")}
                   </p>
                   {
                     hasFrozen &&
@@ -1014,7 +1014,7 @@ class Account extends Component {
                           {tu("Super Representatives")}
                         </h5>
                         <p className="card-text">
-                          {tu("sr_receive_reward_message_0")}
+                          {tu("ev_receive_reward_message_0")}
                         </p>
                         <button className="btn btn-success mr-2"
                                 onClick={() => {
@@ -1027,7 +1027,7 @@ class Account extends Component {
                         {
                           currentWallet.representative.allowance > 0 ?
                               <p className="m-0 mt-3 text-success">
-                                Claimable Rewards: <TRXPrice amount={currentWallet.representative.allowance / ONE_TRX}
+                                Claimable Rewards: <XLTPrice amount={currentWallet.representative.allowance / ONE_XLT}
                                                              className="font-weight-bold"/>
                               </p> :
                               <p className="m-0 mt-3 font-weight-bold text-danger">
@@ -1040,12 +1040,12 @@ class Account extends Component {
                           {tu("landing_page")}
                         </h5>
                         <p className="card-text text-center">
-                          {tu("create_sr_landing_page_message_0")}
+                          {tu("create_ev_landing_page_message_0")}
                         </p>
                         <p className="text-center">
                           <HrefLink className="btn btn-primary mr-2"
-                                    href="https://github.com/tronscan/tronsr-template#readme">
-                            {tu("show_more_information_publish_sr_page")}
+                                    href="https://github.com/litescan/litetokensev-template#readme">
+                            {tu("show_more_information_publish_ev_page")}
                             <i className="fa fa-question ml-2"/>
                           </HrefLink>
                         </p>
@@ -1073,8 +1073,8 @@ class Account extends Component {
                           <tr>
                             <th>{tu("Github Link")}:</th>
                             <td>
-                              <HrefLink href={"http://github.com/" + sr.githubLink}
-                                        target="_blank">{"http://github.com/" + sr.githubLink}</HrefLink>
+                              <HrefLink href={"http://github.com/" + ev.githubLink}
+                                        target="_blank">{"http://github.com/" + ev.githubLink}</HrefLink>
                               <a href="javascript:;" className="float-right text-primary"
                                  onClick={() => {
                                    this.changeGithubURL()
@@ -1139,10 +1139,10 @@ class Account extends Component {
               <div className="card">
                 <div className="card-body mb-0 pb-0 px-0 border-0 text-center">
                   <h5 className="card-title text-center m-0">
-                    {t("buy_trx")}
+                    {t("buy_xlt")}
                   </h5>
                   <p className="card-body text-center">
-                    {t("buy_trx_message_0")}
+                    {t("buy_xlt_message_0")}
                     <HrefLink href={"https://changelly.com/faq"}
                               target="_blank">{"changelly.com/faq"}</HrefLink>{"."}
                   </p>
@@ -1150,14 +1150,14 @@ class Account extends Component {
                     {
                       !showBuyTokens && <button className="btn btn-primary my-2"
                                                 onClick={() => this.setState(state => ({showBuyTokens: !state.showBuyTokens}))}>
-                        {t("buy_trx_using_changelly")}
+                        {t("buy_xlt_using_changelly")}
                         <i className="fa fa-credit-card ml-2"/>
                       </button>
                     }
                   </p>
                   {
                     showBuyTokens && <iframe
-                        src={"https://changelly.com/widget/v1?auth=email&from=USD&to=TRX&merchant_id=9d1448c106fd&address=" + currentWallet.address + "&amount=100&ref_id=x600ducoeoei16mc&color=28cf00"}
+                        src={"https://changelly.com/widget/v1?auth=email&from=USD&to=XLT&merchant_id=9d1448c106fd&address=" + currentWallet.address + "&amount=100&ref_id=x600ducoeoei16mc&color=28cf00"}
                         height="500" className="changelly" scrolling="no"
                         style={{overflowY: 'hidden', border: 'none', width: '100%'}}> {t("cant_load_widget")}
                     </iframe>
@@ -1180,7 +1180,7 @@ function mapStateToProps(state) {
     frozen: state.account.frozen,
     wallet: state.wallet,
     currentWallet: state.wallet.current,
-    trxBalance: state.account.trxBalance,
+    xltBalance: state.account.xltBalance,
   };
 }
 
@@ -1196,7 +1196,7 @@ const styles = {
   iconEntropy: {
     right: 0,
   },
-  tronBalance: {
+  litetokensBalance: {
     position: 'absolute',
     right: 0,
     bottom: 0,

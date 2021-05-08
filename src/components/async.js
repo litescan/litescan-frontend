@@ -1,13 +1,13 @@
 import React from "react";
 import {asyncComponent} from "react-async-component";
-import {TronLoader} from "./common/loaders";
+import {LitetokensLoader} from "./common/loaders";
 
 
 const $script = require("scriptjs");
 
 export const StatisticsAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -25,7 +25,7 @@ export const StatisticsAsync = asyncComponent({
 
 export const SingleChartAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -43,7 +43,7 @@ export const SingleChartAsync = asyncComponent({
 
 export const MarketsAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -62,7 +62,7 @@ export const MarketsAsync = asyncComponent({
 
 export const WalletWizardAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -81,7 +81,7 @@ export const WalletWizardAsync = asyncComponent({
 
 export const TransactionViewerAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -100,7 +100,7 @@ export const TransactionViewerAsync = asyncComponent({
 
 export const VoteOverviewAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -119,7 +119,7 @@ export const VoteOverviewAsync = asyncComponent({
 
 export const VoteLiveAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -138,7 +138,7 @@ export const VoteLiveAsync = asyncComponent({
 
 export const RepresentativesAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -156,7 +156,7 @@ export const RepresentativesAsync = asyncComponent({
 
 export const AccountAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -174,7 +174,7 @@ export const AccountAsync = asyncComponent({
 
 export const NodeTesterAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -190,9 +190,9 @@ export const NodeTesterAsync = asyncComponent({
   )
 });
 
-export const TronConvertToolAsync = asyncComponent({
+export const LitetokensConvertToolAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -200,17 +200,17 @@ export const TronConvertToolAsync = asyncComponent({
           [],
           (require) => {
             $script("", () => {
-              resolve(require("./tools/TronConvertTool"));
+              resolve(require("./tools/LitetokensConvertTool"));
             });
           },
-          'TronConvertTool',
+          'LitetokensConvertTool',
       )
   )
 });
 
 export const SystemAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -228,7 +228,7 @@ export const SystemAsync = asyncComponent({
 
 export const DemoAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -246,7 +246,7 @@ export const DemoAsync = asyncComponent({
 
 export const FaqAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -264,7 +264,7 @@ export const FaqAsync = asyncComponent({
 
 export const MyTokenAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -280,9 +280,9 @@ export const MyTokenAsync = asyncComponent({
   )
 });
 
-export const TRONRatingAsync = asyncComponent({
+export const LITETOKENSRatingAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -290,17 +290,17 @@ export const TRONRatingAsync = asyncComponent({
           [],
           (require) => {
             $script("", () => {
-              resolve(require("./Pages/TRONRating"));
+              resolve(require("./Pages/LITETOKENSRating"));
             });
           },
-          'TRONRating',
+          'LITETOKENSRating',
       )
   )
 });
 
 export const CopyrightAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -318,7 +318,7 @@ export const CopyrightAsync = asyncComponent({
 
 export const LedgerHelpAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -337,7 +337,7 @@ export const LedgerHelpAsync = asyncComponent({
 
 export const TokenOverviewAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -355,7 +355,7 @@ export const TokenOverviewAsync = asyncComponent({
 
 export const TokenListAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -373,7 +373,7 @@ export const TokenListAsync = asyncComponent({
 
 export const TokensCreateAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -393,7 +393,7 @@ export const TokensCreateAsync = asyncComponent({
 
 export const AccountsAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -412,7 +412,7 @@ export const AccountsAsync = asyncComponent({
 
 export const FoundationAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -430,7 +430,7 @@ export const FoundationAsync = asyncComponent({
 
 export const NodesAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -448,7 +448,7 @@ export const NodesAsync = asyncComponent({
 
 export const LiveAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming
@@ -466,7 +466,7 @@ export const LiveAsync = asyncComponent({
 
 export const TokenDetailAsync = asyncComponent({
   LoadingComponent: () => (
-      <TronLoader/>
+      <LitetokensLoader/>
   ),
   resolve: () => new Promise(resolve =>
       // Webpack's code splitting API w/naming

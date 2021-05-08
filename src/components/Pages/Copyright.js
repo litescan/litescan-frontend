@@ -14,8 +14,8 @@ export default class Faq extends Component {
             <div className="card">
               <div className="card-body">
 
-                <p>TRON respects copyright law and expects its users to do the same. In accordance with the Digital Millennium Copyright Act (“DMCA”), the text of which may be found on the U.S. Copyright Office web site at <a style={{textDecoration:'underline'}} href="http://www.copyright.gov/legislation/dmca.pdf">http://www.copyright.gov/legislation/dmca.pdf</a> , TRON will respond expeditiously to notices of alleged copyright infringement that are reported to TRON’s Designated Copyright Agent, identified in the sample Notice below.<br/>
-                  To file a copyright infringement notification with TRON (“Notice”), you will need to send a written communication that includes substantially the following (please consult your legal counsel or see Section 512(c)(3) of the DMCA to confirm these requirements):
+                <p>LITETOKENS respects copyright law and expects its users to do the same. In accordance with the Digital Millennium Copyright Act (“DMCA”), the text of which may be found on the U.S. Copyright Office web site at <a style={{textDecoration:'underline'}} href="http://www.copyright.gov/legislation/dmca.pdf">http://www.copyright.gov/legislation/dmca.pdf</a> , LITETOKENS will respond expeditiously to notices of alleged copyright infringement that are reported to LITETOKENS’s Designated Copyright Agent, identified in the sample Notice below.<br/>
+                  To file a copyright infringement notification with LITETOKENS (“Notice”), you will need to send a written communication that includes substantially the following (please consult your legal counsel or see Section 512(c)(3) of the DMCA to confirm these requirements):
                 </p>
                 <ul>
                   <li>
@@ -39,16 +39,16 @@ export default class Faq extends Component {
 
                 </ul>
                 <p>
-                  Deliver this Notice, with all items completed, to TRON’s Designated Copyright Agent:
+                  Deliver this Notice, with all items completed, to LITETOKENS’s Designated Copyright Agent:
                 </p>
 
                 <p>
                   DMCA Complaints<br/>
-                  TRON<br/>
-                  301 Howard St., Suite 2000<br/>
-                  San Francisco, California 94105<br/>
-                  Attention: TRON Copyright Agent<br/>
-                  <a style={{textDecoration:'underline'}}>copyright@tron.network</a>
+                  Litetokens, Dust LLC as Agent<br/>
+                  2020 North Academy Boulevard, Suite 261 #769<br/>
+                  Colorado Springs, Colorado 80909<br/>
+                  Attention: Litetokens Copyright Agent<br/>
+                  <a style={{textDecoration:'underline'}}>copyright@litetokens.org</a>
                 </p>
 
                 <p>
@@ -60,11 +60,11 @@ export default class Faq extends Component {
                 </p>
 
                 <p>
-                  TRON does not permit copyright infringing activities on its websites and will, if properly notified that files infringe a copyright, remove or disable access to such files.
+                  LITETOKENS does not permit copyright infringing activities on its websites and will, if properly notified that files infringe a copyright, remove or disable access to such files.
                 </p>
 
                 <p>
-                  TRON reserves the right to remove or disable access to files or links to allegedly infringing material without prior notice.
+                  LITETOKENS reserves the right to remove or disable access to files or links to allegedly infringing material without prior notice.
                 </p>
 
                 <h3>Counter-Notification</h3>
@@ -76,12 +76,12 @@ export default class Faq extends Component {
                 </p>
                 <h3>Repeat Infringers</h3>
                 <p>
-                  Not all TRON services limit their usage to registered users or other account holders. For services that do, TRON will terminate registered users or other account holders whom it determines to be repeat infringers. If you believe that a registered user or other account holder is an infringer, please follow the instructions above to contact TRON’s Designated Copyright Agent and provide information sufficient for TRON to verify that the registered user or other account holder is an infringer.
+                  Not all LITETOKENS services limit their usage to registered users or other account holders. For services that do, LITETOKENS will terminate registered users or other account holders whom it determines to be repeat infringers. If you believe that a registered user or other account holder is an infringer, please follow the instructions above to contact LITETOKENS’s Designated Copyright Agent and provide information sufficient for LITETOKENS to verify that the registered user or other account holder is an infringer.
                 </p>
 
                 <h3>Subpoenas</h3>
                 <p>
-                  TRON may be required to disclose information to individuals asserting rights under the Digital Millennium Copyright Act or other intellectual property laws. You authorize TRON to release information about you if required by law or subpoena without notice to you.
+                  LITETOKENS may be required to disclose information to individuals asserting rights under the Digital Millennium Copyright Act or other intellectual property laws. You authorize LITETOKENS to release information about you if required by law or subpoena without notice to you.
                 </p>
 
 
