@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img width="40%" src="https://raw.githubusercontent.com/litescan/docs/master/images/tron-banner.png">
+  <img width="40%" src="https://raw.githubusercontent.com/litescan/docs/master/images/xlt900x450.jpg">
   <br>
   Litescan Frontend
   <br>
