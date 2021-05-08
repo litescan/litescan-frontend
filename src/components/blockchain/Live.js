@@ -182,7 +182,7 @@ class Live extends React.Component {
                   {tu("voter")}{': '}<AddressLink address={event.voterAddress} truncate={false}/>
                 </div>
                 <div className="col-xs-8 col-sm-6">
-                  {tu("representatives")}{': '}<AddressLink address={event.candidateAddress} truncate={false}/>
+                  {tu("envoys")}{': '}<AddressLink address={event.candidateAddress} truncate={false}/>
                 </div>
               </div>
             </Row>
@@ -243,7 +243,7 @@ class Live extends React.Component {
                 </div>
                 <div className="col-xs-8 col-sm-6">
                   {tu("address")}{': '}<AddressLink address={event.ownerAddress}
-                                                    truncate={false}/>{' '}{t("applied_for_super_representative")}
+                                                    truncate={false}/>{' '}{t("applied_for_super_envoy")}
                 </div>
               </div>
             </Row>

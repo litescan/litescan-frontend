@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Înălțime Block",
   "online_nodes": "Noduri Online",
   "pice_per_1000xlt": "Preț (per 1000XLT)",
-  "vote_for_super_representatives": "Votați pentru Super Reprezentanți",
-  "view_super_representatives": "Vizualizare Super Reprezentanți",
+  "vote_for_super_envoys": "Votați pentru Super Reprezentanți",
+  "view_super_envoys": "Vizualizare Super Reprezentanți",
   "create_new_wallet": "Creați un nou Portofel",
   "view_tokens": "Vizualizare Tokeni",
   "transactions_last_day": "Tranzacții din ultima zi",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "aplicați pentru delegat",
-  "apply_super_representative_candidate": "Aplicați ca să fiți un Candidat Super Reprezentant",
+  "apply_super_envoy_candidate": "Aplicați ca să fiți un Candidat Super Reprezentant",
   "your_personal_website_address": "adresa personală de website",
   "apply_for_delegate_predescription": `Fiecare deținător de tokeni are oportunitatea să devină un Super Reprezentant LITETOKENS.
    Cu toate acestea, pentru ca rețeaua și comunitatea să funcționeze mai usor și mai eficient, am creat un set de standarde și regulamente
@@ -317,7 +317,7 @@ export const messages = {
    Fiecare tranzacție făcută în rețea este necesară pentru a fi validată de toți SuperDelegații, și unele bonusuri vor fi primite.
    XLT-ul nu va fi consumat în procesul de aplicare și votare de super delegat.`,
   "unknown_error": "a apărut o eroare necunoscută",
-  "representative_understand": "Înțeleg ce înseamnă să fiu un reprezentant LITETOKENS",
+  "envoy_understand": "Înțeleg ce înseamnă să fiu un reprezentant LITETOKENS",
   "generate_account": "Clic pentru a genera adresa și parola de cont",
   "create_account_confirm_1": "Înțeleg că dacă îmi uit/pierd parola nu voi mai putea accesa bunurile",
   "create_account_confirm_2": "Înțeleg că dacă îmi uit/pierd parola nimeni nu va putea să ma ajute să o recuperez",
@@ -325,7 +325,7 @@ export const messages = {
   "vote_thanks": "Vă mulțumim pentru votul efectuat!",
   "recent_transactions": "tranzacții recente",
   "newest_account": "cel mai nou cont",
-  "representatives": "reprezentanți",
+  "envoys": "reprezentanți",
   "most_votes": "cele mai multe voturi",
   "start_end_time": "Start / Sfârșit Timp",
   "scan_qr_code": "Scanați codul cu un scaner Cod QR",
@@ -341,8 +341,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Înțeleg ce înseamnă să fiu un reprezentant LITETOKENS și confirm să achit o",
   "understand_litetokens_ev_message_1": "taxă.",
   "invalid_url": "Invalid URL",
-  "apply_representative_error_message_0": "Ceva nu a mers bine în timp ce încercați să aplicați pentru reprezentare.",
-  "apply_representative_error_message_1": "Asigurați-vă că aveți destul XLT pentru taxă, sau încercați mai tarziu.",
+  "apply_envoy_error_message_0": "Ceva nu a mers bine în timp ce încercați să aplicați pentru reprezentare.",
+  "apply_envoy_error_message_1": "Asigurați-vă că aveți destul XLT pentru taxă, sau încercați mai tarziu.",
   "open_external_link": "Deschideți un link extern",
   "private_key_untrusted_website_message_0": "Nu introduceți niciodată cheia privată pe un website nesigur.",
   "no_official_litetokens_website": "acesta nu este un site oficial LITETOKENS.",
@@ -552,7 +552,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -560,10 +560,10 @@ export const messages = {
   "lowest_productivity": "Cea mai mică Productivitate",
   "Super Representatives": "Super Reprezentanți",
   "Super Representative Candidates": "Candidați Super Reprezentanți",
-  "loading_representatives": "Încărcare Reprezentanți",
-  "address_not_super_representative": "Această adresă nu este un Super Reprezentant",
-  "unable_load_representatives_page_message": "Nu se poate încărca pagina, acest lucru se întâmplă dacă adresa este invalidă, dacă adresa nu este un reprezentant sau reprezentantul nu și-a configurat încă pagina",
-  "loading_representative": "Încărcare Reprezentant",
+  "loading_envoys": "Încărcare Reprezentanți",
+  "address_not_super_envoy": "Această adresă nu este un Super Reprezentant",
+  "unable_load_envoys_page_message": "Nu se poate încărca pagina, acest lucru se întâmplă dacă adresa este invalidă, dacă adresa nu este un reprezentant sau reprezentantul nu și-a configurat încă pagina",
+  "loading_envoy": "Încărcare Reprezentant",
   /*
   ##################################################################################
   #                                                                                #
@@ -611,7 +611,7 @@ export const messages = {
   "submissing_vote_message_0": "Voturile dumneavoastră au fost propuse cu succes, vor avea efect la începerea următorului ciclu de voturi.",
   "submissing_vote_message_1": "Puteți redistribui voturile oricând doriți",
   "submitting_vote_error_message": "Ceva nu a mers bine în timpul votării. Vă rugăm încercați mai târziu.",
-  "loading_super_representatives": "Încărcare Super Reprezentanți",
+  "loading_super_envoys": "Încărcare Super Reprezentanți",
   /*
   ##################################################################################
   #                                                                                #
@@ -768,7 +768,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "aplicat pentru Super Reprezentanți",
+  "applied_for_super_envoy": "aplicat pentru Super Reprezentanți",
   "ev_candidature": "Candidatură Super Reprezentanți",
   "created_token": "token creat",
   "token_creation": "Creare Token",

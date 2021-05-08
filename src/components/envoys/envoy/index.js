@@ -181,7 +181,7 @@ class Representative extends React.Component {
             <div className="card text-center">
               <div className="card-body">
                 <Alert color="warning">
-                  {tu("unable_load_representatives_page")}
+                  {tu("unable_load_envoys_page")}
                 </Alert>
               </div>
               <p>
@@ -218,7 +218,7 @@ class Representative extends React.Component {
                 <a key={section.id} className="list-group-item" href={"#" + section.id} onClick={this.scrollTo}>{section.name}</a>
               ))
             }
-            <ExternalLink className="list-group-item" url={address.representative.url}>Website</ExternalLink>
+            <ExternalLink className="list-group-item" url={address.envoy.url}>Website</ExternalLink>
           </Scrollspy>
         </div>
         <Link className="btn btn-secondary btn-block mb-2" to="/votes">
@@ -242,20 +242,20 @@ class Representative extends React.Component {
         <main className="container header-overlap">
           <div className="card text-center">
             <LitetokensLoader>
-              {tu("loading_representatives")}
+              {tu("loading_envoys")}
             </LitetokensLoader>
           </div>
         </main>
       );
     }
 
-    if (!address.representative.enabled) {
+    if (!address.envoy.enabled) {
       return (
         <main className="container header-overlap">
           <div className="card text-center">
             <div className="card-body">
               <Alert color="warning">
-                {tu("address_not_super_representative")}
+                {tu("address_not_super_envoy")}
               </Alert>
             </div>
             <p>
@@ -267,7 +267,7 @@ class Representative extends React.Component {
     }
 
     return (
-      <main className="container header-overlap representative-landing-page">
+      <main className="container header-overlap envoy-landing-page">
         <StickyContainer className="row">
           <div className="col-md-3">
             <MediaQuery minWidth={768}>
@@ -282,17 +282,17 @@ class Representative extends React.Component {
             </MediaQuery>
 
           </div>
-          <div className="col-md-9 representative-content">
+          <div className="col-md-9 envoy-content">
             {
               loading ? <div className="card">
                   <LitetokensLoader>
-                    {tu("loading_representative")} {address.address}
+                    {tu("loading_envoy")} {address.address}
                   </LitetokensLoader>
                 </div> :
                 <Fragment>
                   <div className="card">
                     {
-                      address.representative.enabled &&
+                      address.envoy.enabled &&
                       <div className="card-header text-center bg-info font-weight-bold text-white">
                         {address.name || "Representative"}
                       </div>

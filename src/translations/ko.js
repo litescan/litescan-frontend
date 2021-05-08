@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "블록 길이",
   "online_nodes": "온라인 노드",
   "pice_per_1000xlt": "가격 (XLT 1000개당)",
-  "vote_for_super_representatives": "슈퍼 대표(EV)에 투표하기",
-  "view_super_representatives": "슈퍼 대표(EV) 목록보기",
+  "vote_for_super_envoys": "슈퍼 대표(EV)에 투표하기",
+  "view_super_envoys": "슈퍼 대표(EV) 목록보기",
   "create_new_wallet": "새 지갑 만들기",
   "view_tokens": "토큰 보기",
   "transactions_last_day": "1일동안 트랜잭션 수",
@@ -299,7 +299,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "대표 신청",
-  "apply_super_representative_candidate": "슈퍼 대표(EV) 후보에 신청하기",
+  "apply_super_envoy_candidate": "슈퍼 대표(EV) 후보에 신청하기",
   "your_personal_website_address": "귀하의 개인 웹 사이트 주소",
   "apply_for_delegate_predescription": `토큰 소유자는 트론의 슈퍼 대표(EV)가 될 수 있는 기회를 가집니다. 하지만 네트워크 및 커뮤니티가 보다 원활하고 효율적으로 운영되기 위해 자격을 갖춘 후보자가 추천 슈퍼 위임자가 될 수 있도록 표준 및 규정 기준을 만들었습니다. 우리는 그들이 선출되기 위한 가능성을 높이도록 추천하는 슈퍼 대표를 홍보할 것입니다. 새로운 추천된 슈퍼 대표들은 일주일에 한 번씩 업데이트됩니다.`,
   "apply_for_delegate_description": `
@@ -312,7 +312,7 @@ export const messages = {
      네트워크에서 이루어진 모든 거래는 모든 슈퍼 대표들에 의해 검증되어야 하며 일부 보너스를 받을 수 있습니다.
      XLT는 슈퍼 대표 신청 및 투표 과정에서 소비되지 않습니다.`,
   "unknown_error": "알 수 없는 오류가 발생했습니다",
-  "representative_understand": "트론 대표가 되는 것을 이해했습니다",
+  "envoy_understand": "트론 대표가 되는 것을 이해했습니다",
   "generate_account": "귀하의 계정 주소와 암호를 생성하려면 클릭하세요",
   "create_account_confirm_1": "암호를 잃어버리면 자산에 절대로 접근할 수 없는 것을 이해했습니다",
   "create_account_confirm_2": "암호를 잊거나 잃어버리면 아무도 복구할 수 없는 것을 이해했습니다",
@@ -320,7 +320,7 @@ export const messages = {
   "vote_thanks": "귀하의 투표를 제출해 주셔서 감사합니다",
   "recent_transactions": "최근 거래",
   "newest_account": "신규 계정",
-  "representatives": "대표",
+  "envoys": "대표",
   "most_votes": "최대 투표수",
   "start_end_time": "시작 / 종료 시간",
   "scan_qr_code": "QR코드 스캐너로 코드를 스캔하세요",
@@ -336,8 +336,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "나는 어떻게 트론 네트워크의 대표가 되는지에 대해 이해했고, 다음과 같은",
   "understand_litetokens_ev_message_1": "수수료를 낼 것을 확인하였습니다.",
   "invalid_url": "잘못된 URL",
-  "apply_representative_error_message_0": "대표 신청을 시도하는 중에 에러가 났습니다.",
-  "apply_representative_error_message_1": "수수료를 내기 위한 XLT가 충분한지 확인하고 다시 시도해주십시오.",
+  "apply_envoy_error_message_0": "대표 신청을 시도하는 중에 에러가 났습니다.",
+  "apply_envoy_error_message_1": "수수료를 내기 위한 XLT가 충분한지 확인하고 다시 시도해주십시오.",
   "open_external_link": "귀하가 외부 링크에 접속 시도를 하고 있습니다",
   "private_key_untrusted_website_message_0": "절대로 신뢰하지 않는 웹사이트에 개인키를 입력하지 마십시오.",
   "no_official_litetokens_website": "는(은) 공식 트론 사이트가 아닙니다.",
@@ -545,7 +545,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -553,10 +553,10 @@ export const messages = {
   "lowest_productivity": "최저의 생산성",
   "Super Representatives": "슈퍼 대표",
   "Super Representative Candidates": "슈퍼 대표 후보",
-  "loading_representatives": "대표 목록 로딩 중",
-  "address_not_super_representative": "이 주소는 슈퍼 대표가 아닙니다",
-  "unable_load_representatives_page_message": "페이지 로드에 실패하였습니다. 주소가 유효하지 않은 주소이거나 대표가 아닌 경우일 수 있습니다. 또는 해당 대표가 이 페이지에 아직 설정되어있지 않았을 수도 있습니다",
-  "loading_representative": "대표 로딩 중",
+  "loading_envoys": "대표 목록 로딩 중",
+  "address_not_super_envoy": "이 주소는 슈퍼 대표가 아닙니다",
+  "unable_load_envoys_page_message": "페이지 로드에 실패하였습니다. 주소가 유효하지 않은 주소이거나 대표가 아닌 경우일 수 있습니다. 또는 해당 대표가 이 페이지에 아직 설정되어있지 않았을 수도 있습니다",
+  "loading_envoy": "대표 로딩 중",
   /*
   ##################################################################################
   #                                                                                #
@@ -604,7 +604,7 @@ export const messages = {
   "submissing_vote_message_0": "표를 정상적으로 제출하였습니다. 표는 다음 투표 사이클이 시작될 때 반영될 것입니다.",
   "submissing_vote_message_1": "투표수를 재조정하고 싶다면 언제든지 하고 싶을 때 할 수 있습니다.",
   "submitting_vote_error_message": "표를 제출하는것에 실패하였습니다. 나중에 다시 시도해주십시오.",
-  "loading_super_representatives": "슈퍼 대표 목록 로딩 중",
+  "loading_super_envoys": "슈퍼 대표 목록 로딩 중",
   /*
   ##################################################################################
   #                                                                                #
@@ -761,7 +761,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "슈퍼 대표 지원자",
+  "applied_for_super_envoy": "슈퍼 대표 지원자",
   "ev_candidature": "슈퍼 대표 후보",
   "created_token": "생성된 토큰",
   "token_creation": "토큰 생성",

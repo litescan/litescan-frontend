@@ -498,7 +498,7 @@ class VoteOverview extends React.Component {
         {
           loading ? <div className="card mt-2">
               <LitetokensLoader>
-                {tu("loading_super_representatives")}
+                {tu("loading_super_envoys")}
               </LitetokensLoader>
             </div> :
             <div className="row mt-2">
@@ -564,7 +564,7 @@ class VoteOverview extends React.Component {
                               </div>
                               {
                                 candidate.hasPage && <div className="ml-0 ml-sm-auto">
-                                  <Link className="btn btn-lg btn-block btn-outline-secondary mt-1" to={`/representative/${candidate.address}`}>
+                                  <Link className="btn btn-lg btn-block btn-outline-secondary mt-1" to={`/envoy/${candidate.address}`}>
                                     {tu("open_team_page")}
                                     <i className="fas fa-users ml-2"/>
                                   </Link>

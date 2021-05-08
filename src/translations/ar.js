@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "طول الكتلة",
   "online_nodes": "العقد المتصلة",
   "pice_per_1000xlt": "السعر (مقابل 1000 تركس)",
-  "vote_for_super_representatives": "صوت لممثل مميز",
-  "view_super_representatives": "راجع الممثلين المميزين",
+  "vote_for_super_envoys": "صوت لممثل مميز",
+  "view_super_envoys": "راجع الممثلين المميزين",
   "create_new_wallet": "أنشئ محفظة جديدة",
   "view_tokens": "راجع الرموز",
   "transactions_last_day": "العمليات المنجزه في اليوم الأخير",
@@ -299,12 +299,12 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "تقدم للتفويض",
-  "apply_super_representative_candidate": "تقدم كمرشح لتمثيل مميز",
+  "apply_super_envoy_candidate": "تقدم كمرشح لتمثيل مميز",
   "your_personal_website_address": "عنوان موقع الويب الخاص بك",
   "apply_for_delegate_predescription": "كل حامل رمز لديه الفرصة ليصبح ممثل مميز لترون. ومع ذلك، فقد أنشأنا مجموعة من المعايير والقوانين للمرشحين المؤهلين ليصبحوا ممثلين مميزين موصى بهم, و ذلك كي تعمل الشبكة والمجتمع بشكل أكثر سلاسة وفعالية. وسوف نروج للممثلين المميزين الموصى بهم لزيادة فرص انتخابهم.الممثلين المميزين الموصى بهم يتم تحديثم و نشرهم مرة واحدة أسبوعيا.",
   "apply_for_delegate_description": "حاملي عملة ترون يمكنهم التقدم ليصبحوا مفوضين مميزين عبر خاصية ادارة الحساب, و التصويت للمرشحين. بامكان كل حساب تحديث معلومات التصويت الحالية كما و التصويت لعدة مرشحين. الحد الأقصى لعدد الأصوات المتاحة يساوي عدد تركس التي يحملها المستخدم عند التصويت. (اذا كنت تملك كمية معينة من عملة ترون, يمكنك التصويت بقيمة أقل أو توازي عدد الأصوات). سيتم حساب نتيجة التصويت استناداً إلى معلومات الناخبين النهائية لكل حساب في كل دورة من دورات التصويت و التي تمتد من 00:00 إلى 24:00. أصحاب تركس الحاصلين على أكبر عدد من الأصوات يصبحون مفوضين مميزين. يجب التحقق من صحة كل عملية في الشبكة عبر الممثلين المميزين، ويترتب على ذلك أرباح اضافية. عملية التقدم و التصويت للمفوضين المميزين لا تستهلك تركس.",
   "unknown_error": "حدث خطأ غير معروف",
-  "representative_understand": "أنا أفهم كيف أكون ممثل ترون",
+  "envoy_understand": "أنا أفهم كيف أكون ممثل ترون",
   "generate_account": "انقر لإنشاء عنوان حساب وكلمة مرور خاصة بك",
   "create_account_confirm_1": "أفهم أني إذا نسيت/فقدت كلمة المرور الخاصة بي لن أتمكن مطلقا من الوصول الى ممتلكاتي",
   "create_account_confirm_2": "أفهم أني إذا نسيت/فقدت كلمة المرور الخاصة بي لن يتمكن أحد من مساعدتي في استردادها",
@@ -312,7 +312,7 @@ export const messages = {
   "vote_thanks": "شكرا للتصويت!",
   "recent_transactions": "العمليات الأخيرة",
   "newest_account": "الحساب الأحدث",
-  "representatives": "الممثلين",
+  "envoys": "الممثلين",
   "most_votes": "أغلب الأصوات",
   "start_end_time": "وقت البداية / النهاية",
   "scan_qr_code": "امسح الكود باستخدام ماسح رمز الاستجابة السريعة",
@@ -328,8 +328,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "أفهم كيف أكون ممثل LITETOKENS وأؤكد أن أقضي",
   "understand_litetokens_ev_message_1": "رسوم.",
   "invalid_url": "URL غير صالح",
-  "apply_representative_error_message_0": "حدث خطأ ما أثناء محاولة التقدم بطلب للحصول على ممثل.",
-  "apply_representative_error_message_1": "تأكد من أن لديك ما يكفي من XLT مقابل الرسوم ، أو حاول مرة أخرى في وقت لاحق.",
+  "apply_envoy_error_message_0": "حدث خطأ ما أثناء محاولة التقدم بطلب للحصول على ممثل.",
+  "apply_envoy_error_message_1": "تأكد من أن لديك ما يكفي من XLT مقابل الرسوم ، أو حاول مرة أخرى في وقت لاحق.",
   "open_external_link": ".انت على وشك فتح رابط خارجي",
   "private_key_untrusted_website_message_0": "لا تُدخل مفتاحك الخاص مطلقاً على اي موقع الكتروني غير موثوق به",
   "no_official_litetokens_website": "هذا ليس موقع الكتروني رسمي لـ ترون",
@@ -532,7 +532,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -540,10 +540,10 @@ export const messages = {
   "lowest_productivity": "الأقل انتاجية",
   "Super Representatives": "الممثلين المميزين",
   "Super Representative Candidates": "المرشحين كممثلين مميزين",
-  "loading_representatives": "تحميل الممثلين",
-  "address_not_super_representative": "هذا العنوان غير صالح لممثل مميز",
-  "unable_load_representatives_page_message": "لم نتمكن من تحميل الصفحة, و هذا يحصل في حال كان العنوان غير صالح, أو ليس لممثل, أو أن الممثل لم يهيّء هذه الصفحة بعد",
-  "loading_representative": "جاري تحميل الممثلين ",
+  "loading_envoys": "تحميل الممثلين",
+  "address_not_super_envoy": "هذا العنوان غير صالح لممثل مميز",
+  "unable_load_envoys_page_message": "لم نتمكن من تحميل الصفحة, و هذا يحصل في حال كان العنوان غير صالح, أو ليس لممثل, أو أن الممثل لم يهيّء هذه الصفحة بعد",
+  "loading_envoy": "جاري تحميل الممثلين ",
   /*
   ##################################################################################
   #                                                                                #
@@ -591,7 +591,7 @@ export const messages = {
   "submissing_vote_message_0": "تم ارسالك كامل تصويتك بنجاح, و سيتم احتسابهم عند بدء جولة التصويت القادمة.",
   "submissing_vote_message_1": "يمكنك اعادة توزيع أصواتك متى شئت",
   "submitting_vote_error_message": "حصل خطأ عند ارسال تصويتك. الرجاء المحاولة لاحقا.",
-  "loading_super_representatives": "جاري تحميل الممثلين المميزين",
+  "loading_super_envoys": "جاري تحميل الممثلين المميزين",
   /*
   ##################################################################################
   #                                                                                #
@@ -748,7 +748,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

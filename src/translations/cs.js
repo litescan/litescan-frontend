@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Velikost bloku",
   "online_nodes": "Online nódy",
   "pice_per_1000xlt": "Cena (za 1000XLT)",
-  "vote_for_super_representatives": "Hlasovat pro Super Reprezentanta",
-  "view_super_representatives": "Zobrazit Super Reprezentanty",
+  "vote_for_super_envoys": "Hlasovat pro Super Reprezentanta",
+  "view_super_envoys": "Zobrazit Super Reprezentanty",
   "create_new_wallet": "Vytvoøit novou penìženku",
   "view_tokens": "Zobrazit tokeny",
   "transactions_last_day": "Transactions in last day",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "kandidovat na delegáta",
-  "apply_super_representative_candidate": "Podat si žádost o kandidaturu na Super Reprezentanta",
+  "apply_super_envoy_candidate": "Podat si žádost o kandidaturu na Super Reprezentanta",
   "your_personal_website_address": "adresa vaší osobní webové stránky",
   "apply_for_delegate_predescription":`Každý držitel tokenù má možnost stát se LITETOKENS Super Reprezentantem.
    Aby však sí a komunita fungovala efektivnì a bez problémù,
@@ -315,7 +315,7 @@ export const messages = {
    Každá transakce v rámci sítì je validována všemi Super Delegáty, za což dostávají pøíslušnou odmìnu.
    Bìhem procesu podávání žádostí a hlasování pro super delegáty nebude utracen žádný XLT.`,
   "unknown_error": "došlo k neznámé chybì",
-  "representative_understand": "Rozumím tomu, jak se stát LITETOKENS reprezentantem",
+  "envoy_understand": "Rozumím tomu, jak se stát LITETOKENS reprezentantem",
   "generate_account": "Klikni pro vygenerování adresy úètu a hesla",
   "create_account_confirm_1": "Beru na vìdomí, že pokud zapomenu své heslo, ztratím pøístup ke svým tokenùm",
   "create_account_confirm_2": "Beru na vìdomí, že pokud zapomenu své heslo, není nikdo, kdo by mi pomohl mé heslo obnovit",
@@ -323,7 +323,7 @@ export const messages = {
   "vote_thanks": "Díky za odeslání hlasu!",
   "recent_transactions": "nedávné transakce",
   "newest_account": "nejnovìjší úèet",
-  "representatives": "reprezentanti",
+  "envoys": "reprezentanti",
   "most_votes": "vìtšina hlasù",
   "start_end_time": "Zaèátek / Konec",
   "scan_qr_code": "Naèti kód pomocí QR èteèky",
@@ -339,8 +339,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Chápu, co znamená být LITETOKENS reprezentantem a potvrzuji, že zaplatím",
   "understand_litetokens_ev_message_1": "poplatek.",
   "invalid_url": "Neplatná URL",
-  "apply_representative_error_message_0": "Pøi podání pøihlášky na reprezentanta došlo k neznámé chybì.",
-  "apply_representative_error_message_1": "Zkontrolujte, zda máte dostatek XLT na poplatek, v opaèném pøípadì to zkuste pozdìji.",
+  "apply_envoy_error_message_0": "Pøi podání pøihlášky na reprezentanta došlo k neznámé chybì.",
+  "apply_envoy_error_message_1": "Zkontrolujte, zda máte dostatek XLT na poplatek, v opaèném pøípadì to zkuste pozdìji.",
   "open_external_link": "Sppouštíte externí odkaz",
   "private_key_untrusted_website_message_0": "Nikdy nevkládejte soukromý klíè na nedùvìryhodném webu.",
   "no_official_litetokens_website": "není oficiální LITETOKENS web.",
@@ -548,7 +548,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -556,10 +556,10 @@ export const messages = {
   "lowest_productivity": "Nejnižší produktivita",
   "Super Representatives": "Super Reprezentanti",
   "Super Representative Candidates": "Kandidáti na Super Reprezentanty",
-  "loading_representatives": "Naèítám Reprezentanty",
-  "address_not_super_representative": "Tato adresa nepatøí Super Reprezentantovi",
-  "unable_load_representatives_page_message": "Nemohu naèíst stránku, to se mùže stát, pokud je adresa neplatná, nebo nepatøí reprezentantovi, nebo si reprezentant tuto stránku ještì nenakonfiguroval",
-  "loading_representative": "Naèítám reprezentanta",
+  "loading_envoys": "Naèítám Reprezentanty",
+  "address_not_super_envoy": "Tato adresa nepatøí Super Reprezentantovi",
+  "unable_load_envoys_page_message": "Nemohu naèíst stránku, to se mùže stát, pokud je adresa neplatná, nebo nepatøí reprezentantovi, nebo si reprezentant tuto stránku ještì nenakonfiguroval",
+  "loading_envoy": "Naèítám reprezentanta",
   /*
   ##################################################################################
   #                                                                                #
@@ -607,7 +607,7 @@ export const messages = {
   "submissing_vote_message_0": "Vaše hlasy byly úspìšnì odeslány, budou zaúètovány po zaèátku nového hlasovacího cyklu.",
   "submissing_vote_message_1": "Své hlasy mùžete pøerozdìlit, kdykoliv se vám bude chtít",
   "submitting_vote_error_message": "Bìhem odesílání hlasù došlo k chybì. Prosím, zkuste to pozdìji.",
-  "loading_super_representatives": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Representatives",
   /*
   ##################################################################################
   #                                                                                #
@@ -764,7 +764,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "vytvořený token",
   "token_creation": "Vytvoření Token",

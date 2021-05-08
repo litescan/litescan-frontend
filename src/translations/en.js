@@ -144,8 +144,8 @@ export const messages = {
   "block_height": "Block Height",
   "online_nodes": "Online Nodes",
   "pice_per_1000xlt": "Price (per 1000XLT)",
-  "vote_for_super_representatives": "Vote for Super Representatives",
-  "view_super_representatives": "View Super Representatives",
+  "vote_for_super_envoys": "Vote for Super Representatives",
+  "view_super_envoys": "View Super Representatives",
   "create_new_wallet": "Create a new Wallet",
   "view_tokens": "View Tokens",
   "transactions_last_day": "Transactions Last Day",
@@ -300,12 +300,12 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "apply for delegate",
-  "apply_super_representative_candidate": "Apply to be a Super Representative Candidate",
+  "apply_super_envoy_candidate": "Apply to be a Super Representative Candidate",
   "your_personal_website_address": "your personal website address",
   "apply_for_delegate_predescription": "Every token holder has the opportunity to become a LITETOKENS Super Representative.However, for the network and community to operate more smoothly and effectively,we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended EVs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.",
   "apply_for_delegate_description": "All token holders can apply to become Super Representative (EV) candidates by clicking into the Account page; they can also vote for the candidates by clicking into the Votes page. Each user can vote for multiple candidates, with the number of votes smaller or equal to the amount of XLT that they hold.The voting results are based on the last round of voting by each user. The number of votes will be updated at 02:00(GMT+8),08:00(GMT+8),14:00(GMT+8),20:00(GMT+8) every day; users can also view real-time vote numbers. The top 27 most-voted candidates will become EVs and be responsible for transaction packaging and block generation, with a reward of 32 XLT per block generation. The 27 EVs and the top 100 EV candidates can also receive rewards of nodes based on the votes they receive. A one-time transaction fee of 9,999 XLT will be deducted for the application to become a candidate. It will not cost any XLT for users to vote for EV candidates.",
   "unknown_error": "an unknown error occurred",
-  "representative_understand": "I understand how to be a LITETOKENS representative",
+  "envoy_understand": "I understand how to be a LITETOKENS envoy",
   "generate_account": "Click to generate your account address and password",
   "create_account_confirm_1": "I understand that if I forget/lose my password I will never be able to access my assets",
   "create_account_confirm_2": "I understand that if I forget/lose my password no one will be able to help me recover it",
@@ -313,7 +313,7 @@ export const messages = {
   "vote_thanks": "Thanks for submitting your vote!",
   "recent_transactions": "recent transactions",
   "newest_account": "newest account",
-  "representatives": "representatives",
+  "envoys": "envoys",
   "most_votes": "most votes",
   "start_end_time": "Start / End Time",
   "scan_qr_code": "Scan the code with a QR Code scanner",
@@ -326,11 +326,11 @@ export const messages = {
   "xlt_produced": "Transactions Produced",
   "do_not_send_1": "Do not send XLT from your own wallet or exchange to your testnet address!",
   "go_to_votelist": "Go to votelist",
-  "understand_litetokens_ev_message_0": "I understand how to be a LITETOKENS representative and I confirm to spend a",
+  "understand_litetokens_ev_message_0": "I understand how to be a LITETOKENS envoy and I confirm to spend a",
   "understand_litetokens_ev_message_1": "fee.",
   "invalid_url": "Invalid URL",
-  "apply_representative_error_message_0": "Something went wrong while trying to apply for representative.",
-  "apply_representative_error_message_1": "Make sure you have enough XLT for the fee,or try again later.",
+  "apply_envoy_error_message_0": "Something went wrong while trying to apply for envoy.",
+  "apply_envoy_error_message_1": "Make sure you have enough XLT for the fee,or try again later.",
   "open_external_link": "You are opening an external link",
   "private_key_untrusted_website_message_0": "Never enter your private key on an untrusted website.",
   "no_official_litetokens_website": "is not an official LITETOKENS site.",
@@ -360,7 +360,7 @@ export const messages = {
   "rewards_claimed": "Rewards Claimed!",
   "successfully_claimed_rewards": "Successfully claimed rewards",
   "claim_rewards": "Claim Rewards",
-  "ev_receive_reward_message_0": "As a representative you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
+  "ev_receive_reward_message_0": "As a envoy you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
   "intro": "Intro",
   "budget_expenses": "Budget Expenses",
   "server_configuration": "Server Configuration",
@@ -443,7 +443,7 @@ export const messages = {
   "show_more": "Show {countriesLength} More",
   "vote_guide_message": `Use your XLT to vote for Super Representatives.
    For every XLT you hold in your account you have one vote to spend.
-   XLT will not be consumed. You can vote as many times for the several representatives as you like.
+   XLT will not be consumed. You can vote as many times for the several envoys as you like.
    The number of votes will be updated at 02:00,08:00,14:00,20:00(GMT+8）every day and the list of delegates will be updated.`,
   "search_address": "Search for address",
   "token_transactions": "Token Transactions",
@@ -543,7 +543,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -551,10 +551,10 @@ export const messages = {
   "lowest_productivity": "Lowest Productivity",
   "Super Representatives": "Super Representatives",
   "Super Representative Candidates": "Super Representative Candidates",
-  "loading_representatives": "Loading Representatives",
-  "address_not_super_representative": "This address is not a Super Representative",
-  "unable_load_representatives_page_message": "Unable to load page, this may happen if the address is invalid, the address is not a representative or the representative did not configure this page yet",
-  "loading_representative": "Loading Representative",
+  "loading_envoys": "Loading Representatives",
+  "address_not_super_envoy": "This address is not a Super Representative",
+  "unable_load_envoys_page_message": "Unable to load page, this may happen if the address is invalid, the address is not a envoy or the envoy did not configure this page yet",
+  "loading_envoy": "Loading Representative",
   /*
   ##################################################################################
   #                                                                                #
@@ -602,7 +602,7 @@ export const messages = {
   "submissing_vote_message_0": "Your votes are successfully submitted, they will take effect when the next voting cycle starts.",
   "submissing_vote_message_1": "You may redistribute your votes anytime you like",
   "submitting_vote_error_message": "Something went wrong while submitting your votes. Please try again later.",
-  "loading_super_representatives": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Representatives",
   /*
   ##################################################################################
   #                                                                                #
@@ -760,7 +760,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

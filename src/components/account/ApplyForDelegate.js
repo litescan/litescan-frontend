@@ -46,8 +46,8 @@ class ApplyForDelegate extends Component {
       this.setState({
         modal: (
           <SweetAlert warning title={tu("error")} onConfirm={this.hideModal}>
-            {tu("apply_representative_error_message_0")} <br/>
-            {tu("apply_representative_error_message_1")}
+            {tu("apply_envoy_error_message_0")} <br/>
+            {tu("apply_envoy_error_message_1")}
           </SweetAlert>
         )
       })

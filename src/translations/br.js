@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Altura do Bloco",
   "online_nodes": "Nós Conectados",
   "pice_per_1000xlt": "Preço (por 1000XLT)",
-  "vote_for_super_representatives": "Votar para Super Representantes",
-  "view_super_representatives": "Visualizar Super Representantes",
+  "vote_for_super_envoys": "Votar para Super Representantes",
+  "view_super_envoys": "Visualizar Super Representantes",
   "create_new_wallet": "Criar Nova Carteira",
   "view_tokens": "Visualizar Tokens",
   "transactions_last_day": "Transactions in last day",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "candidatar-se a delegado",
-  "apply_super_representative_candidate": "Candidatar-se para ser um Super Representante",
+  "apply_super_envoy_candidate": "Candidatar-se para ser um Super Representante",
   "your_personal_website_address": "seu endereço de website pessoal",
   "apply_for_delegate_predescription": `Cada detentor de token tem a oportunidade de se tornar um Super Representante LITETOKENS.
    Entretanto, para que a rede e a comunidade operem de forma mais suave e eficaz,
@@ -318,7 +318,7 @@ export const messages = {
    Toda transação feita na rede deve ser validada por todos os SuperDelegados e alguns bônus serão obtidos.
    O XLT não será consumido no processo de candidatura e votação do super delegado.`,
   "unknown_error": "ocoreu um erro desconhecido",
-  "representative_understand": "Eu compreendo como ser um representante LITETOKENS",
+  "envoy_understand": "Eu compreendo como ser um representante LITETOKENS",
   "generate_account": "Clique para gerar seu endereço de conta e senha",
   "create_account_confirm_1": "Eu compreendo que, se eu perder/esquecer minha senha, eu nunca mais acessarei meus ativos",
   "create_account_confirm_2": "Eu compreendo que, se eu perder/esquecer minha senha, ninguém poderá me ajudar a recuperá-la",
@@ -326,7 +326,7 @@ export const messages = {
   "vote_thanks": "Obrigado por enviar seu voto!",
   "recent_transactions": "transações recentes",
   "newest_account": "conta mais recente",
-  "representatives": "representantes",
+  "envoys": "representantes",
   "most_votes": "maioria dos votos",
   "start_end_time": "Hora de Início / Término",
   "scan_qr_code": "Digitalize o código com um leitor de código QR",
@@ -342,8 +342,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Eu compreendo como ser um representante LITETOKENS e eu confirmo gastar uma",
   "understand_litetokens_ev_message_1": "taxa.",
   "invalid_url": "URL inválido",
-  "apply_representative_error_message_0": "Algo deu errado ao tentar candidatar-se a representante.",
-  "apply_representative_error_message_1": "Certifique-se que você possui XLT suficiente para a taxa, ou tente novamente mais tarde.",
+  "apply_envoy_error_message_0": "Algo deu errado ao tentar candidatar-se a representante.",
+  "apply_envoy_error_message_1": "Certifique-se que você possui XLT suficiente para a taxa, ou tente novamente mais tarde.",
   "open_external_link": "Você está abrindo um link externo",
   "private_key_untrusted_website_message_0": "Nunca insira sua chave privada em um website não confiável.",
   "no_official_litetokens_website": "não é um site oficial LITETOKENS.",
@@ -549,7 +549,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -557,10 +557,10 @@ export const messages = {
   "lowest_productivity": "Menor Produtividade",
   "Super Representatives": "Super Representantes",
   "Super Representative Candidates": "Candidatos a Super Representantes",
-  "loading_representatives": "Carregando Representantes",
-  "address_not_super_representative": "Este endereço não é um Super Representante",
-  "unable_load_representatives_page_message": "Não foi possível carregar a página. Isso pode acontecer se o endereço for inválido, não for de um representante ou se este representante ainda não tiver configurado a página.",
-  "loading_representative": "Carregando Representante",
+  "loading_envoys": "Carregando Representantes",
+  "address_not_super_envoy": "Este endereço não é um Super Representante",
+  "unable_load_envoys_page_message": "Não foi possível carregar a página. Isso pode acontecer se o endereço for inválido, não for de um representante ou se este representante ainda não tiver configurado a página.",
+  "loading_envoy": "Carregando Representante",
   /*
   ##################################################################################
   #                                                                                #
@@ -608,7 +608,7 @@ export const messages = {
   "submissing_vote_message_0": "Seus votos foram enviados com sucesso, eles entrarão em vigor quando o próximo ciclo de votação começar.",
   "submissing_vote_message_1": "Você pode redistribuir seus votos sempre que quiser",
   "submitting_vote_error_message": "Ocorreu um erro ao enviar seu voto. Por favor, tente novamente mais tarde.",
-  "loading_super_representatives": "Carregando Super Representantes",
+  "loading_super_envoys": "Carregando Super Representantes",
   /*
   ##################################################################################
   #                                                                                #
@@ -765,7 +765,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "candidatado a Super Representante",
+  "applied_for_super_envoy": "candidatado a Super Representante",
   "ev_candidature": "Candidatura a Super Representante",
   "created_token": "token criado",
   "token_creation": "Criação de Token",

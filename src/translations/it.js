@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Altezza Blocco",
   "online_nodes": "Nodi connessi",
   "pice_per_1000xlt": "Prezzo (per 1000 XLT)",
-  "vote_for_super_representatives": "Vota i Super Rappresentanti",
-  "view_super_representatives": "Vedi i Super Rappresentanti",
+  "vote_for_super_envoys": "Vota i Super Rappresentanti",
+  "view_super_envoys": "Vedi i Super Rappresentanti",
   "create_new_wallet": "Crea un nuovo portafoglio",
   "view_tokens": "Vedi Token",
   "transactions_last_day": "Transazioni nell'ultimo giorno",
@@ -299,7 +299,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "richiesta per diventare rappresentante",
-  "apply_super_representative_candidate": "Richiesta per essere un Super Rappresentante",
+  "apply_super_envoy_candidate": "Richiesta per essere un Super Rappresentante",
   "your_personal_website_address": "il tuo sito web personale",
   "apply_for_delegate_predescription":`Ogni possessore di token ha l'opportunità di diventare un Super Rappresentante di LITETOKENS.
    Tuttavia, affinché sia rete che la comunità possano operare in modo più fluido ed efficace,
@@ -313,7 +313,7 @@ export const messages = {
   Ogni transazione eseguita nella rete deve essere convalidata da tutti i Super Rappresentanti, quindi saranno ottenuti dei bonus.
   Nessun XLT verrà utilizzato nel processo di richiesta a Super Rappresentante e per il voto.`,
   "unknown_error": "si è verificato un errore sconosciuto",
-  "representative_understand": "Sono a conoscenza di come diventare Rappresentante di LITETOKENS",
+  "envoy_understand": "Sono a conoscenza di come diventare Rappresentante di LITETOKENS",
   "generate_account": "Clicca per generare l'indirizzo e la password del tuo account",
   "create_account_confirm_1": "Capisco che se dimentico/perdo la mia password non potrò più accedere ai miei asset",
   "create_account_confirm_2": "Capisco che se dimentico/perdo la mia password nessuno sarà in grado di aiutarmi a recuperarli",
@@ -321,7 +321,7 @@ export const messages = {
   "vote_thanks": "Grazie per aver inviato il tuo voto!",
   "recent_transactions": "transazioni recenti",
   "newest_account": "account più recente",
-  "representatives": "rappresentanti",
+  "envoys": "rappresentanti",
   "most_votes": "più voti",
   "start_end_time": "Istante di Inizio / Fine",
   "scan_qr_code": "Scannerizza il codice con uno scanner di codici QR",
@@ -337,8 +337,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Sono a conoscenza di come si diventa un rappresentante LITETOKENS e confermo di spendere ",
   "understand_litetokens_ev_message_1": "in commissioni.",
   "invalid_url": "URL non valido",
-  "apply_representative_error_message_0": "Qualcosa è andato storto durante la candidatura a rappresentante.",
-  "apply_representative_error_message_1": "Assicuratevi di avere XLT sufficienti per le commissioni o riprovare più tardi.",
+  "apply_envoy_error_message_0": "Qualcosa è andato storto durante la candidatura a rappresentante.",
+  "apply_envoy_error_message_1": "Assicuratevi di avere XLT sufficienti per le commissioni o riprovare più tardi.",
   "open_external_link": "Stai per aprire un collegamento esterno",
   "private_key_untrusted_website_message_0": "Non inserite mai la vostra chiave privata su un sito non affidabile.",
   "no_official_litetokens_website": "non è un sito ufficiale di LITETOKENS.",
@@ -547,7 +547,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -555,10 +555,10 @@ export const messages = {
   "lowest_productivity": "Minore produttività",
   "Super Representatives": "Super Rappresentanti",
   "Super Representative Candidates": "Candidati Super Rappresentanti",
-  "loading_representatives": "Caricamento Rappresentanti",
-  "address_not_super_representative": "Questo indirizzo non è un Super Rappresentante",
-  "unable_load_representatives_page_message": "Impossibile caricare la pagina, questo può accadere se l'indirizzo non è valido, l'indirizzo non è di un rappresentante o il rappresentante non ha ancora configurato questa pagina",
-  "loading_representative": "Caricamento Rappresentanti",
+  "loading_envoys": "Caricamento Rappresentanti",
+  "address_not_super_envoy": "Questo indirizzo non è un Super Rappresentante",
+  "unable_load_envoys_page_message": "Impossibile caricare la pagina, questo può accadere se l'indirizzo non è valido, l'indirizzo non è di un rappresentante o il rappresentante non ha ancora configurato questa pagina",
+  "loading_envoy": "Caricamento Rappresentanti",
   /*
   ##################################################################################
   #                                                                                #
@@ -606,7 +606,7 @@ export const messages = {
   "submissing_vote_message_0": "I tuoi voti sono stati inviati correttamente, avranno effetto quando inizierà il prossimo ciclo di voto.",
   "submissing_vote_message_1": "Puoi ridistribuire i tuoi voti quando lo desideri",
   "submitting_vote_error_message": "Qualcosa è andato storto durante l'invio dei voti. Si prega di riprovare più tardi.",
-  "loading_super_representatives": "Caricamento dei Super Rappresentanti",
+  "loading_super_envoys": "Caricamento dei Super Rappresentanti",
   /*
   ##################################################################################
   #                                                                                #
@@ -763,7 +763,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "effettuata richiesta per diventare Super Rappresentante",
+  "applied_for_super_envoy": "effettuata richiesta per diventare Super Rappresentante",
   "ev_candidature": "Candidatura a Super Rappresentante",
   "created_token": "token creato",
   "token_creation": "Creazione Token",

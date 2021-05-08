@@ -73,7 +73,7 @@ class Representatives extends Component {
       return (
           <div className="card">
             <LitetokensLoader>
-              {tu("loading_representatives")}
+              {tu("loading_envoys")}
             </LitetokensLoader>
           </div>
       );
@@ -146,7 +146,7 @@ class Representatives extends Component {
                             <h3 className="text-primary">
                               <FormattedNumber value={witnesses.length}/>
                             </h3>
-                            {tu("representatives")}
+                            {tu("envoys")}
                           </div>
                         </div>
                       </div>

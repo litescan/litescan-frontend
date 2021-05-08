@@ -143,8 +143,8 @@ export const messages = {
   "block_height": "区块高度",
   "online_nodes": "线上节点",
   "pice_per_1000xlt": "价格（每1000XLT）",
-  "vote_for_super_representatives": "为超级代表投票",
-  "view_super_representatives": "查看超级代表",
+  "vote_for_super_envoys": "为超级代表投票",
+  "view_super_envoys": "查看超级代表",
   "create_new_wallet": "创建新钱包",
   "view_tokens": "查看通证",
   "transactions_last_day": "过去一天交易数",
@@ -297,12 +297,12 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "申请成为超级代表",
-  "apply_super_representative_candidate": "申请成为超级代表候选人",
+  "apply_super_envoy_candidate": "申请成为超级代表候选人",
   "your_personal_website_address": "个人网页地址",
   "apply_for_delegate_predescription": "每个代币持有者都有机会成为LITETOKENS超级代表。然而，为了让网络和社区更加平稳有效地运作，我们制定了一套标准和规定，让符合条件的候选人成为超级代表推荐人。我们以推荐超级代表的形式，增加他们当选的机会。新推荐的超级代表每周更新并发布一次。",
   "apply_for_delegate_description": "每个代币持有者都可以通过账户管理页面，申请成为超级代表候选人，或是在投票页面为候选人投票。每个用户可以为多个候选人投票，最高投票数必须少于或者等于持有XLT的数量。投票结果以每名用户的最终投票结果为准，票数会在每天的02:00(GMT+8)，08:00(GMT+8)，14:00(GMT+8)，20:00(GMT+8)刷新，用户也可以查看实时票数。票数最高的前27名候选人可以成为超级代表，超级代表负责打包交易出块，每次出块奖励32个XLT。27个超级代表和前100名代表候选人也可以根据票数获得节点奖励。申请成为候选人需要一次性扣除9,999XLT的手续费，用户为超级代表候选人投票不消耗XLT。",
   "unknown_error": "发生未知错误",
-  "representative_understand": "我已了解如何成为波场超级代表",
+  "envoy_understand": "我已了解如何成为波场超级代表",
   "generate_account": "点击生成账户密码及地址",
   "create_account_confirm_1": "我已了解如果忘记或丢失密码，将不能登录账户查看资产。",
   "create_account_confirm_2": "我已了解如果忘记或丢失密码，没有任何方式可以找回。",
@@ -310,7 +310,7 @@ export const messages = {
   "vote_thanks": "感谢您的投票！",
   "recent_transactions": "近期交易",
   "newest_account": "最新账户",
-  "representatives": "超级代表",
+  "envoys": "超级代表",
   "most_votes": "最高得票",
   "start_end_time": "开始/结束时间",
   "scan_qr_code": "扫描二维码",
@@ -326,8 +326,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "我知道怎么成为超级代表，我确认一次性扣除",
   "understand_litetokens_ev_message_1": "的费用。",
   "invalid_url": "无效的网址",
-  "apply_representative_error_message_0": "当您试图申请超级代表时出错了。",
-  "apply_representative_error_message_1": "请确保您的账户有足够的XLT来支付费用或者稍后再尝试。",
+  "apply_envoy_error_message_0": "当您试图申请超级代表时出错了。",
+  "apply_envoy_error_message_1": "请确保您的账户有足够的XLT来支付费用或者稍后再尝试。",
   "open_external_link": "您正在打开外部链接",
   "private_key_untrusted_website_message_0": "请不要在不受信任的网站上输入您的私钥。",
   "no_official_litetokens_website": "不是波场官方网站",
@@ -536,7 +536,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -544,10 +544,10 @@ export const messages = {
   "lowest_productivity": "出块效率最低",
   "Super Representatives": "超级代表",
   "Super Representative Candidates": "超级代表候选人",
-  "loading_representatives": "超级代表加载中",
-  "address_not_super_representative": "本地址非超级代表",
-  "unable_load_representatives_page_message": "页面加载失败，可能原因为地址无效、非超级代表地址或超级代表尚未设置此页面。",
-  "loading_representative": "超级代表加载中",
+  "loading_envoys": "超级代表加载中",
+  "address_not_super_envoy": "本地址非超级代表",
+  "unable_load_envoys_page_message": "页面加载失败，可能原因为地址无效、非超级代表地址或超级代表尚未设置此页面。",
+  "loading_envoy": "超级代表加载中",
   /*
   ##################################################################################
   #                                                                                #
@@ -595,7 +595,7 @@ export const messages = {
   "submissing_vote_message_0": "您已投票成功，将会在新一轮投票中生效。",
   "submissing_vote_message_1": "您可以随时重新分配您的票数",
   "submitting_vote_error_message": "提交投票时发生错误，请稍后再次尝试。",
-  "loading_super_representatives": "正在加载超级代表",
+  "loading_super_envoys": "正在加载超级代表",
   /*
   ##################################################################################
   #                                                                                #
@@ -752,7 +752,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "申请成为超级代表",
+  "applied_for_super_envoy": "申请成为超级代表",
   "ev_candidature": "超级代表候选人",
   "created_token": "创建的通证",
   "token_creation": "通证创建",

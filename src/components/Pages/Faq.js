@@ -67,8 +67,8 @@ export default class Faq extends Component {
                 <p>On Litescan org, just click on the voting tab, then start voting, and add votes to each EV candidate. Then click the green submit votes button. All votes will remain casted until you change your vote or unfreeze your XLT.</p>
                 <p>
                   A step-by-step guide can be found at{' '}
-                  <HrefLink href="https://medium.com/tron-foundation/how-to-vote-for-super-representatives-d81d14d9743d">
-                    https://medium.com/tron-foundation/how-to-vote-for-super-representatives-d81d14d9743d
+                  <HrefLink href="https://medium.com/tron-foundation/how-to-vote-for-super-envoys-d81d14d9743d">
+                    https://medium.com/tron-foundation/how-to-vote-for-super-envoys-d81d14d9743d
                   </HrefLink>
                 </p>
                 <h2>What is a Super Representative and why would I want to vote?</h2>
@@ -85,7 +85,7 @@ export default class Faq extends Component {
                 <p>Full nodes are the API nodes. There will be thousands, and even tens of thousands of these around the world. These are the severs that will act as &ldquo;web servers&rdquo; on the decentralized web. This is where smart contracts, dapps and user content is stored. However, no compensation is given to Full node owners. Some EVs will use their rewards to fund these nodes, some dapp developers will install these nodes, as will some enthusiasts.</p>
                 <p>A solidity node only shows data from irreversible blocks. It takes time for a witness node to create a block, for other witnesses to agree to the block, and then for additional blocks to be placed on the chain. It is not until a block gets &ldquo;buried&rdquo; in the chain that it is deemed irrevocable. All transactions during this time are considered &ldquo;pending&rdquo;. It can take a block anywhere from 30 second &ndash; 5 minutes to become irreversible.</p>
                 <p className="text-center text-muted p-3">
-                  This FAQ was contributed by <HrefLink href="https://medium.com/tron-foundation/election-manifesto-of-tron-super-representative-freespace-ad20054e55fc">Free Space</HrefLink>
+                  This FAQ was contributed by <HrefLink href="https://medium.com/tron-foundation/election-manifesto-of-tron-super-envoy-freespace-ad20054e55fc">Free Space</HrefLink>
                 </p>
               </div>
             </div>

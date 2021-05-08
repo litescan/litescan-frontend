@@ -346,7 +346,7 @@ class Navigation extends PureComponent {
                       <Link to="/account" className="btn btn-dark btn-block btn-sm">{tu("account")}</Link>
                     </li>
                     {
-                      wallet.current.representative.enabled && (
+                      wallet.current.envoy.enabled && (
                           <li className="dropdown-item text-danger text-center">
                             Representative
                           </li>

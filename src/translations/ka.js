@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "ბლოკის სიმაღლე",
   "online_nodes": "ონლაინ კვანძები",
   "pice_per_1000xlt": "ფასი (1000XLT-ზე)",
-  "vote_for_super_representatives": "ხმის მიცემა სუპერ წარმომადგენლისთვის",
-  "view_super_representatives": "სუპერ წარმომადგენლის ხილვა",
+  "vote_for_super_envoys": "ხმის მიცემა სუპერ წარმომადგენლისთვის",
+  "view_super_envoys": "სუპერ წარმომადგენლის ხილვა",
   "create_new_wallet": "შექმენით ახალი საფულე",
   "view_tokens": "ტოკენების ხილვა",
   "transactions_last_day": "Transactions in last day",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "მიმართეთ დელეგატისთვის",
-  "apply_super_representative_candidate": "მიმართეთ სუპერ წარმომადგენლის კანდიდატისთვის",
+  "apply_super_envoy_candidate": "მიმართეთ სუპერ წარმომადგენლის კანდიდატისთვის",
   "your_personal_website_address": "თქვენი პირადი ვებსაიტის მისამართი",
   "apply_for_delegate_predescription": `ყოველ ტოკენის მფლობელს აქვს შესაძლებლობა გახდეს ტრონის სუპერ წარმომადგენელი.
    მაგრამ, ქსელისა და საზოგადოებასთან უფრო გლუვად და ეფექტურად ოპერირებისთვის, ჩვენ შევქმენით სტანდარტებისა და რეგულაციების კომპლექტი შესაფერისს კანდიდატებისთვის, რათა გახდეთ რეკომენდირებული სუპერ წარმომადგენელი. ჩვენ ხელს ვუწყობთ რეკომენდირებულ სუპერ წარმომადგენლებს, რათა გაზარდონ თავიანთი შესაძლებლობები და იყვნენ ამორჩეულები. ახალი რეკომენდირებული სუპერ წარმომადგენლები განახლდება და გამოქვეყნდება კვირაში ერთხელ.`,
@@ -310,7 +310,7 @@ export const messages = {
      ყოველ ანგარიშს შეუძლია განაახლოს მიმდინარე ხმის მიმცემის ინფორმაცია და აგრეთვე ნებადართულია ხმის მიცემა მრავალი კანდიდატისთვის. ხმების მიცემის მაქსიმალური ინფორმაცია ნაკლებია ან ტოლია XLT-ის მომხმარებელთა მფლობელთა რაოდენობას ყოველი დროისთვის. (თუ გაგაჩნიათ გარკვეული XLT-ის თანხა, თქვენ შეგიძლიათ მისცეთ მასზე ნაკლები ან ტოლი ხმების რაოდენობა ყოველი დროისთვის). ხმის მიცემის შედეგები გაითვლება საბოლოო ყოველი ანგარიშის ხმის მიმცემის ინფორმაციაზე დაყრდნობით ყოველ ხმის მიცემის წრეში, რომლის დროც იწყება 00:00:00 და სრულდება 23:59:59. XLT-ის მფლობელი უმეტესი ხმებით ხდება სუპერ დელეგატი.
      ქსელში ყოველი გაკეთებული ტრანზაქცია აუცილებელია დასამოწმებლად ყველა სუპერ დელეგატის მიერ, და მიიღება გარკვეული ბონუსები. სუპერ დელეგატზე მიმართვისას და ხმის მიცემისას XLT აი იხარჯება.`,
   "unknown_error": "უცნობ შეცდომას აქვს ადგილი",
-  "representative_understand": "მე მესმის როგორ გავხდე ტრონის წარმომადგენელი",
+  "envoy_understand": "მე მესმის როგორ გავხდე ტრონის წარმომადგენელი",
   "generate_account": "დააკლიკეთ ანგარიშის მისამართისა და პაროლის გენერირებისთვის",
   "create_account_confirm_1": "მე მესმის, რომ, თუ დამავიწყდა/დავკარგე პაროლი, მე ვერასდროს შევძლებ ჩემს აქტივებზე წვდომას",
   "create_account_confirm_2": "მე მესმის, რომ, თუ დამავიწყდა/დავკარგე პაროლი, ვერავინ ვერ დამეხმარება მის აღდგენაში",
@@ -318,7 +318,7 @@ export const messages = {
   "vote_thanks": "მადლობა ხმებისთვის!",
   "recent_transactions": "ბოლო ტრანზაქციები",
   "newest_account": "უახლესი ანგარიში",
-  "representatives": "წარმომადგენლები",
+  "envoys": "წარმომადგენლები",
   "most_votes": "ხმების უმრავლესობა",
   "start_end_time": "სასტარტო / დასრულების დრო",
   "scan_qr_code": "კოდის სკანირება QR-კოდის სკანერით",
@@ -334,8 +334,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "მე მესმის, როგორ გავხდე ტრონის წარმომადგენელი და ვადასტურებ დავხარჯო",
   "understand_litetokens_ev_message_1": "გადასახადი.",
   "invalid_url": "უმოქმედო URL",
-  "apply_representative_error_message_0": "წარმომადგენლად მიმართვის მცდელობისას, რაღაცა არასწორად წავიდა.",
-  "apply_representative_error_message_1": "დარწმუნდით, რომ საკმარისი XLT-ის ოდენობა გაქვთ გადასახადისთვის, და კვლავ სცადეთ.",
+  "apply_envoy_error_message_0": "წარმომადგენლად მიმართვის მცდელობისას, რაღაცა არასწორად წავიდა.",
+  "apply_envoy_error_message_1": "დარწმუნდით, რომ საკმარისი XLT-ის ოდენობა გაქვთ გადასახადისთვის, და კვლავ სცადეთ.",
   "open_external_link": "თქვენ გახსნით გარე ბმულს",
   "private_key_untrusted_website_message_0": "არასდროს შეიყვანეთ თქვენი პირადი გასაღები არასანდო ვებსაიტზე.",
   "no_official_litetokens_website": "არ არის ოფიციალური LITETOKENS საიტი.",
@@ -365,7 +365,7 @@ export const messages = {
   "rewards_claimed": "Rewards Claimed!",
   "successfully_claimed_rewards":  "Successfully claimed rewards",
   "claim_rewards": "Claim Rewards",
-  "ev_receive_reward_message_0": "As a representative you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
+  "ev_receive_reward_message_0": "As a envoy you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
   "intro": "Intro",
   "budget_expenses": "Budget Expenses",
   "server_configuration": "Server Configuration",
@@ -541,7 +541,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -549,10 +549,10 @@ export const messages = {
   "lowest_productivity": "უმცირესი წარმადობა",
   "Super Representatives": "სუპერ წარმომადგენლები",
   "Super Representative Candidates": "სუპერ წარმომადგენლობის კანდიდატები",
-  "loading_representatives": "წარმომადგენლების ჩატვირთვა",
-  "address_not_super_representative": "ეს მისამართი სუპერ წარმომადგენელი არაა",
-  "unable_load_representatives_page_message": "გვერდი არ იტვირთება, ეს შესაძლოა მოხდეს, როცა მისამართი არასწორია, მისამართი წარმომადგენლისა არაა ან წარმომადგენელმა ეს გვერდი ჯერ არ დააკონფიგურირა.",
-  "loading_representative": "წარმომადგენლის ჩატვირთვა",
+  "loading_envoys": "წარმომადგენლების ჩატვირთვა",
+  "address_not_super_envoy": "ეს მისამართი სუპერ წარმომადგენელი არაა",
+  "unable_load_envoys_page_message": "გვერდი არ იტვირთება, ეს შესაძლოა მოხდეს, როცა მისამართი არასწორია, მისამართი წარმომადგენლისა არაა ან წარმომადგენელმა ეს გვერდი ჯერ არ დააკონფიგურირა.",
+  "loading_envoy": "წარმომადგენლის ჩატვირთვა",
   /*
   ##################################################################################
   #                                                                                #
@@ -600,7 +600,7 @@ export const messages = {
   "submissing_vote_message_0": "თქვენი ხმები წარმატებით გაიგზავნა, ისინი ეფექტს იქონიებენ შემდეგი ხმის მიცემის ციკლის დაწყებისთვის.",
   "submissing_vote_message_1": "თქვენ შეგეძლებათ ხმის გადანაწილება ნებისმიერ დროს",
   "submitting_vote_error_message": "რაღაცა არასწორად წავიდა ხმის გაგზავნისას. გთხოვთ, კვლავ სცადოთ მოგვიანებით.",
-  "loading_super_representatives": "სუპერ წარმომადგენლების ჩატვირთვა",
+  "loading_super_envoys": "სუპერ წარმომადგენლების ჩატვირთვა",
   /*
   ##################################################################################
   #                                                                                #
@@ -757,7 +757,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

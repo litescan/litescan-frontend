@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Blokkhøyde",
   "online_nodes": "Noder på nett",
   "pice_per_1000xlt": "Pris (per 1000XLT)",
-  "vote_for_super_representatives": "Stemme på Super Representanter",
-  "view_super_representatives": "Se Super Representanter",
+  "vote_for_super_envoys": "Stemme på Super Representanter",
+  "view_super_envoys": "Se Super Representanter",
   "create_new_wallet": "Opprette ny lommebok",
   "view_tokens": "Se Tokener",
   "transactions_last_day": "Transaksjoner i siste dag",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "Søk for å bli representant",
-  "apply_super_representative_candidate": "Søknad om å bli Super Representant",
+  "apply_super_envoy_candidate": "Søknad om å bli Super Representant",
   "your_personal_website_address": "din personlige nettside adresse",
   "apply_for_delegate_predescription":`Alle token holdere har muligheten til å bli en LITETOKENS Super Representant.
    Men, for at nettverket og samfunnet skal kunne operere optimalt og effektivt,
@@ -315,7 +315,7 @@ export const messages = {
    Hver transaksjon gjort i nettverket kreves å bli validert av aller Super Representantene. Dette vil føre til at de opparbeider seg bonuser i form av XLT.
    XLT blir ikke konsumert / brukt i søknadsprosessen til Super Representant applikasjonene og stemmegivningen.`,
   "unknown_error": "en ukjent feil har oppstått",
-  "representative_understand": "Jeg forstår hvordan bli en LITETOKENS representative",
+  "envoy_understand": "Jeg forstår hvordan bli en LITETOKENS envoy",
   "generate_account": "Klikk for å generere din konto adresse og passord",
   "create_account_confirm_1": "Jeg forstår at om jeg glemmer / mister mitt passord vil jeg miste tilgangen til mine eiendeler",
   "create_account_confirm_2": "Jeg forstår at om jeg glemmer / mister mitt passord vil det ikke være mulighet til å hente dette tilbake eller resette det",
@@ -323,7 +323,7 @@ export const messages = {
   "vote_thanks": "Takk for din stemme!",
   "recent_transactions": "siste transaksjoner",
   "newest_account": "nyeste konto",
-  "representatives": "representanter",
+  "envoys": "representanter",
   "most_votes": "flest stemmer",
   "start_end_time": "Start / Slutt Tid",
   "scan_qr_code": "Skann koden med en QR Kode skanner",
@@ -339,8 +339,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Jeg forstår hvordan jeg kan bli en LITETOKENS representativ og bekrefter å betale",
   "understand_litetokens_ev_message_1": "avgift.",
   "invalid_url": "Invalid URL",
-  "apply_representative_error_message_0": "Noe gikk galt med søknaden for å bli representant",
-  "apply_representative_error_message_1": "Sørg for at du har nok XLT til avgiften, eller forsøk igjen senere.",
+  "apply_envoy_error_message_0": "Noe gikk galt med søknaden for å bli representant",
+  "apply_envoy_error_message_1": "Sørg for at du har nok XLT til avgiften, eller forsøk igjen senere.",
   "open_external_link": "Du åpner en ekstern lenke.",
   "private_key_untrusted_website_message_0": "Aldri oppgi din private nøkkel på en nettside du ikke stoler på.",
   "no_official_litetokens_website": "er ikke en offisiell LITETOKENS nettside.",
@@ -548,7 +548,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -556,10 +556,10 @@ export const messages = {
   "lowest_productivity": "Lavest Produktivitet",
   "Super Representatives": "Super Representanter",
   "Super Representative Candidate": "Super Representant kandidater",
-  "loading_representatives": "Laster Representanter",
-  "address_not_super_representative": "Denne adressen er ikke en Super Representant",
-  "unable_load_representatives_page_message": "Kan ikke laste siden, årsak til dette kan være at adressen er ugyldig, adressen ikke er en representant eller at representanten ikke har konfigurert denne siden ennå",
-  "loading_representative": "Henter Representant",
+  "loading_envoys": "Laster Representanter",
+  "address_not_super_envoy": "Denne adressen er ikke en Super Representant",
+  "unable_load_envoys_page_message": "Kan ikke laste siden, årsak til dette kan være at adressen er ugyldig, adressen ikke er en representant eller at representanten ikke har konfigurert denne siden ennå",
+  "loading_envoy": "Henter Representant",
   /*
   ##################################################################################
   #                                                                                #
@@ -607,7 +607,7 @@ export const messages = {
   "submissing_vote_message_0": "Dine stemmer er vellykket sendt, de blir talt med når den neste stemme syklusen starter.",
   "submissing_vote_message_1": "Du kan distribuere dine stemmer når som helst",
   "submitting_vote_error_message": "Noe gikk feil ved innsending av stemmer. Vennligst prøv igjen senere.",
-  "loading_super_representatives": "Henter Super Representanter",
+  "loading_super_envoys": "Henter Super Representanter",
   /*
   ##################################################################################
   #                                                                                #
@@ -764,7 +764,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

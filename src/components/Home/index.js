@@ -365,10 +365,10 @@ class Home extends Component {
                   <h5>Quick links</h5>
                   <div className="line"></div>
                   <ul className="list-unstyled quick-links pt-3">
-                    <li className="p-2"><Link to="/votes"><i className="fa fa-angle-right mr-4"/> {tu("vote_for_super_representatives")}
+                    <li className="p-2"><Link to="/votes"><i className="fa fa-angle-right mr-4"/> {tu("vote_for_super_envoys")}
                     </Link></li>
-                    <li className="p-2"><Link to="/representatives"><i
-                        className="fa fa-angle-right mr-4"/> {tu("view_super_representatives")}</Link></li>
+                    <li className="p-2"><Link to="/envoys"><i
+                        className="fa fa-angle-right mr-4"/> {tu("view_super_envoys")}</Link></li>
                     <li className="p-2"><Link to="/wallet/new"><i className="fa fa-angle-right mr-4"/> {tu("create_new_wallet")}</Link></li>
                     <li className="p-2"><Link to="/tokens/view"><i className="fa fa-angle-right mr-4"/> {tu("view_tokens")}</Link></li>
                     <li className="p-2"><Link to="/help/copyright"><i className="fa fa-angle-right mr-4"/> {tu("copyright")}</Link></li>

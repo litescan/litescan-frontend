@@ -35,7 +35,7 @@ import {
 import Blocks from "./components/blockchain/Blocks";
 import Transactions from "./components/blockchain/Transactions";
 import Transfers from "./components/blockchain/Transfers";
-import Representative from "./components/representatives/representative";
+import Representative from "./components/envoys/envoy";
 import {Redirect} from "react-router-dom";
 
 export const routes = [
@@ -110,8 +110,8 @@ export const routes = [
     component: NodesAsync,
   },
   {
-    label: "representatives",
-    path: "/representatives",
+    label: "envoys",
+    path: "/envoys",
     icon: "fa fa-rocket",
     component: RepresentativesAsync
   },
@@ -134,8 +134,8 @@ export const routes = [
     showInMenu: false,
   },
   {
-    path: "/representative/:id",
-    label: "representative",
+    path: "/envoy/:id",
+    label: "envoy",
     component: Representative,
     showInMenu: false,
   },

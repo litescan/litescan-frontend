@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Block Höjd",
   "online_nodes": "Noder Onlines",
   "pice_per_1000xlt": "Pris (per 1000XLT)",
-  "vote_for_super_representatives": "Rösta för Super Representatives",
-  "view_super_representatives": "Se Super Representatives",
+  "vote_for_super_envoys": "Rösta för Super Representatives",
+  "view_super_envoys": "Se Super Representatives",
   "create_new_wallet": "Skapa en ny plånbok",
   "view_tokens": "Se Tokens",
   "transactions_last_day": "Transaktioner på sista dagen",
@@ -298,7 +298,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "ansöka om ombudet",
-  "apply_super_representative_candidate": "Ansök om att bli en Super Representative kandidat",
+  "apply_super_envoy_candidate": "Ansök om att bli en Super Representative kandidat",
   "your_personal_website_address": "din personliga webbadress",
   "apply_for_delegate_predescription":`Varje token innehavare har möjlighet att bli en LITETOKENS Super Representative.
    För att nätverket och samhället ska fungera mer smidigt och effektivt har vi dock skapat en uppsättning standarder och regler för kvalificerade kandidater att bli rekommenderade superrepresentanter.
@@ -312,7 +312,7 @@ export const messages = {
    röst informationen av varje konto i varje röst cyckel som är mellan 00:00 till 24:00. T
    RX innehavare med flest röster kommer att bli super ombud. Alla transaktioner gjorda i nätverket är tvingade till att bli validerade av alla SuperOmbud, och viss bonus kommer att delas ut. XLT kommer inte att konsumeras i röstnings processen av super ombud.`,
   "unknown_error": "okänt fel inträffade",
-  "representative_understand": "Jag förstår hur man blir en LITETOKENS Representant",
+  "envoy_understand": "Jag förstår hur man blir en LITETOKENS Representant",
   "generate_account": "Klicka för att generera din konto address och lösenord",
   "create_account_confirm_1": "Jag förstår att om jag glömmer/tappar mitt lösenord, så kommer jag aldrig att kunna återfå mina tillgångar",
   "create_account_confirm_2": "Jag förstår att om jag glömmer/tappar mitt lösenord, så kommer ingen kunna hjälpa mig att åter få det",
@@ -320,7 +320,7 @@ export const messages = {
   "vote_thanks": "Tack för din röst!",
   "recent_transactions": "senaste transaktioner",
   "newest_account": "nyaste kontot",
-  "representatives": "representanter",
+  "envoys": "representanter",
   "most_votes": "flesta röster",
   "start_end_time": "Start / Slut Tid",
   "scan_qr_code": "Scanna koden med en QR Kod scanner",
@@ -333,11 +333,11 @@ export const messages = {
   "xlt_produced": "Transanktioner Producerade",
   "do_not_send_1": "Skicka inte XLT från din egna plånbok eller börs till till din testnet address!.",
   "go_to_votelist": "Gå till röst listan",
-  "understand_litetokens_ev_message_0": "Jag förstår hur man blir en LITETOKENS representative och jag godkänner att spendera en",
+  "understand_litetokens_ev_message_0": "Jag förstår hur man blir en LITETOKENS envoy och jag godkänner att spendera en",
   "understand_litetokens_ev_message_1": "avgift.",
   "invalid_url": "Ogiltig webbadress",
-  "apply_representative_error_message_0": "Något gick fel när du försökte ansöka om representant.",
-  "apply_representative_error_message_1": "Se till att du har tillräckligt med XLT för avgiften, eller försök igen senare.",
+  "apply_envoy_error_message_0": "Något gick fel när du försökte ansöka om representant.",
+  "apply_envoy_error_message_1": "Se till att du har tillräckligt med XLT för avgiften, eller försök igen senare.",
   "open_external_link": "Du öppnar en extern länk",
   "private_key_untrusted_website_message_0": "Ange aldrig din privata nyckel på en otillförlitlig webbplats.",
   "no_official_litetokens_website": "är inte en officiell LITETOKENS webbplats.",
@@ -543,7 +543,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -551,10 +551,10 @@ export const messages = {
   "lowest_productivity": "Lägsta produktivitet",
   "Super Representatives": "Super Representatives",
   "Super Representative Candidates": "Super Representative Kandidater",
-  "loading_representatives": "Laddar Representatives",
-  "address_not_super_representative": "Den här adressen är inte en Super Representative",
-  "unable_load_representatives_page_message": "Det gick inte att ladda sidan, detta kan hända när en address är ogiltig, adressen inte är en  representative eller representative har inte konfigurerat sidan ännu.",
-  "loading_representative": "Laddar Representant",
+  "loading_envoys": "Laddar Representatives",
+  "address_not_super_envoy": "Den här adressen är inte en Super Representative",
+  "unable_load_envoys_page_message": "Det gick inte att ladda sidan, detta kan hända när en address är ogiltig, adressen inte är en  envoy eller envoy har inte konfigurerat sidan ännu.",
+  "loading_envoy": "Laddar Representant",
   /*
   ##################################################################################
   #                                                                                #
@@ -602,7 +602,7 @@ export const messages = {
   "submissing_vote_message_0": "Dina röster har skickats in, de träder i kraft när nästa röstcykel börjar.",
   "submissing_vote_message_1": "Du kan omfördela dina röster när som helst.",
   "submitting_vote_error_message": "Något gick fel när du skickade in dina röster. Vänligen försök igen senare.",
-  "loading_super_representatives": "Laddar superrepresentanter",
+  "loading_super_envoys": "Laddar superrepresentanter",
   /*
   ##################################################################################
   #                                                                                #
@@ -759,7 +759,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

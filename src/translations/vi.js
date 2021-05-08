@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Chiều cao khối",
   "online_nodes": "Nút trực tuyến",
   "pice_per_1000xlt": "Giá (cho mỗi 1000XLT)",
-  "vote_for_super_representatives": "Bầu cho Siêu Đại Diện",
-  "view_super_representatives": "Xem Siêu Đại Diện",
+  "vote_for_super_envoys": "Bầu cho Siêu Đại Diện",
+  "view_super_envoys": "Xem Siêu Đại Diện",
   "create_new_wallet": "Tạo ví mới",
   "view_tokens": "Xem mã token",
   "transactions_last_day": "Transactions in last day",
@@ -299,7 +299,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "đăng ký trở thành đại diện",
-  "apply_super_representative_candidate": "Đăng ký trở thành ứng cử viên Siêu Đại Diện",
+  "apply_super_envoy_candidate": "Đăng ký trở thành ứng cử viên Siêu Đại Diện",
   "your_personal_website_address": "địa chỉ trang web cá nhân của bạn",
   "apply_for_delegate_predescription":`Tất cả mọi người giữ mã token đều có cơ hội trở thành Siêu Đại Diện LITETOKENS.
    Tuy nhiên, để mạng và cộng đồng hoạt động thông suốt và hiệu quả hơn,
@@ -316,7 +316,7 @@ export const messages = {
    Mọi giao dịch được thực hiện trong mạng yêu cầu phải được xác thực bởi tất cả các đại biểu cấp cao và một số khoản tiền thưởng sẽ được xem xét.
    XLT sẽ không bị tiêu thụ trong quá trình đăng ký và bỏ phiếu cho đại biểu cấp cao.`,
   "unknown_error": "đã xảy ra lỗi không xác định",
-  "representative_understand": "Tôi đã hiểu cách trở thành đại diện LITETOKENS",
+  "envoy_understand": "Tôi đã hiểu cách trở thành đại diện LITETOKENS",
   "generate_account": "Nhấp để tạo địa chỉ và mật khẩu tài khoản của bạn",
   "create_account_confirm_1": "Tôi hiểu rằng nếu tôi quên/mất mật khẩu, tôi sẽ không bao giờ có thể truy cập vào tài sản của mình",
   "create_account_confirm_2": "Tôi hiểu rằng nếu tôi quên/mất mật khẩu thì không ai có thể giúp tôi khôi phục nó",
@@ -324,7 +324,7 @@ export const messages = {
   "vote_thanks": "Cảm ơn bạn đã gửi phiếu bầu của mình!",
   "recent_transactions": "giao dịch gần đây",
   "newest_account": "tài khoản mới",
-  "representatives": "đại diện",
+  "envoys": "đại diện",
   "most_votes": "phiếu bầu phổ biến",
   "start_end_time": "Thời gian bắt đầu / kết thúc",
   "scan_qr_code": "Quét mã bằng máy quét mã QR",
@@ -340,8 +340,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Tôi hiểu cách trở thành đại diện LITETOKENS và tôi xác nhận sẽ chi khoản",
   "understand_litetokens_ev_message_1": "phí.",
   "invalid_url": "URL không hợp lệ",
-  "apply_representative_error_message_0": "Đã xảy ra sự cố khi cố gắng đăng ký trở thành đại diện.",
-  "apply_representative_error_message_1": "Đảm bảo bạn có đủ XLT cho khoản phí này hoặc thử lại sau.",
+  "apply_envoy_error_message_0": "Đã xảy ra sự cố khi cố gắng đăng ký trở thành đại diện.",
+  "apply_envoy_error_message_1": "Đảm bảo bạn có đủ XLT cho khoản phí này hoặc thử lại sau.",
   "open_external_link": "You are opening an external link",
   "private_key_untrusted_website_message_0": "Never enter your private key on an untrusted website.",
   "no_official_litetokens_website": "is not an official LITETOKENS site.",
@@ -553,7 +553,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -561,10 +561,10 @@ export const messages = {
   "lowest_productivity": "Năng suất thấp nhất",
   "Super Representatives": "Siêu Đại Diện",
   "Super Representative Candidates": "Ứng cử viên Siêu Đại Diện",
-  "loading_representatives": "Đang tải Đại diện",
-  "address_not_super_representative": "Địa chỉ này không phải là Siêu đại diện",
-  "unable_load_representatives_page_message": "Không thể tải trang, điều này có thể xảy ra nếu địa chỉ không hợp lệ, địa chỉ không phải là đại diện hoặc người đại diện chưa định cấu hình trang này",
-  "loading_representative": "Đang tải Đại diện",
+  "loading_envoys": "Đang tải Đại diện",
+  "address_not_super_envoy": "Địa chỉ này không phải là Siêu đại diện",
+  "unable_load_envoys_page_message": "Không thể tải trang, điều này có thể xảy ra nếu địa chỉ không hợp lệ, địa chỉ không phải là đại diện hoặc người đại diện chưa định cấu hình trang này",
+  "loading_envoy": "Đang tải Đại diện",
   /*
   ##################################################################################
   #                                                                                #
@@ -612,7 +612,7 @@ export const messages = {
   "submissing_vote_message_0": "Phiếu bầu của bạn được gửi thành công, chúng sẽ có hiệu lực khi chu kỳ bỏ phiếu tiếp theo bắt đầu.",
   "submissing_vote_message_1": "Bạn có thể phân phối lại phiếu bầu của mình bất kỳ lúc nào bạn thích",
   "submitting_vote_error_message": "Đã xảy ra sự cố khi gửi phiếu bầu của bạn. Vui lòng thử lại sau.",
-  "loading_super_representatives": "Đang tải Đại diện Siêu",
+  "loading_super_envoys": "Đang tải Đại diện Siêu",
   /*
   ##################################################################################
   #                                                                                #
@@ -769,7 +769,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

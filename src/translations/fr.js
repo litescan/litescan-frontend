@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Hauteur du bloc",
   "online_nodes": "Nœuds en ligne",
   "pice_per_1000xlt": "Prix (pour 1000XLT)",
-  "vote_for_super_representatives": "Votez pour les Super Représentants",
-  "view_super_representatives": "voir les super représentants",
+  "vote_for_super_envoys": "Votez pour les Super Représentants",
+  "view_super_envoys": "voir les super représentants",
   "create_new_wallet": "Créer un nouveau portefeuille",
   "view_tokens": "Afficher les jetons",
   "transactions_last_day": "Transactions in last day",
@@ -299,7 +299,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "postuler pour être délégué",
-  "apply_super_representative_candidate": "Postuler pour être un candidat Super Représentant",
+  "apply_super_envoy_candidate": "Postuler pour être un candidat Super Représentant",
   "your_personal_website_address": "l'adresse de votre site web personnel",
   "apply_for_delegate_predescription": `Chaque détenteur de jeton a la possibilité de devenir un super représentant LITETOKENS.
    Néanmoins, pour que le réseau et la communauté fonctionnent de manière plus fluide et efficace, nous avons créé un
@@ -316,7 +316,7 @@ export const messages = {
    Chaque transaction effectuée sur le réseau doit être validée par tous les Super Délégués, et certains bonus seront crédités.
    XLT ne sera pas utilisé dans le processus de demande de super délégué et de vote.`,
   "unknown_error": "une erreur inconnue est survenue",
-  "representative_understand": "Je comprends comment être un représentant de LITETOKENS",
+  "envoy_understand": "Je comprends comment être un représentant de LITETOKENS",
   "generate_account": "Cliquez pour générer votre adresse de compte et votre mot de passe",
   "create_account_confirm_1": "Je comprends que si je perds mon mot de passe, je n'aurai jamais accès à mes actifs",
   "create_account_confirm_2": "Je comprends que si j'oublie ou perd mon mot de passe, personne ne pourra m'aider à le récupérer",
@@ -324,7 +324,7 @@ export const messages = {
   "vote_thanks": "Merci d'avoir envoyé votre vote!",
   "recent_transactions": "transactions récentes",
   "newest_account": "nouveau compte",
-  "representatives": "représentants",
+  "envoys": "représentants",
   "most_votes": "plus de votes",
   "start_end_time": "Heure de début / fin",
   "scan_qr_code": "Scannez le code avec un lecteur QR Code",
@@ -340,8 +340,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Je comprends comment être un représentant LITETOKENS et je confirme de dépenser un montant de",
   "understand_litetokens_ev_message_1": "honoraires.",
   "invalid_url": "URL invalide",
-  "apply_representative_error_message_0": "Something went wrong while trying to apply for representative.",
-  "apply_representative_error_message_1": "Assurez-vous d'avoir assez de XLT pour les frais, ou réessayez plus tard.",
+  "apply_envoy_error_message_0": "Something went wrong while trying to apply for envoy.",
+  "apply_envoy_error_message_1": "Assurez-vous d'avoir assez de XLT pour les frais, ou réessayez plus tard.",
   "open_external_link": "You are opening an external link",
   "private_key_untrusted_website_message_0": "Never enter your private key on an untrusted website.",
   "no_official_litetokens_website": "is not an official LITETOKENS site.",
@@ -371,7 +371,7 @@ export const messages = {
   "rewards_claimed": "Rewards Claimed!",
   "successfully_claimed_rewards":  "Successfully claimed rewards",
   "claim_rewards": "Claim Rewards",
-  "ev_receive_reward_message_0": "As a representative you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
+  "ev_receive_reward_message_0": "As a envoy you receive rewards for producing blocks. These rewards can be claimed every 24 hours",
   "intro": "Intro",
   "budget_expenses": "Budget Expenses",
   "server_configuration": "Server Configuration",
@@ -552,7 +552,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -560,10 +560,10 @@ export const messages = {
   "lowest_productivity": "Productivité la plus faible",
   "Super Representatives": "Super Représentants",
   "Super Representative Candidates": "Candidats super-représentatifs",
-  "loading_representatives": "chargement des Représentants",
-  "address_not_super_representative": "cette adresse ne correspond pas à un Super Représentant",
-  "unable_load_representatives_page_message": "Impossible de charger la page, cela peut arriver si l'adresse n'est pas valide, l'adresse ne correspond pas à un représentant ou bien ce dernier n'a pas encore configuré cette page",
-  "loading_representative": "Loading Representative",
+  "loading_envoys": "chargement des Représentants",
+  "address_not_super_envoy": "cette adresse ne correspond pas à un Super Représentant",
+  "unable_load_envoys_page_message": "Impossible de charger la page, cela peut arriver si l'adresse n'est pas valide, l'adresse ne correspond pas à un représentant ou bien ce dernier n'a pas encore configuré cette page",
+  "loading_envoy": "Loading Representative",
   /*
   ##################################################################################
   #                                                                                #
@@ -611,7 +611,7 @@ export const messages = {
   "submissing_vote_message_0": "Vos votes ont été envoyés avec succès. Ils seront comptabilisés au prochain cycle de vote.",
   "submissing_vote_message_1": "Vous pouvez redistribuer vos votes quand vous le souhaitez",
   "submitting_vote_error_message": "Une erreur s'est produite lors de l'envoi de vos votes. Veuillez réessayer ultérieurement.",
-  "loading_super_representatives": "Loading Super Representatives",
+  "loading_super_envoys": "Loading Super Representatives",
   /*
   ##################################################################################
   #                                                                                #
@@ -768,7 +768,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

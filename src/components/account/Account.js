@@ -68,7 +68,7 @@ class Account extends Component {
       ev: null,
     });
 
-    if (currentWallet && currentWallet.representative.enabled) {
+    if (currentWallet && currentWallet.envoy.enabled) {
       let ev = await Client.getSuperRepresentative(currentWallet.address);
       this.setState({
         ev,
@@ -805,7 +805,7 @@ class Account extends Component {
           <div className="col-md-12">
             <div className="card">
               {
-                currentWallet.representative.enabled &&
+                currentWallet.envoy.enabled &&
                   <div className="card-header bg-info text-center font-weight-bold text-white">Representative</div>
               }
                   <div className="table-responsive">
@@ -829,11 +829,11 @@ class Account extends Component {
                         </tr>
                       }
                       {
-                        currentWallet.representative.enabled &&
+                        currentWallet.envoy.enabled &&
                         <tr>
                           <th>{tu("website")}:</th>
                           <td>
-                            <a href={currentWallet.representative.url}>{currentWallet.representative.url}</a>
+                            <a href={currentWallet.envoy.url}>{currentWallet.envoy.url}</a>
                             <a href="javascript:" className="float-right text-primary" onClick={() => {
                               this.changeWebsite()
                             }}>
@@ -1005,7 +1005,7 @@ class Account extends Component {
             </div>
           </div>
           {
-            currentWallet.representative.enabled ?
+            currentWallet.envoy.enabled ?
                 <div className="row mt-3">
                   <div className="col-md-12">
                     <div className="card">
@@ -1020,14 +1020,14 @@ class Account extends Component {
                                 onClick={() => {
                                   this.claimRewards()
                                 }}
-                                disabled={currentWallet.representative.allowance === 0}>
+                                disabled={currentWallet.envoy.allowance === 0}>
                           {tu("claim_rewards")}
                           <i className="fa fa-hand-holding-usd ml-2"/>
                         </button>
                         {
-                          currentWallet.representative.allowance > 0 ?
+                          currentWallet.envoy.allowance > 0 ?
                               <p className="m-0 mt-3 text-success">
-                                Claimable Rewards: <XLTPrice amount={currentWallet.representative.allowance / ONE_XLT}
+                                Claimable Rewards: <XLTPrice amount={currentWallet.envoy.allowance / ONE_XLT}
                                                              className="font-weight-bold"/>
                               </p> :
                               <p className="m-0 mt-3 font-weight-bold text-danger">
@@ -1086,7 +1086,7 @@ class Account extends Component {
                           <tr>
                             <th>{tu("Representative Page")}</th>
                             <td><Link className="text-primary"
-                                      to={`/representative/${currentWallet.address}`}>View</Link>
+                                      to={`/envoy/${currentWallet.address}`}>View</Link>
                             </td>
                           </tr>
                           </tbody>
@@ -1111,7 +1111,7 @@ class Account extends Component {
                           this.applyForDelegate()
                         }}>
                           <i className="fa fa-hand-holding-usd mr-2"/>
-                          {tu("apply_super_representative_candidate")}
+                          {tu("apply_super_envoy_candidate")}
                         </button>
                       </div>
                     </div>

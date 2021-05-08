@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Blokhoogte",
   "online_nodes": "Online Nodes",
   "pice_per_1000xlt": "Prijs (per 1000XLT)",
-  "vote_for_super_representatives": "Stemmen op Super Representatives",
-  "view_super_representatives": "Bekijk Super Representatives",
+  "vote_for_super_envoys": "Stemmen op Super Representatives",
+  "view_super_envoys": "Bekijk Super Representatives",
   "create_new_wallet": "Nieuwe portemonee maken",
   "view_tokens": "Bekijk tokens",
   "transactions_last_day": "Aantal transacties van gisteren",
@@ -301,12 +301,12 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "Kandidaat stellen als afgevaardigde",
-  "apply_super_representative_candidate": "Kandidaat stellen als Super Vertegenwoordiger",
+  "apply_super_envoy_candidate": "Kandidaat stellen als Super Vertegenwoordiger",
   "your_personal_website_address": "uw persoonlijke website URL",
   "apply_for_delegate_predescription": `Elke tokenhouder heeft de mogelijkheid om LITETOKENS Super Vertegenwoordiger te worden. Echter, voor verkiesbare kandidaten zijn een aantal standaarden en regulaties gecreëerd, om het netwerk en de gemeenschap soepeler en efficiënter te laten lopen, om voorgedragen Super Vertegenwoordig te kunnen worden. Wij zullen de voorgedragen Super Vertegenwoordigers promoten om de kans dat ze worden gekozen te vergroten. Eén keer per week worden nieuw voorgedragen Super Vertegenwoordigers geüpdatet en gepost.`,
   "apply_for_delegate_description": `XLT holders can apply to become a super delegate by using the account management function, and vote for candidates. Each account can update current voter information and also is allowed to vote for multiple candidates. The maximum number of votes is less than or equal to the number of XLT users hold each time. (If you have certain sum of XLT, you can vote less than or equal to certain number of votes). The result of votes will be calculated based on the final voter information of every account in each voting cycle of which the time is from 00:00 to 24:00. XLT holders with the most votes will become super delegate.   Every transaction made in the network is required to be validated by all SuperDelegates, and some bonuses will be getted. XLT will not be consumed in the process of super delegate application and voting.`,
   "unknown_error": "er is een onbekende fout opgetreden",
-  "representative_understand": "Ik begrijp hoe ik een LITETOKENS vertegenwoordige kan zijn",
+  "envoy_understand": "Ik begrijp hoe ik een LITETOKENS vertegenwoordige kan zijn",
   "generate_account": "Genereer een nieuw account en wachtwoord",
   "create_account_confirm_1": "Ik begrijp dat ik nooit meer toegang tot mijn fondsen heb wanneer ik mijn wachtwoord kwijtraak",
   "create_account_confirm_2": "Ik begrijp dat niemand mij kan helpen mijn wachtwoord te herstellen wanneer ik deze kwijtraak",
@@ -314,7 +314,7 @@ export const messages = {
   "vote_thanks": "Bedankt voor het stemmen!",
   "recent_transactions": "recente transacties",
   "newest_account": "nieuwste account",
-  "representatives": "vertegenwoordigers",
+  "envoys": "vertegenwoordigers",
   "most_votes": "meeste stemmen",
   "start_end_time": "Start- / eindtijd",
   "scan_qr_code": "Scan de code met een QR Code scanner",
@@ -330,8 +330,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Ik begrijp de rol en verantwoordelijkheden van een LITETOKENS-vertegenwoordiger en accepteer hierbij betaling van een vergoeding van ",
   "understand_litetokens_ev_message_1": ".",
   "invalid_url": "Ongeldige URL",
-  "apply_representative_error_message_0": "Er is een fout opgetreden tijdens het kandidaat stellen.",
-  "apply_representative_error_message_1": "Zorg ervoor dat u genoeg XLT in uw account heeft om registratiekosten te dekken, of probeer het later nogmaals.",
+  "apply_envoy_error_message_0": "Er is een fout opgetreden tijdens het kandidaat stellen.",
+  "apply_envoy_error_message_1": "Zorg ervoor dat u genoeg XLT in uw account heeft om registratiekosten te dekken, of probeer het later nogmaals.",
   "open_external_link": "Je opent een externe website",
   "private_key_untrusted_website_message_0": "Voer nooit je privé sleutel in op een niet vertrouwde website.",
   "no_official_litetokens_website": "is geen officiële LITETOKENS site.",
@@ -543,7 +543,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -551,10 +551,10 @@ export const messages = {
   "lowest_productivity": "Laagste Productiviteit",
   "Super Representatives": "Super Vertegenwoordiger",
   "Super Representative Candidates": "Super Vertegenwoordiger Kandidaten",
-  "loading_representatives": "Vertegenwoordigers worden geladen",
-  "address_not_super_representative": "Dit adres betreft geen Super Vertegenwoordiger",
-  "unable_load_representatives_page_message": "Niet mogelijk de pagina te laden. Dit kan gebeuren doordat het adres ongeldig is, niet van een vertegenwoordiger of de vertegenwoordiger heeft deze pagina nog niet ingesteld",
-  "loading_representative": "Representative aan het laden",
+  "loading_envoys": "Vertegenwoordigers worden geladen",
+  "address_not_super_envoy": "Dit adres betreft geen Super Vertegenwoordiger",
+  "unable_load_envoys_page_message": "Niet mogelijk de pagina te laden. Dit kan gebeuren doordat het adres ongeldig is, niet van een vertegenwoordiger of de vertegenwoordiger heeft deze pagina nog niet ingesteld",
+  "loading_envoy": "Representative aan het laden",
   /*
   ##################################################################################
   #                                                                                #
@@ -602,7 +602,7 @@ export const messages = {
   "submissing_vote_message_0": "Uw persoonlijke stem is met succes uitgebracht en zal in de volgende verkiezingscyclus van kracht worden.",
   "submissing_vote_message_1": "U mag uw stemmen herverdelen wanneer u maar wilt",
   "submitting_vote_error_message": "Bij het stemmen is een fout opgetreden. Probeer het later nogmaals.",
-  "loading_super_representatives": "Super Representatives aan het laden",
+  "loading_super_envoys": "Super Representatives aan het laden",
   /*
   ##################################################################################
   #                                                                                #
@@ -759,7 +759,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

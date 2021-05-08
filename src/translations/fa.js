@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "ارتفاع بلوک",
   "online_nodes": "نود های آنلاین",
   "pice_per_1000xlt": "قیمت (1000XLT هر)",
-  "vote_for_super_representatives": "برای نمایندگان ممتاز رای دهید",
-  "view_super_representatives": "مشاهده نمایندگان ممتاز",
+  "vote_for_super_envoys": "برای نمایندگان ممتاز رای دهید",
+  "view_super_envoys": "مشاهده نمایندگان ممتاز",
   "create_new_wallet": "ایجاد کیف پول جدید",
   "view_tokens": "مشاهده توکن ها",
   "transactions_last_day": "تراکنش ها در روز گذشته",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "درخواست برای نمایندگی",
-  "apply_super_representative_candidate": "درخواست کاندیداتوری برای نماینده ممتاز شدن",
+  "apply_super_envoy_candidate": "درخواست کاندیداتوری برای نماینده ممتاز شدن",
   "your_personal_website_address": "وبسایت شخصی شما",
   "apply_for_delegate_predescription":`هر صاحب توکن این فرصت را دارد که به عنوان یک نماینده ممتاز ترون تبدیل شود.
    با این حال، برای عملکرد هماهنگ و کارآمد تر شبکه و جامعه،
@@ -316,7 +316,7 @@ export const messages = {
    هر تراکنش که در شبکه انجام می شود باید توسط تمام نمایندگان ممتاز تأیید شود و مقداری از  پاداش را دریافت می کنند
    مقدار تی آر ایکس در فرآیند درخواست نماینده ممتاز و رای گیری کسر نخواهد شد.`,
   "unknown_error": "خطای ناشناخته ای اتفاق افتاد",
-  "representative_understand": "متوجه شدم که چگونه میتوانم یک نماینده ی ترون باشم ",
+  "envoy_understand": "متوجه شدم که چگونه میتوانم یک نماینده ی ترون باشم ",
   "generate_account": "برای ساختن آدرس و رمزتان کلیک کنید",
   "create_account_confirm_1": "متوجه شدم اگر رمزم را فراموش کردم هیچ کس نمیتواند کمک کند دارایی هایم برگردد",
   "create_account_confirm_2": "متوجه شدم اگر پسووردم را فراموش کردم هیچ کس نمیتواند به من کمک کند",
@@ -324,7 +324,7 @@ export const messages = {
   "vote_thanks": "ممنون بابت ارسال رای شما ",
   "recent_transactions": "تراکنش های اخیر",
   "newest_account": "جدیدترین اکانت",
-  "representatives": "نمایندگان",
+  "envoys": "نمایندگان",
   "most_votes": "بیشترین رای ها",
   "start_end_time": "شروع / پایان زمان",
   "scan_qr_code": "کد را اسکن کنید ",
@@ -340,8 +340,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "من درک می کنم که چگونه یک نماینده ترون باشم و تایید می کنم که بپردازم ",
   "understand_litetokens_ev_message_1": "هزینه را.",
   "invalid_url": "آدرس اینترنتی نامعتبر",
-  "apply_representative_error_message_0": "هنگام تلاش برای اعمال کردن نماینده چیز اشتباهی رخ داد.",
-  "apply_representative_error_message_1": "اطمینان حاصل کنید که تی آرایکس به اندازه کافی برای هزینه دارید یا بعدا دوباره امتحان کنید.",
+  "apply_envoy_error_message_0": "هنگام تلاش برای اعمال کردن نماینده چیز اشتباهی رخ داد.",
+  "apply_envoy_error_message_1": "اطمینان حاصل کنید که تی آرایکس به اندازه کافی برای هزینه دارید یا بعدا دوباره امتحان کنید.",
   "open_external_link": "شما یک لینک خارجی را باز میکنید",
   "private_key_untrusted_website_message_0": "هرگز کلید خصوصی خود را در یک وب سایت غیرقابل اعتماد وارد نکنید.",
   "no_official_litetokens_website": "سایت رسمی ترون نیست",
@@ -550,7 +550,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -558,10 +558,10 @@ export const messages = {
   "lowest_productivity": "پایین ترین بهره وری",
   "Super Representatives": "نمایندگان ممتاز",
   "Super Representative Candidates": "کاندیدهای نماینده ممتاز",
-  "loading_representatives": "بارگزاری نمایندگان",
-  "address_not_super_representative": "این آدرس یک نماینده ممتاز نیست",
-  "unable_load_representatives_page_message": "صفحه قابل بارگزاری نیست، ممکن است این اتفاق اگر آدرس نامعتبر باشد، بیفتد ، آدرس نماینده ممتاز نیست یا نماینده این صفحه را پیکربندی نکرده است",
-  "loading_representative": "Loading Representative",
+  "loading_envoys": "بارگزاری نمایندگان",
+  "address_not_super_envoy": "این آدرس یک نماینده ممتاز نیست",
+  "unable_load_envoys_page_message": "صفحه قابل بارگزاری نیست، ممکن است این اتفاق اگر آدرس نامعتبر باشد، بیفتد ، آدرس نماینده ممتاز نیست یا نماینده این صفحه را پیکربندی نکرده است",
+  "loading_envoy": "Loading Representative",
   /*
   ##################################################################################
   #                                                                                #
@@ -609,7 +609,7 @@ export const messages = {
   "submissing_vote_message_0": "Your votes are successfully submitted, they will take effect when the next voting cycle starts.",
   "submissing_vote_message_1": "شما می توانید رای خود را در هر زمان که دوست دارید منتشر کنید",
   "submitting_vote_error_message": "هنگام رای دادن خود اشتباهی رخ داد. لطفا دوباره امتحان کنید. ",
-  "loading_super_representatives": "بارگذاری Super Representatives",
+  "loading_super_envoys": "بارگذاری Super Representatives",
   /*
   ##################################################################################
   #                                                                                #
@@ -766,7 +766,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "applied for Super Representative",
+  "applied_for_super_envoy": "applied for Super Representative",
   "ev_candidature": "Super Representative Candidature",
   "created_token": "created token",
   "token_creation": "Token Creation",

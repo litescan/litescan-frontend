@@ -146,7 +146,7 @@ export const RepresentativesAsync = asyncComponent({
           [],
           (require) => {
             $script("", () => {
-              resolve(require("./representatives/Representatives"));
+              resolve(require("./envoys/Representatives"));
             });
           },
           'Representatives',

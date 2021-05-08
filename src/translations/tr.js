@@ -145,8 +145,8 @@ export const messages = {
   "block_height": "Blok yüksekliği",
   "online_nodes": "Çevrimiçi Düğüm Adeti",
   "pice_per_1000xlt": "Fiyat (1000 XLT başına)",
-  "vote_for_super_representatives": "Süper Temsilcileri Oyla",
-  "view_super_representatives": "Süper Temsilcileri görüntüle",
+  "vote_for_super_envoys": "Süper Temsilcileri Oyla",
+  "view_super_envoys": "Süper Temsilcileri görüntüle",
   "create_new_wallet": "Yeni cüzdan oluştur",
   "view_tokens": "Jetonları görüntüle",
   "transactions_last_day": "Son gün yapılan işlem",
@@ -301,7 +301,7 @@ export const messages = {
   ##################################################################################
   */
   "apply_for_delegate": "temsilci olmak için başvur",
-  "apply_super_representative_candidate": "Süper Temsilci Adayı olmak için başvur",
+  "apply_super_envoy_candidate": "Süper Temsilci Adayı olmak için başvur",
   "your_personal_website_address": "kişisel web sitesi adresiniz",
   "apply_for_delegate_predescription": `Her jeton sahibi LITETOKENS Süper Temsilcisi olma fırsatına sahiptir.
    Bununla birlikte, ağ ve topluluğun daha sorunsuz ve etkin bir şekilde çalışması için,
@@ -318,7 +318,7 @@ export const messages = {
    Tüm Süper Temsilcilerin ağda yapılan her işlemi onaylamaları gerekmektedir, bu emeklerinin karşılığında bazı bonuslar alacaktırlar.
    Süper Temsilci başvurusunda ve oylamasında XLT harcanmayacaktır.`,
   "unknown_error": "bir bilinmeyen hata oluştu",
-  "representative_understand": "LITETOKENS temsilcisi nasıl olunacağını anladım",
+  "envoy_understand": "LITETOKENS temsilcisi nasıl olunacağını anladım",
   "generate_account": "Hesap adresi ve parolası üretmek için tıklayınız",
   "create_account_confirm_1": "Parolamı unutmam/kaybetmem halinde varlıklarıma hiç bir zaman erişemeyeceğimi anlıyorum",
   "create_account_confirm_2": "Parolamı unutmam/kaybetmem halinde kimsenin varlıklarımı kurtarmak için bana yardımcı olamayacağını anlıyorum",
@@ -326,7 +326,7 @@ export const messages = {
   "vote_thanks": "Oy verdiğiniz için teşekkür ederiz!",
   "recent_transactions": "Son işlemler",
   "newest_account": "En yeni hesap",
-  "representatives": "temsilciler",
+  "envoys": "temsilciler",
   "most_votes": "en çok oylar",
   "start_end_time": "Başlangıç / Bitiş Zamanı",
   "scan_qr_code": "Bir kare kod tarayıcısı ile kare kodu tarayın",
@@ -342,8 +342,8 @@ export const messages = {
   "understand_litetokens_ev_message_0": "Nasıl süper temsilci olunacağını anladım ve bunun için bir ücret ödeyeceğimi",
   "understand_litetokens_ev_message_1": "onaylıyorum.",
   "invalid_url": "Geçersiz URL",
-  "apply_representative_error_message_0": "Temsilci başvurusu yaparken bir şeyler yanlış gitti.",
-  "apply_representative_error_message_1": "Ücret için yeteri kadar XLT bulunduğunuzdan emin olun, ya da tekrar deneyin.",
+  "apply_envoy_error_message_0": "Temsilci başvurusu yaparken bir şeyler yanlış gitti.",
+  "apply_envoy_error_message_1": "Ücret için yeteri kadar XLT bulunduğunuzdan emin olun, ya da tekrar deneyin.",
   "open_external_link": "Bir dış bağlantıyı açmaktasınız",
   "private_key_untrusted_website_message_0": "Güvenli olmayan bir web sitesi hiç bir zaman özel anahtarınızı girmeyiniz.",
   "no_official_litetokens_website": "resmi bir LITETOKENS sitesi değildir.",
@@ -555,7 +555,7 @@ export const messages = {
   /*
   ##################################################################################
   #                                                                                #
-  # representatives section                                                        #
+  # envoys section                                                        #
   #                                                                                #
   ##################################################################################
   */
@@ -563,10 +563,10 @@ export const messages = {
   "lowest_productivity": "En Düşük Üretkenlik",
   "Super Representatives": "Süper Temsilciler",
   "Super Representative Candidates": "Süper Temsilci Adayları",
-  "loading_representatives": "Temsilciler Yükleniyor",
-  "address_not_super_representative": "Bu adres bir Süper Temsilci değil",
-  "unable_load_representatives_page_message": "Sayfa yüklenemedi, bunun sebebi adresin geçersiz olması olabileceği gibi, bir Süper Temslcilye ait olmaması ya da temsilcinin henüz bu sayfayı ayarlamamış olması olabilir.",
-  "loading_representative": "Temsilci Yükleniyor",
+  "loading_envoys": "Temsilciler Yükleniyor",
+  "address_not_super_envoy": "Bu adres bir Süper Temsilci değil",
+  "unable_load_envoys_page_message": "Sayfa yüklenemedi, bunun sebebi adresin geçersiz olması olabileceği gibi, bir Süper Temslcilye ait olmaması ya da temsilcinin henüz bu sayfayı ayarlamamış olması olabilir.",
+  "loading_envoy": "Temsilci Yükleniyor",
   /*
   ##################################################################################
   #                                                                                #
@@ -614,7 +614,7 @@ export const messages = {
   "submissing_vote_message_0": "Oylarınız başarıyla iletildi, bir sonraki oylama döngüsü başladığında devreye girecekler.",
   "submissing_vote_message_1": "İstediğiniz anda oylarınızı yeniden dağıtabilirsiniz",
   "submitting_vote_error_message": "Oylarınız gönderilirken bir şeyler yanlış gitti, lütfen daha sonra tekrar deneyiniz.",
-  "loading_super_representatives": "Süper Temilsilciler Yükleniyor",
+  "loading_super_envoys": "Süper Temilsilciler Yükleniyor",
   /*
   ##################################################################################
   #                                                                                #
@@ -771,7 +771,7 @@ export const messages = {
   #                                                                                #
   ##################################################################################
   */
-  "applied_for_super_representative": "Süper Temsilcilik için başvuruldu",
+  "applied_for_super_envoy": "Süper Temsilcilik için başvuruldu",
   "ev_candidature": "Süper Temsilci Adaylığı",
   "created_token": "jeton oluşturuldu",
   "token_creation": "Jeton Oluşturma",

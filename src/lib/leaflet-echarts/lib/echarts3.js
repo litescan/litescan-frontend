@@ -9014,7 +9014,7 @@ define('echarts/component/dataZoom/SliderZoomView', ['require', 'zrender/core/ut
                 return;
             }
 
-            // Find a representative series.
+            // Find a envoy series.
             var result;
             var ecModel = this.ecModel;
 

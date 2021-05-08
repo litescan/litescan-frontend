@@ -115,7 +115,7 @@ class Address extends React.Component {
   async refreshAddress(id) {
     let address = await Client.getAddress(id);
 
-    if (address.representative.enabled) {
+    if (address.envoy.enabled) {
       this.loadMedia(id);
     }
 
@@ -148,7 +148,7 @@ class Address extends React.Component {
 
     let address = await Client.getAddress(id);
 
-    if (address.representative.enabled) {
+    if (address.envoy.enabled) {
       this.loadMedia(id);
     }
 
@@ -277,15 +277,15 @@ class Address extends React.Component {
                 <Fragment>
                   <div className="card">
                     {
-                      address.representative.enabled && !producer &&
+                      address.envoy.enabled && !producer &&
                       <div className="card-header text-center bg-info font-weight-bold text-white">
-                        {tu("representatives")}
+                        {tu("envoys")}
                       </div>
                     }
                     {
-                      address.representative.enabled && producer &&
+                      address.envoy.enabled && producer &&
                       <div className="card-header text-center bg-danger font-weight-bold text-white">
-                        {tu("representatives")}
+                        {tu("envoys")}
                       </div>
                     }
                     {
@@ -312,7 +312,7 @@ class Address extends React.Component {
                             </tr>
                           }
                           {
-                            address.representative.enabled &&
+                            address.envoy.enabled &&
                             <Fragment>
                               {
                                 address.name &&
@@ -326,7 +326,7 @@ class Address extends React.Component {
                               <tr>
                                 <th>{tu("website")}:</th>
                                 <td>
-                                  <ExternalLink url={address.representative.url}/>
+                                  <ExternalLink url={address.envoy.url}/>
                                 </td>
                               </tr>
                               <tr>
@@ -403,13 +403,13 @@ class Address extends React.Component {
                       </div>
                       {
                         /*
-                        <div className={address.representative.enabled ? 'col-md-6 mt-3 mt-md-0' : ''}>
+                        <div className={address.envoy.enabled ? 'col-md-6 mt-3 mt-md-0' : ''}>
                           {
-                          address.representative.enabled && votes.length &&
+                          address.envoy.enabled && votes.length &&
                           <h4 className="text-center mt-3">Top {votes.length} {tu("voters")} {tu("addresses")}</h4>
                         }
                           {
-                          address.representative.enabled &&
+                          address.envoy.enabled &&
                         <PieReact style={{height: 340}} data={votes}/>
                         }
                         </div>

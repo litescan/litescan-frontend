@@ -22,7 +22,7 @@ export default class Faq extends Component {
                     A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
                   </li>
                   <li>
-                    Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site.
+                    Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a envoy list of such works at that site.
                   </li>
                   <li>
                     Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit the service provider to locate the material. Providing URLs in the body of an email is the best way to help us locate content quickly.
