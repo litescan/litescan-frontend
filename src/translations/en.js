@@ -388,7 +388,7 @@ export const messages = {
   "available": "available",
   "testnet": "Testnet",
   "days_to_freeze": "Days to freeze",
-  "xlt_token_fee_message": "1024 XLT is required to issue a new token",
+  "xlt_token_fee_message": "1024000 XLT is required to issue a new token",
   "xlt_token_account_limit": "You may create only one token per account",
   "xlt_token_wallet_requirement": "You need to open a wallet to be able to create a token",
   "invalid_address": "invalid address",
@@ -503,9 +503,9 @@ export const messages = {
   "participation": "Issuing Time",
   "start_date": "Start Date",
   "end_date": "End Date",
-  "token_spend_confirm": "I confirm that creating the total supply of the token costs a one time total fee of 1024 XLT.",
+  "token_spend_confirm": "I confirm that creating the total supply of the token costs a one time total fee of 1024000 XLT.",
   "token_issue_guide_message_1": `Issuing a token on the LITETOKENS Protocol can be done
-    by anyone who has at least 1024 XLT in their account.`,
+    by anyone who has at least 1024000 XLT in their account.`,
   "token_issue_guide_message_2": `When a token is issued it will be shown on the token overview page.
     Users can then participate within the issuing time and exchange their XLT for tokens.`,
   "token_issue_guide_message_3": `After issuing the token your account will receive the amount of tokens equal to the total supply.

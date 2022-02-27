@@ -396,7 +396,7 @@ export const messages = {
   "available": "disponibile",
   "testnet": "Testnet",
   "days_to_freeze": "Giorni da congelare",
-  "xlt_token_fee_message": "Sono richiesti 1024 XLT per creare un nuovo token",
+  "xlt_token_fee_message": "Sono richiesti 1024000 XLT per creare un nuovo token",
   "xlt_token_account_limit": "Puoi creare solo un token per account",
   "xlt_token_wallet_requirement": "Devi avere un portafoglio per poter creare un token",
   "invalid_address": "indirizzo non valido",
@@ -509,8 +509,8 @@ export const messages = {
   "participation": "partecipazione",
   "start_date": "Data di inizio",
   "end_date": "Data di fine",
-  "token_spend_confirm": "Confermo che la creazione del token prevede un costo una tantum di 1024 XLT.",
-  "token_issue_guide_message_1": "L'emissione di un token sul protocollo LITETOKENS può essere eseguita da chiunque possieda almeno 1024 XLT nel proprio conto.",
+  "token_spend_confirm": "Confermo che la creazione del token prevede un costo una tantum di 1024000 XLT.",
+  "token_issue_guide_message_1": "L'emissione di un token sul protocollo LITETOKENS può essere eseguita da chiunque possieda almeno 1024000 XLT nel proprio conto.",
   "token_issue_guide_message_2": `Quando un token viene emesso verrà mostrato nella pagina panoramica del token.
     Gli utenti possono quindi partecipare all'interno del periodo di partecipazione e scambiare i loro XLT per il token.`,
   "token_issue_guide_message_3":`Dopo la creazione del token il tuo conto riceverà la quantità di token pari alla fornitura totale.

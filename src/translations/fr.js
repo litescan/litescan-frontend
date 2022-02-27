@@ -399,7 +399,7 @@ export const messages = {
   "available": "disponible",
   "testnet": "Testnet",
   "days_to_freeze": "Jours d'immobilité",
-  "xlt_token_fee_message": "1024 XLT sont nécessaires pour créer un nouveau jeton",
+  "xlt_token_fee_message": "1024000 XLT sont nécessaires pour créer un nouveau jeton",
   "xlt_token_account_limit": "Vous ne pouvez créer qu'un seul jeton par compte",
   "xlt_token_wallet_requirement": "Vous avez besoin d'un portefeuille ouvert pour pouvoir créer un token",
   "invalid_address": "adresse invalide",
@@ -512,9 +512,9 @@ export const messages = {
   "participation": "participation",
   "start_date": "Date de début",
   "end_date": "Date de fin",
-  "token_spend_confirm": "Je confirme que la création de l'offre totale de jetons aura pour coût unique 1024 XLT.",
+  "token_spend_confirm": "Je confirme que la création de l'offre totale de jetons aura pour coût unique 1024000 XLT.",
   "token_issue_guide_message_1":`L'émission d'un jeton sur le protocole LITETOKENS peut être faite
-   par n'importe qui qui a au moins 1024 XLT dans son compte.`,
+   par n'importe qui qui a au moins 1024000 XLT dans son compte.`,
   "token_issue_guide_message_2":`Lorsqu'un jeton est émis, il apparaît sur la page de présentation des jetons.
    Les utilisateurs peuvent alors participer à la période de participation et échanger leur XLT contre des jetons.`,
   "token_issue_guide_message_3":`Après l'émission du jeton, votre compte recevra le nombre de jetons égal à la quantité totale.

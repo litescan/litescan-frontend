@@ -113,7 +113,7 @@ class Statistics extends React.Component {
         //     limit: 35,
         //     sort: '-balance',
         // });
-        let accountData = await xhr.get("https://assistapi.litescan.org/api/account?limit=35&sort=-balance");
+        let accountData = await xhr.get("https://api.litescan.org/api/account?limit=35&sort=-balance");
         let accounts = accountData.data;
         this.setState({
             accounts: filter(accounts, account => !includes(litetokensAddresses, account.address))
@@ -161,7 +161,7 @@ class Statistics extends React.Component {
     async loadTotalXLTSupply(){
         let {intl} = this.props;
         let random = Math.random();
-        let balanceData = await xhr.get("https://server.litetokens.org/api/v2/node/balance_info?random=" + random);
+        let balanceData = await xhr.get("https://grid.litetokens.org/api/v2/node/balance_info?random=" + random);
         let LITETOKENSFoundationTotal = balanceData.data.total;
         let {blocks} = await Client.getBlocks({
             limit: 1,
@@ -170,7 +170,7 @@ class Statistics extends React.Component {
         let blockHeight = blocks[0] ? blocks[0].number : 0;
         let nodeRewardsNum = blockHeight * 16;
         let blockProduceRewardsNum = blockHeight * 32;
-        let address = await Client.getAddress('TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy');
+        let address = await Client.getAddress('LetuHVRUTGwtaKXZUzaSkwrcm7sYCtbxuD');
         let startFeeBurnedNum = Math.abs(-9223372036854.775808)
         let feeBurnedNum = (startFeeBurnedNum - Math.abs(address.balance / ONE_XLT)).toFixed(2);
         let genesisNum = 100000000000;
@@ -225,7 +225,7 @@ class Statistics extends React.Component {
 
     async loadVolume(){
         let {intl} = this.props;
-        let volumeData = await xhr.get("https://server.litetokens.org/api/v2/node/market_data");
+        let volumeData = await xhr.get("https://grid.litetokens.org/api/v2/node/market_data");
         let volumeUSD = volumeData.data.market_cap_by_available_supply
 
         let volume = volumeUSD.map(function (v, i) {
@@ -296,7 +296,7 @@ class Statistics extends React.Component {
 
     async loadTxOverviewStats() {
         // let {txOverviewStats} = await Client.getTxOverviewStats();
-        let overviewData = await xhr.get("https://assistapi.litescan.org/api/stats/overview");
+        let overviewData = await xhr.get("https://api.litescan.org/api/stats/overview");
         let txOverviewStats = overviewData.data.data;
         let temp = [];
         let addressesTemp = [];
@@ -432,7 +432,7 @@ class Statistics extends React.Component {
         let {match, intl} = this.props;
         let {txOverviewStats, addressesStats, blockSizeStats, blockchainSizeStats, priceStats, transactionStats, transactionValueStats, blockStats, accounts, volumeStats, pieChart, supplyTypesChart, summit,genesisNum,blockProduceRewardsNum,nodeRewardsNum,independenceDayBurned,feeBurnedNum,currentTotalSupply,priceUSD,priceBTC,marketCapitalization,foundationFreeze,circulatingNum} = this.state;
         let unit;
-        let uploadURL = "http://server.litetokens.org/api/v2/node/overview_upload";
+        let uploadURL = "http://grid.litetokens.org/api/v2/node/overview_upload";
         if (match.params.chartName === 'blockchainSizeStats' || match.params.chartName === 'addressesStats') {
             unit = 'increase';
         } else {
@@ -755,7 +755,7 @@ class Statistics extends React.Component {
                         </div>
                         {
                             match.params.chartName === 'txOverviewStats' &&
-                            <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#C23631'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;</div>
+                            <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#0171bb'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;</div>
                         }
 
                     </div>

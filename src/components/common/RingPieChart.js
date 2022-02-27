@@ -210,13 +210,13 @@ export class EnvoysRingPieReact extends React.Component {
     myChart.setOption(config.representPieChart);
   }
 
-
+  // Kedia TODO:  enabling the following causes errors:
   componentDidMount() {
-    this.initPie(this.state.pieId);
+    //this.initPie(this.state.pieId);
   }
 
   componentDidUpdate() {
-    this.initPie(this.state.pieId);
+    //this.initPie(this.state.pieId);
   }
 
   render() {

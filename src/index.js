@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './styles/main.scss';
+import './styles/gspin.scss';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 import "./scripts.js";
 import AppCmp from './components/AppCmp';

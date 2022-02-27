@@ -50,15 +50,15 @@ class Accounts extends Component {
       }
     }
 
-    /*
+    
     let {accounts, total} = await Client.getAccounts({
       sort: '-balance',
       limit: pageSize,
       start: (page-1) * pageSize,
     });
-    */
+    
     let random=Math.random();
-    let data = await xhr.get("https://server.litetokens.org/api/v2/node/balance_info?random="+random);
+    let data = await xhr.get("https://grid.litetokens.org/api/v2/node/balance_info?random="+random);
     data.data.data.sort(compare('key'));
     this.setState({
       loading: false,

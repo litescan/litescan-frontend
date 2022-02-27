@@ -401,7 +401,7 @@ export const messages = {
   "available": "müsait",
   "testnet": "Test ağı",
   "days_to_freeze": "Dondurulacağı günler",
-  "xlt_token_fee_message": "Yeni bir jeton çıkartılması için 1024 XLT gerekmektedir",
+  "xlt_token_fee_message": "Yeni bir jeton çıkartılması için 1024000 XLT gerekmektedir",
   "xlt_token_account_limit": "Bir hesap sadece bir jeton üretebilir",
   "xlt_token_wallet_requirement": "Jeton üretmek için bir cüzdan açmanız gerekmektedir",
   "invalid_address": "geçersiz adres",
@@ -515,9 +515,9 @@ export const messages = {
   "participation": "katılım",
   "start_date": "Başlama Tarihi",
   "end_date": "Bitiş Tarihi",
-  "token_spend_confirm": "Jeton arzının tamamnını yaratmanın bir defalık toplam 1024 XLT ücrete tabi olduğunu onaylarım.",
+  "token_spend_confirm": "Jeton arzının tamamnını yaratmanın bir defalık toplam 1024000 XLT ücrete tabi olduğunu onaylarım.",
   "token_issue_guide_message_1": `LITETOKENS Protokolünde jeton üretimi
-   hesabında en az 1024 XLT bulunan herkes tarafından yapılabilir.`,
+   hesabında en az 1024000 XLT bulunan herkes tarafından yapılabilir.`,
   "token_issue_guide_message_2":`Bir jeton üretilir üretilmez jetonlara genel bakış sayfasında görünecektir.
    Kullanıcılar katılım süresi boyunca katılım sağlayarak XLT'leri ile jeton alabilirler.`,
   "token_issue_guide_message_3":`Jeton üretildikten sonra hesabınıza toplam arzı kadar miktarda jeton gelecektir.

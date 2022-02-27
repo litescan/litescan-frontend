@@ -27,7 +27,7 @@ class Nodes extends Component {
   }
 
   buildNodeList = () => {
-    let {nodes} = this.state;
+    let nodes = this.state.nodes;
 
     let nodesByCountry = {};
     for (let node of nodes) {
@@ -91,7 +91,7 @@ class Nodes extends Component {
 
   loadNodes = async () => {
    // let {nodes, status} = await Client.getNodeLocations();
-    let {data} = await xhr.get("https://server.litetokens.org/api/v2/node/nodemap");
+    let data = await xhr.get("https://api.litescan.org/api/nodemap");
 
     this.setState({
       nodes:data.data,

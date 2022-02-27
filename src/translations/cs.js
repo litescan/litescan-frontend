@@ -398,7 +398,7 @@ export const messages = {
   "available": "dostupný",
   "testnet": "Testovací sí",
   "days_to_freeze": "Dnù ke zmrazení",
-  "xlt_token_fee_message": "K vydání nového tokenu je potøeba 1024 XLT.",
+  "xlt_token_fee_message": "K vydání nového tokenu je potøeba 1024000 XLT.",
   "xlt_token_account_limit": "Mùžete vytvoøit pouze jeden token pod jedním úètem",
   "xlt_token_wallet_requirement": "Musíte otevøít penìženku, abyste mohli vytvoøit token",
   "invalid_address": "neplatná adresa",
@@ -510,8 +510,8 @@ export const messages = {
   "participation": "úèast",
   "start_date": "Poèáteèní datum",
   "end_date": "Koncové datum",
-  "token_spend_confirm": "Beru na vìdomí, že za celkové množství vydaných tokenù bude úètován jednorázový poplatek 1024 XLT.",
-  "token_issue_guide_message_1": `Token na LITETOKENS protokolu mùže vydat každý, kdo má na úètu alespoò 1024 XLT.`,
+  "token_spend_confirm": "Beru na vìdomí, že za celkové množství vydaných tokenù bude úètován jednorázový poplatek 1024000 XLT.",
+  "token_issue_guide_message_1": `Token na LITETOKENS protokolu mùže vydat každý, kdo má na úètu alespoò 1024000 XLT.`,
   "token_issue_guide_message_2":`Jakmile je token vydán, zobrazí se na stránce s pøehledem tokenù.
     Uživatelé si následnì bìhem daného odobí mohou vymìnit své XLT za tokeny.`,
   "token_issue_guide_message_3":`Po vydání tokenù obdržíte na svùj úèet tokeny v hodnotì odpovídající celkovému množství v obìhu.

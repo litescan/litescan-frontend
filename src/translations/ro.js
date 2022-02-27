@@ -400,7 +400,7 @@ export const messages = {
   "available": "disponibil",
   "testnet": "Rețea de test",
   "days_to_freeze": "Zile de înghețare",
-  "xlt_token_fee_message": "1024 XLT se necesită pentru a emite un nou token",
+  "xlt_token_fee_message": "1024000 XLT se necesită pentru a emite un nou token",
   "xlt_token_account_limit": "Puteți crea doar un token per cont",
   "xlt_token_wallet_requirement": "Trebuie să deschideți un portofel pentru a crea un token",
   "invalid_address": "adresă invalidă",
@@ -514,8 +514,8 @@ export const messages = {
   "participation": "participare",
   "start_date": "Dată Start",
   "end_date": "Dată Sfârșit",
-  "token_spend_confirm": "Confirm că supply-ul total al tokenilor costă o taxă unică de 1024 XLT.",
-  "token_issue_guide_message_1": `Emiterea unui token pe LITETOKENS Protocol se poate face de oricine are cel puțin 1024 XLT în contul lui.`,
+  "token_spend_confirm": "Confirm că supply-ul total al tokenilor costă o taxă unică de 1024000 XLT.",
+  "token_issue_guide_message_1": `Emiterea unui token pe LITETOKENS Protocol se poate face de oricine are cel puțin 1024000 XLT în contul lui.`,
   "token_issue_guide_message_2":`Atunci când un token este emis acesta va fi indicat pe pagina de prezentare token.
     Utilizatorii pot apoi să participe în perioada de participare şi să schimbe XLTul lor pentru tokeni.`,
   "token_issue_guide_message_3":`După emiterea tokenului contul va primi suma de tokeni egală cu supply-ul total.

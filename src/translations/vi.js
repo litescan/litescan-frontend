@@ -399,7 +399,7 @@ export const messages = {
   "available": "có sẵn",
   "testnet": "Testnet",
   "days_to_freeze": "Ngày đóng băng",
-  "xlt_token_fee_message": "Cần có 1024 XLT để phát hành mã token mới",
+  "xlt_token_fee_message": "Cần có 1024000 XLT để phát hành mã token mới",
   "xlt_token_account_limit": "Bạn chỉ có thể tạo một mã token cho mỗi tài khoản",
   "xlt_token_wallet_requirement": "Bạn cần mở ví để có thể tạo mã token",
   "invalid_address": "Địa chỉ không hợp lệ",
@@ -513,9 +513,9 @@ export const messages = {
   "participation": "tham gia",
   "start_date": "Ngày bắt đầu",
   "end_date": "Ngày kết thúc",
-  "token_spend_confirm": "Tôi xác nhận việc tạo tổng nguồn cung cho mã token tổng chi phí một lần là 1024 XLT.",
+  "token_spend_confirm": "Tôi xác nhận việc tạo tổng nguồn cung cho mã token tổng chi phí một lần là 1024000 XLT.",
   "token_issue_guide_message_1": `Phát hành một mã token trên Giao thức LITETOKENS có thể được thực hiện
-    bởi bất kỳ ai có ít nhất 1024 XLT trong tài khoản của họ.`,
+    bởi bất kỳ ai có ít nhất 1024000 XLT trong tài khoản của họ.`,
   "token_issue_guide_message_2":`Khi một mã token được phát hành, nó sẽ được hiển thị trên trang tổng quan mã token.
     Sau đó, người dùng có thể tham gia trong khoảng thời gian này và trao đổi XLT với mã token.`,
   "token_issue_guide_message_3":`Sau khi phát hành mã token, tài khoản của bạn sẽ nhận được số lượng mã token bằng tổng số nguồn cung.

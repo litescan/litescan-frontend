@@ -144,7 +144,7 @@ class TokenCreate extends Component {
       })(account.key);
 
       if (result.success) {
-        let result_img = await xhr.post("https://www.litetokensapp.co:9009/api/uploadLogo", {
+        let result_img = await xhr.post("https://api.litescan.org/api/uploadLogo", {
           imageData: logoData,
           owner_address: account.address
         });
@@ -184,7 +184,7 @@ class TokenCreate extends Component {
     } finally {
       this.setState({loading: false});
     }
-  };
+  }
 
   isLoggedIn = () => {
     let {account} = this.props;

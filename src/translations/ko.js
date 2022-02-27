@@ -395,7 +395,7 @@ export const messages = {
   "available": "이용가능",
   "testnet": "테스트넷",
   "days_to_freeze": "동결 기간",
-  "xlt_token_fee_message": "토큰을 발행하기 위해서는 1024 XLT가 필요합니다.",
+  "xlt_token_fee_message": "토큰을 발행하기 위해서는 1024000 XLT가 필요합니다.",
   "xlt_token_account_limit": "한 계정당 만들 수 있는 토큰은 1개입니다",
   "xlt_token_wallet_requirement": "토큰을 생성하기 위해서는 지갑을 열어야합니다",
   "invalid_address": "잘못된 주소",
@@ -507,8 +507,8 @@ export const messages = {
   "participation": "참여",
   "start_date": "시작 일자",
   "end_date": "종료 일자",
-  "token_spend_confirm": "나는 토큰의 총 공급량을 만드는데 한 번의 총 1024 XLT의 비용이 들었음을 확인합니다.",
-  "token_issue_guide_message_1":`LITETOKENS 프로토콜에서 토큰을 발행하는 것은 계정에 최소 1024 개의 XLT를 가진 사람이 수행 할 수 있습니다.`,
+  "token_spend_confirm": "나는 토큰의 총 공급량을 만드는데 한 번의 총 1024000 XLT의 비용이 들었음을 확인합니다.",
+  "token_issue_guide_message_1":`LITETOKENS 프로토콜에서 토큰을 발행하는 것은 계정에 최소 1024000 개의 XLT를 가진 사람이 수행 할 수 있습니다.`,
   "token_issue_guide_message_2":`토큰이 발급되면 토큰 개요 페이지에 표시됩니다.
    사용자는 참여 기간 내에 참여하고 XLT를 토큰으로 교환 할 수 있습니다.`,
   "token_issue_guide_message_3":`토큰을 발행하면 계정에 총 공급과 동일한 토큰 금액이 지급됩니다.

@@ -21,7 +21,7 @@ function WizardStep({ icon, completed = false, first = false }) {
     <div className={"col step d-flex justify-content-center " + (completed ? "completed" : "") }>
       {
         first && <div className="progress first-progress">
-          <div className="progress-bar bg-danger"/>
+          <div className="progress-bar bg-info"/>
         </div>
       }
       <div className="step-icon">
@@ -29,7 +29,7 @@ function WizardStep({ icon, completed = false, first = false }) {
         <i className="fa fa-check icon-complete" />
       </div>
       <div className="progress">
-        <div className="progress-bar bg-danger"/>
+        <div className="progress-bar bg-info"/>
       </div>
     </div>
   )
@@ -287,7 +287,7 @@ class Wizard extends React.PureComponent {
     return (
       <main className="container wallet-wizard header-overlap">
         <div className="card">
-          <div className="text-center p-5 bg-dark">
+          <div className="text-center p-5 bg-light">
             <img className="wallet-wizard-logo" src={litetokensLogo}/>
           </div>
           <div className="card-body d-flex wizard-steps">

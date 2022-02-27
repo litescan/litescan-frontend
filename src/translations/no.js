@@ -398,7 +398,7 @@ export const messages = {
   "available": "tilgjengelig",
   "testnet": "Testnett",
   "days_to_freeze": "Dager å fryse",
-  "xlt_token_fee_message": "Det kreves 1024 XLT for å utstede en ny token",
+  "xlt_token_fee_message": "Det kreves 1024000 XLT for å utstede en ny token",
   "xlt_token_account_limit": "Du kan kun opprette en token per konto",
   "xlt_token_wallet_requirement": "Du må åpne en lommebok for å kunne opprette en token",
   "invalid_address": "invalid adresse",
@@ -510,8 +510,8 @@ export const messages = {
   "participation": "deltakelse",
   "start_date": "Start Dato",
   "end_date": "Slutt Dato",
-  "token_spend_confirm": "Jeg bekrevter herved at ved å utstede en total beholdning av et token, vil det koste meg et engangsbeløp på 1024 XLT.",
-  "token_issue_guide_message_1": `Å utstede en token på LITETOKENS Protokollen kan gjøres av hvilken som helst som innehar minst 1024 XLT på sin konto.`,
+  "token_spend_confirm": "Jeg bekrevter herved at ved å utstede en total beholdning av et token, vil det koste meg et engangsbeløp på 1024000 XLT.",
+  "token_issue_guide_message_1": `Å utstede en token på LITETOKENS Protokollen kan gjøres av hvilken som helst som innehar minst 1024000 XLT på sin konto.`,
   "token_issue_guide_message_2":`Når en token er utstedt vil du kunne se den på siden for token oversikt.
     Brukere kan så delta innenfor deltakelsesperioden og veksle deres XLT for tokens.`,
   "token_issue_guide_message_3":`Etter å ha utstedt token vil du på din konto motta antall tokener lik den totale beholdningen.

@@ -4,8 +4,10 @@
     // default background style ====================================================
     $white: #FFF;
     background-size: cover;
-    background: #f5f8fa url(../images/body_backgound_transparent.png) fixed no-repeat;
-    background-position: center -200px;
+    // kedia change background;
+    // background: #f5f8fa url(../images/body_backgound_transparent.png) fixed no-repeat;
+    //background-position: center -200px;
+    // end kedia change
     .logo-wrapper {
         background: $white;
     }
@@ -442,9 +444,9 @@ $color-grey-200: #666666;
 $color-grey-300: #999999;
 $color-grey-border:#979797;
 
-$color:#C23631;
+$color:#0171bb;
 .litetokens-light {
-  background-color: #F3F3F3;
+  background-color: #0171bb;
   .header-top {
     background: #F7F7F7;
   }
@@ -488,7 +490,7 @@ $color:#C23631;
   }
   .btn-search{
     color: #fff;
-    background-color: $color;
+    background-color: #000;
     border-color: $color;
   }
 

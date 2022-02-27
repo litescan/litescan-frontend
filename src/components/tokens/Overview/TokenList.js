@@ -45,9 +45,9 @@ class TokenList extends Component {
     let result;
 
     if (filter.name)
-      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
+      result = await xhr.get("https://api.litescan.org/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&name=" + filter.name);
     else
-      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
+      result = await xhr.get("https://api.litescan.org/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize);
 
     let total = result.data.data['Total'];
     let tokens = result.data.data['Data'];
@@ -59,9 +59,10 @@ class TokenList extends Component {
        ...filter,
      });
      */
+    /* kedia disable until creation of initial tokens
     if (tokens.length === 0) {
       toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'record_not_found'}));
-    }
+    }*/
     try {
       // token = await Client.getToken("McDonaldsCoin");
       // if (page === 1)

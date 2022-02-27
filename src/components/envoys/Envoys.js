@@ -101,7 +101,7 @@ class Envoys extends Component {
             </thead>
             <tbody>
             <tr>
-              <td colSpan="9" className="bg-danger text-white text-center font-weight-bold">
+              <td colSpan="9" className="bg-info text-white text-center font-weight-bold">
                 {tu("Super Envoys")}
               </td>
             </tr>

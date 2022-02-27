@@ -11,7 +11,7 @@ export const BLOCK_REWARD = 32;
 export const EV_MAX_COUNT = 27;
 export const WITNESS_CREATE_COST = 9999;
 export const CIRCULATING_SUPPLY = 100000000000;
-export const ASSET_ISSUE_COST = 1024 * ONE_XLT;
+export const ASSET_ISSUE_COST = 1024000 * ONE_XLT;
 
 export const PUBLIC_URL = process.env.PUBLIC_URL || window.location.origin;
 export const API_URL = process.env.API_URL;

@@ -103,12 +103,13 @@ export const routes = [
       }
     ]
   },
+  /* kedia: disabling nodemap as code needs updating to be functional
   {
     label: "nodes",
     icon: 'fa fa-server',
     path: "/nodes",
     component: NodesAsync,
-  },
+  },*/
   {
     label: "envoys",
     path: "/envoys",

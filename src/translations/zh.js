@@ -385,7 +385,7 @@ export const messages = {
   "available": "可供购买",
   "testnet": "测试网",
   "days_to_freeze": "冻结天数",
-  "xlt_token_fee_message": "发行新通证将花费1024XLT",
+  "xlt_token_fee_message": "发行新通证将花费1024000XLT",
   "xlt_token_account_limit": "每个账户只能发行1种通证",
   "xlt_token_wallet_requirement": "发行通证需要首先打开钱包",
   "invalid_address": "无效地址",
@@ -498,8 +498,8 @@ export const messages = {
   "participation": "参与时间",
   "start_date": "开始日期",
   "end_date": "结束日期",
-  "token_spend_confirm": "我已获知发行通证需一次性缴纳1024XLT。",
-  "token_issue_guide_message_1": `用户账户中有至少1024XLT，就可以在波场协议上发行通证。`,
+  "token_spend_confirm": "我已获知发行通证需一次性缴纳1024000XLT。",
+  "token_issue_guide_message_1": `用户账户中有至少1024000XLT，就可以在波场协议上发行通证。`,
   "token_issue_guide_message_2": `通证发行后，会在通证总览页面进行显示。
     之后用户可以在发行期限内参与认购，用XLT兑换通证。`,
   "token_issue_guide_message_3": `在发行通证后，您的账户将会收到全部的发行数额。

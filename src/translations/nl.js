@@ -389,7 +389,7 @@ export const messages = {
   "available": "beschikbaar",
   "testnet": "Testnet",
   "days_to_freeze": "Dagen om vast te zetten",
-  "xlt_token_fee_message": "Er is 1024 XLT verschuldigd om een nieuwe token uit te geven",
+  "xlt_token_fee_message": "Er is 1024000 XLT verschuldigd om een nieuwe token uit te geven",
   "xlt_token_account_limit": "Je kunt slechts één token per account maken",
   "xlt_token_wallet_requirement": "Je dient een portemonee te hebben om een token te kunnen maken",
   "invalid_address": "ongeldig adres",
@@ -503,9 +503,9 @@ export const messages = {
   "participation": "Deelname",
   "start_date": "Begindatum",
   "end_date": "Einddatum",
-  "token_spend_confirm": "Ik bevestig dat ik op de hoogte ben van het feit dat het maken van de gehele voorraad van mijn tokens 1024 XLT kost.",
+  "token_spend_confirm": "Ik bevestig dat ik op de hoogte ben van het feit dat het maken van de gehele voorraad van mijn tokens 1024000 XLT kost.",
   "token_issue_guide_message_1": `Het uitgeven van een token op het LITETOKENS Protocol kan gedaan worden
-    door iedereen die tenminste 1024 XLT beschikbaar heeft.`,
+    door iedereen die tenminste 1024000 XLT beschikbaar heeft.`,
   "token_issue_guide_message_2":`Als een token is uitgegeven wordt deze getoond op de overzichtspagina.
     Gebruikers kunnen in de deelname periode hun XLT inwisselen voor tokens.`,
   "token_issue_guide_message_3":` Na het uitgeven van een token ontvangt u een aantal tokens dat gelijk is aan de totale voorraad in uw account.

@@ -45,9 +45,9 @@ class TokenOverview extends Component {
     let result;
 
     if (filter.name)
-      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico" + "&name=" + filter.name);
+      result = await xhr.get("https://api.litescan.org/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico" + "&name=" + filter.name);
     else
-      result = await xhr.get("https://www.litetokensapp.co:9009/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico");
+      result = await xhr.get("https://api.litescan.org/api/token?sort=-name&limit=" + pageSize + "&start=" + (page - 1) * pageSize + "&status=ico");
 
     let total = result.data.data['Total'];
     let tokens = result.data.data['Data'];
@@ -60,9 +60,11 @@ class TokenOverview extends Component {
           ...filter,
         });
     */
+    /* kedia disable until issuance of initial tokens
     if (tokens.length === 0) {
       toastr.warning(intl.formatMessage({id: 'warning'}), intl.formatMessage({id: 'record_not_found'}));
     }
+    */
 
     this.setState({
       loading: false,

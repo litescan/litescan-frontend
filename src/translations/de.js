@@ -400,7 +400,7 @@ export const messages = {
   "available": "verfügbar",
   "testnet": "Testnetz",
   "days_to_freeze": "Sperrdauer",
-  "xlt_token_fee_message": "1024 XLT wird für die Ausgabe eines neuen Tokens benötigt",
+  "xlt_token_fee_message": "1024000 XLT wird für die Ausgabe eines neuen Tokens benötigt",
   "xlt_token_account_limit": "Es kann nur ein Token pro Konto erstellt werden",
   "xlt_token_wallet_requirement": "Sie müssen eine Wallet eröffnen um ein Token zu erstellen",
   "invalid_address": "ungültige Adresse",
@@ -516,9 +516,9 @@ export const messages = {
   "participation": "Teilnehmen",
   "start_date": "Start Datum",
   "end_date": "End Datum",
-  "token_spend_confirm": "Hiermit akzeptiere ich, dass mich die Erstellung des Tokens eine einmalige Gebühr von 1024 XLT kostet.",
+  "token_spend_confirm": "Hiermit akzeptiere ich, dass mich die Erstellung des Tokens eine einmalige Gebühr von 1024000 XLT kostet.",
   "token_issue_guide_message_1":`Die Erstellung und Ausgabe eines eigenen Tokens auf Basis des LITETOKENS-Protokolls kann durch jeden Benutzer erfolgen,
-   man benötigt dazu mindestens 1024 XLT auf seinem Konto.`,
+   man benötigt dazu mindestens 1024000 XLT auf seinem Konto.`,
   "token_issue_guide_message_2":`Der aktuelle Stand der ausgegebenen Tokens wird auf der Token-Übersichtsseite angezeigt.
    Die Benutzer können innerhalb des definierten Zeitraums teilnehmen und ihre XLT gegen Token eintauschen.`,
   "token_issue_guide_message_3":`Nach der Erstellung des Token werden Ihnen diese auf Ihrem Konto gugeschrieben.

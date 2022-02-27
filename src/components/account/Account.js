@@ -780,7 +780,7 @@ class Account extends Component {
               <div className="card h-100 text-center widget-icon">
                 <i className="icon-big fa fa-bolt fa-7x" style={{color: '#ffc107'}}/>
                 <div className="card-body">
-                  <h3 className="text-warning">
+                  <h3 className="text-secondary">
                     <FormattedNumber value={currentWallet.frozenXlt / ONE_XLT}/>
                   </h3>
                   LITETOKENS {tu("power")}
@@ -792,7 +792,7 @@ class Account extends Component {
               <div className="card h-100 widget-icon">
                 <img src={require("../../images/litetokens-icon.svg")} style={styles.litetokensBalance}/>
                 <div className="card-body text-center">
-                  <h3 className="text-danger">
+                  <h3 className="text-secondary">
                     <XLTPrice amount={currentWallet.balance / ONE_XLT}/>
                   </h3>
                   {tu("balance")}
@@ -856,7 +856,7 @@ class Account extends Component {
 
                           {
                             IS_TESTNET &&
-                            <p className="text-danger">
+                            <p className="text-secondary">
                               ({tu("do_not_send_2")})
                             </p>
                         }
@@ -1030,7 +1030,7 @@ class Account extends Component {
                                 Claimable Rewards: <XLTPrice amount={currentWallet.envoy.allowance / ONE_XLT}
                                                              className="font-weight-bold"/>
                               </p> :
-                              <p className="m-0 mt-3 font-weight-bold text-danger">
+                              <p className="m-0 mt-3 font-weight-bold text-secondary">
                                 No rewards to claim
                               </p>
                         }

@@ -39,7 +39,7 @@ class Accounts extends Component {
     //   limit: pageSize,
     //   start: (page-1) * pageSize,
     // });
-      let accountData = await xhr.get("https://assistapi.litescan.org/api/account?sort=-balance&limit="+ pageSize + "&start=" + (page - 1) * pageSize);
+      let accountData = await xhr.get("https://api.litescan.org/api/account?sort=-balance&limit="+ pageSize + "&start=" + (page - 1) * pageSize);
       let accountsTotal = accountData.data.total;
       let accounts = accountData.data.data;
       this.setState({

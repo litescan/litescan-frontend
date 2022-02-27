@@ -7,11 +7,10 @@ import {tu} from "../../../utils/i18n";
 import {FormattedNumber, FormattedDate, injectIntl} from "react-intl";
 
 export default function Contract({contract}) {
-
+  console.log('contract: \n'+contract);
   switch (contract.contractType.toUpperCase()) {
     case "TRANSFERCONTRACT":
-
-
+        
       return (
         <Fragment>
           <div className="card-body">

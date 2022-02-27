@@ -251,7 +251,7 @@ class Address extends React.Component {
     let totalVotes;
     let producer;
 
-    let uploadURL =   "https://server.litetokens.org/api/v2/node/info_upload?address=" + match.params.id
+    let uploadURL =   "https://grid.litetokens.org/api/v2/node/info_upload?address=" + match.params.id
     for (let can in candidates) {
       if (address.address === candidates[can].address) {
         rank = candidates[can].rank;
@@ -284,7 +284,7 @@ class Address extends React.Component {
                     }
                     {
                       address.envoy.enabled && producer &&
-                      <div className="card-header text-center bg-danger font-weight-bold text-white">
+                      <div className="card-header text-center bg-info font-weight-bold text-white">
                         {tu("envoys")}
                       </div>
                     }
@@ -443,7 +443,7 @@ class Address extends React.Component {
                       </Switch>
                     </div>
                   </div>
-                  <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#C23631'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;
+                  <div style={{marginTop:20,float:'right'}}><i size="1" style={{fontStyle: 'normal'}}>[ Download <a href={uploadURL} style={{color: '#0171bb'}}><b>CSV Export</b></a>&nbsp;<span className="glyphicon glyphicon-download-alt"></span> ]</i>&nbsp;
                   </div>
                 </Fragment>
             }
